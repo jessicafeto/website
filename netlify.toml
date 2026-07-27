@@ -1,0 +1,14 @@
+# Netlify configuration for the noova Next.js site.
+# The official Next.js runtime handles SSR, the App Router and next-intl
+# middleware automatically — no extra adapter needed.
+
+[build]
+  command = "next build"
+  publish = ".next"
+
+[build.environment]
+  # Next.js 15 requires Node >= 18.18; pin to an LTS for reproducible builds.
+  NODE_VERSION = "20"
+
+[[plugins]]
+  package = "@netlify/plugin-nextjs"

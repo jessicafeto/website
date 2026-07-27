@@ -1,0 +1,131 @@
+{
+  "meta": {
+    "title": "noova — Branding, Websites & Marketing · London",
+    "description": "noova builds brands from the inside out — a London studio uniting strategy, design, websites, marketing and technology as one coherent system. For businesses that have outgrown their own image.",
+    "ogDescription": "We build brands from the inside out. For businesses that have outgrown their own image."
+  },
+  "nav": {
+    "aboutStudio": "About the Studio",
+    "portfolio": "Portfolio",
+    "services": "Services",
+    "contact": "Contact"
+  },
+  "hero": {
+    "service1": "Branding",
+    "service2": "Websites",
+    "service3": "Marketing",
+    "tagline": "For businesses that have outgrown their own image.",
+    "scroll": "Scroll"
+  },
+  "welcome": {
+    "label": "WELCOME TO NOOVA",
+    "heading": "We build brands from the inside out.",
+    "intro": "noova is a creative studio combining strategy, branding, websites, marketing and intelligent systems into one coherent practice. Every decision is connected. Every touchpoint is designed together. Nothing feels bolted on.",
+    "brandDesc": "Strategy, identity and creative direction that give businesses a clear foundation.",
+    "websitesDesc": "Editorial websites designed with clarity, precision and performance in mind.",
+    "growthDesc": "Marketing, content and intelligent systems that help ambitious businesses grow."
+  },
+  "founder": {
+    "label": "ABOUT THE FOUNDER",
+    "headingA": "Meet Jessica,",
+    "headingB": "founder of noova.",
+    "p1": "Rather than coming from a traditional design background, my path began in engineering, data science, marketing and technology. Working across startups, AI companies and growth teams taught me that most businesses don't have a design problem—they have a clarity problem.",
+    "p2": "That's why I founded noova.",
+    "p3": "Today I help ambitious businesses build brands from the inside out, bringing together strategy, identity, websites, marketing and intelligent systems into one coherent practice. Every decision is connected. Every detail has a reason.",
+    "cta": "Read the story →"
+  },
+  "services": {
+    "label": "WHAT WE BUILD",
+    "categories": [
+      {
+        "t": "Brand & Identity",
+        "d": ["Brand strategy", "Positioning", "Naming & messaging", "Visual identity", "Brand guidelines", "Tone of voice", "Creative direction"]
+      },
+      {
+        "t": "Websites",
+        "d": ["Website strategy", "UX & information architecture", "Website design", "Webflow development", "Landing pages", "SEO foundations", "Performance optimisation"]
+      },
+      {
+        "t": "Content",
+        "d": ["Content strategy", "Editorial planning", "Social media strategy", "Content calendars", "Copywriting", "Photography direction", "AI-assisted content production"]
+      },
+      {
+        "t": "Campaigns",
+        "d": ["Marketing strategy", "Launch planning", "Campaign concepts", "Influencer partnerships", "Creator collaborations", "Brand activations", "Community building"]
+      },
+      {
+        "t": "Growth",
+        "d": ["Marketing analytics", "GA4 & Looker Studio", "CRM strategy", "Email marketing", "Conversion optimisation", "Reporting dashboards", "Growth roadmaps"]
+      },
+      {
+        "t": "AI & Systems",
+        "d": ["AI workflows", "Marketing automation", "CRM implementation", "Business systems", "Customer journeys", "Lead generation systems", "Process optimisation"]
+      }
+    ]
+  },
+  "work": {
+    "label": "Selected Work",
+    "viewAll": "View all work →",
+    "meta01": "Technology · Branding, Marketing & Events",
+    "meta02": "Beauty · Branding, Creative & Marketing",
+    "meta03": "Hospitality · Branding, Website & Marketing",
+    "meta04": "Fashion · Branding, Website & Creative",
+    "meta05": "Hospitality · Branding",
+    "meta06": "Community · Branding, Creative"
+  },
+  "contact": {
+    "heading": "Work with us.",
+    "intro": "Tell us about your business, your ambitions, or simply where you'd like to begin.",
+    "fieldName": "Name",
+    "fieldEmail": "Email",
+    "fieldCompany": "Company",
+    "fieldProject": "Project",
+    "submit": "Begin the conversation →",
+    "sending": "Sending…",
+    "sent": "Thank you. We'll be in touch shortly.",
+    "error": "Something went wrong. Please try again, or email hello@noovadata.com.",
+    "location": "London · United Kingdom"
+  },
+  "footer": {
+    "tagline": "noova is a creative partner for businesses that have outgrown their own image.",
+    "description": "We build brands from the inside out—bringing together strategy, branding, websites, marketing and intelligent systems into one coherent practice. The result is a brand that finally matches the business behind it.",
+    "navHeading": "Navigation",
+    "home": "Home",
+    "services": "Services",
+    "portfolio": "Portfolio",
+    "journal": "Journal",
+    "contact": "Contact",
+    "connectHeading": "Connect",
+    "londonHeading": "London",
+    "tiranaHeading": "Tirana",
+    "privacy": "Privacy Policy",
+    "cookiePolicy": "Cookie Policy",
+    "cookieSettings": "Cookie Settings",
+    "rights": "© 2026 NOOVA. ALL RIGHTS RESERVED.",
+    "studioLabel": "BRAND & INNOVATION STUDIO"
+  },
+  "cookieBanner": {
+    "title": "A note on cookies",
+    "body": "We use essential cookies to keep the site working, and — only with your permission — a few more to understand how it's read. You stay in control. See our <privacy>Privacy Policy</privacy> and <cookies>Cookie Policy</cookies>.",
+    "acceptAll": "Accept all",
+    "reject": "Reject non-essential",
+    "preferences": "Cookie preferences"
+  },
+  "cookieModal": {
+    "title": "Cookie preferences",
+    "intro": "Choose what you're comfortable with. You can change this at any time from the footer.",
+    "close": "Close",
+    "closeAria": "Close cookie preferences",
+    "essentialName": "Essential",
+    "essentialDesc": "Required for the site to function — remembering your choices and keeping things secure. Always on.",
+    "essentialAria": "Essential cookies (always on)",
+    "analyticsName": "Analytics",
+    "analyticsDesc": "Anonymous, aggregated insight into how the site is read, so we can make it better.",
+    "analyticsAria": "Analytics cookies",
+    "marketingName": "Marketing",
+    "marketingDesc": "Used to measure campaigns and show relevant work across other platforms.",
+    "marketingAria": "Marketing cookies",
+    "acceptAll": "Accept all",
+    "save": "Save preferences"
+  }
+}

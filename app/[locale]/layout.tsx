@@ -29,7 +29,7 @@ export async function generateMetadata({
   }
 
   return {
-    metadataBase: new URL("https://noova.studio"),
+    metadataBase: new URL("https://www.noovadata.com"),
     title: { default: t("title"), template: "%s · noova" },
     description: t("description"),
     alternates: { languages },

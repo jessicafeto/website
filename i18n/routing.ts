@@ -12,10 +12,9 @@ import { defineRouting } from "next-intl/routing";
  * English URLs are untouched while each language stays separately crawlable.
  */
 export const routing = defineRouting({
-  // English only for now. Albanian is fully translated but held back pending a
-  // native review — add "sq" back to publish it (the switcher, hreflang and
-  // sitemap all pick it up automatically).
-  locales: ["en" /*, "sq" */],
+  // English + Albanian. The switcher, language popup, hreflang and sitemap all
+  // read from this list.
+  locales: ["en", "sq"],
   defaultLocale: "en",
   localePrefix: "as-needed",
 });

@@ -66,7 +66,7 @@ export default function Footer() {
                 </a>
 
                 <a
-                  href="#services"
+                  href="#welcome"
                   className="font-sans text-[0.92rem] transition-opacity duration-300 hover:opacity-100"
                   style={{ color: "rgba(255,255,255,0.82)" }}
                 >

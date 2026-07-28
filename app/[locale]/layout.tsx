@@ -5,6 +5,7 @@ import { getMessages, getTranslations, setRequestLocale } from "next-intl/server
 import { cormorant, lato } from "../fonts";
 import { routing, type Locale } from "@/i18n/routing";
 import CookieConsent from "@/components/consent/CookieConsent";
+import LanguagePopup from "@/components/LanguagePopup";
 import "../globals.css";
 
 /** Pre-render a page for each locale at build time. */
@@ -63,6 +64,7 @@ export default async function LocaleLayout({
     <html lang={locale} className={`${cormorant.variable} ${lato.variable}`}>
       <body>
         <NextIntlClientProvider messages={messages}>
+          <LanguagePopup />
           <CookieConsent>{children}</CookieConsent>
         </NextIntlClientProvider>
       </body>

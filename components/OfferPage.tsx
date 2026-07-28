@@ -212,29 +212,27 @@ export default function OfferPage({ offer }: { offer: Offer }) {
           </div>
         </section>
 
-        {/* FAQ */}
+        {/* FAQ — open grid, question above answer */}
         <section className="border-t border-rule bg-paper py-[clamp(5rem,12vh,8rem)]">
           <div className="wrap">
-            <div className="mx-auto max-w-3xl">
+            <div className="mx-auto max-w-6xl">
               <FadeUp>
-                <p className="eyebrow text-grey">Questions</p>
+                <h2 className="max-w-[16ch] font-serif text-ink text-[clamp(2rem,4vw,3.4rem)] leading-[1.1]">
+                  Questions worth asking.
+                </h2>
               </FadeUp>
-              <div className="mt-10 border-t border-rule">
-                {offer.faqs.map((f) => (
-                  <details
-                    key={f.q}
-                    className="group border-b border-rule py-6"
-                  >
-                    <summary className="flex cursor-pointer list-none items-center justify-between gap-6 font-serif text-[1.2rem] text-ink [&::-webkit-details-marker]:hidden">
-                      {f.q}
-                      <span className="flex-none text-[1.4rem] leading-none text-oxblood transition-transform duration-300 group-open:rotate-45">
-                        +
-                      </span>
-                    </summary>
-                    <p className="mt-4 max-w-[60ch] font-sans text-[1rem] leading-[1.8] text-grey">
-                      {f.a}
-                    </p>
-                  </details>
+              <div className="mt-16 grid gap-x-16 gap-y-14 md:grid-cols-2 lg:grid-cols-3">
+                {offer.faqs.map((f, i) => (
+                  <FadeUp key={f.q} delay={i * 0.05}>
+                    <div>
+                      <h3 className="font-sans text-[0.8rem] font-semibold uppercase leading-snug tracking-[0.14em] text-ink">
+                        {f.q}
+                      </h3>
+                      <p className="mt-6 font-sans text-[0.95rem] leading-[1.75] text-grey">
+                        {f.a}
+                      </p>
+                    </div>
+                  </FadeUp>
                 ))}
               </div>
             </div>

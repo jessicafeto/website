@@ -42,7 +42,7 @@ export default function OfferPage({ offer }: { offer: Offer }) {
                 <span className="text-rule" aria-hidden>
                   ·
                 </span>
-                <span className="text-grey">{offer.price}</span>
+                <span className="text-grey">{offer.tiers[0].price}</span>
               </div>
               <a
                 href="/#contact"
@@ -128,8 +128,68 @@ export default function OfferPage({ offer }: { offer: Offer }) {
           </div>
         </section>
 
+        {/* Packages */}
+        <section className="wrap py-[clamp(5rem,12vh,8rem)]">
+          <div className="mx-auto max-w-5xl">
+            <FadeUp>
+              <p className="eyebrow text-grey">Packages</p>
+              <p className="mt-4 max-w-[46ch] font-sans text-[0.95rem] leading-[1.7] text-light">
+                Three ways to begin. Every engagement is tailored — these are
+                starting points, and the right scope is agreed in conversation.
+              </p>
+            </FadeUp>
+
+            <div className="mt-12 grid gap-6 md:grid-cols-3">
+              {offer.tiers.map((tier, i) => (
+                <FadeUp key={tier.name} delay={i * 0.08}>
+                  <div
+                    className={`flex h-full flex-col border p-8 ${
+                      tier.featured
+                        ? "border-oxblood bg-paper"
+                        : "border-rule"
+                    }`}
+                  >
+                    <div className="flex items-baseline justify-between">
+                      <h3 className="font-serif text-[1.5rem] text-ink">
+                        {tier.name}
+                      </h3>
+                      {tier.featured && (
+                        <span className="font-sans text-[0.65rem] uppercase tracking-[0.18em] text-oxblood">
+                          Most chosen
+                        </span>
+                      )}
+                    </div>
+                    <p className="mt-2 font-sans text-[1.1rem] text-oxblood">
+                      {tier.price}
+                    </p>
+                    <p className="mt-4 font-sans text-[0.95rem] leading-[1.7] text-grey">
+                      {tier.summary}
+                    </p>
+                    <ul className="mt-6 space-y-2.5 border-t border-rule pt-6">
+                      {tier.scope.map((s) => (
+                        <li
+                          key={s}
+                          className="font-sans text-[0.9rem] leading-relaxed text-grey"
+                        >
+                          {s}
+                        </li>
+                      ))}
+                    </ul>
+                    <a
+                      href="/#contact"
+                      className="eyebrow mt-8 inline-block text-oxblood transition-opacity duration-500 hover:opacity-60"
+                    >
+                      Enquire &rarr;
+                    </a>
+                  </div>
+                </FadeUp>
+              ))}
+            </div>
+          </div>
+        </section>
+
         {/* Invitation */}
-        <section className="wrap py-[clamp(5rem,12vh,9rem)]">
+        <section className="wrap border-t border-rule py-[clamp(5rem,12vh,9rem)]">
           <div className="mx-auto max-w-[40rem] text-center">
             <FadeUp>
               <p className="font-serif italic text-ink text-[clamp(1.8rem,3.6vw,2.8rem)] leading-[1.25]">

@@ -10,6 +10,20 @@
 export type Phase = { n: string; title: string; body: string };
 export type Group = { label: string; items: string[] };
 
+/**
+ * A pricing tier. Prices are all "from" figures — change them here and they
+ * update on the page automatically. `featured` highlights the recommended one.
+ */
+export type Tier = {
+  name: string;
+  price: string;
+  /** One line on who it's for. */
+  summary: string;
+  /** A short scope — a few representative inclusions, not the full list. */
+  scope: string[];
+  featured?: boolean;
+};
+
 export type Offer = {
   slug: "branding" | "websites" | "marketing";
   /** Small label above the title. */
@@ -20,12 +34,12 @@ export type Offer = {
   headline: string;
   /** The one-paragraph offer summary. */
   offer: string;
-  /** Duration / cadence, shown beside the price. */
+  /** Duration / cadence, shown beside the entry price in the hero. */
   cadence: string;
-  /** Public "from" price. Change these here. */
-  price: string;
   /** The transformation — before → after, in noova's voice. */
   shift: { heading: string; body: string };
+  /** Three packages — Essential, Signature (featured), Bespoke. */
+  tiers: Tier[];
   /** What's inside, grouped so it reads as a system, not a checklist. */
   includes: Group[];
   /** How the work unfolds. */
@@ -41,11 +55,46 @@ export const OFFERS: Record<Offer["slug"], Offer> = {
     offer:
       "A six-to-eight-week, end-to-end brand build — complete strategy, creative direction, and a visual identity system — designed to launch your brand with clarity, confidence, and a luxury presence.",
     cadence: "6–8 weeks",
-    price: "From £3,000",
     shift: {
       heading: "The shift",
       body: "Businesses of real quality are rarely broken — they're scattered, their best work spread across parts that were never designed to work together. We don't decorate; we clarify. We begin at the core — what your business is, what it believes, and why it matters — and let everything visible grow from there. You leave with one coherent system instead of disconnected parts, and the confidence to stop apologising for how you look.",
     },
+    tiers: [
+      {
+        name: "Essential",
+        price: "From £1,800",
+        summary: "A clear, confident core for a business finding its feet.",
+        scope: [
+          "Brand strategy essentials",
+          "Primary logo",
+          "Core colour & type",
+          "Mini brand guide",
+        ],
+      },
+      {
+        name: "Signature",
+        price: "From £3,200",
+        summary: "The full end-to-end brand build — strategy to identity.",
+        scope: [
+          "Full strategy & positioning",
+          "Complete visual identity",
+          "Full brand guidelines",
+          "Launch & rollout plan",
+        ],
+        featured: true,
+      },
+      {
+        name: "Bespoke",
+        price: "From £6,000",
+        summary: "A landmark brand, crafted without limits.",
+        scope: [
+          "Naming & messaging",
+          "Art & photography direction",
+          "Extended identity system",
+          "Launch campaign",
+        ],
+      },
+    ],
     includes: [
       {
         label: "Strategy",
@@ -113,11 +162,46 @@ export const OFFERS: Record<Offer["slug"], Offer> = {
     offer:
       "A refined four-to-eight-week digital build that transforms your brand into an elevated, seamless website — crafted with intentional design, strategic structure, and a world-class user experience.",
     cadence: "4–8 weeks",
-    price: "From £2,400",
     shift: {
       heading: "The shift",
       body: "Most websites quietly undersell the business behind them — busy where they should be clear, decorative where they should be structural. We design the opposite: a calm, editorial experience that guides the right people through a single, deliberate story. Fast, considered, and unmistakably yours — a home that finally carries the brand instead of diminishing it.",
     },
+    tiers: [
+      {
+        name: "Essential",
+        price: "From £1,500",
+        summary: "A refined, compact site that reads beautifully.",
+        scope: [
+          "Up to 3 pages",
+          "Editorial design",
+          "Copywriting direction",
+          "Launch & basic SEO",
+        ],
+      },
+      {
+        name: "Signature",
+        price: "From £2,800",
+        summary: "The full editorial website, built to perform.",
+        scope: [
+          "Up to ~6 custom pages",
+          "UX & information architecture",
+          "Development & integrations",
+          "Performance & aftercare",
+        ],
+        featured: true,
+      },
+      {
+        name: "Bespoke",
+        price: "From £5,000",
+        summary: "A larger, tailored build with room to grow.",
+        scope: [
+          "Advanced interaction & motion",
+          "CMS / blog",
+          "E-commerce or booking",
+          "Ongoing support",
+        ],
+      },
+    ],
     includes: [
       {
         label: "Strategy & structure",
@@ -184,11 +268,46 @@ export const OFFERS: Record<Offer["slug"], Offer> = {
     offer:
       "An ongoing marketing partnership that turns your brand into a living publication — uniting editorial content, considered campaigns, and intelligent systems into one coherent presence, designed to reach the right people, build lasting trust, and grow with intention rather than noise.",
     cadence: "Ongoing partnership",
-    price: "From £1,200 / month",
     shift: {
       heading: "The shift",
       body: "Most marketing is made to fill a schedule — louder, faster, forgotten by morning. We build the opposite: a body of work worth returning to. Every channel becomes one edition of the same publication, carrying a single voice and level of care. Presence over frequency, meaning over volume — a brand that speaks when it has something worth saying, and grows because of it.",
     },
+    tiers: [
+      {
+        name: "Essential",
+        price: "From £900 / month",
+        summary: "A steady, considered presence on one channel.",
+        scope: [
+          "Content & social planning",
+          "Copywriting",
+          "One channel focus",
+          "Monthly reporting",
+        ],
+      },
+      {
+        name: "Signature",
+        price: "From £1,500 / month",
+        summary: "The publication, plus campaigns that land.",
+        scope: [
+          "Multi-channel content",
+          "Campaign concepts",
+          "Email marketing",
+          "GA4 reporting",
+        ],
+        featured: true,
+      },
+      {
+        name: "Bespoke",
+        price: "From £2,800 / month",
+        summary: "A full growth partnership with systems behind it.",
+        scope: [
+          "Full content system",
+          "Automation & CRM",
+          "Growth strategy",
+          "Priority partnership",
+        ],
+      },
+    ],
     includes: [
       {
         label: "The publication",

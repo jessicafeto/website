@@ -2,12 +2,13 @@
 
 import Image from "next/image";
 import { useTranslations } from "next-intl";
+import { Link } from "@/i18n/navigation";
 import { FadeUp } from "./Motion";
 
 const SERVICES = [
-  { title: "BRAND", image: "/img/brand.png", descKey: "brandDesc" },
-  { title: "WEBSITES", image: "/img/website.png", descKey: "websitesDesc" },
-  { title: "GROWTH", image: "/img/growth.png", descKey: "growthDesc" },
+  { title: "BRAND", image: "/img/brand.png", descKey: "brandDesc", href: "/branding" },
+  { title: "WEBSITES", image: "/img/website.png", descKey: "websitesDesc", href: "/websites" },
+  { title: "GROWTH", image: "/img/growth.png", descKey: "growthDesc", href: "/marketing" },
 ] as const;
 
 export default function Belief() {
@@ -41,7 +42,7 @@ export default function Belief() {
         <FadeUp delay={0.35}>
           <div className="mt-20 grid gap-12 md:grid-cols-3">
             {SERVICES.map((item) => (
-              <div key={item.title} className="group">
+              <Link key={item.title} href={item.href} className="group block">
                 <div className="overflow-hidden border border-rule">
                   <Image
                     src={item.image}
@@ -60,7 +61,7 @@ export default function Belief() {
                 <p className="mt-5 font-sans text-[1rem] leading-relaxed text-grey">
                   {t(item.descKey)}
                 </p>
-              </div>
+              </Link>
             ))}
           </div>
         </FadeUp>

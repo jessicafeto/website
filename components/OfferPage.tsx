@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { Link } from "@/i18n/navigation";
 import SiteHeader from "@/components/SiteHeader";
 import Footer from "@/components/home/Footer";
@@ -31,35 +32,52 @@ export default function OfferPage({ offer }: { offer: Offer }) {
       <SiteHeader />
 
       <main className="bg-white">
-        {/* Hero — the outcome, then the offer */}
-        <section className="wrap pt-[calc(82px+clamp(3.5rem,10vh,7rem))] pb-[clamp(2.5rem,7vh,5rem)]">
-          <div className="mx-auto max-w-[52rem] text-center">
-            <FadeUp>
-              <p className="eyebrow text-oxblood">{offer.eyebrow}</p>
-            </FadeUp>
-            <FadeUp delay={0.1}>
-              <h1 className="mx-auto mt-8 max-w-[20ch] font-serif italic text-ink leading-[1.08] text-[clamp(2.4rem,5.5vw,4.25rem)]">
-                {offer.headline}
-              </h1>
-            </FadeUp>
-            <FadeUp delay={0.22}>
-              <p className="mx-auto mt-10 max-w-[46ch] font-sans text-[1.0625rem] leading-[1.85] text-grey">
-                {offer.offer}
-              </p>
-            </FadeUp>
-            <FadeUp delay={0.3}>
-              <a
-                href="#enquire"
-                className="eyebrow mt-10 inline-block text-oxblood transition-opacity duration-500 hover:opacity-60"
-              >
-                Start your project &rarr;
-              </a>
-            </FadeUp>
+        {/* Hero — full-bleed image with the offer over it */}
+        <section className="relative flex min-h-[88vh] items-center justify-center overflow-hidden">
+          <Image
+            src={offer.heroImage}
+            alt={offer.heroAlt}
+            fill
+            priority
+            sizes="100vw"
+            className="object-cover object-center"
+          />
+          {/* Scrim for legibility */}
+          <div className="absolute inset-0 bg-black/45" aria-hidden />
+          <div
+            className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-black/30"
+            aria-hidden
+          />
+
+          <div className="wrap relative z-10 pt-[82px] text-center">
+            <div className="mx-auto max-w-[52rem]">
+              <FadeUp>
+                <p className="eyebrow text-white/80">{offer.eyebrow}</p>
+              </FadeUp>
+              <FadeUp delay={0.1}>
+                <h1 className="mx-auto mt-8 max-w-[20ch] font-serif italic text-white leading-[1.08] text-[clamp(2.4rem,5.5vw,4.25rem)]">
+                  {offer.headline}
+                </h1>
+              </FadeUp>
+              <FadeUp delay={0.22}>
+                <p className="mx-auto mt-8 max-w-[46ch] font-sans text-[1.0625rem] leading-[1.85] text-white/85">
+                  {offer.offer}
+                </p>
+              </FadeUp>
+              <FadeUp delay={0.3}>
+                <a
+                  href="#enquire"
+                  className="eyebrow mt-10 inline-block text-white transition-opacity duration-500 hover:opacity-70"
+                >
+                  Start your project &rarr;
+                </a>
+              </FadeUp>
+            </div>
           </div>
         </section>
 
         {/* What it is + meta row (Timeline · Booking · Investment) */}
-        <section className="border-y border-rule bg-paper py-[clamp(4rem,10vh,7rem)]">
+        <section className="border-y border-rule py-[clamp(4rem,10vh,7rem)]">
           <div className="wrap">
             <div className="mx-auto grid max-w-5xl gap-12 lg:grid-cols-[1.5fr_1fr] lg:gap-20">
               <div>
@@ -155,7 +173,7 @@ export default function OfferPage({ offer }: { offer: Offer }) {
         </section>
 
         {/* What's inside — the same services as "What We Build" */}
-        <section className="border-t border-rule bg-paper py-[clamp(5rem,12vh,8rem)]">
+        <section className="border-t border-rule py-[clamp(5rem,12vh,8rem)]">
           <div className="wrap">
             <div className="mx-auto max-w-5xl">
               <FadeUp>
@@ -213,7 +231,7 @@ export default function OfferPage({ offer }: { offer: Offer }) {
         </section>
 
         {/* FAQ — open grid, question above answer */}
-        <section className="border-t border-rule bg-paper py-[clamp(5rem,12vh,8rem)]">
+        <section className="border-t border-rule py-[clamp(5rem,12vh,8rem)]">
           <div className="wrap">
             <div className="mx-auto max-w-6xl">
               <FadeUp>

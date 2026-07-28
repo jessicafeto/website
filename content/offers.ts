@@ -39,6 +39,9 @@ export type Offer = {
   eyebrow: string;
   /** The pillar name, as used in navigation and cross-links. */
   name: string;
+  /** Full-bleed hero image (public path) and its alt text. */
+  heroImage: string;
+  heroAlt: string;
   /** The outcome headline — serif italic, the promise, not the deliverable. */
   headline: string;
   /** The one-paragraph offer summary. */
@@ -64,6 +67,9 @@ export const OFFERS: Record<Offer["slug"], Offer> = {
     slug: "branding",
     eyebrow: "Engagement 01",
     name: "Branding",
+    heroImage: "/hero/branding.jpg",
+    heroAlt:
+      "Brand guidelines, paper stocks and typography samples laid across a studio table.",
     headline: "A brand that finally matches the business behind it.",
     offer:
       "A six-to-eight-week, end-to-end brand build — complete strategy, creative direction, and a visual identity system — designed to launch your brand with clarity, confidence, and a luxury presence.",
@@ -185,6 +191,9 @@ export const OFFERS: Record<Offer["slug"], Offer> = {
     slug: "websites",
     eyebrow: "Engagement 02",
     name: "Websites",
+    heroImage: "/hero/websites.jpg",
+    heroAlt:
+      "A wall of pinned editorial layouts and case-study pages in the noova studio.",
     headline: "A website as considered as the brand behind it.",
     offer:
       "A refined four-to-eight-week digital build that transforms your brand into an elevated, seamless website — crafted with intentional design, strategic structure, and a world-class user experience.",
@@ -307,6 +316,9 @@ export const OFFERS: Record<Offer["slug"], Offer> = {
     slug: "marketing",
     eyebrow: "Engagement 03",
     name: "Marketing & Growth",
+    heroImage: "/hero/marketing.jpg",
+    heroAlt:
+      "Overhead view of noova journal pages being laid out and edited across a desk.",
     headline: "A presence worth returning to.",
     offer:
       "An ongoing marketing partnership that turns your brand into a living publication — uniting editorial content, considered campaigns, and intelligent systems into one coherent presence, designed to reach the right people, build lasting trust, and grow with intention rather than noise.",

@@ -2,6 +2,7 @@
 
 import { MotionConfig } from "framer-motion";
 import Belief from "./Belief";
+import Clients from "./Clients";
 import Founder from "./Founder";
 import WhatWeBuild from "./WhatWeBuild";
 import SelectedWork from "./SelectedWork";
@@ -18,6 +19,7 @@ export default function Home() {
     <MotionConfig reducedMotion="user">
       <main>
         <Belief />
+        <Clients />
         <Founder />
         <WhatWeBuild />
         <SelectedWork />

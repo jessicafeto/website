@@ -76,14 +76,14 @@ export default function OfferPage({ offer }: { offer: Offer }) {
             <FadeUp>
               <p className="eyebrow text-grey">What&rsquo;s inside</p>
             </FadeUp>
-            <div className="mt-12 grid gap-x-16 gap-y-14 md:grid-cols-3">
+            <div className="mt-12 space-y-12">
               {offer.includes.map((group, i) => (
-                <FadeUp key={group.label} delay={i * 0.08}>
+                <FadeUp key={group.label} delay={i * 0.06}>
                   <div className="border-t border-rule pt-6">
                     <h2 className="font-serif text-[1.35rem] text-oxblood">
                       {group.label}
                     </h2>
-                    <ul className="mt-5 space-y-3">
+                    <ul className="mt-5 grid gap-x-16 gap-y-3 sm:grid-cols-2 lg:grid-cols-3">
                       {group.items.map((item) => (
                         <li
                           key={item}

@@ -45,7 +45,7 @@ export default function SiteHeader() {
         </Link>
 
         <div className="site-header__links">
-          <Link href="/story">{t("aboutStudio")}</Link>
+          <Link href="/studio">{t("aboutStudio")}</Link>
           <Link href="/#work">{t("portfolio")}</Link>
           <Link href="/#welcome">{t("services")}</Link>
         </div>

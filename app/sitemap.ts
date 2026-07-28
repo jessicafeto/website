@@ -6,6 +6,7 @@ const BASE_URL = "https://noovadata.com";
 /** Every routable path, listed once per locale with hreflang alternates. */
 const PATHS = [
   "",
+  "/studio",
   "/branding",
   "/websites",
   "/marketing",

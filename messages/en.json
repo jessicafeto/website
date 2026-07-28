@@ -163,5 +163,22 @@
       "sent": "Thank you — we'll be in touch within two working days.",
       "error": "Something went wrong. Please try again, or email hello@noovadata.com."
     }
+  },
+  "studio": {
+    "metaTitle": "About the Studio",
+    "metaDesc": "noova is a studio between London and Tirana, uniting strategy, branding, websites, marketing and intelligent systems into one coherent practice.",
+    "eyebrow": "The Studio",
+    "headline": "A creative partner for businesses that have outgrown their own image.",
+    "intro": "noova is a studio working between London and Tirana, uniting strategy, branding, websites, marketing and intelligent systems into one coherent practice — so a business is expressed as clearly as it deserves.",
+    "h1": "We build brands from the inside out.",
+    "p1": "The most important part of a brand is the part no one sees first — the thinking beneath it. Before a business can be expressed, it has to be understood. So we start at the core: what a business is, what it believes, and why it matters. Everything visible grows from there.",
+    "h2": "One practice, not separate departments.",
+    "p2": "Businesses of real quality are rarely broken — they're scattered, their best work spread across parts that were never designed to work together. We don't decorate; we clarify. Strategy, identity, words, websites and technology are built as one coherent system, in one room, rather than handed between departments.",
+    "h3": "Coherence, never decoration.",
+    "p3": "The result isn't a new look. It's a brand that finally matches the business behind it — built to last, not to trend. A single, considered world across every touchpoint.",
+    "h4": "Two studios, one standard.",
+    "p4": "noova works between London and Tirana — two cities, one level of care. Wherever a project begins, it's held to the same rigour and the same restraint.",
+    "storyCta": "Meet the founder →",
+    "contactCta": "Start a conversation →"
   }
 }

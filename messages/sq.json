@@ -163,5 +163,22 @@
       "sent": "Faleminderit — do t'ju kontaktojmë brenda dy ditëve të punës.",
       "error": "Diçka shkoi keq. Ju lutemi provoni sërish, ose na shkruani në hello@noovadata.com."
     }
+  },
+  "studio": {
+    "metaTitle": "Rreth Studios",
+    "metaDesc": "noova është një studio mes Londrës dhe Tiranës, që bashkon strategjinë, brandingun, uebsajtet, marketingun dhe sistemet inteligjente në një tërësi të vetme dhe të integruar.",
+    "eyebrow": "Studioja",
+    "headline": "Një partner kreativ për bizneset që janë rritur përtej imazhit të tyre.",
+    "intro": "noova është një studio që punon mes Londrës dhe Tiranës, duke bashkuar strategjinë, brandingun, uebsajtet, marketingun dhe sistemet inteligjente në një tërësi të vetme dhe të integruar — që një biznes të shprehet aq qartë sa e meriton.",
+    "h1": "Ne ndërtojmë marka nga brenda jashtë.",
+    "p1": "Pjesa më e rëndësishme e një marke është ajo që askush nuk e sheh e para — mendimi poshtë saj. Para se një biznes të shprehet, ai duhet kuptuar. Prandaj nisim nga thelbi: çfarë është një biznes, çfarë beson dhe pse ka rëndësi. Çdo gjë e dukshme rritet prej andej.",
+    "h2": "Një praktikë e vetme, jo departamente të ndara.",
+    "p2": "Bizneset me cilësi të vërtetë rrallë janë të prishura — janë të shpërndara, me punën e tyre më të mirë të ndarë nëpër pjesë që kurrë nuk u menduan të funksiononin bashkë. Ne nuk zbukurojmë; ne sqarojmë. Strategjia, identiteti, fjalët, uebsajtet dhe teknologjia ndërtohen si një sistem i vetëm koherent, në një dhomë, në vend që të kalojnë nga një departament te tjetri.",
+    "h3": "Koherencë, kurrë dekorim.",
+    "p3": "Rezultati nuk është një pamje e re. Është një markë që më në fund përputhet me biznesin që qëndron pas saj — e ndërtuar për të zgjatur, jo për modën. Një botë e vetme e menduar në çdo pikë kontakti.",
+    "h4": "Dy studio, një standard.",
+    "p4": "noova punon mes Londrës dhe Tiranës — dy qytete, i njëjti nivel kujdesi. Kudo që nis një projekt, ai mbahet me të njëjtin rigorozitet dhe të njëjtën përkujdesje.",
+    "storyCta": "Njihuni me themeluesen →",
+    "contactCta": "Nisni një bisedë →"
   }
 }

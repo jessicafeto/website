@@ -1,7 +1,7 @@
 import type { MetadataRoute } from "next";
 import { routing } from "@/i18n/routing";
 
-const BASE_URL = "https://www.noovadata.com";
+const BASE_URL = "https://noovadata.com";
 
 /** Every routable path, listed once per locale with hreflang alternates. */
 const PATHS = [

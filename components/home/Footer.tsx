@@ -110,7 +110,9 @@ export default function Footer() {
 
               <div className="flex flex-col gap-3">
                 <a
-                  href="#"
+                  href="https://www.instagram.com/noovadata/"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="font-sans text-[0.92rem] transition-opacity duration-300 hover:opacity-100"
                   style={{ color: "rgba(247,243,236,0.82)" }}
                 >
@@ -118,27 +120,13 @@ export default function Footer() {
                 </a>
 
                 <a
-                  href="#"
+                  href="https://www.linkedin.com/company/noova-data/"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="font-sans text-[0.92rem] transition-opacity duration-300 hover:opacity-100"
                   style={{ color: "rgba(247,243,236,0.82)" }}
                 >
                   LinkedIn
-                </a>
-
-                <a
-                  href="#"
-                  className="font-sans text-[0.92rem] transition-opacity duration-300 hover:opacity-100"
-                  style={{ color: "rgba(247,243,236,0.82)" }}
-                >
-                  Behance
-                </a>
-
-                <a
-                  href="#"
-                  className="font-sans text-[0.92rem] transition-opacity duration-300 hover:opacity-100"
-                  style={{ color: "rgba(247,243,236,0.82)" }}
-                >
-                  Pinterest
                 </a>
               </div>
             </div>

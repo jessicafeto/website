@@ -4,6 +4,7 @@ import { MotionConfig } from "framer-motion";
 import Belief from "./Belief";
 import Founder from "./Founder";
 import WhatWeBuild from "./WhatWeBuild";
+import Engagements from "./Engagements";
 import SelectedWork from "./SelectedWork";
 import Invitation from "./Invitation";
 import Footer from "./Footer";
@@ -20,6 +21,7 @@ export default function Home() {
         <Belief />
         <Founder />
         <WhatWeBuild />
+        <Engagements />
         <SelectedWork />
         <Invitation />
       </main>

@@ -4,7 +4,15 @@ import { routing } from "@/i18n/routing";
 const BASE_URL = "https://www.noovadata.com";
 
 /** Every routable path, listed once per locale with hreflang alternates. */
-const PATHS = ["", "/story", "/privacy", "/cookies"];
+const PATHS = [
+  "",
+  "/branding",
+  "/websites",
+  "/marketing",
+  "/story",
+  "/privacy",
+  "/cookies",
+];
 
 function localizedUrl(locale: string, path: string) {
   const prefix = locale === routing.defaultLocale ? "" : `/${locale}`;

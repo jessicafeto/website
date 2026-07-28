@@ -9,7 +9,7 @@ export default function Footer() {
   const t = useTranslations("footer");
 
   return (
-    <footer className="border-t border-white/10 bg-oxblood">
+    <footer className="border-t border-white/10 bg-[#800020]">
       <div className="wrap py-24">
         <div className="grid gap-20 lg:grid-cols-[1.6fr_1fr]">
           {/* LEFT */}

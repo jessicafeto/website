@@ -165,16 +165,27 @@ export default function OfferPage({ offer }: { offer: Offer }) {
                     <p className="mt-4 font-sans text-[0.95rem] leading-[1.7] text-grey">
                       {tier.summary}
                     </p>
-                    <ul className="mt-6 space-y-2.5 border-t border-rule pt-6">
-                      {tier.scope.map((s) => (
-                        <li
-                          key={s}
-                          className="font-sans text-[0.9rem] leading-relaxed text-grey"
-                        >
-                          {s}
-                        </li>
-                      ))}
-                    </ul>
+                    <div className="mt-6 border-t border-rule pt-6">
+                      {tier.builds && (
+                        <p className="mb-4 font-serif italic text-[0.95rem] text-ink">
+                          Everything in {tier.builds}, plus:
+                        </p>
+                      )}
+                      <ul className="space-y-2.5">
+                        {tier.scope.map((s) => (
+                          <li
+                            key={s}
+                            className="flex gap-2.5 font-sans text-[0.9rem] leading-relaxed text-grey"
+                          >
+                            <span
+                              className="mt-[0.5em] h-[3px] w-[3px] flex-none rounded-full bg-oxblood"
+                              aria-hidden
+                            />
+                            <span>{s}</span>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
                     <a
                       href="/#contact"
                       className="eyebrow mt-8 inline-block text-oxblood transition-opacity duration-500 hover:opacity-60"

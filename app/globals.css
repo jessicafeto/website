@@ -82,6 +82,13 @@ p {
   max-width: 68ch;
 }
 
+/* The measure above pins a paragraph to the left of its box. Inside a
+   centered block, re-center the measure so the text sits under its heading
+   instead of drifting left. Left-aligned sections are unaffected. */
+.text-center p {
+  margin-inline: auto;
+}
+
 /* ---------- shared editorial primitives ---------- */
 
 /* Horizontal frame — the invisible grid everything aligns to */

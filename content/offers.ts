@@ -11,6 +11,7 @@
 
 export type Phase = { n: string; title: string; body: string };
 export type Group = { label: string; items: string[] };
+export type Faq = { q: string; a: string };
 
 /**
  * A pricing tier. Prices are all "from" figures — change them here and they
@@ -42,8 +43,10 @@ export type Offer = {
   headline: string;
   /** The one-paragraph offer summary. */
   offer: string;
-  /** Duration / cadence, shown beside the entry price in the hero. */
+  /** Duration / cadence, shown in the hero and the meta row. */
   cadence: string;
+  /** Availability / lead-time note for the meta row. Edit to taste. */
+  booking: string;
   /** The transformation — before → after, in noova's voice. */
   shift: { heading: string; body: string };
   /** Three packages — Essential, Signature (featured), Bespoke. */
@@ -52,6 +55,8 @@ export type Offer = {
   includes: Group[];
   /** How the work unfolds. */
   process: Phase[];
+  /** Frequently asked questions for this engagement. */
+  faqs: Faq[];
 };
 
 export const OFFERS: Record<Offer["slug"], Offer> = {
@@ -63,6 +68,7 @@ export const OFFERS: Record<Offer["slug"], Offer> = {
     offer:
       "A six-to-eight-week, end-to-end brand build — complete strategy, creative direction, and a visual identity system — designed to launch your brand with clarity, confidence, and a luxury presence.",
     cadence: "6–8 weeks",
+    booking: "Limited monthly availability",
     shift: {
       heading: "The shift",
       body: "Businesses of real quality are rarely broken — they're scattered, their best work spread across parts that were never designed to work together. We don't decorate; we clarify. We begin at the core — what your business is, what it believes, and why it matters — and let everything visible grow from there. You leave with one coherent system instead of disconnected parts, and the confidence to stop apologising for how you look.",
@@ -151,6 +157,28 @@ export const OFFERS: Record<Offer["slug"], Offer> = {
         body: "A considered rollout plan and a full handover, so the brand arrives with intention rather than noise.",
       },
     ],
+    faqs: [
+      {
+        q: "Can I customise or mix the packages?",
+        a: "Yes. The tiers are starting points — we shape the exact scope together in our first conversation, so you only pay for what your brand genuinely needs.",
+      },
+      {
+        q: "How does payment work?",
+        a: "A 50% deposit secures your start date; the balance is due before launch. For larger projects we can split it further.",
+      },
+      {
+        q: "How long does it take?",
+        a: "A full Signature build usually runs six to eight weeks, depending on scope and how quickly feedback comes back.",
+      },
+      {
+        q: "What do you need from me to begin?",
+        a: "An introduction to your business, your goals, and any existing materials. We guide every step from there.",
+      },
+      {
+        q: "What happens after launch?",
+        a: "You receive every file and the brand guidelines, plus a walkthrough. Bespoke adds ongoing post-launch support.",
+      },
+    ],
   },
 
   websites: {
@@ -161,6 +189,7 @@ export const OFFERS: Record<Offer["slug"], Offer> = {
     offer:
       "A refined four-to-eight-week digital build that transforms your brand into an elevated, seamless website — crafted with intentional design, strategic structure, and a world-class user experience.",
     cadence: "4–8 weeks",
+    booking: "Limited monthly availability",
     shift: {
       heading: "The shift",
       body: "Most websites quietly undersell the business behind them — busy where they should be clear, decorative where they should be structural. We design the opposite: a calm, editorial experience that guides the right people through a single, deliberate story. Fast, considered, and unmistakably yours — a home that finally carries the brand instead of diminishing it.",
@@ -250,6 +279,28 @@ export const OFFERS: Record<Offer["slug"], Offer> = {
         body: "Careful QA, a smooth launch, and aftercare — plus a walkthrough so you're never left guessing how it works.",
       },
     ],
+    faqs: [
+      {
+        q: "Which platform do you build on?",
+        a: "Primarily Webflow — fast, reliable, and easy for you to edit. Other platforms are available on request.",
+      },
+      {
+        q: "Can I update the site myself afterwards?",
+        a: "Yes. Signature and above include a CMS and a walkthrough, so you can add posts and edit content without a developer.",
+      },
+      {
+        q: "How does payment work?",
+        a: "A 50% deposit books your slot; the balance is due before launch.",
+      },
+      {
+        q: "How long does a website take?",
+        a: "Between four and eight weeks, depending on the tier and how ready your content is.",
+      },
+      {
+        q: "Do you offer ongoing support?",
+        a: "One to two weeks of aftercare is included, and an optional maintenance retainer is available.",
+      },
+    ],
   },
 
   marketing: {
@@ -260,6 +311,7 @@ export const OFFERS: Record<Offer["slug"], Offer> = {
     offer:
       "An ongoing marketing partnership that turns your brand into a living publication — uniting editorial content, considered campaigns, and intelligent systems into one coherent presence, designed to reach the right people, build lasting trust, and grow with intention rather than noise.",
     cadence: "Ongoing partnership",
+    booking: "Rolling monthly start",
     shift: {
       heading: "The shift",
       body: "Most marketing is made to fill a schedule — louder, faster, forgotten by morning. We build the opposite: a body of work worth returning to. Every channel becomes one edition of the same publication, carrying a single voice and level of care. Presence over frequency, meaning over volume — a brand that speaks when it has something worth saying, and grows because of it.",
@@ -383,6 +435,28 @@ export const OFFERS: Record<Offer["slug"], Offer> = {
         n: "05",
         title: "Rhythm",
         body: "An ongoing partnership: publishing, reviewing, and refining — compounding presence and trust over time.",
+      },
+    ],
+    faqs: [
+      {
+        q: "Is there a minimum commitment?",
+        a: "We ask for an initial three months, so the work has room to compound rather than being judged on a single post.",
+      },
+      {
+        q: "How does billing work?",
+        a: "A simple monthly retainer, billed at the start of each month. You can move up or down a tier with a month's notice.",
+      },
+      {
+        q: "Is ad spend included?",
+        a: "No — media budget is separate and paid directly to the platforms. We manage the campaigns; you keep control of the spend.",
+      },
+      {
+        q: "Which channels do you cover?",
+        a: "Whatever fits your audience — most often Instagram and LinkedIn, plus email and your journal. We focus rather than spread thin.",
+      },
+      {
+        q: "What do you need from me?",
+        a: "Access to your channels and a short monthly check-in. We handle strategy, creation, and reporting.",
       },
     ],
   },

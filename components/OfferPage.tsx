@@ -1,14 +1,25 @@
 import { Link } from "@/i18n/navigation";
 import SiteHeader from "@/components/SiteHeader";
 import Footer from "@/components/home/Footer";
+import EnquiryForm from "@/components/EnquiryForm";
 import { FadeUp } from "@/components/home/Motion";
 import { OFFERS, OFFER_ORDER, type Offer } from "@/content/offers";
 
+/** One entry in the Timeline / Booking / Investment meta row. */
+function Meta({ label, value }: { label: string; value: string }) {
+  return (
+    <div>
+      <p className="eyebrow text-grey">{label}</p>
+      <p className="mt-2 font-serif text-[1.3rem] text-ink">{value}</p>
+    </div>
+  );
+}
+
 /**
  * The template shared by all three engagement pages (/branding, /websites,
- * /marketing). Content comes entirely from `content/offers.ts` — this file
- * only decides how an offer is presented. Same editorial rhythm as the rest
- * of the site: belief → substance → proof → a calm invitation.
+ * /marketing). Content comes entirely from `content/offers.ts`. The section
+ * flow mirrors a considered service page: hero → what it is + meta →
+ * packages → what's inside → process → questions → enquiry.
  */
 export default function OfferPage({ offer }: { offer: Offer }) {
   const others = OFFER_ORDER.filter((s) => s !== offer.slug).map(
@@ -21,7 +32,7 @@ export default function OfferPage({ offer }: { offer: Offer }) {
 
       <main className="bg-white">
         {/* Hero — the outcome, then the offer */}
-        <section className="wrap pt-[calc(82px+clamp(3.5rem,10vh,7rem))] pb-[clamp(3rem,8vh,6rem)]">
+        <section className="wrap pt-[calc(82px+clamp(3.5rem,10vh,7rem))] pb-[clamp(2.5rem,7vh,5rem)]">
           <div className="mx-auto max-w-[52rem] text-center">
             <FadeUp>
               <p className="eyebrow text-oxblood">{offer.eyebrow}</p>
@@ -37,93 +48,37 @@ export default function OfferPage({ offer }: { offer: Offer }) {
               </p>
             </FadeUp>
             <FadeUp delay={0.3}>
-              <div className="mt-10 flex flex-wrap items-center justify-center gap-x-5 gap-y-2 font-sans text-[0.8rem] uppercase tracking-[0.18em] text-light">
-                <span>{offer.cadence}</span>
-                <span className="text-rule" aria-hidden>
-                  ·
-                </span>
-                <span className="text-grey">{offer.tiers[0].price}</span>
-              </div>
               <a
-                href="/#contact"
-                className="eyebrow mt-8 inline-block text-oxblood transition-opacity duration-500 hover:opacity-60"
+                href="#enquire"
+                className="eyebrow mt-10 inline-block text-oxblood transition-opacity duration-500 hover:opacity-60"
               >
-                Begin a conversation &rarr;
+                Start your project &rarr;
               </a>
             </FadeUp>
           </div>
         </section>
 
-        {/* The shift */}
+        {/* What it is + meta row (Timeline · Booking · Investment) */}
         <section className="border-y border-rule bg-paper py-[clamp(4rem,10vh,7rem)]">
           <div className="wrap">
-            <div className="mx-auto max-w-[46rem] text-center">
-              <FadeUp>
-                <p className="eyebrow text-grey">{offer.shift.heading}</p>
-              </FadeUp>
-              <FadeUp delay={0.1}>
-                <p className="mt-8 font-serif text-ink text-[clamp(1.4rem,2.6vw,2rem)] leading-[1.5]">
-                  {offer.shift.body}
-                </p>
-              </FadeUp>
-            </div>
-          </div>
-        </section>
-
-        {/* What's inside — grouped, so it reads as a system */}
-        <section className="wrap py-[clamp(5rem,12vh,8rem)]">
-          <div className="mx-auto max-w-5xl">
-            <FadeUp>
-              <p className="eyebrow text-grey">What&rsquo;s inside</p>
-            </FadeUp>
-            <div className="mt-12 space-y-12">
-              {offer.includes.map((group, i) => (
-                <FadeUp key={group.label} delay={i * 0.06}>
-                  <div className="border-t border-rule pt-6">
-                    <h2 className="font-serif text-[1.35rem] text-oxblood">
-                      {group.label}
-                    </h2>
-                    <ul className="mt-5 grid gap-x-16 gap-y-3 sm:grid-cols-2 lg:grid-cols-3">
-                      {group.items.map((item) => (
-                        <li
-                          key={item}
-                          className="font-sans text-[1rem] leading-relaxed text-grey"
-                        >
-                          {item}
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
+            <div className="mx-auto grid max-w-5xl gap-12 lg:grid-cols-[1.5fr_1fr] lg:gap-20">
+              <div>
+                <FadeUp>
+                  <p className="eyebrow text-grey">What is {offer.name}?</p>
                 </FadeUp>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        {/* The process */}
-        <section className="border-t border-rule bg-paper py-[clamp(5rem,12vh,8rem)]">
-          <div className="wrap">
-            <div className="mx-auto max-w-4xl">
-              <FadeUp>
-                <p className="eyebrow text-grey">How it unfolds</p>
-              </FadeUp>
-              <div className="mt-12 divide-y divide-rule">
-                {offer.process.map((phase, i) => (
-                  <FadeUp key={phase.n} delay={i * 0.05}>
-                    <div className="grid grid-cols-[auto_1fr] gap-x-8 py-8 md:grid-cols-[6rem_14rem_1fr] md:gap-x-12">
-                      <span className="font-serif italic text-[1.5rem] text-light">
-                        {phase.n}
-                      </span>
-                      <h3 className="font-serif text-[1.4rem] text-ink">
-                        {phase.title}
-                      </h3>
-                      <p className="col-span-2 mt-3 font-sans text-[1rem] leading-[1.8] text-grey md:col-span-1 md:mt-0">
-                        {phase.body}
-                      </p>
-                    </div>
-                  </FadeUp>
-                ))}
+                <FadeUp delay={0.1}>
+                  <p className="mt-6 font-serif text-ink text-[clamp(1.35rem,2.4vw,1.9rem)] leading-[1.5]">
+                    {offer.shift.body}
+                  </p>
+                </FadeUp>
               </div>
+              <FadeUp delay={0.16}>
+                <div className="flex flex-col gap-8 border-t border-rule pt-8 lg:h-full lg:justify-center lg:border-l lg:border-t-0 lg:pl-16 lg:pt-0">
+                  <Meta label="Timeline" value={offer.cadence} />
+                  <Meta label="Booking" value={offer.booking} />
+                  <Meta label="Investment" value={offer.tiers[0].price} />
+                </div>
+              </FadeUp>
             </div>
           </div>
         </section>
@@ -187,7 +142,7 @@ export default function OfferPage({ offer }: { offer: Offer }) {
                       </ul>
                     </div>
                     <a
-                      href="/#contact"
+                      href="#enquire"
                       className="eyebrow mt-8 inline-block text-oxblood transition-opacity duration-500 hover:opacity-60"
                     >
                       Enquire &rarr;
@@ -199,23 +154,123 @@ export default function OfferPage({ offer }: { offer: Offer }) {
           </div>
         </section>
 
-        {/* Invitation */}
-        <section className="wrap border-t border-rule py-[clamp(5rem,12vh,9rem)]">
-          <div className="mx-auto max-w-[40rem] text-center">
+        {/* What's inside — the same services as "What We Build" */}
+        <section className="border-t border-rule bg-paper py-[clamp(5rem,12vh,8rem)]">
+          <div className="wrap">
+            <div className="mx-auto max-w-5xl">
+              <FadeUp>
+                <p className="eyebrow text-grey">What&rsquo;s inside</p>
+              </FadeUp>
+              <div className="mt-12 space-y-12">
+                {offer.includes.map((group, i) => (
+                  <FadeUp key={group.label} delay={i * 0.06}>
+                    <div className="border-t border-rule pt-6">
+                      <h2 className="font-serif text-[1.35rem] text-oxblood">
+                        {group.label}
+                      </h2>
+                      <ul className="mt-5 grid gap-x-16 gap-y-3 sm:grid-cols-2 lg:grid-cols-3">
+                        {group.items.map((item) => (
+                          <li
+                            key={item}
+                            className="font-sans text-[1rem] leading-relaxed text-grey"
+                          >
+                            {item}
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  </FadeUp>
+                ))}
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* The process */}
+        <section className="wrap py-[clamp(5rem,12vh,8rem)]">
+          <div className="mx-auto max-w-4xl">
             <FadeUp>
-              <p className="font-serif italic text-ink text-[clamp(1.8rem,3.6vw,2.8rem)] leading-[1.25]">
-                Tell us about your business, your ambitions, or simply where
-                you&rsquo;d like to begin.
-              </p>
+              <p className="eyebrow text-grey">How it unfolds</p>
             </FadeUp>
-            <FadeUp delay={0.12}>
-              <a
-                href="/#contact"
-                className="eyebrow mt-10 inline-block text-oxblood transition-opacity duration-500 hover:opacity-60"
-              >
-                Begin a conversation &rarr;
-              </a>
-            </FadeUp>
+            <div className="mt-12 divide-y divide-rule">
+              {offer.process.map((phase, i) => (
+                <FadeUp key={phase.n} delay={i * 0.05}>
+                  <div className="grid grid-cols-[auto_1fr] gap-x-8 py-8 md:grid-cols-[6rem_14rem_1fr] md:gap-x-12">
+                    <span className="font-serif italic text-[1.5rem] text-light">
+                      {phase.n}
+                    </span>
+                    <h3 className="font-serif text-[1.4rem] text-ink">
+                      {phase.title}
+                    </h3>
+                    <p className="col-span-2 mt-3 font-sans text-[1rem] leading-[1.8] text-grey md:col-span-1 md:mt-0">
+                      {phase.body}
+                    </p>
+                  </div>
+                </FadeUp>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* FAQ */}
+        <section className="border-t border-rule bg-paper py-[clamp(5rem,12vh,8rem)]">
+          <div className="wrap">
+            <div className="mx-auto max-w-3xl">
+              <FadeUp>
+                <p className="eyebrow text-grey">Questions</p>
+              </FadeUp>
+              <div className="mt-10 border-t border-rule">
+                {offer.faqs.map((f) => (
+                  <details
+                    key={f.q}
+                    className="group border-b border-rule py-6"
+                  >
+                    <summary className="flex cursor-pointer list-none items-center justify-between gap-6 font-serif text-[1.2rem] text-ink [&::-webkit-details-marker]:hidden">
+                      {f.q}
+                      <span className="flex-none text-[1.4rem] leading-none text-oxblood transition-transform duration-300 group-open:rotate-45">
+                        +
+                      </span>
+                    </summary>
+                    <p className="mt-4 max-w-[60ch] font-sans text-[1rem] leading-[1.8] text-grey">
+                      {f.a}
+                    </p>
+                  </details>
+                ))}
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Enquiry */}
+        <section
+          id="enquire"
+          className="scroll-mt-24 border-t border-rule py-[clamp(5rem,12vh,8rem)]"
+        >
+          <div className="wrap">
+            <div className="mx-auto max-w-3xl">
+              <div className="text-center">
+                <FadeUp>
+                  <p className="eyebrow text-oxblood">Begin</p>
+                </FadeUp>
+                <FadeUp delay={0.08}>
+                  <h2 className="mt-6 font-serif italic text-ink text-[clamp(2rem,3.6vw,2.8rem)] leading-[1.2]">
+                    Enquire about {offer.name}.
+                  </h2>
+                </FadeUp>
+                <FadeUp delay={0.16}>
+                  <p className="mx-auto mt-6 max-w-[46ch] font-sans text-[1rem] leading-[1.8] text-grey">
+                    Tell us a little about your business and where you&rsquo;d
+                    like to begin. We reply to every enquiry personally, within
+                    two working days.
+                  </p>
+                </FadeUp>
+              </div>
+              <FadeUp delay={0.2}>
+                <div className="mt-12">
+                  <EnquiryForm engagement={offer.name} />
+                </div>
+              </FadeUp>
+            </div>
           </div>
         </section>
 

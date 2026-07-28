@@ -11,7 +11,9 @@ function Meta({ label, value }: { label: string; value: string }) {
   return (
     <div>
       <p className="eyebrow text-grey">{label}</p>
-      <p className="mt-2 font-serif text-[1.3rem] text-ink">{value}</p>
+      <p className="mt-3 font-sans text-[0.9rem] font-bold uppercase tracking-[0.14em] text-ink">
+        {value}
+      </p>
     </div>
   );
 }

@@ -1,8 +1,8 @@
 {
   "meta": {
     "title": "noova — Branding, Websites & Marketing · Londër",
-    "description": "noova ndërton marka nga brenda jashtë — një studio në Londër që bashkon strategjinë, dizajnin, uebsajtet, marketingun dhe teknologjinë në një sistem të vetëm koherent. Për bizneset që i kanë tejkaluar imazhin e vet.",
-    "ogDescription": "Ne ndërtojmë marka nga brenda jashtë. Për bizneset që i kanë tejkaluar imazhin e vet."
+    "description": "noova ndërton marka nga brenda jashtë — një studio në Londër që bashkon strategjinë, dizajnin, uebsajtet, marketingun dhe teknologjinë në një sistem të vetëm dhe koherent. Për bizneset që janë rritur përtej imazhit të tyre.",
+    "ogDescription": "Ne ndërtojmë marka nga brenda jashtë. Për bizneset që janë rritur përtej imazhit të tyre."
   },
   "nav": {
     "aboutStudio": "Rreth Studios",
@@ -15,24 +15,24 @@
     "service2": "Websites",
     "service3": "Marketing",
     "tagline": "Një markë që më në fund përputhet me biznesin që qëndron pas saj.",
-    "scroll": "Zbrit"
+    "scroll": "Lëviz poshtë"
   },
   "welcome": {
     "label": "MIRË SE VINI TE NOOVA",
     "heading": "Ne ndërtojmë marka nga brenda jashtë.",
-    "intro": "noova është një studio kreative që bashkon strategjinë, brandingun, uebsajtet, marketingun dhe sistemet inteligjente në një praktikë të vetme koherente. Çdo vendim është i lidhur. Çdo pikëkontakt dizajnohet së bashku. Asgjë nuk duket e shtuar sipërfaqësisht.",
+    "intro": "noova është një studio kreative që bashkon strategjinë, brandingun, uebsajtet, marketingun dhe sistemet inteligjente në një tërësi të vetme dhe të integruar. Çdo vendim lidhet me tjetrin. Çdo pikë kontakti dizajnohet së bashku. Asgjë nuk duket e shtuar sipërfaqësisht.",
     "brandDesc": "Strategji, identitet dhe drejtim kreativ që u japin bizneseve një themel të qartë.",
-    "websitesDesc": "Uebsajte editoriale të dizajnuara me qartësi, saktësi dhe performancë në mendje.",
+    "websitesDesc": "Uebsajte editoriale të dizajnuara me fokus te qartësia, saktësia dhe performanca.",
     "growthDesc": "Marketing, përmbajtje dhe sisteme inteligjente që ndihmojnë bizneset ambicioze të rriten."
   },
   "founder": {
     "label": "RRETH THEMELUESES",
-    "headingA": "Njihuni me Jessica-n,",
-    "headingB": "themeluesen e noova-s.",
-    "p1": "Në vend që të vija nga një sfond klasik i dizajnit, rruga ime nisi në inxhinieri, shkencë të dhënash, marketing dhe teknologji. Puna nëpër startup-e, kompani AI dhe ekipe rritjeje më mësoi se shumica e bizneseve nuk kanë problem dizajni—kanë problem qartësie.",
-    "p2": "Prandaj e themelova noova-n.",
-    "p3": "Sot ndihmoj bizneset ambicioze të ndërtojnë marka nga brenda jashtë, duke bashkuar strategjinë, identitetin, uebsajtet, marketingun dhe sistemet inteligjente në një praktikë të vetme koherente. Çdo vendim është i lidhur. Çdo detaj ka një arsye.",
-    "cta": "Lexo historinë →"
+    "headingA": "Njihuni me Xhesikën,",
+    "headingB": "themeluesen e noova.",
+    "p1": "Në vend që të vija nga një sfond klasik i dizajnit, rruga ime nisi në inxhinieri, shkencën e të dhënave, marketing dhe teknologji. Puna nëpër startup-e, kompani të inteligjencës artificiale dhe ekipe rritjeje më mësoi se shumica e bizneseve nuk kanë problem dizajni — kanë problem qartësie.",
+    "p2": "Prandaj themelova noova.",
+    "p3": "Sot ndihmoj bizneset ambicioze të ndërtojnë marka nga brenda jashtë, duke bashkuar strategjinë, identitetin, uebsajtet, marketingun dhe sistemet inteligjente në një tërësi të vetme dhe të integruar. Çdo vendim lidhet me tjetrin. Çdo detaj ka një arsye.",
+    "cta": "Lexoni historinë →"
   },
   "services": {
     "label": "ÇFARË NDËRTOJMË",
@@ -43,11 +43,11 @@
       },
       {
         "t": "Websites",
-        "d": ["Strategji uebsajti", "UX & arkitekturë informacioni", "Dizajn uebsajti", "Zhvillim në Webflow", "Faqe uljeje", "Baza SEO", "Optimizim performance"]
+        "d": ["Strategji uebsajti", "UX & arkitekturë informacioni", "Dizajn uebsajti", "Zhvillim në Webflow", "Faqe uljeje", "Baza SEO", "Optimizim i performancës"]
       },
       {
         "t": "Content",
-        "d": ["Strategji përmbajtjeje", "Planifikim editorial", "Strategji për rrjete sociale", "Kalendarë përmbajtjeje", "Kopjeshkrim", "Drejtim fotografie", "Prodhim përmbajtjeje me ndihmën e AI"]
+        "d": ["Strategji përmbajtjeje", "Planifikim editorial", "Strategji për rrjete sociale", "Kalendarë përmbajtjeje", "Shkrim tekstesh", "Drejtim fotografie", "Prodhim përmbajtjeje me ndihmën e AI"]
       },
       {
         "t": "Campaigns",
@@ -59,13 +59,13 @@
       },
       {
         "t": "AI & Systems",
-        "d": ["Rrjedha pune me AI", "Automatizim marketingu", "Zbatim CRM", "Sisteme biznesi", "Udhëtime klientësh", "Sisteme gjenerimi lidhjesh", "Optimizim procesesh"]
+        "d": ["Rrjedha pune me AI", "Automatizim marketingu", "Zbatim CRM", "Sisteme biznesi", "Rrugëtimi i klientit", "Sisteme për gjenerimin e kontakteve", "Optimizim procesesh"]
       }
     ]
   },
   "work": {
-    "label": "Punë të Zgjedhura",
-    "viewAll": "Shiko të gjitha punët →",
+    "label": "Projektet e përzgjedhura",
+    "viewAll": "Shiko të gjitha projektet →",
     "meta01": "Teknologji · Branding, Marketing & Events",
     "meta02": "Bukuri · Branding, Creative & Marketing",
     "meta03": "Mikpritje · Branding, Website & Marketing",
@@ -87,15 +87,15 @@
     "location": "Londër · Mbretëria e Bashkuar"
   },
   "footer": {
-    "tagline": "noova është një partner kreativ për bizneset që i kanë tejkaluar imazhin e vet.",
-    "description": "Ne ndërtojmë marka nga brenda jashtë—duke bashkuar strategjinë, brandingun, uebsajtet, marketingun dhe sistemet inteligjente në një praktikë të vetme koherente. Rezultati është një markë që më në fund përputhet me biznesin që qëndron pas saj.",
+    "tagline": "noova është një partner kreativ për bizneset që janë rritur përtej imazhit të tyre.",
+    "description": "Ne ndërtojmë marka nga brenda jashtë — duke bashkuar strategjinë, brandingun, uebsajtet, marketingun dhe sistemet inteligjente në një tërësi të vetme dhe të integruar. Rezultati është një markë që më në fund përputhet me biznesin që qëndron pas saj.",
     "navHeading": "Navigimi",
     "home": "Ballina",
     "services": "Shërbimet",
     "portfolio": "Portofoli",
     "journal": "Journal",
     "contact": "Kontakt",
-    "connectHeading": "Lidhu",
+    "connectHeading": "Lidhuni me ne",
     "londonHeading": "Londër",
     "tiranaHeading": "Tiranë",
     "privacy": "Politika e Privatësisë",
@@ -107,15 +107,15 @@
   "cookieBanner": {
     "title": "Një shënim mbi cookies",
     "body": "Ne përdorim cookies thelbësore për ta mbajtur faqen në punë dhe — vetëm me lejen tuaj — pak të tjera për të kuptuar si lexohet. Kontrolli mbetet te ju. Shihni <privacy>Politikën e Privatësisë</privacy> dhe <cookies>Politikën e Cookies</cookies>.",
-    "acceptAll": "Prano të gjitha",
-    "reject": "Refuzo jo-thelbësoret",
+    "acceptAll": "Pranoni të gjitha",
+    "reject": "Refuzoni jo-thelbësoret",
     "preferences": "Preferencat e cookies"
   },
   "cookieModal": {
     "title": "Preferencat e cookies",
     "intro": "Zgjidhni me çfarë ndiheni rehat. Mund ta ndryshoni këtë në çdo kohë nga fundi i faqes.",
-    "close": "Mbyll",
-    "closeAria": "Mbyll preferencat e cookies",
+    "close": "Mbyllni",
+    "closeAria": "Mbyllni preferencat e cookies",
     "essentialName": "Thelbësore",
     "essentialDesc": "Të nevojshme që faqja të funksionojë — për të mbajtur mend zgjedhjet tuaja dhe për të ruajtur sigurinë. Gjithmonë aktive.",
     "essentialAria": "Cookies thelbësore (gjithmonë aktive)",
@@ -125,7 +125,7 @@
     "marketingName": "Marketing",
     "marketingDesc": "Përdoren për të matur fushatat dhe për të shfaqur punë relevante nëpër platforma të tjera.",
     "marketingAria": "Cookies marketingu",
-    "acceptAll": "Prano të gjitha",
-    "save": "Ruaj preferencat"
+    "acceptAll": "Pranoni të gjitha",
+    "save": "Ruani preferencat"
   }
 }

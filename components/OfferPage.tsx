@@ -33,19 +33,19 @@ export default function OfferPage({ offer }: { offer: Offer }) {
 
       <main className="bg-white">
         {/* Hero — full-bleed image with the offer over it */}
-        <section className="relative flex min-h-[88vh] items-center justify-center overflow-hidden">
+        <section className="film-grain relative flex min-h-[88vh] items-center justify-center overflow-hidden">
           <Image
             src={offer.heroImage}
             alt={offer.heroAlt}
             fill
             priority
             sizes="100vw"
-            className="object-cover object-center"
+            className="scale-105 object-cover object-center blur-[3px]"
           />
           {/* Scrim for legibility */}
-          <div className="absolute inset-0 bg-black/45" aria-hidden />
+          <div className="absolute inset-0 bg-black/50" aria-hidden />
           <div
-            className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-black/30"
+            className="absolute inset-0 bg-gradient-to-t from-black/65 via-black/20 to-black/40"
             aria-hidden
           />
 

@@ -45,11 +45,6 @@ export default function Hero() {
         </p>
         <p className="hero-tag">{t("tagline")}</p>
       </div>
-
-      <div className="hero-scrollcue" aria-hidden>
-        <span>{t("scroll")}</span>
-        <span className="line" />
-      </div>
     </section>
   );
 }

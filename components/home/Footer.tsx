@@ -23,14 +23,14 @@ export default function Footer() {
             <div className="mt-10 max-w-[620px]">
               <p
                 className="font-serif italic text-[1.45rem] leading-relaxed"
-                style={{ color: "#F7F3EC" }}
+                style={{ color: "#ffffff" }}
               >
                 {t("tagline")}
               </p>
 
               <p
                 className="mt-5 font-sans text-[1rem] leading-8"
-                style={{ color: "rgba(247,243,236,0.82)" }}
+                style={{ color: "rgba(255,255,255,0.82)" }}
               >
                 {t("description")}
               </p>
@@ -39,7 +39,7 @@ export default function Footer() {
             <a
               href="mailto:hello@noovadata.com"
               className="mt-12 inline-block font-sans font-normal text-[1.15rem] tracking-[0.01em] transition-opacity duration-300 hover:opacity-80"
-              style={{ color: "#F7F3EC" }}
+              style={{ color: "#ffffff" }}
             >
               hello@noovadata.com
             </a>
@@ -51,7 +51,7 @@ export default function Footer() {
             <div>
               <p
                 className="mb-5 font-sans text-[0.72rem] uppercase tracking-[0.28em]"
-                style={{ color: "rgba(247,243,236,0.45)" }}
+                style={{ color: "rgba(255,255,255,0.45)" }}
               >
                 {t("navHeading")}
               </p>
@@ -60,7 +60,7 @@ export default function Footer() {
                 <a
                   href="#hero"
                   className="font-sans text-[0.92rem] transition-opacity duration-300 hover:opacity-100"
-                  style={{ color: "rgba(247,243,236,0.82)" }}
+                  style={{ color: "rgba(255,255,255,0.82)" }}
                 >
                   {t("home")}
                 </a>
@@ -68,7 +68,7 @@ export default function Footer() {
                 <a
                   href="#services"
                   className="font-sans text-[0.92rem] transition-opacity duration-300 hover:opacity-100"
-                  style={{ color: "rgba(247,243,236,0.82)" }}
+                  style={{ color: "rgba(255,255,255,0.82)" }}
                 >
                   {t("services")}
                 </a>
@@ -76,7 +76,7 @@ export default function Footer() {
                 <a
                   href="#portfolio"
                   className="font-sans text-[0.92rem] transition-opacity duration-300 hover:opacity-100"
-                  style={{ color: "rgba(247,243,236,0.82)" }}
+                  style={{ color: "rgba(255,255,255,0.82)" }}
                 >
                   {t("portfolio")}
                 </a>
@@ -84,7 +84,7 @@ export default function Footer() {
                 <a
                   href="#journal"
                   className="font-sans text-[0.92rem] transition-opacity duration-300 hover:opacity-100"
-                  style={{ color: "rgba(247,243,236,0.82)" }}
+                  style={{ color: "rgba(255,255,255,0.82)" }}
                 >
                   {t("journal")}
                 </a>
@@ -92,7 +92,7 @@ export default function Footer() {
                 <a
                   href="#contact"
                   className="font-sans text-[0.92rem] transition-opacity duration-300 hover:opacity-100"
-                  style={{ color: "rgba(247,243,236,0.82)" }}
+                  style={{ color: "rgba(255,255,255,0.82)" }}
                 >
                   {t("contact")}
                 </a>
@@ -103,7 +103,7 @@ export default function Footer() {
             <div>
               <p
                 className="mb-5 font-sans text-[0.72rem] uppercase tracking-[0.28em]"
-                style={{ color: "rgba(247,243,236,0.45)" }}
+                style={{ color: "rgba(255,255,255,0.45)" }}
               >
                 {t("connectHeading")}
               </p>
@@ -114,7 +114,7 @@ export default function Footer() {
                   target="_blank"
                   rel="noopener noreferrer"
                   className="font-sans text-[0.92rem] transition-opacity duration-300 hover:opacity-100"
-                  style={{ color: "rgba(247,243,236,0.82)" }}
+                  style={{ color: "rgba(255,255,255,0.82)" }}
                 >
                   Instagram
                 </a>
@@ -124,7 +124,7 @@ export default function Footer() {
                   target="_blank"
                   rel="noopener noreferrer"
                   className="font-sans text-[0.92rem] transition-opacity duration-300 hover:opacity-100"
-                  style={{ color: "rgba(247,243,236,0.82)" }}
+                  style={{ color: "rgba(255,255,255,0.82)" }}
                 >
                   LinkedIn
                 </a>
@@ -135,14 +135,14 @@ export default function Footer() {
             <div>
               <p
                 className="mb-5 font-sans text-[0.72rem] uppercase tracking-[0.28em]"
-                style={{ color: "rgba(247,243,236,0.45)" }}
+                style={{ color: "rgba(255,255,255,0.45)" }}
               >
                 {t("londonHeading")}
               </p>
 
               <p
                 className="font-sans text-[0.92rem] leading-7"
-                style={{ color: "rgba(247,243,236,0.82)" }}
+                style={{ color: "rgba(255,255,255,0.82)" }}
               >
                 167–169 Great Portland Street
                 <br />
@@ -158,14 +158,14 @@ export default function Footer() {
             <div>
               <p
                 className="mb-5 font-sans text-[0.72rem] uppercase tracking-[0.28em]"
-                style={{ color: "rgba(247,243,236,0.45)" }}
+                style={{ color: "rgba(255,255,255,0.45)" }}
               >
                 {t("tiranaHeading")}
               </p>
 
               <p
                 className="font-sans text-[0.92rem] leading-7"
-                style={{ color: "rgba(247,243,236,0.82)" }}
+                style={{ color: "rgba(255,255,255,0.82)" }}
               >
                 Aleksandër Moisiu 4
                 <br />
@@ -179,38 +179,38 @@ export default function Footer() {
 
         <div
           className="mt-20 h-px"
-          style={{ backgroundColor: "rgba(247,243,236,0.12)" }}
+          style={{ backgroundColor: "rgba(255,255,255,0.12)" }}
         />
 
         <div className="mt-8 flex flex-col items-center gap-6 text-center lg:flex-row lg:justify-between">
           <p
             className="font-sans text-[0.72rem] uppercase tracking-[0.24em]"
-            style={{ color: "rgba(247,243,236,0.55)" }}
+            style={{ color: "rgba(255,255,255,0.55)" }}
           >
             {t("rights")}
           </p>
 
-          <div className="flex flex-wrap items-center justify-center gap-x-6 gap-y-2 font-sans text-[0.72rem] uppercase tracking-[0.24em] text-[rgba(247,243,236,0.55)]">
+          <div className="flex flex-wrap items-center justify-center gap-x-6 gap-y-2 font-sans text-[0.72rem] uppercase tracking-[0.24em] text-[rgba(255,255,255,0.55)]">
             <Link
               href="/privacy"
-              className="transition-colors duration-300 hover:text-[rgba(247,243,236,0.9)]"
+              className="transition-colors duration-300 hover:text-[rgba(255,255,255,0.9)]"
             >
               {t("privacy")}
             </Link>
             <Link
               href="/cookies"
-              className="transition-colors duration-300 hover:text-[rgba(247,243,236,0.9)]"
+              className="transition-colors duration-300 hover:text-[rgba(255,255,255,0.9)]"
             >
               {t("cookiePolicy")}
             </Link>
-            <CookieSettingsLink className="uppercase tracking-[0.24em] transition-colors duration-300 hover:text-[rgba(247,243,236,0.9)]">
+            <CookieSettingsLink className="uppercase tracking-[0.24em] transition-colors duration-300 hover:text-[rgba(255,255,255,0.9)]">
               {t("cookieSettings")}
             </CookieSettingsLink>
           </div>
 
           <p
             className="font-sans text-[0.72rem] uppercase tracking-[0.24em]"
-            style={{ color: "rgba(247,243,236,0.55)" }}
+            style={{ color: "rgba(255,255,255,0.55)" }}
           >
             {t("studioLabel")}
           </p>

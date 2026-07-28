@@ -73,7 +73,7 @@ export default function EnquiryForm({ engagement }: { engagement: string }) {
       action={FORMSPREE_ENDPOINT}
       method="POST"
       onSubmit={handleSubmit}
-      className="mx-auto grid max-w-3xl gap-8 text-left sm:grid-cols-2"
+      className="flex w-full flex-col gap-6 text-left"
     >
       <input type="hidden" name="engagement" value={engagement} />
       <input type="hidden" name="_subject" value={`New ${engagement} enquiry — noova`} />
@@ -82,11 +82,9 @@ export default function EnquiryForm({ engagement }: { engagement: string }) {
       <Field label="Email" name="email" type="email" required />
       <Field label="Business & industry" name="business" />
       <Field label="Ideal timeline" name="timeline" />
-      <div className="sm:col-span-2">
-        <Field label="Budget (optional)" name="budget" />
-      </div>
+      <Field label="Budget (optional)" name="budget" />
 
-      <div className="sm:col-span-2 pt-2 text-center">
+      <div className="pt-2 text-center">
         <button
           type="submit"
           disabled={status === "sending"}

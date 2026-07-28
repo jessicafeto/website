@@ -230,6 +230,23 @@ export default function OfferPage({ offer }: { offer: Offer }) {
           </div>
         </section>
 
+        {/* A glimpse into selected work */}
+        <section className="bg-charcoal py-[clamp(3rem,7vh,4.5rem)]">
+          <div className="wrap">
+            <div className="flex flex-col items-center gap-6 text-center sm:flex-row sm:justify-between sm:text-left">
+              <p className="eyebrow text-white/70">
+                A glimpse into selected work
+              </p>
+              <Link
+                href="/#work"
+                className="eyebrow inline-block bg-paper px-8 py-4 text-ink transition-colors duration-500 hover:bg-white"
+              >
+                View selected projects &rarr;
+              </Link>
+            </div>
+          </div>
+        </section>
+
         {/* FAQ — open grid, question above answer */}
         <section className="border-t border-rule py-[clamp(5rem,12vh,8rem)]">
           <div className="wrap">
@@ -257,35 +274,50 @@ export default function OfferPage({ offer }: { offer: Offer }) {
           </div>
         </section>
 
-        {/* Enquiry */}
+        {/* Enquiry — same wax-seal frame as the home contact */}
         <section
           id="enquire"
-          className="scroll-mt-24 border-t border-rule py-[clamp(5rem,12vh,8rem)]"
+          className="scroll-mt-24 border-t border-rule py-[clamp(6rem,10vh,8rem)]"
         >
-          <div className="wrap">
-            <div className="mx-auto max-w-3xl">
-              <div className="text-center">
-                <FadeUp>
-                  <p className="eyebrow text-oxblood">Begin</p>
-                </FadeUp>
-                <FadeUp delay={0.08}>
-                  <h2 className="mt-6 font-serif italic text-ink text-[clamp(2rem,3.6vw,2.8rem)] leading-[1.2]">
-                    Enquire about {offer.name}.
-                  </h2>
-                </FadeUp>
-                <FadeUp delay={0.16}>
-                  <p className="mx-auto mt-6 max-w-[46ch] font-sans text-[1rem] leading-[1.8] text-grey">
-                    Tell us a little about your business and where you&rsquo;d
-                    like to begin. We reply to every enquiry personally, within
-                    two working days.
-                  </p>
-                </FadeUp>
-              </div>
-              <FadeUp delay={0.2}>
-                <div className="mt-12">
-                  <EnquiryForm engagement={offer.name} />
+          <div className="mx-auto max-w-[1400px] px-8">
+            <div className="border-2 border-oxblood p-[6px]">
+              <div className="relative border border-oxblood/70 bg-white px-10 py-12 md:px-20 md:py-14">
+                {/* Wax seal */}
+                <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2">
+                  <FadeUp>
+                    <Image
+                      src="/brand/wax-seal.png"
+                      alt="noova wax seal"
+                      width={100}
+                      height={100}
+                      priority
+                    />
+                  </FadeUp>
                 </div>
-              </FadeUp>
+
+                <div className="mx-auto flex max-w-[650px] flex-col items-center text-center">
+                  <FadeUp delay={0.1}>
+                    <h2 className="font-serif italic text-ink text-[clamp(2.1rem,3.6vw,3rem)] leading-[1.05]">
+                      Enquire about {offer.name}.
+                    </h2>
+                  </FadeUp>
+                  <FadeUp delay={0.18}>
+                    <p className="mt-4 max-w-[40ch] font-sans text-[1.05rem] leading-relaxed text-grey">
+                      Tell us a little about your business and where you&rsquo;d
+                      like to begin. We reply to every enquiry personally,
+                      within two working days.
+                    </p>
+                  </FadeUp>
+                  <FadeUp delay={0.25} className="mt-8 w-full">
+                    <EnquiryForm engagement={offer.name} />
+                  </FadeUp>
+                  <FadeUp delay={0.35}>
+                    <div className="mt-10 w-full border-t border-oxblood/20 pt-6 text-center">
+                      <p className="eyebrow text-grey">London · United Kingdom</p>
+                    </div>
+                  </FadeUp>
+                </div>
+              </div>
             </div>
           </div>
         </section>

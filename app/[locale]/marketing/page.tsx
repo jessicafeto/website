@@ -1,13 +1,20 @@
 import type { Metadata } from "next";
 import OfferPage from "@/components/OfferPage";
-import { OFFERS } from "@/content/offers";
+import { getOffer } from "@/content/offers";
 
-export const metadata: Metadata = {
-  title: "Marketing & Growth",
-  description: OFFERS.marketing.offer,
-  alternates: { canonical: "/marketing" },
-};
+type Props = { params: Promise<{ locale: string }> };
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { locale } = await params;
+  return {
+    title: "Marketing & Growth",
+    description: getOffer(locale, "marketing").offer,
+    alternates: {
+      canonical: locale === "en" ? "/marketing" : `/${locale}/marketing`,
+    },
+  };
+}
 
 export default function MarketingPage() {
-  return <OfferPage offer={OFFERS.marketing} />;
+  return <OfferPage slug="marketing" />;
 }

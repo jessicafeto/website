@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { useTranslations } from "next-intl";
 
 const FORMSPREE_ENDPOINT = "https://formspree.io/f/xkolzzyy";
 
@@ -35,6 +36,7 @@ function Field({
  * engagement the enquiry is for, and `_subject` labels the email.
  */
 export default function EnquiryForm({ engagement }: { engagement: string }) {
+  const t = useTranslations("offer.form");
   const [status, setStatus] = useState<"idle" | "sending" | "sent" | "error">(
     "idle",
   );
@@ -63,7 +65,7 @@ export default function EnquiryForm({ engagement }: { engagement: string }) {
   if (status === "sent") {
     return (
       <p className="text-center font-serif italic text-[1.4rem] text-ink">
-        Thank you — we&rsquo;ll be in touch within two working days.
+        {t("sent")}
       </p>
     );
   }
@@ -78,11 +80,11 @@ export default function EnquiryForm({ engagement }: { engagement: string }) {
       <input type="hidden" name="engagement" value={engagement} />
       <input type="hidden" name="_subject" value={`New ${engagement} enquiry — noova`} />
 
-      <Field label="Your name" name="name" required />
-      <Field label="Email" name="email" type="email" required />
-      <Field label="Business & industry" name="business" />
-      <Field label="Ideal timeline" name="timeline" />
-      <Field label="Budget (optional)" name="budget" />
+      <Field label={t("name")} name="name" required />
+      <Field label={t("email")} name="email" type="email" required />
+      <Field label={t("business")} name="business" />
+      <Field label={t("timeline")} name="timeline" />
+      <Field label={t("budget")} name="budget" />
 
       <div className="pt-2 text-center">
         <button
@@ -90,11 +92,11 @@ export default function EnquiryForm({ engagement }: { engagement: string }) {
           disabled={status === "sending"}
           className="rounded-full bg-oxblood px-10 py-4 font-sans text-[0.8rem] uppercase tracking-[0.22em] text-white transition-all duration-300 hover:opacity-90 disabled:opacity-60"
         >
-          {status === "sending" ? "Sending…" : "Submit enquiry →"}
+          {status === "sending" ? t("sending") : t("submit")}
         </button>
         {status === "error" && (
           <p className="mt-4 font-sans text-[0.9rem] text-oxblood">
-            Something went wrong. Please try again, or email hello@noovadata.com.
+            {t("error")}
           </p>
         )}
       </div>

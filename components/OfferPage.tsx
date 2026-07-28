@@ -1,10 +1,11 @@
 import Image from "next/image";
+import { getLocale, getTranslations } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 import SiteHeader from "@/components/SiteHeader";
 import Footer from "@/components/home/Footer";
 import EnquiryForm from "@/components/EnquiryForm";
 import { FadeUp } from "@/components/home/Motion";
-import { OFFERS, OFFER_ORDER, type Offer } from "@/content/offers";
+import { getOffer, OFFER_ORDER, type Offer } from "@/content/offers";
 
 /** One entry in the Timeline / Booking / Investment meta row. */
 function Meta({ label, value }: { label: string; value: string }) {
@@ -20,13 +21,15 @@ function Meta({ label, value }: { label: string; value: string }) {
 
 /**
  * The template shared by all three engagement pages (/branding, /websites,
- * /marketing). Content comes entirely from `content/offers.ts`. The section
- * flow mirrors a considered service page: hero → what it is + meta →
- * packages → what's inside → process → questions → enquiry.
+ * /marketing), in both locales. Content comes from content/offers.ts (per
+ * locale, incl. pricing); UI strings come from the `offer` message namespace.
  */
-export default function OfferPage({ offer }: { offer: Offer }) {
-  const others = OFFER_ORDER.filter((s) => s !== offer.slug).map(
-    (s) => OFFERS[s],
+export default async function OfferPage({ slug }: { slug: Offer["slug"] }) {
+  const locale = await getLocale();
+  const t = await getTranslations("offer");
+  const offer = getOffer(locale, slug);
+  const others = OFFER_ORDER.filter((s) => s !== slug).map((s) =>
+    getOffer(locale, s),
   );
 
   return (
@@ -44,7 +47,6 @@ export default function OfferPage({ offer }: { offer: Offer }) {
             sizes="100vw"
             className="scale-105 object-cover object-center blur-[3px]"
           />
-          {/* Scrim for legibility */}
           <div className="absolute inset-0 bg-black/50" aria-hidden />
           <div
             className="absolute inset-0 bg-gradient-to-t from-black/65 via-black/20 to-black/40"
@@ -71,7 +73,7 @@ export default function OfferPage({ offer }: { offer: Offer }) {
                   href="#enquire"
                   className="eyebrow mt-10 inline-block text-white transition-opacity duration-500 hover:opacity-70"
                 >
-                  Start your project &rarr;
+                  {t("startProject")}
                 </a>
               </FadeUp>
             </div>
@@ -84,7 +86,9 @@ export default function OfferPage({ offer }: { offer: Offer }) {
             <div className="mx-auto grid max-w-5xl gap-12 lg:grid-cols-[1.5fr_1fr] lg:gap-20">
               <div>
                 <FadeUp>
-                  <p className="eyebrow text-grey">What is {offer.name}?</p>
+                  <p className="eyebrow text-grey">
+                    {t("whatIs", { name: offer.name })}
+                  </p>
                 </FadeUp>
                 <FadeUp delay={0.1}>
                   <p className="mt-6 font-serif text-ink text-[clamp(1.35rem,2.4vw,1.9rem)] leading-[1.5]">
@@ -94,9 +98,9 @@ export default function OfferPage({ offer }: { offer: Offer }) {
               </div>
               <FadeUp delay={0.16}>
                 <div className="flex flex-col gap-8 border-t border-rule pt-8 lg:h-full lg:justify-center lg:border-l lg:border-t-0 lg:pl-16 lg:pt-0">
-                  <Meta label="Timeline" value={offer.cadence} />
-                  <Meta label="Booking" value={offer.booking} />
-                  <Meta label="Investment" value={offer.tiers[0].price} />
+                  <Meta label={t("timeline")} value={offer.cadence} />
+                  <Meta label={t("booking")} value={offer.booking} />
+                  <Meta label={t("investment")} value={offer.tiers[0].price} />
                 </div>
               </FadeUp>
             </div>
@@ -107,10 +111,9 @@ export default function OfferPage({ offer }: { offer: Offer }) {
         <section className="wrap py-[clamp(5rem,12vh,8rem)]">
           <div className="mx-auto max-w-5xl">
             <FadeUp>
-              <p className="eyebrow text-grey">Packages</p>
+              <p className="eyebrow text-grey">{t("packages")}</p>
               <p className="mt-4 max-w-[46ch] font-sans text-[0.95rem] leading-[1.7] text-light">
-                Three ways to begin. Every engagement is tailored — these are
-                starting points, and the right scope is agreed in conversation.
+                {t("packagesIntro")}
               </p>
             </FadeUp>
 
@@ -119,9 +122,7 @@ export default function OfferPage({ offer }: { offer: Offer }) {
                 <FadeUp key={tier.name} delay={i * 0.08}>
                   <div
                     className={`flex h-full flex-col border p-8 ${
-                      tier.featured
-                        ? "border-oxblood bg-paper"
-                        : "border-rule"
+                      tier.featured ? "border-oxblood bg-paper" : "border-rule"
                     }`}
                   >
                     <div className="flex items-baseline justify-between">
@@ -130,7 +131,7 @@ export default function OfferPage({ offer }: { offer: Offer }) {
                       </h3>
                       {tier.featured && (
                         <span className="font-sans text-[0.65rem] uppercase tracking-[0.18em] text-oxblood">
-                          Most chosen
+                          {t("mostChosen")}
                         </span>
                       )}
                     </div>
@@ -143,7 +144,7 @@ export default function OfferPage({ offer }: { offer: Offer }) {
                     <div className="mt-6 border-t border-rule pt-6">
                       {tier.builds && (
                         <p className="mb-4 font-serif italic text-[0.95rem] text-ink">
-                          Everything in {tier.builds}, plus:
+                          {t("everythingIn", { builds: tier.builds })}
                         </p>
                       )}
                       <ul className="space-y-2.5">
@@ -165,7 +166,7 @@ export default function OfferPage({ offer }: { offer: Offer }) {
                       href="#enquire"
                       className="eyebrow mt-8 inline-block text-oxblood transition-opacity duration-500 hover:opacity-60"
                     >
-                      Enquire &rarr;
+                      {t("enquireShort")}
                     </a>
                   </div>
                 </FadeUp>
@@ -174,12 +175,12 @@ export default function OfferPage({ offer }: { offer: Offer }) {
           </div>
         </section>
 
-        {/* What's inside — the same services as "What We Build" */}
+        {/* What's inside */}
         <section className="border-t border-rule py-[clamp(5rem,12vh,8rem)]">
           <div className="wrap">
             <div className="mx-auto max-w-5xl">
               <FadeUp>
-                <p className="eyebrow text-grey">What&rsquo;s inside</p>
+                <p className="eyebrow text-grey">{t("whatsInside")}</p>
               </FadeUp>
               <div className="mt-12 space-y-12">
                 {offer.includes.map((group, i) => (
@@ -210,7 +211,7 @@ export default function OfferPage({ offer }: { offer: Offer }) {
         <section className="wrap py-[clamp(5rem,12vh,8rem)]">
           <div className="mx-auto max-w-4xl">
             <FadeUp>
-              <p className="eyebrow text-grey">How it unfolds</p>
+              <p className="eyebrow text-grey">{t("howItUnfolds")}</p>
             </FadeUp>
             <div className="mt-12 divide-y divide-rule">
               {offer.process.map((phase, i) => (
@@ -236,14 +237,12 @@ export default function OfferPage({ offer }: { offer: Offer }) {
         <section className="bg-charcoal py-[clamp(3rem,7vh,4.5rem)]">
           <div className="wrap">
             <div className="flex flex-col items-center gap-6 text-center sm:flex-row sm:justify-between sm:text-left">
-              <p className="eyebrow text-white/70">
-                A glimpse into selected work
-              </p>
+              <p className="eyebrow text-white/70">{t("glimpseLabel")}</p>
               <Link
                 href="/#work"
                 className="eyebrow inline-block bg-paper px-8 py-4 text-ink transition-colors duration-500 hover:bg-white"
               >
-                View selected projects &rarr;
+                {t("viewProjects")}
               </Link>
             </div>
           </div>
@@ -255,7 +254,7 @@ export default function OfferPage({ offer }: { offer: Offer }) {
             <div className="mx-auto max-w-6xl">
               <FadeUp>
                 <h2 className="max-w-[16ch] font-serif text-ink text-[clamp(2rem,4vw,3.4rem)] leading-[1.1]">
-                  Questions worth asking.
+                  {t("faqHeading")}
                 </h2>
               </FadeUp>
               <div className="mt-16 grid gap-x-16 gap-y-14 md:grid-cols-2 lg:grid-cols-3">
@@ -284,7 +283,6 @@ export default function OfferPage({ offer }: { offer: Offer }) {
           <div className="mx-auto max-w-[1400px] px-8">
             <div className="border-2 border-oxblood p-[6px]">
               <div className="relative border border-oxblood/70 bg-white px-10 py-12 md:px-20 md:py-14">
-                {/* Wax seal */}
                 <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2">
                   <FadeUp>
                     <Image
@@ -300,14 +298,12 @@ export default function OfferPage({ offer }: { offer: Offer }) {
                 <div className="mx-auto flex max-w-[650px] flex-col items-center text-center">
                   <FadeUp delay={0.1}>
                     <h2 className="font-serif italic text-ink text-[clamp(2.1rem,3.6vw,3rem)] leading-[1.05]">
-                      Enquire about {offer.name}.
+                      {t("enquireHeading", { name: offer.name })}
                     </h2>
                   </FadeUp>
                   <FadeUp delay={0.18}>
-                    <p className="mt-4 max-w-[40ch] font-sans text-[1.05rem] leading-relaxed text-grey">
-                      Tell us a little about your business and where you&rsquo;d
-                      like to begin. We reply to every enquiry personally,
-                      within two working days.
+                    <p className="mt-4 max-w-[42ch] font-sans text-[1.05rem] leading-relaxed text-grey">
+                      {t("enquireIntro")}
                     </p>
                   </FadeUp>
                   <FadeUp delay={0.25} className="mt-8 w-full">
@@ -315,7 +311,7 @@ export default function OfferPage({ offer }: { offer: Offer }) {
                   </FadeUp>
                   <FadeUp delay={0.35}>
                     <div className="mt-10 w-full border-t border-oxblood/20 pt-6 text-center">
-                      <p className="eyebrow text-grey">London · United Kingdom</p>
+                      <p className="eyebrow text-grey">{t("location")}</p>
                     </div>
                   </FadeUp>
                 </div>
@@ -328,7 +324,7 @@ export default function OfferPage({ offer }: { offer: Offer }) {
         <section className="border-t border-rule py-[clamp(3.5rem,8vh,5rem)]">
           <div className="wrap">
             <p className="eyebrow mb-8 text-center text-grey">
-              The other engagements
+              {t("otherEngagements")}
             </p>
             <div className="mx-auto grid max-w-3xl gap-px sm:grid-cols-2">
               {others.map((o) => (

@@ -127,5 +127,41 @@
     "marketingAria": "Marketing cookies",
     "acceptAll": "Accept all",
     "save": "Save preferences"
+  },
+  "clients": {
+    "label": "Selected clients"
+  },
+  "offer": {
+    "startProject": "Start your project →",
+    "whatIs": "What is {name}?",
+    "timeline": "Timeline",
+    "booking": "Booking",
+    "investment": "Investment",
+    "packages": "Packages",
+    "packagesIntro": "Three ways to begin. Every engagement is tailored — these are starting points, and the right scope is agreed in conversation.",
+    "mostChosen": "Most chosen",
+    "everythingIn": "Everything in {builds}, plus:",
+    "enquireShort": "Enquire →",
+    "whatsInside": "What's inside",
+    "howItUnfolds": "How it unfolds",
+    "glimpseLabel": "A glimpse into selected work",
+    "viewProjects": "View selected projects →",
+    "faqHeading": "Questions worth asking.",
+    "begin": "Begin",
+    "enquireHeading": "Enquire about {name}.",
+    "enquireIntro": "Tell us a little about your business and where you'd like to begin. We reply to every enquiry personally, within two working days.",
+    "location": "London · United Kingdom",
+    "otherEngagements": "The other engagements",
+    "form": {
+      "name": "Your name",
+      "email": "Email",
+      "business": "Business & industry",
+      "timeline": "Ideal timeline",
+      "budget": "Budget (optional)",
+      "submit": "Submit enquiry →",
+      "sending": "Sending…",
+      "sent": "Thank you — we'll be in touch within two working days.",
+      "error": "Something went wrong. Please try again, or email hello@noovadata.com."
+    }
   }
 }

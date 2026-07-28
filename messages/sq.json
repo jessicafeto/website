@@ -127,5 +127,41 @@
     "marketingAria": "Cookies marketingu",
     "acceptAll": "Pranoni të gjitha",
     "save": "Ruani preferencat"
+  },
+  "clients": {
+    "label": "Klientë të përzgjedhur"
+  },
+  "offer": {
+    "startProject": "Nisni projektin tuaj →",
+    "whatIs": "Çfarë është {name}?",
+    "timeline": "Kohëzgjatja",
+    "booking": "Rezervimi",
+    "investment": "Investimi",
+    "packages": "Paketat",
+    "packagesIntro": "Tri mënyra për të nisur. Çdo angazhim është i personalizuar — këto janë pika nisjeje, dhe fusha e saktë përcaktohet së bashku në bisedë.",
+    "mostChosen": "Më e zgjedhura",
+    "everythingIn": "Gjithçka te {builds}, plus:",
+    "enquireShort": "Pyesni →",
+    "whatsInside": "Çfarë përfshihet",
+    "howItUnfolds": "Si zhvillohet",
+    "glimpseLabel": "Një vështrim te projektet e përzgjedhura",
+    "viewProjects": "Shiko projektet e përzgjedhura →",
+    "faqHeading": "Pyetjet që ia vlen t'i bëni.",
+    "begin": "Fillimi",
+    "enquireHeading": "Pyesni për {name}.",
+    "enquireIntro": "Na tregoni pak për biznesin tuaj dhe nga ku dëshironi të nisni. I përgjigjemi personalisht çdo kërkese, brenda dy ditëve të punës.",
+    "location": "Tiranë · Shqipëri",
+    "otherEngagements": "Angazhimet e tjera",
+    "form": {
+      "name": "Emri juaj",
+      "email": "Email",
+      "business": "Biznesi & industria",
+      "timeline": "Koha ideale",
+      "budget": "Buxheti (opsional)",
+      "submit": "Dërgoni kërkesën →",
+      "sending": "Duke dërguar…",
+      "sent": "Faleminderit — do t'ju kontaktojmë brenda dy ditëve të punës.",
+      "error": "Diçka shkoi keq. Ju lutemi provoni sërish, ose na shkruani në hello@noovadata.com."
+    }
   }
 }

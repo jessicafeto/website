@@ -1,11 +1,9 @@
 /**
- * The three noova engagements, presented as outcomes rather than a menu.
+ * The three noova engagements, per locale.
  *
- * This is the single source of truth for the offer pages (/branding,
- * /websites, /marketing). The service names here mirror the "What We Build"
- * section (see messages/en.json → services), so the homepage and the offer
- * pages describe the same offering in the same words.
- * To change a price, a headline, or what's included, edit it here — nothing
+ * English content carries UK (GBP) pricing; Albanian carries Albanian-market
+ * (EUR) pricing. Service names in "What's inside" mirror the homepage. Look up
+ * an offer with getOffer(locale, slug). Change prices or copy here — nothing
  * else needs to change.
  */
 
@@ -13,56 +11,39 @@ export type Phase = { n: string; title: string; body: string };
 export type Group = { label: string; items: string[] };
 export type Faq = { q: string; a: string };
 
-/**
- * A pricing tier. Prices are all "from" figures — change them here and they
- * update on the page automatically. `featured` highlights the recommended one.
- */
 export type Tier = {
   name: string;
   price: string;
-  /** One line on who it's for. */
   summary: string;
-  /**
-   * The name of the tier this one builds on. When set, the page shows
-   * "Everything in {builds}, plus" above the scope, so higher tiers stay
-   * complete without repeating every lower-tier line.
-   */
   builds?: string;
-  /** Everything this package includes (for a `builds` tier, the additions). */
   scope: string[];
   featured?: boolean;
 };
 
 export type Offer = {
   slug: "branding" | "websites" | "marketing";
-  /** Small label above the title. */
   eyebrow: string;
-  /** The pillar name, as used in navigation and cross-links. */
   name: string;
-  /** Full-bleed hero image (public path) and its alt text. */
   heroImage: string;
   heroAlt: string;
-  /** The outcome headline — serif italic, the promise, not the deliverable. */
   headline: string;
-  /** The one-paragraph offer summary. */
   offer: string;
-  /** Duration / cadence, shown in the hero and the meta row. */
   cadence: string;
-  /** Availability / lead-time note for the meta row. Edit to taste. */
   booking: string;
-  /** The transformation — before → after, in noova's voice. */
   shift: { heading: string; body: string };
-  /** Three packages — Essential, Signature (featured), Bespoke. */
   tiers: Tier[];
-  /** What's inside — mirrors the "What We Build" categories for this pillar. */
   includes: Group[];
-  /** How the work unfolds. */
   process: Phase[];
-  /** Frequently asked questions for this engagement. */
   faqs: Faq[];
 };
 
-export const OFFERS: Record<Offer["slug"], Offer> = {
+export const OFFER_ORDER: Offer["slug"][] = [
+  "branding",
+  "websites",
+  "marketing",
+];
+
+const OFFERS_EN: Record<Offer["slug"], Offer> = {
   branding: {
     slug: "branding",
     eyebrow: "Engagement 01",
@@ -474,9 +455,424 @@ export const OFFERS: Record<Offer["slug"], Offer> = {
   },
 };
 
-/** Ordered list, for the home-page block and cross-links. */
-export const OFFER_ORDER: Offer["slug"][] = [
-  "branding",
-  "websites",
-  "marketing",
-];
+const OFFERS_SQ: Record<Offer["slug"], Offer> = {
+  branding: {
+    slug: "branding",
+    eyebrow: "Angazhimi 01",
+    name: "Branding",
+    heroImage: "/hero/branding.jpg",
+    heroAlt:
+      "Udhëzues brendi, mostra letrash dhe shembuj tipografie të shtrira mbi një tavolinë studioje.",
+    headline: "Një markë që më në fund përputhet me biznesin që qëndron pas saj.",
+    offer:
+      "Një ndërtim i plotë brendi gjashtë deri në tetë javë — strategji e plotë, drejtim kreativ dhe një sistem identiteti vizual — i dizajnuar për ta lançuar markën tuaj me qartësi, besim dhe një prani luksi.",
+    cadence: "6–8 javë",
+    booking: "Disponueshmëri e kufizuar mujore",
+    shift: {
+      heading: "Ndryshimi",
+      body: "Bizneset me cilësi të vërtetë rrallë janë të prishura — janë të shpërndara, me punën e tyre më të mirë të ndarë nëpër pjesë që kurrë nuk u menduan të funksiononin bashkë. Ne nuk zbukurojmë; ne sqarojmë. Nisim nga thelbi — çfarë është biznesi juaj, çfarë beson dhe pse ka rëndësi — dhe lëmë çdo gjë të dukshme të rritet prej andej. Largoheni me një sistem të vetëm koherent në vend të pjesëve të shkëputura, dhe me besimin për të mos kërkuar më falje për pamjen tuaj.",
+    },
+    tiers: [
+      {
+        name: "Essential",
+        price: "Nga €700",
+        summary: "Një bazë e qartë dhe e sigurt për një biznes që po gjen veten.",
+        scope: [
+          "Strategji brendi — misioni, vlerat, audienca",
+          "Pozicionim",
+          "Identitet vizual — logoja parësore & sistemi bazë",
+          "Udhëzues brendi (PDF i shkurtër)",
+          "Të gjitha skedarët e logos & aseteve",
+        ],
+      },
+      {
+        name: "Signature",
+        price: "Nga €1,400",
+        summary: "Ndërtimi i plotë i brendit — nga strategjia te identiteti.",
+        builds: "Essential",
+        scope: [
+          "Emërtim & mesazhe",
+          "Ton zëri",
+          "Drejtim kreativ",
+          "Identitet vizual i plotë — grup logosh, ngjyra & tipografi",
+          "Udhëzues brendi gjithëpërfshirës",
+          "Kit brendi për rrjete sociale",
+          "Plan lançimi & shpërndarjeje",
+        ],
+        featured: true,
+      },
+      {
+        name: "Bespoke",
+        price: "Nga €2,800",
+        summary: "Një markë e paharrueshme, e krijuar pa kufij.",
+        builds: "Signature",
+        scope: [
+          "Fotografi & drejtim artistik",
+          "Ilustrim i personalizuar ose identitet në lëvizje",
+          "Paketim ose materiale të shtypura",
+          "Libër brendi i zgjeruar, i shtypur",
+          "Mbështetje brendi pas lançimit",
+        ],
+      },
+    ],
+    includes: [
+      {
+        label: "Brand & Identity",
+        items: [
+          "Strategji brendi",
+          "Pozicionim",
+          "Emërtim & mesazhe",
+          "Identitet vizual",
+          "Udhëzues brendi",
+          "Ton zëri",
+          "Drejtim kreativ",
+        ],
+      },
+    ],
+    process: [
+      {
+        n: "01",
+        title: "Zhytja",
+        body: "Nisim nën sipërfaqe — duke kuptuar biznesin, audiencën e tij dhe të vërtetën mbi të cilën është ndërtuar. Strategji para çdo gjëje të dukshme.",
+      },
+      {
+        n: "02",
+        title: "Strategjia",
+        body: "Vendoset themeli: pozicionimi, mesazhet dhe zëri — mendimi nga i cili rrjedh çdo vendim i dukshëm.",
+      },
+      {
+        n: "03",
+        title: "Drejtimi kreativ",
+        body: "Bota merr formë. Drejtim artistik dhe gjuhë vizuale, të eksploruara e të rëna dakord para se të finalizohet çdo aset.",
+      },
+      {
+        n: "04",
+        title: "Sistemi i identitetit",
+        body: "Sistemi i plotë — grup logosh, tipografi, ngjyra dhe udhëzuesit që e mbajnë atë koherent kudo që shfaqet.",
+      },
+      {
+        n: "05",
+        title: "Lançimi",
+        body: "Një plan i menduar shpërndarjeje dhe një dorëzim i plotë, që marka të mbërrijë me qëllim e jo me zhurmë.",
+      },
+    ],
+    faqs: [
+      {
+        q: "A mund t'i personalizoj ose kombinoj paketat?",
+        a: "Po. Nivelet janë pika nisjeje — fushën e saktë e formësojmë së bashku në bisedën e parë, që të paguani vetëm për atë që i duhet vërtet markës suaj.",
+      },
+      {
+        q: "Si funksionon pagesa?",
+        a: "Një depozitë prej 50% e siguron datën e nisjes; pjesa tjetër paguhet para lançimit. Për projekte më të mëdha mund ta ndajmë më tej.",
+      },
+      {
+        q: "Sa zgjat?",
+        a: "Një ndërtim i plotë Signature zakonisht zgjat gjashtë deri në tetë javë, në varësi të fushës dhe shpejtësisë së reagimeve.",
+      },
+      {
+        q: "Çfarë ju nevojitet nga unë për të nisur?",
+        a: "Një prezantim i biznesit tuaj, qëllimet tuaja dhe çdo material ekzistues. Ne ju udhëheqim në çdo hap.",
+      },
+      {
+        q: "Çfarë ndodh pas lançimit?",
+        a: "Merrni të gjitha skedarët dhe udhëzuesit e brendit, plus një udhëzim. Bespoke shton mbështetje pas lançimit.",
+      },
+    ],
+  },
+
+  websites: {
+    slug: "websites",
+    eyebrow: "Angazhimi 02",
+    name: "Websites",
+    heroImage: "/hero/websites.jpg",
+    heroAlt:
+      "Një mur me faqe editoriale dhe raste studimore të fiksuara në studion e noova.",
+    headline: "Një uebsajt po aq i menduar sa marka pas tij.",
+    offer:
+      "Një ndërtim dixhital i rafinuar katër deri në tetë javë që e shndërron markën tuaj në një uebsajt elegant e të qetë — i punuar me dizajn të qëllimshëm, strukturë strategjike dhe një përvojë përdoruesi të klasit botëror.",
+    cadence: "4–8 javë",
+    booking: "Disponueshmëri e kufizuar mujore",
+    shift: {
+      heading: "Ndryshimi",
+      body: "Shumica e uebsajteve në heshtje e nënvlerësojnë biznesin pas tyre — të ngarkuar aty ku duhet të jenë të qartë, dekorativë aty ku duhet të jenë strukturorë. Ne dizajnojmë të kundërtën: një përvojë të qetë e editoriale që i udhëheq njerëzit e duhur nëpër një histori të vetme e të qëllimshme. E shpejtë, e menduar dhe pa dyshim e juaja — një shtëpi që më në fund e mban markën në vend që ta zvogëlojë.",
+    },
+    tiers: [
+      {
+        name: "Essential",
+        price: "Nga €500",
+        summary: "Një sajt i rafinuar e kompakt që lexohet bukur.",
+        scope: [
+          "Strategji uebsajti",
+          "Dizajn uebsajti — editorial",
+          "Faqe uljeje — deri në 3 faqe",
+          "Baza SEO",
+          "Lançim + 1 javë mbështetje",
+        ],
+      },
+      {
+        name: "Signature",
+        price: "Nga €1,100",
+        summary: "Uebsajti i plotë editorial, i ndërtuar për të performuar.",
+        builds: "Essential",
+        scope: [
+          "UX & arkitekturë informacioni",
+          "Zhvillim në Webflow",
+          "Deri në ~6 faqe të personalizuara",
+          "CMS — blog / ditar",
+          "Integrime & analitikë",
+          "Optimizim i performancës",
+          "2 javë mbështetje + udhëzim",
+        ],
+        featured: true,
+      },
+      {
+        name: "Bespoke",
+        price: "Nga €2,000",
+        summary: "Një ndërtim më i madh e i personalizuar, me hapësirë për t'u rritur.",
+        builds: "Signature",
+        scope: [
+          "Sistem e-commerce ose rezervimesh",
+          "Ndërveprime & lëvizje të avancuara",
+          "Koleksione CMS të personalizuara",
+          "Gati për shumë gjuhë",
+          "Integrime CRM & automatizim marketingu",
+          "Kontratë mirëmbajtjeje opsionale",
+        ],
+      },
+    ],
+    includes: [
+      {
+        label: "Websites",
+        items: [
+          "Strategji uebsajti",
+          "UX & arkitekturë informacioni",
+          "Dizajn uebsajti",
+          "Zhvillim në Webflow",
+          "Faqe uljeje",
+          "Baza SEO",
+          "Optimizim i performancës",
+        ],
+      },
+    ],
+    process: [
+      {
+        n: "01",
+        title: "Zbulimi",
+        body: "Së pari kuptohen qëllimet, audienca dhe përmbajtja. Biem dakord çfarë duhet të arrijë uebsajti para se të dizajnojmë një ekran të vetëm.",
+      },
+      {
+        n: "02",
+        title: "Strategji & strukturë",
+        body: "Harta e faqes, arkitektura e informacionit dhe hierarkia e përmbajtjes — skeleti i qetë që e bën gjithë përvojën të duket pa mund.",
+      },
+      {
+        n: "03",
+        title: "Dizajni",
+        body: "Dizajn faqesh editorial, në linjë me markën. Një ide udhëheq çdo ekran, kurrë disa që konkurrojnë për syrin.",
+      },
+      {
+        n: "04",
+        title: "Ndërtimi",
+        body: "Zhvillim, integrime, baza SEO dhe performancë — të projektuara për të qenë të shpejta, të aksesueshme dhe të lehta për t'u përdorur.",
+      },
+      {
+        n: "05",
+        title: "Lançim & mbështetje",
+        body: "Testim i kujdesshëm, një lançim i qetë dhe kujdes pas tij — plus një udhëzim që të mos mbeteni kurrë në pikëpyetje se si funksionon.",
+      },
+    ],
+    faqs: [
+      {
+        q: "Në cilën platformë ndërtoni?",
+        a: "Kryesisht Webflow — i shpejtë, i besueshëm dhe i lehtë për ta redaktuar. Platforma të tjera me kërkesë.",
+      },
+      {
+        q: "A mund ta përditësoj vetë sajtin më pas?",
+        a: "Po. Signature e lart përfshin një CMS dhe një udhëzim, që të shtoni postime e të redaktoni përmbajtjen pa një programues.",
+      },
+      {
+        q: "Si funksionon pagesa?",
+        a: "Një depozitë prej 50% e rezervon vendin tuaj; pjesa tjetër paguhet para lançimit.",
+      },
+      {
+        q: "Sa zgjat një uebsajt?",
+        a: "Nga katër deri në tetë javë, në varësi të nivelit dhe sa gati është përmbajtja juaj.",
+      },
+      {
+        q: "A ofroni mbështetje të vazhdueshme?",
+        a: "Përfshihet një deri në dy javë kujdes pas lançimit, dhe ofrohet një kontratë mirëmbajtjeje opsionale.",
+      },
+    ],
+  },
+
+  marketing: {
+    slug: "marketing",
+    eyebrow: "Angazhimi 03",
+    name: "Marketing & Growth",
+    heroImage: "/hero/marketing.jpg",
+    heroAlt:
+      "Pamje nga lart e faqeve të ditarit noova duke u shtruar e redaktuar mbi një tavolinë.",
+    headline: "Një prani te e cila ia vlen të kthehesh.",
+    offer:
+      "Një partneritet i vazhdueshëm marketingu që e kthen markën tuaj në një botim të gjallë — duke bashkuar përmbajtjen editoriale, fushatat e menduara dhe sistemet inteligjente në një prani të vetme koherente, të projektuar për të arritur njerëzit e duhur, për të ndërtuar besim afatgjatë dhe për t'u rritur me qëllim e jo me zhurmë.",
+    cadence: "Partneritet i vazhdueshëm",
+    booking: "Nisje mujore e vazhdueshme",
+    shift: {
+      heading: "Ndryshimi",
+      body: "Shumica e marketingut bëhet për të mbushur një kalendar — më i zhurmshëm, më i shpejtë, i harruar deri në mëngjes. Ne ndërtojmë të kundërtën: një trup pune te i cili ia vlen të kthehesh. Çdo kanal bëhet një botim i të njëjtit publikim, që mban një zë e një nivel kujdesi. Prani mbi shpeshtësi, kuptim mbi vëllim — një markë që flet kur ka diçka që ia vlen të thuhet, dhe rritet për shkak të kësaj.",
+    },
+    tiers: [
+      {
+        name: "Essential",
+        price: "Nga €300 / muaj",
+        summary: "Një prani e qëndrueshme e e menduar në një kanal.",
+        scope: [
+          "Strategji përmbajtjeje",
+          "Strategji për rrjete sociale — një kanal",
+          "Kalendarë përmbajtjeje",
+          "Shkrim tekstesh",
+          "8–10 postime / muaj",
+          "Analitikë marketingu — raport mujor",
+        ],
+      },
+      {
+        name: "Signature",
+        price: "Nga €600 / muaj",
+        summary: "Publikimi, plus fushata që lënë gjurmë.",
+        builds: "Essential",
+        scope: [
+          "Planifikim editorial",
+          "Drejtim fotografie",
+          "Koncepte fushatash & planifikim lançimi",
+          "Marketing me email",
+          "12–16 postime / muaj + storie — dy kanale",
+          "Panel GA4 & Looker Studio",
+        ],
+        featured: true,
+      },
+      {
+        name: "Bespoke",
+        price: "Nga €1,200 / muaj",
+        summary: "Një partneritet i plotë rritjeje me sisteme pas tij.",
+        builds: "Signature",
+        scope: [
+          "Prodhim përmbajtjeje me ndihmën e AI",
+          "Partneritete me influencues & bashkëpunime me krijues",
+          "Automatizim marketingu & zbatim CRM",
+          "Sisteme për gjenerimin e kontakteve",
+          "Optimizim konvertimesh",
+          "Plane rritjeje",
+        ],
+      },
+    ],
+    includes: [
+      {
+        label: "Content",
+        items: [
+          "Strategji përmbajtjeje",
+          "Planifikim editorial",
+          "Strategji për rrjete sociale",
+          "Kalendarë përmbajtjeje",
+          "Shkrim tekstesh",
+          "Drejtim fotografie",
+          "Prodhim përmbajtjeje me ndihmën e AI",
+        ],
+      },
+      {
+        label: "Campaigns",
+        items: [
+          "Strategji marketingu",
+          "Planifikim lançimi",
+          "Koncepte fushatash",
+          "Partneritete me influencues",
+          "Bashkëpunime me krijues",
+          "Aktivizime brendi",
+          "Ndërtim komuniteti",
+        ],
+      },
+      {
+        label: "Growth",
+        items: [
+          "Analitikë marketingu",
+          "GA4 & Looker Studio",
+          "Strategji CRM",
+          "Marketing me email",
+          "Optimizim konvertimesh",
+          "Panele raportimi",
+          "Plane rritjeje",
+        ],
+      },
+      {
+        label: "AI & Systems",
+        items: [
+          "Rrjedha pune me AI",
+          "Automatizim marketingu",
+          "Zbatim CRM",
+          "Sisteme biznesi",
+          "Rrugëtimi i klientit",
+          "Sisteme për gjenerimin e kontakteve",
+          "Optimizim procesesh",
+        ],
+      },
+    ],
+    process: [
+      {
+        n: "01",
+        title: "Themeli",
+        body: "Vlerësojmë ku ndodheni — zëri, kanalet dhe matja — dhe përcaktojmë temat te të cilat puna do të kthehet vazhdimisht.",
+      },
+      {
+        n: "02",
+        title: "Publikimi",
+        body: "Një strategji përmbajtjeje dhe kalendar editorial që noova mund ta mbajë për vite, jo javë — i njëjti zë në çdo kanal.",
+      },
+      {
+        n: "03",
+        title: "Fushatat",
+        body: "Lançime, koncepte dhe bashkëpunime të menduara — momente qëllimi në vend të një rrjedhe të vazhdueshme e ankthioze.",
+      },
+      {
+        n: "04",
+        title: "Sistemet",
+        body: "Shtresa inteligjente nën gjithçka — automatizim, CRM dhe analitikë që e kthejnë vëmendjen në marrëdhënie.",
+      },
+      {
+        n: "05",
+        title: "Ritmi",
+        body: "Një partneritet i vazhdueshëm: botim, rishikim dhe përsosje — duke rritur praninë dhe besimin me kalimin e kohës.",
+      },
+    ],
+    faqs: [
+      {
+        q: "A ka një angazhim minimal?",
+        a: "Kërkojmë tre muaj fillestarë, që puna të ketë hapësirë të shtohet e të mos gjykohet nga një postim i vetëm.",
+      },
+      {
+        q: "Si funksionon faturimi?",
+        a: "Një tarifë e thjeshtë mujore, e faturuar në fillim të çdo muaji. Mund të lëvizni lart ose poshtë një nivel me një muaj paralajmërim.",
+      },
+      {
+        q: "A përfshihet buxheti i reklamave?",
+        a: "Jo — buxheti i medias është i ndarë dhe paguhet drejtpërdrejt te platformat. Ne menaxhojmë fushatat; ju mbani kontrollin e shpenzimit.",
+      },
+      {
+        q: "Cilat kanale mbuloni?",
+        a: "Ato që i përshtaten audiencës suaj — më së shpeshti Instagram dhe LinkedIn, plus email dhe ditari juaj. Ne fokusohemi, në vend që të shpërndahemi.",
+      },
+      {
+        q: "Çfarë ju nevojitet nga unë?",
+        a: "Qasje te kanalet tuaja dhe një takim i shkurtër mujor. Ne kujdesemi për strategjinë, krijimin dhe raportimin.",
+      },
+    ],
+  },
+};
+
+const BY_LOCALE: Record<string, Record<Offer["slug"], Offer>> = {
+  en: OFFERS_EN,
+  sq: OFFERS_SQ,
+};
+
+/** Get an engagement's content for the active locale (falls back to English). */
+export function getOffer(locale: string, slug: Offer["slug"]): Offer {
+  return (BY_LOCALE[locale] ?? OFFERS_EN)[slug];
+}

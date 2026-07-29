@@ -10,6 +10,9 @@ import { FadeUp } from "./home/Motion";
  * (set NEXT_PUBLIC_MAKE_WEBHOOK in the environment), then shows a tailored
  * result. Make routes the lead into MailerLite and flags hot leads.
  */
+// Every submission is emailed to noova via Formspree (no other setup needed).
+const FORMSPREE = "https://formspree.io/f/xkolzzyy";
+// Optional: also POST to a Make.com webhook for automation, once you set it up.
 const WEBHOOK = process.env.NEXT_PUBLIC_MAKE_WEBHOOK ?? "";
 
 type Opt = { t: string; v: number };
@@ -143,20 +146,29 @@ export default function BrandAudit() {
   async function submit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
     setSending(true);
+    const answerSummary = QUESTIONS.map(
+      (q, i) => `${q.q} → ${q.a.find((o) => o.v === answers[i])?.t ?? ""}`,
+    ).join("\n");
+    const payload = { email, score, tier: tier.name, answers: answerSummary };
     try {
+      // Always email the lead to noova via Formspree.
+      await fetch(FORMSPREE, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify({
+          _subject: `Brand Audit lead — ${tier.name} (${score}/20)`,
+          ...payload,
+        }),
+      });
+      // Optionally also send to a Make webhook for full automation.
       if (WEBHOOK) {
         await fetch(WEBHOOK, {
           method: "POST",
           headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({
-            email,
-            score,
-            tier: tier.name,
-            answers: QUESTIONS.map((q, i) => ({
-              q: q.q,
-              a: q.a.find((o) => o.v === answers[i])?.t ?? "",
-            })),
-          }),
+          body: JSON.stringify(payload),
         });
       }
     } catch {

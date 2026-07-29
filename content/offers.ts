@@ -21,7 +21,7 @@ export type Tier = {
 };
 
 export type Offer = {
-  slug: "branding" | "websites" | "marketing";
+  slug: "branding" | "websites" | "marketing" | "automation";
   eyebrow: string;
   name: string;
   heroImage: string;
@@ -41,6 +41,7 @@ export const OFFER_ORDER: Offer["slug"][] = [
   "branding",
   "websites",
   "marketing",
+  "automation",
 ];
 
 const OFFERS_EN: Record<Offer["slug"], Offer> = {
@@ -453,6 +454,127 @@ const OFFERS_EN: Record<Offer["slug"], Offer> = {
       },
     ],
   },
+
+  automation: {
+    slug: "automation",
+    eyebrow: "Engagement 04",
+    name: "AI & Automation",
+    heroImage: "/hero/automation.jpg",
+    heroAlt:
+      "An analytics dashboard on a tablet beside brand materials on a dark studio surface.",
+    headline: "The intelligent systems behind the brand.",
+    offer:
+      "A build of the automations, funnels and AI workflows that let an ambitious business grow without adding headcount — lead generation, CRM, email and operations, connected into one quiet, reliable system.",
+    cadence: "3–6 weeks",
+    booking: "Limited monthly availability",
+    shift: {
+      heading: "The shift",
+      body: "Growth usually means more work — more manual follow-up, more spreadsheets, more things slipping through. It doesn't have to. The right systems do the repetitive work in the background: capturing leads, nurturing them, updating your CRM, and freeing you for the work only you can do. Not more tools bolted on — one connected system, built around how your business actually runs.",
+    },
+    tiers: [
+      {
+        name: "Essential",
+        price: "From £900",
+        summary: "One automation or lead funnel, built end to end.",
+        scope: [
+          "A single automation or lead-gen funnel",
+          "Chat / DM capture (e.g. ManyChat)",
+          "Connected to your email tool",
+          "Tested and documented",
+        ],
+      },
+      {
+        name: "Signature",
+        price: "From £1,800",
+        summary: "A connected growth system.",
+        builds: "Essential",
+        scope: [
+          "Lead-gen funnel + landing page or quiz",
+          "CRM setup & tagging",
+          "Email automation sequences",
+          "Analytics & lead notifications",
+          "A simple reporting dashboard",
+        ],
+        featured: true,
+      },
+      {
+        name: "Bespoke",
+        price: "From £3,500",
+        summary: "Full operations & AI, automated.",
+        builds: "Signature",
+        scope: [
+          "Multi-step business automations",
+          "AI content & operations workflows",
+          "CRM implementation",
+          "Integrations across your tools",
+          "Ongoing optimisation",
+        ],
+      },
+    ],
+    includes: [
+      {
+        label: "AI & Systems",
+        items: [
+          "AI workflows",
+          "Marketing automation",
+          "CRM implementation",
+          "Business systems",
+          "Customer journeys",
+          "Lead generation systems",
+          "Process optimisation",
+        ],
+      },
+    ],
+    process: [
+      {
+        n: "01",
+        title: "Map",
+        body: "We map how your business actually runs — the leads, the follow-ups, the handoffs — and find where time leaks.",
+      },
+      {
+        n: "02",
+        title: "Design",
+        body: "We design the system — the funnel, the flows, the data, the tools — on paper before anything is built.",
+      },
+      {
+        n: "03",
+        title: "Build",
+        body: "We build and connect it — automations, CRM, email, AI workflows — as one reliable system.",
+      },
+      {
+        n: "04",
+        title: "Test",
+        body: "We test every path, document it in plain language, and hand it over so you understand exactly how it runs.",
+      },
+      {
+        n: "05",
+        title: "Optimise",
+        body: "We watch the numbers and refine — tightening what converts, removing what doesn't.",
+      },
+    ],
+    faqs: [
+      {
+        q: "Which tools do you build with?",
+        a: "Whatever fits — Make, Zapier, ManyChat, plus your CRM and email tool. We work with what you have, or recommend the simplest stack.",
+      },
+      {
+        q: "Do I need technical knowledge?",
+        a: "No. We build it, document it in plain language, and walk you through it. You run it; we're here if it needs to change.",
+      },
+      {
+        q: "How does pricing work?",
+        a: "Simple systems are a fixed project fee; larger, evolving ones can run as a monthly partnership. We agree the scope up front.",
+      },
+      {
+        q: "Will it work with my website and brand?",
+        a: "Yes — that's the point. We build the systems to fit the brand, not the other way around, so everything stays coherent.",
+      },
+      {
+        q: "Is my data safe?",
+        a: "We use reputable, secure platforms and give you full ownership and access. Nothing is locked to us.",
+      },
+    ],
+  },
 };
 
 const OFFERS_SQ: Record<Offer["slug"], Offer> = {
@@ -862,6 +984,127 @@ const OFFERS_SQ: Record<Offer["slug"], Offer> = {
       {
         q: "Çfarë ju nevojitet nga unë?",
         a: "Qasje te kanalet tuaja dhe një takim i shkurtër mujor. Ne kujdesemi për strategjinë, krijimin dhe raportimin.",
+      },
+    ],
+  },
+
+  automation: {
+    slug: "automation",
+    eyebrow: "Angazhimi 04",
+    name: "AI & Automation",
+    heroImage: "/hero/automation.jpg",
+    heroAlt:
+      "Një panel analitik në një tablet pranë materialeve të markës mbi një sipërfaqe të errët studioje.",
+    headline: "Sistemet inteligjente pas markës.",
+    offer:
+      "Një ndërtim i automatizimeve, funneleve dhe rrjedhave të punës me AI që i lejojnë një biznesi ambicioz të rritet pa shtuar staf — gjenerim kontaktesh, CRM, email dhe operacione, të lidhura në një sistem të vetëm, të qetë e të besueshëm.",
+    cadence: "3–6 javë",
+    booking: "Disponueshmëri e kufizuar mujore",
+    shift: {
+      heading: "Ndryshimi",
+      body: "Rritja zakonisht do të thotë më shumë punë — më shumë ndjekje manuale, më shumë tabela, më shumë gjëra që rrëshqasin. Nuk ka pse të jetë kështu. Sistemet e duhura e bëjnë punën e përsëritur në sfond: kapin kontaktet, i ushqejnë ato, përditësojnë CRM-në tuaj, dhe ju lirojnë për punën që vetëm ju mund ta bëni. Jo më shumë vegla të shtuara — një sistem i vetëm i lidhur, i ndërtuar rreth mënyrës si funksionon vërtet biznesi juaj.",
+    },
+    tiers: [
+      {
+        name: "Essential",
+        price: "Nga €400",
+        summary: "Një automatizim ose funnel kontaktesh, i ndërtuar plotësisht.",
+        scope: [
+          "Një automatizim ose funnel gjenerimi kontaktesh",
+          "Kapje me chat / DM (p.sh. ManyChat)",
+          "I lidhur me mjetin tuaj të email-it",
+          "I testuar dhe i dokumentuar",
+        ],
+      },
+      {
+        name: "Signature",
+        price: "Nga €800",
+        summary: "Një sistem rritjeje i lidhur.",
+        builds: "Essential",
+        scope: [
+          "Funnel kontaktesh + faqe uljeje ose kuiz",
+          "Konfigurim & etiketim CRM",
+          "Sekuenca automatizimi me email",
+          "Analitikë & njoftime për kontakte",
+          "Një panel i thjeshtë raportimi",
+        ],
+        featured: true,
+      },
+      {
+        name: "Bespoke",
+        price: "Nga €1,600",
+        summary: "Operacione & AI, plotësisht të automatizuara.",
+        builds: "Signature",
+        scope: [
+          "Automatizime biznesi me shumë hapa",
+          "Rrjedha pune me AI për përmbajtje & operacione",
+          "Zbatim CRM",
+          "Integrime nëpër mjetet tuaja",
+          "Optimizim i vazhdueshëm",
+        ],
+      },
+    ],
+    includes: [
+      {
+        label: "AI & Systems",
+        items: [
+          "Rrjedha pune me AI",
+          "Automatizim marketingu",
+          "Zbatim CRM",
+          "Sisteme biznesi",
+          "Rrugëtimi i klientit",
+          "Sisteme për gjenerimin e kontakteve",
+          "Optimizim procesesh",
+        ],
+      },
+    ],
+    process: [
+      {
+        n: "01",
+        title: "Harta",
+        body: "Hartojmë si funksionon vërtet biznesi juaj — kontaktet, ndjekjet, dorëzimet — dhe gjejmë ku humbet koha.",
+      },
+      {
+        n: "02",
+        title: "Dizajni",
+        body: "Dizajnojmë sistemin — funnelin, rrjedhat, të dhënat, mjetet — në letër para se të ndërtohet çdo gjë.",
+      },
+      {
+        n: "03",
+        title: "Ndërtimi",
+        body: "E ndërtojmë dhe e lidhim — automatizime, CRM, email, rrjedha me AI — si një sistem i vetëm i besueshëm.",
+      },
+      {
+        n: "04",
+        title: "Testimi",
+        body: "Testojmë çdo rrugë, e dokumentojmë me gjuhë të thjeshtë dhe ua dorëzojmë, që ta kuptoni saktësisht si funksionon.",
+      },
+      {
+        n: "05",
+        title: "Optimizimi",
+        body: "Ndjekim numrat dhe përsosim — shtrëngojmë atë që konverton, heqim atë që s'funksionon.",
+      },
+    ],
+    faqs: [
+      {
+        q: "Me cilat mjete ndërtoni?",
+        a: "Me ato që përshtaten — Make, Zapier, ManyChat, plus CRM-në dhe mjetin tuaj të email-it. Punojmë me atë që keni, ose rekomandojmë grupin më të thjeshtë.",
+      },
+      {
+        q: "A më duhet njohuri teknike?",
+        a: "Jo. Ne e ndërtojmë, e dokumentojmë me gjuhë të thjeshtë dhe ju udhëzojmë. Ju e drejtoni; ne jemi këtu nëse duhet ndryshuar.",
+      },
+      {
+        q: "Si funksionon çmimi?",
+        a: "Sistemet e thjeshta kanë një tarifë fikse projekti; ato më të mëdha e në zhvillim mund të shkojnë si partneritet mujor. E përcaktojmë fushën që në fillim.",
+      },
+      {
+        q: "A do të punojë me uebsajtin dhe markën time?",
+        a: "Po — ky është qëllimi. I ndërtojmë sistemet t'i përshtaten markës, jo e kundërta, që gjithçka të mbetet koherente.",
+      },
+      {
+        q: "A janë të dhënat e mia të sigurta?",
+        a: "Përdorim platforma të besueshme e të sigurta dhe ju japim pronësi e qasje të plotë. Asgjë nuk mbetet e lidhur me ne.",
       },
     ],
   },

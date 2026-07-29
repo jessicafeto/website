@@ -10,6 +10,7 @@ const PATHS = [
   "/branding",
   "/websites",
   "/marketing",
+  "/automation",
   "/story",
   "/privacy",
   "/cookies",

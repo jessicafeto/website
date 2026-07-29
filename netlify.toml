@@ -3,12 +3,17 @@
 # middleware automatically — no extra adapter needed.
 
 [build]
-  command = "next build"
+  # tinacms build generates the /admin editor and the Tina client, then the
+  # Next.js build runs. Requires NEXT_PUBLIC_TINA_CLIENT_ID and TINA_TOKEN to
+  # be set as Netlify environment variables.
+  command = "tinacms build && next build"
   publish = ".next"
 
 [build.environment]
   # Next.js 15 requires Node >= 18.18; pin to an LTS for reproducible builds.
   NODE_VERSION = "20"
+  # Tina's admin bundle needs headroom during the build.
+  NODE_OPTIONS = "--max-old-space-size=4096"
 
 [[plugins]]
   package = "@netlify/plugin-nextjs"

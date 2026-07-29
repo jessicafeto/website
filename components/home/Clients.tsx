@@ -9,7 +9,7 @@ import { FadeUp } from "./Motion";
  * client, edit this list (they're set as text, not logo images).
  */
 const CLIENTS = [
-  "Intellimation.ai",
+  "intellimation.ai",
   "Seereen",
   "Opa Taverne",
   "355",

@@ -8,7 +8,8 @@ import { FadeUp } from "./Motion";
 const SERVICES = [
   { title: "BRAND", image: "/img/brand.png", descKey: "brandDesc", href: "/branding" },
   { title: "WEBSITES", image: "/img/website.png", descKey: "websitesDesc", href: "/websites" },
-  { title: "GROWTH", image: "/img/growth.png", descKey: "growthDesc", href: "/marketing" },
+  { title: "MARKETING", image: "/img/marketing.png", descKey: "growthDesc", href: "/marketing" },
+  { title: "AUTOMATION", image: "/img/automation.png", descKey: "automationDesc", href: "/automation" },
 ] as const;
 
 export default function Belief() {
@@ -40,7 +41,7 @@ export default function Belief() {
 
         {/* Cards */}
         <FadeUp delay={0.35}>
-          <div className="mt-20 grid gap-12 md:grid-cols-3">
+          <div className="mt-20 grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
             {SERVICES.map((item) => (
               <Link key={item.title} href={item.href} className="group block">
                 <div className="overflow-hidden border border-rule">

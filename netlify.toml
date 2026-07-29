@@ -5,8 +5,10 @@
 [build]
   # tinacms build generates the /admin editor and the Tina client, then the
   # Next.js build runs. Requires NEXT_PUBLIC_TINA_CLIENT_ID and TINA_TOKEN to
-  # be set as Netlify environment variables.
-  command = "tinacms build && next build"
+  # be set as Netlify environment variables. --skip-cloud-checks lets the site
+  # deploy before Tina Cloud has indexed the branch; indexing is triggered the
+  # first time /admin is opened and authenticated on the live site.
+  command = "tinacms build --skip-cloud-checks && next build"
   publish = ".next"
 
 [build.environment]

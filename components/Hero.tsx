@@ -42,6 +42,10 @@ export default function Hero() {
             ·
           </span>
           {t("service3")}
+          <span className="sep" aria-hidden>
+            ·
+          </span>
+          {t("service4")}
         </p>
         <p className="hero-tag">{t("tagline")}</p>
       </div>

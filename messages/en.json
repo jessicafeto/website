@@ -14,6 +14,7 @@
     "service1": "Branding",
     "service2": "Websites",
     "service3": "Marketing",
+    "service4": "Automation",
     "tagline": "For businesses that have outgrown their own image.",
     "scroll": "Scroll"
   },
@@ -23,7 +24,7 @@
     "intro": "noova is a creative studio combining strategy, branding, websites, marketing and intelligent systems into one coherent practice. Every decision is connected. Every touchpoint is designed together. Nothing feels bolted on.",
     "brandDesc": "Strategy, identity and creative direction that give businesses a clear foundation.",
     "websitesDesc": "Editorial websites designed with clarity, precision and performance in mind.",
-    "growthDesc": "Marketing, content and campaigns that help ambitious businesses grow.",
+    "growthDesc": "Marketing, content and campaigns that build visibility, demand and lasting momentum.",
     "automationDesc": "Lead generation, CRM and AI workflows — the systems that make growth run itself."
   },
   "founder": {

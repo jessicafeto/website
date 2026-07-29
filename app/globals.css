@@ -145,7 +145,11 @@ p {
    ============================================================ */
 .hero {
   position: relative;
-  height: 100vh;
+  /* On wide screens the photo is landscape, so 100vh crops only top/bottom.
+     On narrow/portrait windows a full 100vh would zoom hard into the centre and
+     lose the sides of the room — so cap the height by width there, keeping more
+     of the scene in frame. min() picks whichever is shorter. */
+  height: min(100vh, 68vw);
   min-height: 600px;
   overflow: hidden;
   display: flex;
@@ -154,7 +158,7 @@ p {
 }
 .hero-media {
   object-fit: cover;
-  object-position: 50% 45%; /* subject is centred; hold her through the crop */
+  object-position: 50% 42%; /* subject is centred; hold her through the crop */
   filter: contrast(1.04) saturate(1.02); /* counter upscale softness, gently */
 }
 /* Film grain — masks softness, adds editorial texture (Vol II: grain like paper).

@@ -1,8 +1,8 @@
 {
   "meta": {
     "title": "noova — Branding, Websites & Marketing · Londër",
-    "description": "noova ndërton marka nga brenda jashtë — një studio në Londër që bashkon strategjinë, dizajnin, uebsajtet, marketingun dhe teknologjinë në një sistem të vetëm dhe koherent. Për bizneset që janë rritur përtej imazhit të tyre.",
-    "ogDescription": "Ne ndërtojmë marka nga brenda jashtë. Për bizneset që janë rritur përtej imazhit të tyre."
+    "description": "noova është një studio kreative me bazë në Londër që bashkon strategjinë, dizajnin, uebsajtet, marketingun dhe teknologjinë për të ndërtuar marka të forta dhe të qëndrueshme. Për bizneset që kanë evoluar përtej imazhit të tyre.",
+    "ogDescription": "Ne ndërtojmë marka që i japin formë biznesit. Për bizneset që imazhi nuk i përfaqëson më."
   },
   "nav": {
     "aboutStudio": "Rreth Studios",
@@ -39,27 +39,75 @@
     "categories": [
       {
         "t": "Brand & Identity",
-        "d": ["Strategji brendi", "Pozicionim", "Emërtim & mesazhe", "Identitet vizual", "Udhëzues brendi", "Ton zëri", "Drejtim kreativ"]
+        "d": [
+          "Strategji brendi",
+          "Pozicionim",
+          "Emërtim & mesazhe",
+          "Identitet vizual",
+          "Udhëzues brendi",
+          "Ton zëri",
+          "Drejtim kreativ"
+        ]
       },
       {
         "t": "Websites",
-        "d": ["Strategji uebsajti", "UX & arkitekturë informacioni", "Dizajn uebsajti", "Zhvillim në Webflow", "Faqe uljeje", "Baza SEO", "Optimizim i performancës"]
+        "d": [
+          "Strategji uebsajti",
+          "UX & arkitekturë informacioni",
+          "Dizajn uebsajti",
+          "Zhvillim në Webflow",
+          "Faqe uljeje",
+          "Baza SEO",
+          "Optimizim i performancës"
+        ]
       },
       {
         "t": "Content",
-        "d": ["Strategji përmbajtjeje", "Planifikim editorial", "Strategji për rrjete sociale", "Kalendarë përmbajtjeje", "Shkrim tekstesh", "Drejtim fotografie", "Prodhim përmbajtjeje me ndihmën e AI"]
+        "d": [
+          "Strategji përmbajtjeje",
+          "Planifikim editorial",
+          "Strategji për rrjete sociale",
+          "Kalendarë përmbajtjeje",
+          "Shkrim tekstesh",
+          "Drejtim fotografie",
+          "Prodhim përmbajtjeje me ndihmën e AI"
+        ]
       },
       {
         "t": "Campaigns",
-        "d": ["Strategji marketingu", "Planifikim lançimi", "Koncepte fushatash", "Partneritete me influencues", "Bashkëpunime me krijues", "Aktivizime brendi", "Ndërtim komuniteti"]
+        "d": [
+          "Strategji marketingu",
+          "Planifikim lançimi",
+          "Koncepte fushatash",
+          "Partneritete me influencues",
+          "Bashkëpunime me krijues",
+          "Aktivizime brendi",
+          "Ndërtim komuniteti"
+        ]
       },
       {
         "t": "Growth",
-        "d": ["Analitikë marketingu", "GA4 & Looker Studio", "Strategji CRM", "Marketing me email", "Optimizim konvertimesh", "Panele raportimi", "Plane rritjeje"]
+        "d": [
+          "Analitikë marketingu",
+          "GA4 & Looker Studio",
+          "Strategji CRM",
+          "Marketing me email",
+          "Optimizim konvertimesh",
+          "Panele raportimi",
+          "Plane rritjeje"
+        ]
       },
       {
         "t": "AI & Systems",
-        "d": ["Rrjedha pune me AI", "Automatizim marketingu", "Zbatim CRM", "Sisteme biznesi", "Rrugëtimi i klientit", "Sisteme për gjenerimin e kontakteve", "Optimizim procesesh"]
+        "d": [
+          "Rrjedha pune me AI",
+          "Automatizim marketingu",
+          "Zbatim CRM",
+          "Sisteme biznesi",
+          "Rrugëtimi i klientit",
+          "Sisteme për gjenerimin e kontakteve",
+          "Optimizim procesesh"
+        ]
       }
     ]
   },

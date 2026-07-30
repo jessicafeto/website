@@ -123,6 +123,22 @@
     "meta05": "Mikpritje · Branding",
     "meta06": "Komunitet · Branding, Creative"
   },
+  "caseStudy": {
+    "overview": "Përmbledhje",
+    "role": "Roli",
+    "year": "Viti",
+    "services": "Shërbimet",
+    "sector": "Sektori",
+    "approach": "Si u realizua",
+    "gallery": "Pamje të zgjedhura",
+    "delivered": "Çfarë dorëzuam",
+    "results": "Rezultati",
+    "testimonial": "Me fjalët e tyre",
+    "ctaHeading": "Keni një projekt në mendje?",
+    "ctaBody": "Na tregoni ku po shkon brandi juaj. Ne ju tregojmë si do ta çonim atje.",
+    "ctaButton": "Nis një projekt",
+    "moreWork": "Më shumë punë"
+  },
   "contact": {
     "heading": "Punoni me ne.",
     "intro": "Na tregoni për biznesin tuaj, ambiciet tuaja, ose thjesht nga ku dëshironi të filloni.",

@@ -75,6 +75,22 @@
     "meta05": "Hospitality · Branding",
     "meta06": "Community · Branding, Creative"
   },
+  "caseStudy": {
+    "overview": "Overview",
+    "role": "Role",
+    "year": "Year",
+    "services": "Services",
+    "sector": "Sector",
+    "approach": "How it came together",
+    "gallery": "Selected frames",
+    "delivered": "What we delivered",
+    "results": "The outcome",
+    "testimonial": "In their words",
+    "ctaHeading": "Have a project in mind?",
+    "ctaBody": "Tell us where your brand is headed. We'll show you how we'd get it there.",
+    "ctaButton": "Start a project",
+    "moreWork": "More work"
+  },
   "contact": {
     "heading": "Work with us.",
     "intro": "Tell us about your business, your ambitions, or simply where you'd like to begin.",

@@ -193,17 +193,17 @@ export default function Footer() {
           <div className="flex flex-wrap items-center justify-center gap-x-6 gap-y-2 font-sans text-[0.72rem] uppercase tracking-[0.24em] text-[rgba(255,255,255,0.55)]">
             <Link
               href="/privacy"
-              className="transition-colors duration-300 hover:text-[rgba(255,255,255,0.9)]"
+              className="footer-legal transition-colors duration-300"
             >
               {t("privacy")}
             </Link>
             <Link
               href="/cookies"
-              className="transition-colors duration-300 hover:text-[rgba(255,255,255,0.9)]"
+              className="footer-legal transition-colors duration-300"
             >
               {t("cookiePolicy")}
             </Link>
-            <CookieSettingsLink className="uppercase tracking-[0.24em] transition-colors duration-300 hover:text-[rgba(255,255,255,0.9)]">
+            <CookieSettingsLink className="footer-legal uppercase tracking-[0.24em] transition-colors duration-300">
               {t("cookieSettings")}
             </CookieSettingsLink>
           </div>

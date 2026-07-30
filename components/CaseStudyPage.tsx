@@ -145,7 +145,7 @@ export default async function CaseStudyPage({ slug }: { slug: string }) {
           <div className="absolute inset-0 bg-black/35" aria-hidden />
           <div className="absolute inset-0 flex flex-col items-center justify-center px-6 text-center">
             <FadeUp>
-              <h1 className="font-sans font-bold uppercase text-white leading-tight text-[clamp(2rem,5.5vw,4rem)] tracking-[0.22em]">
+              <h1 className="font-sans font-bold text-white leading-tight text-[clamp(2rem,5.5vw,4rem)] tracking-[0.12em]">
                 {cs.name}
               </h1>
             </FadeUp>
@@ -164,7 +164,7 @@ export default async function CaseStudyPage({ slug }: { slug: string }) {
 
         {/* Section 2 — overview */}
         <section className="wrap pt-[clamp(5.5rem,15vh,11rem)] pb-[clamp(3rem,8vh,6rem)] text-center">
-          <div className="mx-auto max-w-[720px]">
+          <div className="mx-auto max-w-[880px]">
             <FadeUp>
               <p className="eyebrow text-grey">{t("theProject")}</p>
             </FadeUp>
@@ -174,7 +174,7 @@ export default async function CaseStudyPage({ slug }: { slug: string }) {
               </h2>
             </FadeUp>
             <FadeUp delay={0.2}>
-              <p className="mx-auto mt-8 max-w-[600px] font-sans text-[1.05rem] leading-[1.9] text-grey">
+              <p className="mx-auto mt-8 max-w-[820px] font-sans text-[1.05rem] leading-[1.85] text-grey">
                 {cs.overview}
               </p>
             </FadeUp>
@@ -256,7 +256,7 @@ export default async function CaseStudyPage({ slug }: { slug: string }) {
                   aria-hidden
                 />
                 <div className="absolute inset-0 flex items-center justify-center">
-                  <h2 className="font-sans font-bold uppercase text-white text-[clamp(1.6rem,3.5vw,2.8rem)] tracking-[0.2em]">
+                  <h2 className="font-sans font-bold text-white text-[clamp(1.6rem,3.5vw,2.8rem)] tracking-[0.12em]">
                     {next.name}
                   </h2>
                 </div>

@@ -56,14 +56,16 @@ function BlockView({ block, alt }: { block: Block; alt: string }) {
         <div className="grid grid-cols-1 gap-[clamp(1rem,3vw,2.5rem)] sm:grid-cols-2">
           {block.items.map((im) => (
             <FadeUp key={im.src}>
-              <Image
-                src={im.src}
-                alt={alt}
-                width={im.w}
-                height={im.h}
-                sizes="(max-width:640px) 100vw, 50vw"
-                className="h-auto w-full"
-              />
+              <div className="relative overflow-hidden film-grain-soft">
+                <Image
+                  src={im.src}
+                  alt={alt}
+                  width={im.w}
+                  height={im.h}
+                  sizes="(max-width:640px) 100vw, 50vw"
+                  className="h-auto w-full"
+                />
+              </div>
             </FadeUp>
           ))}
         </div>
@@ -75,14 +77,16 @@ function BlockView({ block, alt }: { block: Block; alt: string }) {
     return (
       <div className="mx-auto w-full max-w-[860px] px-[clamp(1.25rem,5vw,5rem)]">
         <FadeUp>
-          <Image
-            src={block.src}
-            alt={alt}
-            width={block.w}
-            height={block.h}
-            sizes="(max-width:860px) 100vw, 860px"
-            className="h-auto w-full"
-          />
+          <div className="relative overflow-hidden film-grain-soft">
+            <Image
+              src={block.src}
+              alt={alt}
+              width={block.w}
+              height={block.h}
+              sizes="(max-width:860px) 100vw, 860px"
+              className="h-auto w-full"
+            />
+          </div>
         </FadeUp>
       </div>
     );
@@ -92,14 +96,16 @@ function BlockView({ block, alt }: { block: Block; alt: string }) {
   return (
     <div className="mx-auto w-full max-w-[1600px] px-[clamp(1.25rem,5vw,5rem)]">
       <FadeUp>
-        <Image
-          src={block.src}
-          alt={alt}
-          width={block.w}
-          height={block.h}
-          sizes="(max-width:1600px) 100vw, 1600px"
-          className="h-auto w-full"
-        />
+        <div className="relative overflow-hidden film-grain-soft">
+          <Image
+            src={block.src}
+            alt={alt}
+            width={block.w}
+            height={block.h}
+            sizes="(max-width:1600px) 100vw, 1600px"
+            className="h-auto w-full"
+          />
+        </div>
       </FadeUp>
     </div>
   );
@@ -126,14 +132,16 @@ export default async function CaseStudyPage({ slug }: { slug: string }) {
       <main className="bg-white">
         {/* Section 1 — full-screen hero */}
         <section className="relative h-[100svh] w-full overflow-hidden bg-charcoal">
-          <Image
-            src={cs.heroImage}
-            alt={cs.name}
-            fill
-            priority
-            sizes="100vw"
-            className="object-cover"
-          />
+          <div className="absolute inset-0 isolate overflow-hidden film-grain-soft">
+            <Image
+              src={cs.heroImage}
+              alt={cs.name}
+              fill
+              priority
+              sizes="100vw"
+              className="object-cover"
+            />
+          </div>
           <div className="absolute inset-0 bg-black/35" aria-hidden />
           <div className="absolute inset-0 flex flex-col items-center justify-center px-6 text-center">
             <FadeUp>
@@ -210,14 +218,16 @@ export default async function CaseStudyPage({ slug }: { slug: string }) {
             <div className="mt-[clamp(5rem,13vh,10rem)]">
               <div className="mx-auto w-full max-w-[1600px] px-[clamp(1.25rem,5vw,5rem)]">
                 <FadeUp>
-                  <Image
-                    src={cs.finalImage.src}
-                    alt={imgAlt}
-                    width={cs.finalImage.w}
-                    height={cs.finalImage.h}
-                    sizes="(max-width:1600px) 100vw, 1600px"
-                    className="h-auto w-full"
-                  />
+                  <div className="relative overflow-hidden film-grain-soft">
+                    <Image
+                      src={cs.finalImage.src}
+                      alt={imgAlt}
+                      width={cs.finalImage.w}
+                      height={cs.finalImage.h}
+                      sizes="(max-width:1600px) 100vw, 1600px"
+                      className="h-auto w-full"
+                    />
+                  </div>
                 </FadeUp>
               </div>
             </div>
@@ -232,13 +242,15 @@ export default async function CaseStudyPage({ slug }: { slug: string }) {
           <FadeUp delay={0.1}>
             <Link href={`/work/${next.slug}`} className="group mt-10 block">
               <div className="relative mx-auto aspect-[16/10] w-full max-w-[1100px] overflow-hidden bg-paper md:aspect-[2.2/1]">
-                <Image
-                  src={next.heroImage}
-                  alt={next.name}
-                  fill
-                  sizes="(max-width:1100px) 100vw, 1100px"
-                  className="object-cover transition-transform duration-[1600ms] ease-[cubic-bezier(0.2,0.6,0.2,1)] group-hover:scale-[1.04]"
-                />
+                <div className="absolute inset-0 isolate overflow-hidden film-grain-soft">
+                  <Image
+                    src={next.heroImage}
+                    alt={next.name}
+                    fill
+                    sizes="(max-width:1100px) 100vw, 1100px"
+                    className="object-cover transition-transform duration-[1600ms] ease-[cubic-bezier(0.2,0.6,0.2,1)] group-hover:scale-[1.04]"
+                  />
+                </div>
                 <div
                   className="absolute inset-0 bg-black/30 transition-colors duration-500 group-hover:bg-black/45"
                   aria-hidden

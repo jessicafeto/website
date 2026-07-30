@@ -88,13 +88,7 @@ const CASES_EN: Record<string, CaseStudy> = {
         note: "A full system of brochures and one-pagers that make a complex product easy to hand over.",
       },
       { kind: "full", src: "/img/iai 8.png", w: 1536, h: 1024 },
-      {
-        kind: "duo",
-        items: [
-          { src: "/img/iai 6.png", w: 1086, h: 1448 },
-          { src: "/img/iai 5.png", w: 1086, h: 1448 },
-        ],
-      },
+      { kind: "portrait", src: "/img/iai 6.png", w: 1086, h: 1448 },
       { kind: "full", src: "/img/iai 7.png", w: 1536, h: 1024 },
       {
         kind: "caption",
@@ -330,13 +324,7 @@ const CASES_SQ: Record<string, CaseStudy> = {
         note: "Një sistem i plotë broshurash e fletushkash që e bëjnë të lehtë dorëzimin e një produkti kompleks.",
       },
       { kind: "full", src: "/img/iai 8.png", w: 1536, h: 1024 },
-      {
-        kind: "duo",
-        items: [
-          { src: "/img/iai 6.png", w: 1086, h: 1448 },
-          { src: "/img/iai 5.png", w: 1086, h: 1448 },
-        ],
-      },
+      { kind: "portrait", src: "/img/iai 6.png", w: 1086, h: 1448 },
       { kind: "full", src: "/img/iai 7.png", w: 1536, h: 1024 },
       {
         kind: "caption",

@@ -93,13 +93,26 @@ const CASES_EN: Record<string, CaseStudy> = {
       {
         kind: "caption",
         label: "Identity & Stationery",
-        note: "Considered details — from the folder in your hands to the gift you leave with.",
+        note: "Considered details — the folder, the deck, the print in a client's hands.",
       },
       {
         kind: "duo",
         items: [
           { src: "/img/iai 2.png", w: 1254, h: 1254 },
           { src: "/img/iai 3.png", w: 1254, h: 1254 },
+        ],
+      },
+      {
+        kind: "caption",
+        label: "Merch & Extras",
+        note: "Details that travel — business cards, a conference badge and a branded polo.",
+      },
+      { kind: "full", src: "/img/iai-card.jpg", w: 1072, h: 852 },
+      {
+        kind: "duo",
+        items: [
+          { src: "/img/iai-badge.jpg", w: 1402, h: 1122 },
+          { src: "/img/iai-polo.jpg", w: 1402, h: 1122 },
         ],
       },
     ],
@@ -329,13 +342,26 @@ const CASES_SQ: Record<string, CaseStudy> = {
       {
         kind: "caption",
         label: "Identitet & Letra",
-        note: "Detaje të menduara — nga dosja në duart e tua te dhurata me të cilën largohesh.",
+        note: "Detaje të menduara — dosja, prezantimi, printi në duart e klientit.",
       },
       {
         kind: "duo",
         items: [
           { src: "/img/iai 2.png", w: 1254, h: 1254 },
           { src: "/img/iai 3.png", w: 1254, h: 1254 },
+        ],
+      },
+      {
+        kind: "caption",
+        label: "Veshje & Ekstra",
+        note: "Detaje që udhëtojnë — karta biznesi, një kartë konference dhe një polo e brenduar.",
+      },
+      { kind: "full", src: "/img/iai-card.jpg", w: 1072, h: 852 },
+      {
+        kind: "duo",
+        items: [
+          { src: "/img/iai-badge.jpg", w: 1402, h: 1122 },
+          { src: "/img/iai-polo.jpg", w: 1402, h: 1122 },
         ],
       },
     ],

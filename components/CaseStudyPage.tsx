@@ -169,7 +169,7 @@ export default async function CaseStudyPage({ slug }: { slug: string }) {
               <p className="eyebrow text-grey">{t("theProject")}</p>
             </FadeUp>
             <FadeUp delay={0.1}>
-              <h2 className="mt-8 font-serif text-ink text-[clamp(1.9rem,3.8vw,3.1rem)] leading-[1.18]">
+              <h2 className="mt-8 font-sans font-bold text-ink text-[clamp(1.7rem,3.3vw,2.7rem)] leading-[1.2] tracking-[-0.01em]">
                 {cs.overviewHeading}
               </h2>
             </FadeUp>

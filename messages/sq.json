@@ -124,20 +124,12 @@
     "meta06": "Komunitet · Branding, Creative"
   },
   "caseStudy": {
-    "overview": "Përmbledhje",
-    "role": "Roli",
-    "year": "Viti",
+    "theProject": "Projekti",
+    "industry": "Industria",
     "services": "Shërbimet",
-    "sector": "Sektori",
-    "approach": "Si u realizua",
-    "gallery": "Pamje të zgjedhura",
-    "delivered": "Çfarë dorëzuam",
-    "results": "Rezultati",
-    "testimonial": "Me fjalët e tyre",
-    "ctaHeading": "Keni një projekt në mendje?",
-    "ctaBody": "Na tregoni ku po shkon brandi juaj. Ne ju tregojmë si do ta çonim atje.",
-    "ctaButton": "Nis një projekt",
-    "moreWork": "Më shumë punë"
+    "timeline": "Kohëzgjatja",
+    "deliverables": "Dorëzimet",
+    "nextProject": "Projekti tjetër"
   },
   "contact": {
     "heading": "Punoni me ne.",

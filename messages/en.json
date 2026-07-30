@@ -76,20 +76,12 @@
     "meta06": "Community · Branding, Creative"
   },
   "caseStudy": {
-    "overview": "Overview",
-    "role": "Role",
-    "year": "Year",
+    "theProject": "The Project",
+    "industry": "Industry",
     "services": "Services",
-    "sector": "Sector",
-    "approach": "How it came together",
-    "gallery": "Selected frames",
-    "delivered": "What we delivered",
-    "results": "The outcome",
-    "testimonial": "In their words",
-    "ctaHeading": "Have a project in mind?",
-    "ctaBody": "Tell us where your brand is headed. We'll show you how we'd get it there.",
-    "ctaButton": "Start a project",
-    "moreWork": "More work"
+    "timeline": "Timeline",
+    "deliverables": "Deliverables",
+    "nextProject": "Next Project"
   },
   "contact": {
     "heading": "Work with us.",

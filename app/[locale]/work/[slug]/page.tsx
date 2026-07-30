@@ -14,7 +14,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (!cs) return {};
   return {
     title: `${cs.name} — Selected Work`,
-    description: cs.intro,
+    description: `${cs.category}. ${cs.overviewHeading}`,
     alternates: {
       canonical: locale === "en" ? `/work/${slug}` : `/${locale}/work/${slug}`,
     },

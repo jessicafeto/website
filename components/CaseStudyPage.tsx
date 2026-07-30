@@ -38,7 +38,7 @@ function BlockView({ block, alt }: { block: Block; alt: string }) {
       <div className="wrap text-center">
         <FadeUp>
           <div className="mx-auto max-w-[640px]">
-            <h2 className="font-serif text-ink text-[clamp(1.5rem,2.6vw,2rem)] leading-tight">
+            <h2 className="font-sans font-bold text-ink text-[clamp(1.35rem,2.3vw,1.85rem)] leading-tight tracking-[-0.01em]">
               {block.label}
             </h2>
             <p className="mx-auto mt-4 max-w-[520px] font-sans text-[1rem] leading-[1.8] text-grey">

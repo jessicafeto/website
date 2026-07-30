@@ -59,7 +59,7 @@ export default function SelectedWork() {
                 <div className="mt-6 flex items-baseline gap-5">
                   <span className="eyebrow text-oxblood">{p.no}</span>
                   <div>
-                    <h3 className="font-serif text-[clamp(1.4rem,1.9vw,1.85rem)] leading-tight text-ink transition-colors duration-500 group-hover:text-oxblood">
+                    <h3 className="font-sans font-bold tracking-[-0.01em] text-[clamp(1.3rem,1.8vw,1.7rem)] leading-tight text-ink transition-colors duration-500 group-hover:text-oxblood">
                       {p.name}
                     </h3>
                     <p className="eyebrow mt-2 text-grey">{t(`meta${p.no}`)}</p>

@@ -1,15 +1,39 @@
 import type { Metadata } from "next";
+import { getLocale } from "next-intl/server";
 import { LegalLayout, H2, P, UL } from "@/components/legal/LegalLayout";
 
-export const metadata: Metadata = {
-  title: "Privacy Policy",
-  description:
-    "How noova collects, uses and protects your personal data, and the rights you have under the UK GDPR and EU GDPR.",
-};
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  const sq = locale === "sq";
+  return {
+    title: sq ? "Politika e Privatësisë" : "Privacy Policy",
+    description: sq
+      ? "Si noova mbledh, përdor dhe mbron të dhënat tuaja personale, dhe të drejtat që keni sipas GDPR-së së Mbretërisë së Bashkuar dhe BE-së."
+      : "How noova collects, uses and protects your personal data, and the rights you have under the UK GDPR and EU GDPR.",
+    alternates: { canonical: locale === "en" ? "/privacy" : `/${locale}/privacy` },
+  };
+}
 
-export default function PrivacyPolicyPage() {
+export default async function PrivacyPolicyPage() {
+  const sq = (await getLocale()) === "sq";
   return (
-    <LegalLayout title="Privacy Policy" updated="July 2026">
+    <LegalLayout
+      title={sq ? "Politika e Privatësisë" : "Privacy Policy"}
+      eyebrow={sq ? "Ligjore" : "Legal"}
+      updatedLabel={sq ? "Përditësuar më Korrik 2026" : "Last updated July 2026"}
+    >
+      {sq ? <PrivacySq /> : <PrivacyEn />}
+    </LegalLayout>
+  );
+}
+
+function PrivacyEn() {
+  return (
+    <>
       <P>
         This policy explains how noova (&ldquo;we&rdquo;, &ldquo;us&rdquo;)
         collects, uses and protects your personal data, and the rights you have.
@@ -139,6 +163,152 @@ export default function PrivacyPolicyPage() {
           details before publishing.
         </em>
       </P>
-    </LegalLayout>
+    </>
+  );
+}
+
+function PrivacySq() {
+  return (
+    <>
+      <P>
+        Kjo politikë shpjegon si noova (&ldquo;ne&rdquo;) mbledh, përdor dhe
+        mbron të dhënat tuaja personale, si dhe të drejtat që keni. Ne jemi
+        kontrolluesi i të dhënave për informacionin e përshkruar këtu. Ajo është
+        hartuar në përputhje me GDPR-në e Mbretërisë së Bashkuar dhe GDPR-në e
+        BE-së.
+      </P>
+
+      <H2>Kush jemi ne</H2>
+      <P>
+        noova është një studio brandingu, uebsajtesh dhe marketingu me bazë në
+        Londër, Mbretëria e Bashkuar, me një studio në Tiranë, Shqipëri. Për çdo
+        pyetje mbi privatësinë, ose për të ushtruar të drejtat tuaja, na
+        kontaktoni në{" "}
+        <a
+          href="mailto:hello@noovadata.com"
+          className="text-oxblood underline underline-offset-2 hover:opacity-70"
+        >
+          hello@noovadata.com
+        </a>
+        .
+      </P>
+
+      <H2>Çfarë mbledhim</H2>
+      <UL>
+        <li>
+          <strong>Informacioni që na jepni.</strong> Kur përdorni formularin tonë
+          të kontaktit, mbledhim emrin, adresën tuaj të email-it, kompaninë dhe
+          detajet e kërkesës suaj.
+        </li>
+        <li>
+          <strong>Informacioni i mbledhur automatikisht.</strong> Me pëlqimin
+          tuaj, përdorim cookie analitike dhe të marketingut që mbledhin të dhëna
+          përdorimi, si faqet e shikuara, vendndodhjen e përafërt, pajisjen dhe
+          shfletuesin. Shihni{" "}
+          <a
+            href="/sq/cookies"
+            className="text-oxblood underline underline-offset-2 hover:opacity-70"
+          >
+            Politikën tonë të Cookie-ve
+          </a>
+          .
+        </li>
+      </UL>
+
+      <H2>Si i përdorim të dhënat tuaja</H2>
+      <UL>
+        <li>
+          Për t&rsquo;iu përgjigjur kërkesës suaj dhe për të ofruar shërbimet që
+          kërkoni.
+        </li>
+        <li>
+          Për të kuptuar dhe përmirësuar mënyrën si përdoret uebsajti (vetëm me
+          pëlqimin tuaj).
+        </li>
+        <li>
+          Për të matur dhe, kur është e rëndësishme, për të realizuar marketing
+          (vetëm me pëlqimin tuaj).
+        </li>
+      </UL>
+
+      <H2>Bazat ligjore</H2>
+      <P>
+        Ne mbështetemi te <strong>pëlqimi</strong> juaj për cookie-t analitike
+        dhe të marketingut; te domosdoshmëria për të ndërmarrë hapa me kërkesën
+        tuaj dhe te <strong>interesi ynë legjitim</strong> për t&rsquo;iu
+        përgjigjur kërkesave kur na kontaktoni; dhe te interesi ynë legjitim për
+        ta mbajtur faqen të sigurt dhe funksionale për cookie-t thelbësore.
+      </P>
+
+      <H2>Me kë i ndajmë</H2>
+      <P>
+        Ne nuk i shesim të dhënat tuaja. Përdorim një numër të vogël përpunuesish
+        të besuar, që veprojnë sipas udhëzimeve tona:
+      </P>
+      <UL>
+        <li>
+          <strong>Formspree</strong> — na dorëzon dërgesat e formularit të
+          kontaktit.
+        </li>
+        <li>
+          <strong>Google Analytics &amp; Google Tag Manager, Microsoft
+          Clarity</strong> — analitikë e uebsajtit, e ngarkuar vetëm me pëlqimin
+          tuaj analitik.
+        </li>
+        <li>
+          <strong>Meta Pixel, LinkedIn Insight Tag</strong> — matje marketingu, e
+          ngarkuar vetëm me pëlqimin tuaj për marketing.
+        </li>
+      </UL>
+
+      <H2>Transferimet ndërkombëtare</H2>
+      <P>
+        Disa nga këta ofrues janë të vendosur jashtë Mbretërisë së Bashkuar/ZEE-së.
+        Kur të dhënat transferohen ndërkombëtarisht, ato mbrohen me masa të
+        përshtatshme mbrojtëse, si Marrëveshja Ndërkombëtare e Transferimit të të
+        Dhënave e Mbretërisë së Bashkuar ose Klauzolat Standarde Kontraktuale të
+        BE-së.
+      </P>
+
+      <H2>Sa kohë i mbajmë</H2>
+      <P>
+        Korrespondenca e kërkesave mbahet vetëm aq kohë sa nevojitet për të
+        trajtuar kërkesën tuaj dhe për një periudhë të arsyeshme më pas. Të dhënat
+        analitike dhe të marketingut ruhen sipas cilësimeve të secilit ofrues dhe
+        pëlqimit tuaj.
+      </P>
+
+      <H2>Të drejtat tuaja</H2>
+      <P>
+        Ju keni të drejtën të aksesoni, korrigjoni, fshini, kufizoni ose
+        kundërshtoni përpunimin e të dhënave tuaja, të drejtën e transportueshmërisë
+        së të dhënave dhe të tërhiqni pëlqimin në çdo kohë (përfshirë përmes
+        lidhjes &ldquo;Cilësimet e Cookie-ve&rdquo; në fund të faqes). Për të
+        ushtruar ndonjë prej tyre, dërgoni email te{" "}
+        <a
+          href="mailto:hello@noovadata.com"
+          className="text-oxblood underline underline-offset-2 hover:opacity-70"
+        >
+          hello@noovadata.com
+        </a>
+        . Gjithashtu mund të ankoheni pranë Zyrës së Komisionerit për Informacion
+        të Mbretërisë së Bashkuar (ico.org.uk) ose autoritetit tuaj vendor
+        mbikëqyrës.
+      </P>
+
+      <H2>Ndryshimet</H2>
+      <P>
+        Ne mund ta përditësojmë këtë politikë herë pas here. Data më sipër tregon
+        kur është rishikuar për herë të fundit.
+      </P>
+
+      <P>
+        <em>
+          Ky dokument është një model i ofruar për zbatim. Ju lutemi ta rishikoni
+          nga një profesionist i kualifikuar ligjor dhe të plotësoni të dhënat e
+          kompanisë suaj para publikimit.
+        </em>
+      </P>
+    </>
   );
 }

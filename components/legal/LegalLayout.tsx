@@ -2,14 +2,17 @@ import { type ReactNode } from "react";
 import SiteHeader from "@/components/SiteHeader";
 import Footer from "@/components/home/Footer";
 
-/** Shared editorial shell + prose primitives for the legal pages. */
+/** Shared editorial shell + prose primitives for the legal pages. Labels are
+ *  passed in already-localised, so this stays a plain (sync) component. */
 export function LegalLayout({
   title,
-  updated,
+  eyebrow,
+  updatedLabel,
   children,
 }: {
   title: string;
-  updated: string;
+  eyebrow: string;
+  updatedLabel: string;
   children: ReactNode;
 }) {
   return (
@@ -18,11 +21,11 @@ export function LegalLayout({
       <main className="bg-white">
         <div className="wrap pb-[clamp(4rem,10vh,8rem)] pt-[calc(82px+clamp(3rem,8vh,6rem))]">
           <div className="mx-auto max-w-[46rem]">
-            <p className="eyebrow text-oxblood">Legal</p>
+            <p className="eyebrow text-oxblood">{eyebrow}</p>
             <h1 className="mt-6 font-serif leading-[1.08] text-ink text-[clamp(2.4rem,5vw,3.5rem)]">
               {title}
             </h1>
-            <p className="eyebrow mt-5 text-grey">Last updated {updated}</p>
+            <p className="eyebrow mt-5 text-grey">{updatedLabel}</p>
             <div className="mt-14">{children}</div>
           </div>
         </div>

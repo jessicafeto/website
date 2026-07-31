@@ -1,15 +1,39 @@
 import type { Metadata } from "next";
+import { getLocale } from "next-intl/server";
 import { LegalLayout, H2, P, UL } from "@/components/legal/LegalLayout";
 
-export const metadata: Metadata = {
-  title: "Cookie Policy",
-  description:
-    "What cookies noova uses, why, and how to control them. Non-essential cookies load only with your consent.",
-};
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  const sq = locale === "sq";
+  return {
+    title: sq ? "Politika e Cookie-ve" : "Cookie Policy",
+    description: sq
+      ? "Cilat cookie përdor noova, pse, dhe si t'i kontrolloni. Cookie-t joesenciale ngarkohen vetëm me pëlqimin tuaj."
+      : "What cookies noova uses, why, and how to control them. Non-essential cookies load only with your consent.",
+    alternates: { canonical: locale === "en" ? "/cookies" : `/${locale}/cookies` },
+  };
+}
 
-export default function CookiePolicyPage() {
+export default async function CookiePolicyPage() {
+  const sq = (await getLocale()) === "sq";
   return (
-    <LegalLayout title="Cookie Policy" updated="July 2026">
+    <LegalLayout
+      title={sq ? "Politika e Cookie-ve" : "Cookie Policy"}
+      eyebrow={sq ? "Ligjore" : "Legal"}
+      updatedLabel={sq ? "Përditësuar më Korrik 2026" : "Last updated July 2026"}
+    >
+      {sq ? <CookiesSq /> : <CookiesEn />}
+    </LegalLayout>
+  );
+}
+
+function CookiesEn() {
+  return (
+    <>
       <P>
         Cookies are small files stored on your device that help a website work
         and provide information to its owners. This policy explains which cookies
@@ -83,6 +107,90 @@ export default function CookiePolicyPage() {
           reviewed by a qualified legal professional before publishing.
         </em>
       </P>
-    </LegalLayout>
+    </>
+  );
+}
+
+function CookiesSq() {
+  return (
+    <>
+      <P>
+        Cookie-t janë skedarë të vegjël të ruajtur në pajisjen tuaj, që ndihmojnë
+        një uebsajt të funksionojë dhe u japin informacion pronarëve të tij. Kjo
+        politikë shpjegon cilat cookie përdorim dhe si t&rsquo;i kontrolloni ato.
+        Cookie-t joesenciale ngarkohen <strong>vetëm pasi jepni pëlqimin</strong>.
+      </P>
+
+      <H2>Kategoritë që përdorim</H2>
+      <UL>
+        <li>
+          <strong>Thelbësore.</strong> Të nevojshme që faqja të funksionojë — për
+          shembull, për të kujtuar zgjedhjen tuaj për cookie-t. Këto janë gjithmonë
+          aktive dhe nuk mund të çaktivizohen.
+        </li>
+        <li>
+          <strong>Analitike.</strong> Na ndihmojnë të kuptojmë, në përgjithësi, si
+          përdoret faqja, që ta përmirësojmë. Të fikura derisa t&rsquo;i lejoni.
+        </li>
+        <li>
+          <strong>Marketingu.</strong> Na ndihmojnë të masim fushatat dhe të
+          shfaqim punë relevante në platforma të tjera. Të fikura derisa
+          t&rsquo;i lejoni.
+        </li>
+      </UL>
+
+      <H2>Mjetet që mund të përdorim</H2>
+      <P>Secili prej tyre ngarkohet vetëm nëse jepni pëlqimin për kategorinë e tij:</P>
+      <UL>
+        <li>
+          <strong>Google Analytics 4 &amp; Google Tag Manager</strong> (analitike)
+          — masin përdorimin e uebsajtit.
+        </li>
+        <li>
+          <strong>Microsoft Clarity</strong> (analitike) — të dhëna të anonimizuara
+          mbi mënyrën si përdoren faqet.
+        </li>
+        <li>
+          <strong>Meta Pixel</strong> (marketing) — matje fushatash nëpër platformat
+          Meta.
+        </li>
+        <li>
+          <strong>LinkedIn Insight Tag</strong> (marketing) — matje fushatash në
+          LinkedIn.
+        </li>
+      </UL>
+
+      <H2>Menaxhimi i zgjedhjes suaj</H2>
+      <P>
+        Në vizitën tuaj të parë, një banderolë ju lejon të pranoni të gjitha, të
+        refuzoni joesencialet, ose të vendosni preferencat tuaja. Mund ta ndryshoni
+        vendimin në çdo kohë duke përdorur lidhjen{" "}
+        <strong>&ldquo;Cilësimet e Cookie-ve&rdquo;</strong> në fund të faqes.
+        Gjithashtu mund t&rsquo;i bllokoni ose fshini cookie-t përmes cilësimeve të
+        shfletuesit tuaj, megjithëse faqja mund të mos funksionojë siç duhet pa
+        cookie-t thelbësore.
+      </P>
+
+      <H2>Ndryshimet</H2>
+      <P>
+        Ne mund ta përditësojmë këtë politikë ndërsa ndryshojnë mjetet që përdorim.
+        Data më sipër tregon kur është rishikuar për herë të fundit. Për më shumë
+        mbi mënyrën si i trajtojmë të dhënat personale, shihni{" "}
+        <a
+          href="/sq/privacy"
+          className="text-oxblood underline underline-offset-2 hover:opacity-70"
+        >
+          Politikën tonë të Privatësisë
+        </a>
+        .
+      </P>
+
+      <P>
+        <em>
+          Ky dokument është një model i ofruar për zbatim. Ju lutemi ta rishikoni
+          nga një profesionist i kualifikuar ligjor para publikimit.
+        </em>
+      </P>
+    </>
   );
 }

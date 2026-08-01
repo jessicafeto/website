@@ -419,20 +419,19 @@
     "heroImage": "/hero/automation.jpg",
     "shift": {
       "heading": "Ndryshimi",
-      "body": "Rritja zakonisht do të thotë më shumë punë — më shumë ndjekje manuale, më shumë tabela, më shumë gjëra që rrëshqasin. Nuk ka pse të jetë kështu. Sistemet e duhura e bëjnë punën e përsëritur në sfond: kapin kontaktet, i ushqejnë ato, përditësojnë CRM-në tuaj, dhe ju lirojnë për punën që vetëm ju mund ta bëni. Jo më shumë vegla të shtuara — një sistem i vetëm i lidhur, i ndërtuar rreth mënyrës si funksionon vërtet biznesi juaj."
+      "body": "Rritja nuk duhet të krijojë më shumë kaos. Sistemet e duhura automatizojnë punën e përsëritur, organizojnë kontaktet, përditësojnë CRM-në dhe lidhin proceset në një rrjedhë të vetme. Kështu kurseni kohë, shmangni gabimet dhe krijoni një biznes që funksionon më zgjuar."
     },
     "eyebrow": "Angazhimi 04",
     "includes": [
       {
         "label": "AI & Systems",
         "items": [
-          "Rrjedha pune me AI",
-          "Automatizim marketingu",
-          "Zbatim CRM",
-          "Sisteme biznesi",
-          "Rrugëtimi i klientit",
-          "Sisteme për gjenerimin e kontakteve",
-          "Optimizim procesesh"
+          "AI Workflows",
+          "Marketing Automation",
+          "CRM Implementation",
+          "Business Systems",
+          "Customer Journey Automation",
+          "Process Optimisation"
         ]
       }
     ],
@@ -470,46 +469,48 @@
       {
         "name": "Essential",
         "price": "Nga €400",
-        "summary": "Një automatizim ose funnel kontaktesh, i ndërtuar plotësisht.",
+        "summary": "Një sistem automatizimi, i ndërtuar për ju.",
         "scope": [
-          "Një automatizim ose funnel gjenerimi kontaktesh",
-          "Kapje me chat / DM (p.sh. ManyChat)",
-          "I lidhur me mjetin tuaj të email-it",
-          "I testuar dhe i dokumentuar"
+          "1 Automation ose Lead Funnel",
+          "Chat & DM Automation (p.sh. ManyChat)",
+          "CRM Integration",
+          "Email Automation",
+          "Testim dhe Launch."
         ]
       },
       {
         "name": "Signature",
         "price": "Nga €800",
-        "summary": "Një sistem rritjeje i lidhur.",
+        "summary": "Një sistem inteligjent për rritjen e biznesit.",
         "builds": "Essential",
         "scope": [
-          "Funnel kontaktesh + faqe uljeje ose kuiz",
-          "Konfigurim & etiketim CRM",
-          "Sekuenca automatizimi me email",
-          "Analitikë & njoftime për kontakte",
-          "Një panel i thjeshtë raportimi"
+          "Lead Funnel",
+          "Landing Page",
+          "Chat & DM Automation",
+          "CRM Setup & Tagging",
+          "Email Automation",
+          "Analytics Dashboard."
         ],
         "featured": true
       },
       {
         "name": "Bespoke",
         "price": "Nga €1,600",
-        "summary": "Operacione & AI, plotësisht të automatizuara.",
+        "summary": "AI & Automation për veprimtari inteligjente.",
         "builds": "Signature",
         "scope": [
-          "Automatizime biznesi me shumë hapa",
-          "Rrjedha pune me AI për përmbajtje & operacione",
-          "Zbatim CRM",
-          "Integrime nëpër mjetet tuaja",
-          "Optimizim i vazhdueshëm"
+          "Multi-step Automations",
+          "AI Workflows për Content & Operations",
+          "CRM Implementation",
+          "Integrations me mjetet tuaja",
+          "Continuous Optimisation."
         ]
       }
     ],
     "cadence": "3–6 javë",
-    "headline": "Sistemet inteligjente pas markës.",
-    "booking": "Disponueshmëri e kufizuar mujore",
-    "offer": "Një ndërtim i automatizimeve, funneleve dhe rrjedhave të punës me AI që i lejojnë një biznesi ambicioz të rritet pa shtuar staf — gjenerim kontaktesh, CRM, email dhe operacione, të lidhura në një sistem të vetëm, të qetë e të besueshëm.",
+    "headline": "Automatizim që kursen kohë.",
+    "booking": "Vende të kufizuara.",
+    "offer": "Ndërtojmë sisteme me AI, automatizime dhe workflow që lidhin marketingun, shitjet dhe operacionet në një ekosistem të vetëm. Nga gjenerimi i kontakteve te CRM, email dhe proceset e brendshme, çdo hap punon së bashku për të kursyer kohë dhe për të mbështetur rritjen.",
     "faqs": [
       {
         "q": "Me cilat mjete ndërtoni?",

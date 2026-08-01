@@ -19,11 +19,11 @@
         "price": "Nga €700",
         "summary": "Një bazë e qartë dhe e sigurt për një biznes që po gjen veten.",
         "scope": [
-          "Strategji brendi — misioni, vlerat, audienca",
-          "Pozicionim",
-          "Identitet vizual — logoja parësore & sistemi bazë",
-          "Udhëzues brendi (PDF i shkurtër)",
-          "Të gjitha skedarët e logos & aseteve"
+          "Brand Strategy",
+          "Positioning",
+          "Visual Identity — Primary Logo",
+          "Brand Guidelines — Short PDF",
+          "Logo & Asset Files"
         ]
       },
       {
@@ -32,13 +32,13 @@
         "summary": "Ndërtimi i plotë i brendit — nga strategjia te identiteti.",
         "builds": "Essential",
         "scope": [
-          "Emërtim & mesazhe",
-          "Ton zëri",
-          "Drejtim kreativ",
-          "Identitet vizual i plotë — grup logosh, ngjyra & tipografi",
-          "Udhëzues brendi gjithëpërfshirës",
-          "Kit brendi për rrjete sociale",
-          "Plan lançimi & shpërndarjeje"
+          "Naming & Messaging",
+          "Tone of Voice",
+          "Creative Direction",
+          "Visual Identity — Full Suite",
+          "Brand Guidelines — Comprehensive",
+          "Social Media Brand Kit",
+          "Launch & Rollout Plan"
         ],
         "featured": true
       },
@@ -48,11 +48,11 @@
         "summary": "Një markë e paharrueshme, e krijuar pa kufij.",
         "builds": "Signature",
         "scope": [
-          "Fotografi & drejtim artistik",
-          "Ilustrim i personalizuar ose identitet në lëvizje",
-          "Paketim ose materiale të shtypura",
-          "Libër brendi i zgjeruar, i shtypur",
-          "Mbështetje brendi pas lançimit"
+          "Photography & Art Direction",
+          "Custom Illustration or Motion Identity",
+          "Packaging or Print Collateral",
+          "Brand Book — Printed",
+          "Post-Launch Support"
         ]
       }
     ],
@@ -60,13 +60,13 @@
       {
         "label": "Brand & Identity",
         "items": [
-          "Strategji brendi",
-          "Pozicionim",
-          "Emërtim & mesazhe",
-          "Identitet vizual",
-          "Udhëzues brendi",
-          "Ton zëri",
-          "Drejtim kreativ"
+          "Brand Strategy",
+          "Positioning",
+          "Naming & Messaging",
+          "Visual Identity",
+          "Brand Guidelines",
+          "Tone of Voice",
+          "Creative Direction"
         ]
       }
     ],
@@ -140,11 +140,11 @@
         "price": "Nga €500",
         "summary": "Një sajt i rafinuar e kompakt që lexohet bukur.",
         "scope": [
-          "Strategji uebsajti",
-          "Dizajn uebsajti — editorial",
-          "Faqe uljeje — deri në 3 faqe",
-          "Baza SEO",
-          "Lançim + 1 javë mbështetje"
+          "Website Strategy",
+          "Editorial Website Design",
+          "Landing Pages — Up to 3 Pages",
+          "SEO Foundations",
+          "Launch + 1 Week Support"
         ]
       },
       {
@@ -153,13 +153,13 @@
         "summary": "Uebsajti i plotë editorial, i ndërtuar për të performuar.",
         "builds": "Essential",
         "scope": [
-          "UX & arkitekturë informacioni",
-          "Zhvillim në Webflow",
-          "Deri në ~6 faqe të personalizuara",
-          "CMS — blog / ditar",
-          "Integrime & analitikë",
-          "Optimizim i performancës",
-          "2 javë mbështetje + udhëzim"
+          "UX & Information Architecture",
+          "Webflow Development",
+          "Up to 6 Custom Pages",
+          "CMS — Blog / Journal",
+          "Integrations & Analytics",
+          "Performance Optimisation",
+          "2 Weeks Support + Walkthrough"
         ],
         "featured": true
       },
@@ -169,12 +169,12 @@
         "summary": "Një ndërtim më i madh e i personalizuar, me hapësirë për t'u rritur.",
         "builds": "Signature",
         "scope": [
-          "Sistem e-commerce ose rezervimesh",
-          "Ndërveprime & lëvizje të avancuara",
-          "Koleksione CMS të personalizuara",
-          "Gati për shumë gjuhë",
-          "Integrime CRM & automatizim marketingu",
-          "Kontratë mirëmbajtjeje opsionale"
+          "E-Commerce or Booking System",
+          "Advanced Interactions & Motion",
+          "Custom CMS Collections",
+          "Multi-Language Ready",
+          "CRM & Marketing Automation Integrations",
+          "Optional Maintenance Retainer"
         ]
       }
     ],
@@ -182,13 +182,13 @@
       {
         "label": "Websites",
         "items": [
-          "Strategji uebsajti",
-          "UX & arkitekturë informacioni",
-          "Dizajn uebsajti",
-          "Zhvillim në Webflow",
-          "Faqe uljeje",
-          "Baza SEO",
-          "Optimizim i performancës"
+          "Website Strategy",
+          "UX & Information Architecture",
+          "Website Design",
+          "Webflow Development",
+          "Landing Pages",
+          "SEO Foundations",
+          "Performance Optimisation"
         ]
       }
     ],
@@ -262,12 +262,12 @@
         "price": "Nga €300 / muaj",
         "summary": "Një prani e qëndrueshme e e menduar në një kanal.",
         "scope": [
-          "Strategji përmbajtjeje",
-          "Strategji për rrjete sociale — një kanal",
-          "Kalendarë përmbajtjeje",
-          "Shkrim tekstesh",
-          "8–10 postime / muaj",
-          "Analitikë marketingu — raport mujor"
+          "Content Strategy",
+          "Social Media Strategy — One Channel",
+          "Content Calendars",
+          "Copywriting",
+          "8–10 Posts / Month",
+          "Marketing Analytics — Monthly Report"
         ]
       },
       {
@@ -276,12 +276,12 @@
         "summary": "Publikimi, plus fushata që lënë gjurmë.",
         "builds": "Essential",
         "scope": [
-          "Planifikim editorial",
-          "Drejtim fotografie",
-          "Koncepte fushatash & planifikim lançimi",
-          "Marketing me email",
-          "12–16 postime / muaj + storie — dy kanale",
-          "Panel GA4 & Looker Studio"
+          "Editorial Planning",
+          "Photography Direction",
+          "Campaign Strategy & Campaign Planning",
+          "Email Marketing",
+          "12–16 Posts / Month + Stories — Two Channels",
+          "GA4 & Looker Studio Dashboard"
         ],
         "featured": true
       },
@@ -291,12 +291,12 @@
         "summary": "Një partneritet i plotë rritjeje me sisteme pas tij.",
         "builds": "Signature",
         "scope": [
-          "Prodhim përmbajtjeje me ndihmën e AI",
-          "Partneritete me influencues & bashkëpunime me krijues",
-          "Automatizim marketingu & zbatim CRM",
-          "Sisteme për gjenerimin e kontakteve",
-          "Optimizim konvertimesh",
-          "Plane rritjeje"
+          "AI-Assisted Content Production",
+          "Influencer Partnerships & Creator Collaborations",
+          "Marketing Automation & CRM Implementation",
+          "Lead Generation Systems",
+          "Conversion Optimisation",
+          "Growth Roadmaps"
         ]
       }
     ],
@@ -304,49 +304,49 @@
       {
         "label": "Content",
         "items": [
-          "Strategji përmbajtjeje",
-          "Planifikim editorial",
-          "Strategji për rrjete sociale",
-          "Kalendarë përmbajtjeje",
-          "Shkrim tekstesh",
-          "Drejtim fotografie",
-          "Prodhim përmbajtjeje me ndihmën e AI"
+          "Content Strategy",
+          "Editorial Planning",
+          "Social Media Strategy",
+          "Content Calendars",
+          "Copywriting",
+          "Photography Direction",
+          "AI-Assisted Content Production"
         ]
       },
       {
         "label": "Campaigns",
         "items": [
-          "Strategji marketingu",
-          "Planifikim lançimi",
-          "Koncepte fushatash",
-          "Partneritete me influencues",
-          "Bashkëpunime me krijues",
-          "Aktivizime brendi",
-          "Ndërtim komuniteti"
+          "Marketing Strategy",
+          "Campaign Planning",
+          "Campaign Strategy",
+          "Influencer Partnerships",
+          "Creator Collaborations",
+          "Brand Activations",
+          "Community Building"
         ]
       },
       {
         "label": "Growth",
         "items": [
-          "Analitikë marketingu",
+          "Marketing Analytics",
           "GA4 & Looker Studio",
-          "Strategji CRM",
-          "Marketing me email",
-          "Optimizim konvertimesh",
-          "Panele raportimi",
-          "Plane rritjeje"
+          "CRM Strategy",
+          "Email Marketing",
+          "Conversion Optimisation",
+          "Reporting Dashboards",
+          "Growth Roadmaps"
         ]
       },
       {
         "label": "AI & Systems",
         "items": [
-          "Rrjedha pune me AI",
-          "Automatizim marketingu",
-          "Zbatim CRM",
-          "Sisteme biznesi",
-          "Rrugëtimi i klientit",
-          "Sisteme për gjenerimin e kontakteve",
-          "Optimizim procesesh"
+          "AI Workflows",
+          "Marketing Automation",
+          "CRM Implementation",
+          "Business Automation",
+          "Customer Journeys",
+          "Lead Generation Systems",
+          "Process Optimisation"
         ]
       }
     ],
@@ -420,10 +420,10 @@
         "price": "Nga €400",
         "summary": "Një automatizim ose funnel kontaktesh, i ndërtuar plotësisht.",
         "scope": [
-          "Një automatizim ose funnel gjenerimi kontaktesh",
-          "Kapje me chat / DM (p.sh. ManyChat)",
-          "I lidhur me mjetin tuaj të email-it",
-          "I testuar dhe i dokumentuar"
+          "Lead Generation Funnel or Automation",
+          "Chat / DM Capture — ManyChat",
+          "Email Tool Integration",
+          "Tested & Documented"
         ]
       },
       {
@@ -432,11 +432,11 @@
         "summary": "Një sistem rritjeje i lidhur.",
         "builds": "Essential",
         "scope": [
-          "Funnel kontaktesh + faqe uljeje ose kuiz",
-          "Konfigurim & etiketim CRM",
-          "Sekuenca automatizimi me email",
-          "Analitikë & njoftime për kontakte",
-          "Një panel i thjeshtë raportimi"
+          "Lead Generation Funnel + Landing Page or Quiz",
+          "CRM Setup & Tagging",
+          "Email Automation Sequences",
+          "Analytics & Lead Notifications",
+          "Simple Reporting Dashboard"
         ],
         "featured": true
       },
@@ -446,11 +446,11 @@
         "summary": "Operacione & AI, plotësisht të automatizuara.",
         "builds": "Signature",
         "scope": [
-          "Automatizime biznesi me shumë hapa",
-          "Rrjedha pune me AI për përmbajtje & operacione",
-          "Zbatim CRM",
-          "Integrime nëpër mjetet tuaja",
-          "Optimizim i vazhdueshëm"
+          "Multi-Step Business Automations",
+          "AI Workflows — Content & Operations",
+          "CRM Implementation",
+          "Tool Integrations",
+          "Ongoing Optimisation"
         ]
       }
     ],
@@ -458,13 +458,13 @@
       {
         "label": "AI & Systems",
         "items": [
-          "Rrjedha pune me AI",
-          "Automatizim marketingu",
-          "Zbatim CRM",
-          "Sisteme biznesi",
-          "Rrugëtimi i klientit",
-          "Sisteme për gjenerimin e kontakteve",
-          "Optimizim procesesh"
+          "AI Workflows",
+          "Marketing Automation",
+          "CRM Implementation",
+          "Business Automation",
+          "Customer Journeys",
+          "Lead Generation Systems",
+          "Process Optimisation"
         ]
       }
     ],

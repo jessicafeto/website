@@ -1,11 +1,6 @@
 {
   "355": {
-    "slug": "355",
-    "name": "355",
-    "category": "Komunitet & Identitet",
     "heroImage": "/img/work-1.jpg",
-    "overviewHeading": "Një identitet i qetë e i sigurt për një komunitet vetëm-me-ftesë.",
-    "overview": "355 është një komunitet anëtarësh i ndërtuar mbi takime të kuruara dhe lidhje të vërteta. Brandi duhej të ndihej ekskluziv pa qenë i ftohtë — një siguri e qetë që shpërblen ata që janë tashmë brenda. E trajtuam vetë numrin si ikonë: të kursyer, të paharrueshëm, paksa misterioz. Një paletë e errët e e prekshme dhe tipografi e rafinuar kalojnë nga kartat e anëtarësisë te ftesat e deri te web-i, që çdo pikëkontakt të ndihet pjesë e së njëjtës dhomë — e fituar, e menduar dhe padyshim për anëtarët.",
     "snapshot": {
       "industry": "Komunitet",
       "services": [
@@ -24,6 +19,11 @@
         "Drejtim Web"
       ]
     },
+    "finalImage": {
+      "src": "/img/automation.png",
+      "w": 1448,
+      "h": 1086
+    },
     "blocks": [
       {
         "kind": "caption",
@@ -36,15 +36,15 @@
         "w": 1402,
         "h": 1122
       }
-    ]
+    ],
+    "overviewHeading": "Një identitet i qetë e i sigurt për një komunitet vetëm-me-ftesë.",
+    "name": "355",
+    "slug": "355",
+    "overview": "355 është një komunitet anëtarësh i ndërtuar mbi takime të kuruara dhe lidhje të vërteta. Brandi duhej të ndihej ekskluziv pa qenë i ftohtë — një siguri e qetë që shpërblen ata që janë tashmë brenda. E trajtuam vetë numrin si ikonë: të kursyer, të paharrueshëm, paksa misterioz. Një paletë e errët e e prekshme dhe tipografi e rafinuar kalojnë nga kartat e anëtarësisë te ftesat e deri te web-i, që çdo pikëkontakt të ndihet pjesë e së njëjtës dhomë — e fituar, e menduar dhe padyshim për anëtarët.",
+    "category": "Komunitet & Identitet"
   },
   "intellimation": {
-    "slug": "intellimation",
-    "name": "intellimation.ai",
-    "category": "Identitet Brandi & Sistem Marketingu",
     "heroImage": "/img/iai 1.png",
-    "overviewHeading": "Ndërtimi i një identiteti modern enterprise për të ardhmen e Vertical AI.",
-    "overview": "intellimation.ai ndërton AI vertikale të pronësisë për shërbimet bankare dhe financiare — automatizim i krijuar posaçërisht për një industri që mbahet mbi besimin. Kompania kishte nevojë për një brand që të qëndronte pranë institucioneve si Barclays, Citi dhe Nomura pa trashëguar ngurtësinë e tyre: i besueshëm, modern dhe i qartë për një produkt kompleks. Ndërtuam identitetin, sistemin e mesazheve dhe një gamë të plotë materialesh — website, broshura, prezantime dhe një prani të drejtpërdrejtë në ekspozita. Rezultati është një identitet i njësuar enterprise që e bën AI-në e avancuar të ndihet e menduar, e lexueshme dhe gati për sallën ku po shitet.",
     "snapshot": {
       "industry": "Teknologji / AI",
       "services": [
@@ -66,6 +66,11 @@
         "Materiale Printi",
         "Materiale Eventi"
       ]
+    },
+    "finalImage": {
+      "src": "/img/iai 1.png",
+      "w": 1448,
+      "h": 1086
     },
     "blocks": [
       {
@@ -138,19 +143,14 @@
         ]
       }
     ],
-    "finalImage": {
-      "src": "/img/iai 4.png",
-      "w": 1448,
-      "h": 1086
-    }
+    "overviewHeading": "Ndërtimi i një identiteti modern enterprise për të ardhmen e Vertical AI.",
+    "name": "intellimation.ai",
+    "slug": "intellimation",
+    "overview": "intellimation.ai zhvillon inteligjencë artificiale të specializuar për sektorin bankar dhe financiar — sisteme të ndërtuara posaçërisht për nevojat, proceset dhe rregulloret e kësaj industrie. Kompania kishte nevojë për një identitet që të ndihej në të njëjtin nivel me institucione si Barclays, Citi dhe Nomura, pa trashëguar gjuhën apo estetikën tradicionale të korporatave. Ndërtuam identitetin e markës, sistemin e mesazheve dhe një ekosistem të plotë materialesh — website, broshura, prezantime, dokumentacion shitjesh dhe prani në evente. Rezultati është një identitet enterprise i qartë dhe koherent, që e bën një teknologji komplekse të ndihet e kuptueshme, e besueshme dhe gati për treg.",
+    "category": "Identitet Brandi & Sistem Marketingu"
   },
   "seereen": {
-    "slug": "seereen",
-    "name": "Seereen",
-    "category": "Identitet Brandi & Print",
     "heroImage": "/img/seereen 1.png",
-    "overviewHeading": "Një identitet i qetë e i sigurt për një studio moderne flokësh dhe estetike.",
-    "overview": "Seereen është një studio flokësh dhe estetike e ndërtuar mbi kujdesin dhe mjeshtërinë. I duhej një identitet që të ndihej premium pa u bërë i ftohtë — një vend që i beson pamjen tënde dhe të pëlqen të hysh brenda. Krijuam wordmark-un, një sistem vizual të ngrohtë e me dritë, dhe materiale printi që nisin nga fytyra reale dhe rezultate reale. Nga tabela e sallonit te kartat e çmimeve e deri te rrjetet sociale, çdo pikëkontakt tani mbart të njëjtën mirëseardhje të qetë — të afrueshme, feminine dhe padyshim të vetën.",
     "snapshot": {
       "industry": "Bukuri & Mirëqenie",
       "services": [
@@ -168,6 +168,11 @@
         "Fletushka Promocionale",
         "Shabllone Sociale"
       ]
+    },
+    "finalImage": {
+      "src": "/img/seereen-5.png",
+      "w": 1536,
+      "h": 1024
     },
     "blocks": [
       {
@@ -197,19 +202,14 @@
         "h": 1536
       }
     ],
-    "finalImage": {
-      "src": "/img/seereen-5.png",
-      "w": 1536,
-      "h": 1024
-    }
+    "overviewHeading": "Një identitet i qetë e i sigurt për një studio moderne flokësh dhe estetike.",
+    "name": "Seereen",
+    "slug": "seereen",
+    "overview": "Seereen është një studio flokësh dhe estetike e ndërtuar mbi kujdesin dhe mjeshtërinë. I duhej një identitet që të ndihej premium pa u bërë i ftohtë — një vend që i beson pamjen tënde dhe të pëlqen të hysh brenda. Krijuam wordmark-un, një sistem vizual të ngrohtë e me dritë, dhe materiale printi që nisin nga fytyra reale dhe rezultate reale. Nga tabela e sallonit te kartat e çmimeve e deri te rrjetet sociale, çdo pikëkontakt tani mbart të njëjtën mirëseardhje të qetë — të afrueshme, feminine dhe padyshim të vetën.",
+    "category": "Identitet Brandi & Print"
   },
   "opa-taverne": {
-    "slug": "opa-taverne",
-    "name": "Opa Taverne",
-    "category": "Branding Mikpritjeje",
     "heroImage": "/img/work-2.jpg",
-    "overviewHeading": "Ngrohtësia e një tryeze mesdhetare, e mbyllur në një brand.",
-    "overview": "Opa Taverne është një tavernë mesdhetare ku ushqimi, familja dhe mbrëmjet e gjata janë thelbi. Brandi duhej ta mbante atë ngrohtësi jashtë pjatës — në çdo meny, tabelë dhe postim — ftues, bujar, kurrë turistik. Ndërtuam një identitet të punuar me dorë e mikpritës, në tone tokësore dhe materiale të prekshme, të krijuara për t'u prekur e mbajtur. Nga dera te tryeza e deri te Instagrami, tani ndihet si e njëjta mirëseardhje që merr në çastin që hyn.",
     "snapshot": {
       "industry": "Mikpritje",
       "services": [
@@ -229,6 +229,11 @@
         "Identitet Social"
       ]
     },
+    "finalImage": {
+      "src": "/img/automation.png",
+      "w": 1448,
+      "h": 1086
+    },
     "blocks": [
       {
         "kind": "caption",
@@ -241,15 +246,15 @@
         "w": 900,
         "h": 1600
       }
-    ]
+    ],
+    "overviewHeading": "Ngrohtësia e një tryeze mesdhetare, e mbyllur në një brand.",
+    "name": "Opa Taverne",
+    "slug": "opa-taverne",
+    "overview": "Opa Taverne është një tavernë mesdhetare ku ushqimi, familja dhe mbrëmjet e gjata janë thelbi. Brandi duhej ta mbante atë ngrohtësi jashtë pjatës — në çdo meny, tabelë dhe postim — ftues, bujar, kurrë turistik. Ndërtuam një identitet të punuar me dorë e mikpritës, në tone tokësore dhe materiale të prekshme, të krijuara për t'u prekur e mbajtur. Nga dera te tryeza e deri te Instagrami, tani ndihet si e njëjta mirëseardhje që merr në çastin që hyn.",
+    "category": "Branding Mikpritjeje"
   },
   "ame": {
-    "slug": "ame",
-    "name": "AMË",
-    "category": "Modë & Drejtim Artistik",
     "heroImage": "/img/work-3.jpg",
-    "overviewHeading": "Trashëgimia, e veshur përpara — një identitet shqiptar për rrugën.",
-    "overview": "AMË është një markë streetwear me trashëgimi që e mbart identitetin shqiptar në rrugët e Londrës e më tej. Duhej të ndihej krenare pa qenë nostalgjike — e rrënjosur në origjinë, por e prerë për sot. E ankoruam brandin te një ide e vetme, origjina si identitet, dhe e shprehëm përmes motivit të shqiponjës, një wordmark-u të sigurt dhe një palete të heshtur, editoriale. Fotografia në rrugë të lagura i jep qëndrimin: e përmbajtur, e sigurt në vetvete, padyshim e vetja — trashëgimi që do ta veshësh.",
     "snapshot": {
       "industry": "Modë",
       "services": [
@@ -268,6 +273,11 @@
         "Grafika Veshjesh"
       ]
     },
+    "finalImage": {
+      "src": "/img/automation.png",
+      "w": 1448,
+      "h": 1084
+    },
     "blocks": [
       {
         "kind": "caption",
@@ -280,15 +290,15 @@
         "w": 2400,
         "h": 1500
       }
-    ]
+    ],
+    "overviewHeading": "Trashëgimia, e veshur përpara — një identitet shqiptar për rrugën.",
+    "name": "AMË",
+    "slug": "ame",
+    "overview": "AMË është një markë streetwear me trashëgimi që e mbart identitetin shqiptar në rrugët e Londrës e më tej. Duhej të ndihej krenare pa qenë nostalgjike — e rrënjosur në origjinë, por e prerë për sot. E ankoruam brandin te një ide e vetme, origjina si identitet, dhe e shprehëm përmes motivit të shqiponjës, një wordmark-u të sigurt dhe një palete të heshtur, editoriale. Fotografia në rrugë të lagura i jep qëndrimin: e përmbajtur, e sigurt në vetvete, padyshim e vetja — trashëgimi që do ta veshësh.",
+    "category": "Modë & Drejtim Artistik"
   },
   "her-club": {
-    "slug": "her-club",
-    "name": "HER CLUB",
-    "category": "Komunitet & Anëtarësi",
     "heroImage": "/img/problem.jpg",
-    "overviewHeading": "Aty ku ambicia takon motërzinë — një identitet i ngrohtë dhe i ngritur.",
-    "overview": "HER Club është një komunitet ku gratë ambicioze lidhen dhe rriten së bashku. Brandi duhej të ndihej njëkohësisht frymëzues dhe intim — mjaftueshëm i rafinuar për t'i besuar, mjaftueshëm i ngrohtë për t'iu bashkuar. E ndërtuam rreth ngrohtësisë dhe një sigurie të qetë: ari të butë, tipografi të rafinuar dhe një stemë që sinjalizon përkatësi pa përjashtim. Nga kartat e mirëseardhjes te materialet e anëtarësisë e deri te web-i, çdo pjesë ndihet personale — një dorë e zgjatur, jo një portë e ruajtur. Rezultati lexohet i ngritur dhe bujar njëkohësisht.",
     "snapshot": {
       "industry": "Komunitet",
       "services": [
@@ -307,6 +317,11 @@
         "Drejtim Web"
       ]
     },
+    "finalImage": {
+      "src": "/img/automation.png",
+      "w": 1448,
+      "h": 1081
+    },
     "blocks": [
       {
         "kind": "caption",
@@ -319,6 +334,11 @@
         "w": 1402,
         "h": 1122
       }
-    ]
+    ],
+    "overviewHeading": "Aty ku ambicia takon motërzinë — një identitet i ngrohtë dhe i ngritur.",
+    "name": "HER CLUB",
+    "slug": "her-club",
+    "overview": "HER Club është një komunitet ku gratë ambicioze lidhen dhe rriten së bashku. Brandi duhej të ndihej njëkohësisht frymëzues dhe intim — mjaftueshëm i rafinuar për t'i besuar, mjaftueshëm i ngrohtë për t'iu bashkuar. E ndërtuam rreth ngrohtësisë dhe një sigurie të qetë: ari të butë, tipografi të rafinuar dhe një stemë që sinjalizon përkatësi pa përjashtim. Nga kartat e mirëseardhjes te materialet e anëtarësisë e deri te web-i, çdo pjesë ndihet personale — një dorë e zgjatur, jo një portë e ruajtur. Rezultati lexohet i ngritur dhe bujar njëkohësisht.",
+    "category": "Komunitet & Anëtarësi"
   }
 }

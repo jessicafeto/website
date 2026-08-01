@@ -1,22 +1,16 @@
 {
-  "meta": {
-    "title": "noova — Branding, Websites & Marketing · Londër",
-    "description": "noova është një studio kreative me bazë në Londër që bashkon strategjinë, dizajnin, uebsajtet, marketingun dhe teknologjinë për të ndërtuar marka të forta dhe të qëndrueshme. Për bizneset që kanë evoluar përtej imazhit të tyre.",
-    "ogDescription": "Ne ndërtojmë marka që i japin formë biznesit. Për bizneset që imazhi nuk i përfaqëson më."
-  },
-  "nav": {
-    "aboutStudio": "Rreth Studios",
-    "portfolio": "Portofoli",
-    "services": "Shërbimet",
-    "contact": "Kontakt"
-  },
-  "hero": {
-    "service1": "Branding",
-    "service2": "Websites",
-    "service3": "Marketing",
-    "service4": "Automation",
-    "tagline": "Për bizneset që duan të ndërtojnë një markë, jo thjesht një logo.",
-    "scroll": ""
+  "contact": {
+    "heading": "Punoni me ne.",
+    "fieldEmail": "Email",
+    "fieldCompany": "Kompania",
+    "fieldName": "Emri",
+    "error": "Diçka shkoi keq. Ju lutemi provoni sërish, ose na shkruani në hello@noovadata.com.",
+    "intro": "Na tregoni për biznesin tuaj, ambiciet tuaja, ose thjesht nga ku dëshironi të filloni.",
+    "location": "Londër · Mbretëria e Bashkuar",
+    "submit": "Nisni bisedën →",
+    "sent": "Faleminderit. Do t'ju kontaktojmë së shpejti.",
+    "sending": "Duke dërguar…",
+    "fieldProject": "Projekti"
   },
   "welcome": {
     "label": "MIRË SE VINI TE NOOVA",
@@ -27,6 +21,37 @@
     "growthDesc": "Marketing, përmbajtje dhe fushata që ndihmojnë bizneset ambicioze të rriten.",
     "automationDesc": "Gjenerim kontaktesh, CRM dhe rrjedha pune me AI — sistemet që e bëjnë rritjen të ecë vetë."
   },
+  "nav": {
+    "aboutStudio": "Rreth Studios",
+    "portfolio": "Portofoli",
+    "services": "Shërbimet",
+    "contact": "Kontakt"
+  },
+  "meta": {
+    "title": "noova — Branding, Websites & Marketing · Londër",
+    "description": "noova është një studio kreative me bazë në Londër që bashkon strategjinë, dizajnin, uebsajtet, marketingun dhe teknologjinë për të ndërtuar marka të forta dhe të qëndrueshme. Për bizneset që kanë evoluar përtej imazhit të tyre.",
+    "ogDescription": "Ne ndërtojmë marka që i japin formë biznesit. Për bizneset që imazhi nuk i përfaqëson më."
+  },
+  "clients": {
+    "label": "Klientë të përzgjedhur"
+  },
+  "cookieModal": {
+    "closeAria": "Mbyllni preferencat e cookies",
+    "intro": "Zgjidhni me çfarë ndiheni rehat. Mund ta ndryshoni këtë në çdo kohë nga fundi i faqes.",
+    "marketingAria": "Cookies marketingu",
+    "analyticsAria": "Cookies analitike",
+    "marketingName": "Marketing",
+    "analyticsName": "Analitika",
+    "essentialAria": "Cookies thelbësore (gjithmonë aktive)",
+    "marketingDesc": "Përdoren për të matur fushatat dhe për të shfaqur punë relevante nëpër platforma të tjera.",
+    "analyticsDesc": "Të dhëna anonime dhe të përmbledhura mbi mënyrën si lexohet faqja, që të mund ta përmirësojmë.",
+    "close": "Mbyllni",
+    "title": "Preferencat e cookies",
+    "essentialName": "Thelbësore",
+    "acceptAll": "Pranoni të gjitha",
+    "save": "Ruani preferencat",
+    "essentialDesc": "Të nevojshme që faqja të funksionojë — për të mbajtur mend zgjedhjet tuaja dhe për të ruajtur sigurinë. Gjithmonë aktive."
+  },
   "founder": {
     "label": "Kush qëndron pas noova?",
     "headingA": "Njihuni me Xhesikën,",
@@ -35,6 +60,107 @@
     "p2": "Kjo është arsyeja pse themelova noova.",
     "p3": "Sot ndihmoj bizneset të ndërtojnë marka që pasqyrojnë vërtet atë që janë, duke bashkuar strategjinë, identitetin, uebsajtet, marketingun dhe sistemet inteligjente në një tërësi të vetme. Çdo vendim ka një qëllim. Çdo detaj është menduar me kujdes.",
     "cta": "Lexoni historinë →"
+  },
+  "cookieBanner": {
+    "title": "Një shënim mbi cookies",
+    "body": "Ne përdorim cookies thelbësore për ta mbajtur faqen në punë dhe — vetëm me lejen tuaj — pak të tjera për të kuptuar si lexohet. Kontrolli mbetet te ju. Shihni <privacy>Politikën e Privatësisë</privacy> dhe <cookies>Politikën e Cookies</cookies>.",
+    "acceptAll": "Pranoni të gjitha",
+    "reject": "Refuzoni jo-thelbësoret",
+    "preferences": "Preferencat e cookies"
+  },
+  "work": {
+    "label": "Projektet e përzgjedhura",
+    "viewAll": "Shiko të gjitha projektet →",
+    "meta01": "Teknologji · Branding, Marketing & Events",
+    "meta02": "Bukuri · Branding, Creative & Marketing",
+    "meta03": "Mikpritje · Branding, Website & Marketing",
+    "meta04": "Modë · Branding, Website & Creative",
+    "meta05": "Mikpritje · Branding",
+    "meta06": "Komunitet · Branding, Creative"
+  },
+  "studio": {
+    "p1": "Një markë nuk fillon me një logo apo një ngjyrë. Fillon me të kuptuarit e biznesit. Para se një biznes të shprehet, duhet të kuptohet: çfarë është, në çfarë beson dhe pse ka vlerë. Vetëm atëherë identiteti merr kuptim.",
+    "p2": "Bizneset e mira rrallë kanë nevojë për më shumë dekorim. Shpesh u mungon qartësia dhe lidhja mes pjesëve të ndryshme të markës së tyre. Ne nuk punojmë me departamente të ndara. Strategjia, identiteti, përmbajtja, uebsajti, marketingu dhe teknologjia zhvillohen së bashku si një sistem i vetëm.",
+    "p3": "Rezultati nuk është thjesht një pamje e re. Është një markë që përfaqëson biznesin me të njëjtën qartësi, cilësi dhe ambicie që ai ka në të vërtetë. Një identitet i menduar për të zgjatur, jo për të ndjekur trendet.",
+    "p4": "noova punon mes Londrës dhe Tiranës. Pavarësisht se ku fillon një projekt, ai zhvillohet me të njëjtin përkushtim, kujdes dhe standard cilësie.",
+    "h1": "Gjithçka fillon me biznesin.",
+    "eyebrow": "Studioja",
+    "h2": "Një studio. Një proces.",
+    "h3": "Një markë që përfaqëson biznesin.",
+    "h4": "Dy studio. I njëjti standard.",
+    "intro": "noova është një studio që punon mes Londrës dhe Tiranës, duke bashkuar strategjinë, identitetin, uebsajtet, marketingun dhe sistemet inteligjente në një proces të vetëm. Qëllimi ynë është i thjeshtë: të ndërtojmë marka që pasqyrojnë qartë biznesin që qëndron pas tyre.",
+    "contactCta": "Nisni një bisedë →",
+    "metaTitle": "Rreth Studios",
+    "headline": "Për bizneset që duan të ndërtojnë një markë, jo thjesht një logo.",
+    "metaDesc": "noova është një studio mes Londrës dhe Tiranës, që bashkon strategjinë, brandingun, uebsajtet, marketingun dhe sistemet inteligjente në një tërësi të vetme dhe të integruar.",
+    "storyCta": "Njihuni me themeluesen →"
+  },
+  "caseStudy": {
+    "theProject": "Projekti",
+    "industry": "Industria",
+    "services": "Shërbimet",
+    "timeline": "Kohëzgjatja",
+    "deliverables": "Dorëzimet",
+    "nextProject": "Projekti tjetër"
+  },
+  "hero": {
+    "service1": "Marketing",
+    "service2": "Websites",
+    "service3": "Branding",
+    "service4": "Automation",
+    "tagline": "Për bizneset që duan të ndërtojnë një markë, jo thjesht një logo.",
+    "scroll": ""
+  },
+  "footer": {
+    "contact": "Kontakt",
+    "cookieSettings": "Cilësimet e Cookies",
+    "portfolio": "Portofoli",
+    "privacy": "Politika e Privatësisë",
+    "londonHeading": "Londër",
+    "tiranaHeading": "Tiranë",
+    "tagline": "noova është një partner kreativ për bizneset që janë rritur përtej imazhit të tyre.",
+    "cookiePolicy": "Politika e Cookies",
+    "rights": "© 2026 NOOVA. TË GJITHA TË DREJTAT E REZERVUARA.",
+    "journal": "Journal",
+    "connectHeading": "Lidhuni me ne",
+    "description": "Ne ndërtojmë marka nga brenda jashtë — duke bashkuar strategjinë, brandingun, uebsajtet, marketingun dhe sistemet inteligjente në një tërësi të vetme dhe të integruar. Rezultati është një markë që më në fund përputhet me biznesin që qëndron pas saj.",
+    "services": "Shërbimet",
+    "studioLabel": "STUDIO BRANDINGU & INOVACIONI",
+    "home": "Ballina",
+    "navHeading": "Navigimi"
+  },
+  "offer": {
+    "timeline": "Kohëzgjatja",
+    "form": {
+      "business": "Biznesi & industria",
+      "timeline": "Koha ideale",
+      "budget": "Buxheti (opsional)",
+      "error": "Diçka shkoi keq. Ju lutemi provoni sërish, ose na shkruani në hello@noovadata.com.",
+      "name": "Emri juaj",
+      "submit": "Dërgoni kërkesën →",
+      "sent": "Faleminderit — do t'ju kontaktojmë brenda dy ditëve të punës.",
+      "sending": "Duke dërguar…",
+      "email": "Email"
+    },
+    "otherEngagements": "Angazhimet e tjera",
+    "begin": "Fillimi",
+    "whatsInside": "Çfarë përfshihet",
+    "faqHeading": "Pyetjet që ia vlen t'i bëni.",
+    "packages": "Paketat",
+    "enquireShort": "Pyesni →",
+    "whatIs": "Çfarë është {name}?",
+    "enquireHeading": "Pyesni për {name}.",
+    "investment": "Investimi",
+    "mostChosen": "Më e zgjedhura",
+    "location": "Tiranë · Shqipëri",
+    "startProject": "Nisni projektin tuaj →",
+    "everythingIn": "Gjithçka te {builds}, plus:",
+    "booking": "Rezervimi",
+    "glimpseLabel": "Një vështrim te projektet e përzgjedhura",
+    "enquireIntro": "Na tregoni pak për biznesin tuaj dhe nga ku dëshironi të nisni. I përgjigjemi personalisht çdo kërkese, brenda dy ditëve të punës.",
+    "howItUnfolds": "Si zhvillohet",
+    "packagesIntro": "Tri mënyra për të nisur. Çdo angazhim është i personalizuar — këto janë pika nisjeje, dhe fusha e saktë përcaktohet së bashku në bisedë.",
+    "viewProjects": "Shiko projektet e përzgjedhura →"
   },
   "services": {
     "label": "ÇFARË NDËRTOJMË",
@@ -112,131 +238,5 @@
         ]
       }
     ]
-  },
-  "work": {
-    "label": "Projektet e përzgjedhura",
-    "viewAll": "Shiko të gjitha projektet →",
-    "meta01": "Teknologji · Branding, Marketing & Events",
-    "meta02": "Bukuri · Branding, Creative & Marketing",
-    "meta03": "Mikpritje · Branding, Website & Marketing",
-    "meta04": "Modë · Branding, Website & Creative",
-    "meta05": "Mikpritje · Branding",
-    "meta06": "Komunitet · Branding, Creative"
-  },
-  "caseStudy": {
-    "theProject": "Projekti",
-    "industry": "Industria",
-    "services": "Shërbimet",
-    "timeline": "Kohëzgjatja",
-    "deliverables": "Dorëzimet",
-    "nextProject": "Projekti tjetër"
-  },
-  "contact": {
-    "heading": "Punoni me ne.",
-    "intro": "Na tregoni për biznesin tuaj, ambiciet tuaja, ose thjesht nga ku dëshironi të filloni.",
-    "fieldName": "Emri",
-    "fieldEmail": "Email",
-    "fieldCompany": "Kompania",
-    "fieldProject": "Projekti",
-    "submit": "Nisni bisedën →",
-    "sending": "Duke dërguar…",
-    "sent": "Faleminderit. Do t'ju kontaktojmë së shpejti.",
-    "error": "Diçka shkoi keq. Ju lutemi provoni sërish, ose na shkruani në hello@noovadata.com.",
-    "location": "Londër · Mbretëria e Bashkuar"
-  },
-  "footer": {
-    "tagline": "noova është një partner kreativ për bizneset që janë rritur përtej imazhit të tyre.",
-    "description": "Ne ndërtojmë marka nga brenda jashtë — duke bashkuar strategjinë, brandingun, uebsajtet, marketingun dhe sistemet inteligjente në një tërësi të vetme dhe të integruar. Rezultati është një markë që më në fund përputhet me biznesin që qëndron pas saj.",
-    "navHeading": "Navigimi",
-    "home": "Ballina",
-    "services": "Shërbimet",
-    "portfolio": "Portofoli",
-    "journal": "Journal",
-    "contact": "Kontakt",
-    "connectHeading": "Lidhuni me ne",
-    "londonHeading": "Londër",
-    "tiranaHeading": "Tiranë",
-    "privacy": "Politika e Privatësisë",
-    "cookiePolicy": "Politika e Cookies",
-    "cookieSettings": "Cilësimet e Cookies",
-    "rights": "© 2026 NOOVA. TË GJITHA TË DREJTAT E REZERVUARA.",
-    "studioLabel": "STUDIO BRANDINGU & INOVACIONI"
-  },
-  "cookieBanner": {
-    "title": "Një shënim mbi cookies",
-    "body": "Ne përdorim cookies thelbësore për ta mbajtur faqen në punë dhe — vetëm me lejen tuaj — pak të tjera për të kuptuar si lexohet. Kontrolli mbetet te ju. Shihni <privacy>Politikën e Privatësisë</privacy> dhe <cookies>Politikën e Cookies</cookies>.",
-    "acceptAll": "Pranoni të gjitha",
-    "reject": "Refuzoni jo-thelbësoret",
-    "preferences": "Preferencat e cookies"
-  },
-  "cookieModal": {
-    "title": "Preferencat e cookies",
-    "intro": "Zgjidhni me çfarë ndiheni rehat. Mund ta ndryshoni këtë në çdo kohë nga fundi i faqes.",
-    "close": "Mbyllni",
-    "closeAria": "Mbyllni preferencat e cookies",
-    "essentialName": "Thelbësore",
-    "essentialDesc": "Të nevojshme që faqja të funksionojë — për të mbajtur mend zgjedhjet tuaja dhe për të ruajtur sigurinë. Gjithmonë aktive.",
-    "essentialAria": "Cookies thelbësore (gjithmonë aktive)",
-    "analyticsName": "Analitika",
-    "analyticsDesc": "Të dhëna anonime dhe të përmbledhura mbi mënyrën si lexohet faqja, që të mund ta përmirësojmë.",
-    "analyticsAria": "Cookies analitike",
-    "marketingName": "Marketing",
-    "marketingDesc": "Përdoren për të matur fushatat dhe për të shfaqur punë relevante nëpër platforma të tjera.",
-    "marketingAria": "Cookies marketingu",
-    "acceptAll": "Pranoni të gjitha",
-    "save": "Ruani preferencat"
-  },
-  "clients": {
-    "label": "Klientë të përzgjedhur"
-  },
-  "offer": {
-    "startProject": "Nisni projektin tuaj →",
-    "whatIs": "Çfarë është {name}?",
-    "timeline": "Kohëzgjatja",
-    "booking": "Rezervimi",
-    "investment": "Investimi",
-    "packages": "Paketat",
-    "packagesIntro": "Tri mënyra për të nisur. Çdo angazhim është i personalizuar — këto janë pika nisjeje, dhe fusha e saktë përcaktohet së bashku në bisedë.",
-    "mostChosen": "Më e zgjedhura",
-    "everythingIn": "Gjithçka te {builds}, plus:",
-    "enquireShort": "Pyesni →",
-    "whatsInside": "Çfarë përfshihet",
-    "howItUnfolds": "Si zhvillohet",
-    "glimpseLabel": "Një vështrim te projektet e përzgjedhura",
-    "viewProjects": "Shiko projektet e përzgjedhura →",
-    "faqHeading": "Pyetjet që ia vlen t'i bëni.",
-    "begin": "Fillimi",
-    "enquireHeading": "Pyesni për {name}.",
-    "enquireIntro": "Na tregoni pak për biznesin tuaj dhe nga ku dëshironi të nisni. I përgjigjemi personalisht çdo kërkese, brenda dy ditëve të punës.",
-    "location": "Tiranë · Shqipëri",
-    "otherEngagements": "Angazhimet e tjera",
-    "form": {
-      "name": "Emri juaj",
-      "email": "Email",
-      "business": "Biznesi & industria",
-      "timeline": "Koha ideale",
-      "budget": "Buxheti (opsional)",
-      "submit": "Dërgoni kërkesën →",
-      "sending": "Duke dërguar…",
-      "sent": "Faleminderit — do t'ju kontaktojmë brenda dy ditëve të punës.",
-      "error": "Diçka shkoi keq. Ju lutemi provoni sërish, ose na shkruani në hello@noovadata.com."
-    }
-  },
-  "studio": {
-    "metaTitle": "Rreth Studios",
-    "metaDesc": "noova është një studio mes Londrës dhe Tiranës, që bashkon strategjinë, brandingun, uebsajtet, marketingun dhe sistemet inteligjente në një tërësi të vetme dhe të integruar.",
-    "eyebrow": "Studioja",
-    "headline": "Për bizneset që duan të ndërtojnë një markë, jo thjesht një logo.",
-    "intro": "noova është një studio që punon mes Londrës dhe Tiranës, duke bashkuar strategjinë, identitetin, uebsajtet, marketingun dhe sistemet inteligjente në një proces të vetëm. Qëllimi ynë është i thjeshtë: të ndërtojmë marka që pasqyrojnë qartë biznesin që qëndron pas tyre.",
-    "h1": "Gjithçka fillon me biznesin.",
-    "p1": "Një markë nuk fillon me një logo apo një ngjyrë. Fillon me të kuptuarit e biznesit. Para se një biznes të shprehet, duhet të kuptohet: çfarë është, në çfarë beson dhe pse ka vlerë. Vetëm atëherë identiteti merr kuptim.",
-    "h2": "Një studio. Një proces.",
-    "p2": "Bizneset e mira rrallë kanë nevojë për më shumë dekorim. Shpesh u mungon qartësia dhe lidhja mes pjesëve të ndryshme të markës së tyre. Ne nuk punojmë me departamente të ndara. Strategjia, identiteti, përmbajtja, uebsajti, marketingu dhe teknologjia zhvillohen së bashku si një sistem i vetëm.",
-    "h3": "Një markë që përfaqëson biznesin.",
-    "p3": "Rezultati nuk është thjesht një pamje e re. Është një markë që përfaqëson biznesin me të njëjtën qartësi, cilësi dhe ambicie që ai ka në të vërtetë. Një identitet i menduar për të zgjatur, jo për të ndjekur trendet.",
-    "h4": "Dy studio. I njëjti standard.",
-    "p4": "noova punon mes Londrës dhe Tiranës. Pavarësisht se ku fillon një projekt, ai zhvillohet me të njëjtin përkushtim, kujdes dhe standard cilësie.",
-    "storyCta": "Njihuni me themeluesen →",
-    "contactCta": "Nisni një bisedë →"
   }
 }

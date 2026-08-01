@@ -91,7 +91,7 @@ export default async function OfferPage({ slug }: { slug: Offer["slug"] }) {
                   </p>
                 </FadeUp>
                 <FadeUp delay={0.1}>
-                  <p className="mt-6 font-serif text-ink text-[clamp(1.35rem,2.4vw,1.9rem)] leading-[1.5]">
+                  <p className="mt-6 font-sans text-ink text-[clamp(1.15rem,2vw,1.5rem)] leading-[1.6]">
                     {offer.shift.body}
                   </p>
                 </FadeUp>

@@ -254,57 +254,57 @@
   "marketing": {
     "heroImage": "/hero/marketing.jpg",
     "shift": {
-      "heading": "Ndryshimi",
-      "body": "Shumica e marketingut bëhet për të mbushur një kalendar — më i zhurmshëm, më i shpejtë, i harruar deri në mëngjes. Ne ndërtojmë të kundërtën: një trup pune te i cili ia vlen të kthehesh. Çdo kanal bëhet një botim i të njëjtit publikim, që mban një zë e një nivel kujdesi. Prani mbi shpeshtësi, kuptim mbi vëllim — një markë që flet kur ka diçka që ia vlen të thuhet, dhe rritet për shkak të kësaj."
+      "heading": "Përtej marketingut",
+      "body": "Shumë marka publikojnë çdo ditë, por pak kanë diçka që ia vlen të dëgjohet. Ne nuk krijojmë përmbajtje vetëm për të qenë aktivë. Ndërtojmë një sistem ku strategjia, përmbajtja, fushatat dhe automatizimi punojnë së bashku. Rezultati është një prezencë online që ndërton besim dhe rritet bashkë me biznesin tuaj."
     },
     "eyebrow": "Angazhimi 03",
     "includes": [
       {
         "label": "Content",
         "items": [
-          "Strategji përmbajtjeje",
-          "Planifikim editorial",
-          "Strategji për rrjete sociale",
-          "Kalendarë përmbajtjeje",
-          "Shkrim tekstesh",
-          "Drejtim fotografie",
-          "Prodhim përmbajtjeje me ndihmën e AI"
+          "Content Strategy",
+          "Editorial Planning",
+          "Social Media Strategy",
+          "Content Calendar",
+          "Copywriting",
+          "Content Production",
+          "Monthly Publishing.  Campaigns"
         ]
       },
       {
         "label": "Campaigns",
         "items": [
-          "Strategji marketingu",
-          "Planifikim lançimi",
-          "Koncepte fushatash",
-          "Partneritete me influencues",
-          "Bashkëpunime me krijues",
-          "Aktivizime brendi",
-          "Ndërtim komuniteti"
+          "Marketing Strategy",
+          "Campaign Planning",
+          "Campaign Concepts",
+          "Influencer Partnerships",
+          "Creator Collaborations",
+          "Email Marketing",
+          "Paid Media."
         ]
       },
       {
         "label": "Growth",
         "items": [
-          "Analitikë marketingu",
+          "Marketing Analytics",
           "GA4 & Looker Studio",
-          "Strategji CRM",
-          "Marketing me email",
-          "Optimizim konvertimesh",
-          "Panele raportimi",
-          "Plane rritjeje"
+          "CRM Strategy",
+          "Email Marketing",
+          "CRO",
+          "KPI Dashboards",
+          "Monthly Reporting."
         ]
       },
       {
         "label": "AI & Systems",
         "items": [
-          "Rrjedha pune me AI",
-          "Automatizim marketingu",
-          "Zbatim CRM",
-          "Sisteme biznesi",
-          "Rrugëtimi i klientit",
-          "Sisteme për gjenerimin e kontakteve",
-          "Optimizim procesesh"
+          "AI Workflows",
+          "Marketing Automation",
+          "CRM Implementation",
+          "Business Systems",
+          "Customer Journey Mapping",
+          "AI Agents",
+          "Process Optimisation."
         ]
       }
     ],
@@ -344,41 +344,47 @@
         "price": "Nga €300 / muaj",
         "summary": "Një prani e qëndrueshme e e menduar në një kanal.",
         "scope": [
-          "Strategji përmbajtjeje",
-          "Strategji për rrjete sociale — një kanal",
-          "Kalendarë përmbajtjeje",
-          "Shkrim tekstesh",
-          "8–10 postime / muaj",
-          "Analitikë marketingu — raport mujor"
+          "Content Strategy",
+          "Social Media Strategy (1 platformë)",
+          "Content Calendar",
+          "Copywriting",
+          "8–10 postime në muaj",
+          "Analytics & Monthly Reporting."
         ]
       },
       {
         "name": "Signature",
         "price": "Nga €600 / muaj",
-        "summary": "Publikimi, plus fushata që lënë gjurmë.",
+        "summary": "Content, plus Paid Ads që sjellin rezultate",
         "builds": "Essential",
         "scope": [
-          "Planifikim editorial",
-          "Drejtim fotografie",
-          "Koncepte fushatash & planifikim lançimi",
-          "Marketing me email",
-          "12–16 postime / muaj + storie — dy kanale",
-          "Panel GA4 & Looker Studio"
+          "Editorial Planning",
+          "Creative Direction",
+          "Photoshoots",
+          "Campaign Concepts",
+          "Launch Planning",
+          "Email Marketing",
+          "Paid Social",
+          "Content Creation",
+          "12–16 postime në muaj",
+          "Analytics & Monthly Reporting."
         ],
         "featured": true
       },
       {
         "name": "Bespoke",
         "price": "Nga €1,200 / muaj",
-        "summary": "Një partneritet i plotë rritjeje me sisteme pas tij.",
+        "summary": "Partneritet afatgjatë për rritje të qëndrueshme.",
         "builds": "Signature",
         "scope": [
-          "Prodhim përmbajtjeje me ndihmën e AI",
-          "Partneritete me influencues & bashkëpunime me krijues",
-          "Automatizim marketingu & zbatim CRM",
-          "Sisteme për gjenerimin e kontakteve",
-          "Optimizim konvertimesh",
-          "Plane rritjeje"
+          "AI Content Production",
+          "Creator Partnerships",
+          "Paid Advertising",
+          "Marketing Automation",
+          "CRM & Email Marketing",
+          "Analytics & Dashboards",
+          "Growth Strategy",
+          "sipas nevojave të biznesit."
         ]
       }
     ],
@@ -389,23 +395,23 @@
     "faqs": [
       {
         "q": "A ka një angazhim minimal?",
-        "a": "Kërkojmë tre muaj fillestarë, që puna të ketë hapësirë të shtohet e të mos gjykohet nga një postim i vetëm."
+        "a": "Po. Kërkojmë një angazhim minimal prej tre muajsh, që strategjia të ketë kohë të japë rezultate."
       },
       {
-        "q": "Si funksionon faturimi?",
-        "a": "Një tarifë e thjeshtë mujore, e faturuar në fillim të çdo muaji. Mund të lëvizni lart ose poshtë një nivel me një muaj paralajmërim."
+        "q": "Si funksionon pagesa?",
+        "a": "Pagesa bëhet në fillim të çdo muaji. Paketën mund ta ndryshoni ose ta anuloni me një muaj njoftim paraprak."
       },
       {
         "q": "A përfshihet buxheti i reklamave?",
-        "a": "Jo — buxheti i medias është i ndarë dhe paguhet drejtpërdrejt te platformat. Ne menaxhojmë fushatat; ju mbani kontrollin e shpenzimit."
+        "a": "Jo. Buxheti për Paid Ads paguhet veçmas, drejtpërdrejt te platformat. Ne kujdesemi për strategjinë, menaxhimin dhe optimizimin e fushatave."
       },
       {
         "q": "Cilat kanale mbuloni?",
-        "a": "Ato që i përshtaten audiencës suaj — më së shpeshti Instagram dhe LinkedIn, plus email dhe ditari juaj. Ne fokusohemi, në vend që të shpërndahemi."
+        "a": "Zgjedhim kanalet që i përshtaten më mirë biznesit dhe audiencës suaj. Më shpesh punojmë me Instagram, LinkedIn, Email Marketing dhe blogun e uebsajtit."
       },
       {
         "q": "Çfarë ju nevojitet nga unë?",
-        "a": "Qasje te kanalet tuaja dhe një takim i shkurtër mujor. Ne kujdesemi për strategjinë, krijimin dhe raportimin."
+        "a": "Akses në kanalet tuaja, një takim i shkurtër çdo muaj dhe komunikim i hapur. Ne kujdesemi për strategjinë, krijimin, publikimin dhe raportimin."
       }
     ]
   },

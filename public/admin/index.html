@@ -5,9 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="robots" content="noindex, nofollow" />
     <title>noova — Edit Content</title>
+    <!--
+      Vercel serves /admin without a trailing slash, so Decap's default
+      *relative* config.yml lookup resolves against the site root
+      (noovadata.com/config.yml, a 404) instead of /admin/config.yml.
+      An explicit absolute link sidesteps that entirely.
+    -->
+    <link href="/admin/config.yml" type="text/yaml" rel="cms-config-url" />
   </head>
   <body>
-    <!-- Decap CMS reads ./config.yml automatically. -->
     <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
   </body>
 </html>

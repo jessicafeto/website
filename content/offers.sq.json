@@ -1,61 +1,11 @@
 {
   "branding": {
-    "slug": "branding",
-    "eyebrow": "Angazhimi 01",
-    "name": "Branding",
     "heroImage": "/hero/branding.jpg",
-    "heroAlt": "Udhëzues brendi, mostra letrash dhe shembuj tipografie të shtrira mbi një tavolinë studioje.",
-    "headline": "Një markë që më në fund përputhet me biznesin që qëndron pas saj.",
-    "offer": "Një ndërtim i plotë brendi gjashtë deri në tetë javë — strategji e plotë, drejtim kreativ dhe një sistem identiteti vizual — i dizajnuar për ta lançuar markën tuaj me qartësi, besim dhe një prani luksi.",
-    "cadence": "6–8 javë",
-    "booking": "Disponueshmëri e kufizuar mujore",
     "shift": {
       "heading": "Ndryshimi",
-      "body": "Bizneset me cilësi të vërtetë rrallë janë të prishura — janë të shpërndara, me punën e tyre më të mirë të ndarë nëpër pjesë që kurrë nuk u menduan të funksiononin bashkë. Ne nuk zbukurojmë; ne sqarojmë. Nisim nga thelbi — çfarë është biznesi juaj, çfarë beson dhe pse ka rëndësi — dhe lëmë çdo gjë të dukshme të rritet prej andej. Largoheni me një sistem të vetëm koherent në vend të pjesëve të shkëputura, dhe me besimin për të mos kërkuar më falje për pamjen tuaj."
+      "body": "Bizneset me cilësi të vërtetë rrallë kanë nevojë për më shumë dizajn. Ato kanë nevojë për më shumë qartësi. Puna e tyre më e mirë shpesh është e shpërndarë në pjesë që nuk janë menduar të funksionojnë së bashku. \n\nNe nuk krijojmë vetëm identitete vizuale. Ne ndërtojmë sisteme që funksionojnë. Fillojmë nga thelbi i biznesit tuaj: çfarë është, çfarë përfaqëson dhe pse ka rëndësi. Më pas ndërtojmë një sistem të vetëm, ku çdo element lidhet natyrshëm me tjetrin."
     },
-    "tiers": [
-      {
-        "name": "Essential",
-        "price": "Nga €700",
-        "summary": "Një bazë e qartë dhe e sigurt për një biznes që po gjen veten.",
-        "scope": [
-          "Strategji brendi — misioni, vlerat, audienca",
-          "Pozicionim",
-          "Identitet vizual — logoja parësore & sistemi bazë",
-          "Udhëzues brendi (PDF i shkurtër)",
-          "Të gjitha skedarët e logos & aseteve"
-        ]
-      },
-      {
-        "name": "Signature",
-        "price": "Nga €1,400",
-        "summary": "Ndërtimi i plotë i brendit — nga strategjia te identiteti.",
-        "builds": "Essential",
-        "scope": [
-          "Emërtim & mesazhe",
-          "Ton zëri",
-          "Drejtim kreativ",
-          "Identitet vizual i plotë — grup logosh, ngjyra & tipografi",
-          "Udhëzues brendi gjithëpërfshirës",
-          "Kit brendi për rrjete sociale",
-          "Plan lançimi & shpërndarjeje"
-        ],
-        "featured": true
-      },
-      {
-        "name": "Bespoke",
-        "price": "Nga €2,800",
-        "summary": "Një markë e paharrueshme, e krijuar pa kufij.",
-        "builds": "Signature",
-        "scope": [
-          "Fotografi & drejtim artistik",
-          "Ilustrim i personalizuar ose identitet në lëvizje",
-          "Paketim ose materiale të shtypura",
-          "Libër brendi i zgjeruar, i shtypur",
-          "Mbështetje brendi pas lançimit"
-        ]
-      }
-    ],
+    "eyebrow": "Angazhimi 01",
     "includes": [
       {
         "label": "Brand & Identity",
@@ -70,6 +20,8 @@
         ]
       }
     ],
+    "name": "Ndërtim Marke",
+    "slug": "branding",
     "process": [
       {
         "n": "01",
@@ -97,6 +49,58 @@
         "body": "Një plan i menduar shpërndarjeje dhe një dorëzim i plotë, që marka të mbërrijë me qëllim e jo me zhurmë."
       }
     ],
+    "heroAlt": "Udhëzues marke, mostra letrash dhe shembuj tipografie të shtrira mbi një tavolinë studioje.",
+    "tiers": [
+      {
+        "name": "Essential",
+        "price": "Nga €400",
+        "summary": "Një bazë e qartë dhe e sigurt për një biznes që po gjen veten.",
+        "scope": [
+          "Strategjia e markës",
+          "misioni",
+          "vlerat dhe audienca",
+          "pozicionimi",
+          "identiteti vizual",
+          "logoja kryesore dhe sistemi bazë",
+          "udhëzuesi i markës (PDF)",
+          "të gjithë skedarët e logos dhe asetet."
+        ]
+      },
+      {
+        "name": "Signature",
+        "price": "Nga €900",
+        "summary": "Një markë e ndërtuar nga strategjia te identiteti.",
+        "builds": "Essential",
+        "scope": [
+          "Emërtimi dhe mesazhet",
+          "toni i zërit",
+          "drejtimi kreativ",
+          "identiteti vizual i plotë",
+          "grupi i logove",
+          "ngjyrat dhe tipografia",
+          "udhëzuesi i markës",
+          "kit për rrjetet sociale dhe plani i lançimit."
+        ],
+        "featured": true
+      },
+      {
+        "name": "Bespoke",
+        "price": "Nga €1400",
+        "summary": "Një identitet i veçantë, i krijuar pa kufij.",
+        "builds": "Signature",
+        "scope": [
+          "Fotografi dhe drejtim artistik",
+          "ilustrime të personalizuara ose identitet në lëvizje",
+          "dizajn paketimi dhe materiale të shtypura",
+          "udhëzues i zgjeruar i markës",
+          "mbështetje pas lançimit. ⭐"
+        ]
+      }
+    ],
+    "cadence": "6–8 javë",
+    "headline": "Një markë që më në fund përputhet me biznesin që qëndron pas saj.",
+    "booking": "Vende të kufizuara.",
+    "offer": "Një proces i plotë për ndërtimin e markës, që zgjat 6–8 javë, me strategji, drejtim kreativ dhe një sistem identiteti vizual, i krijuar për ta lançuar markën tuaj me qartësi, besim dhe një prani premium.",
     "faqs": [
       {
         "q": "A mund t'i personalizoj ose kombinoj paketat?",
@@ -121,19 +125,56 @@
     ]
   },
   "websites": {
-    "slug": "websites",
-    "eyebrow": "Angazhimi 02",
-    "name": "Websites",
     "heroImage": "/hero/websites.jpg",
-    "heroAlt": "Një mur me faqe editoriale dhe raste studimore të fiksuara në studion e noova.",
-    "headline": "Një uebsajt po aq i menduar sa marka pas tij.",
-    "offer": "Një ndërtim dixhital i rafinuar katër deri në tetë javë që e shndërron markën tuaj në një uebsajt elegant e të qetë — i punuar me dizajn të qëllimshëm, strukturë strategjike dhe një përvojë përdoruesi të klasit botëror.",
-    "cadence": "4–8 javë",
-    "booking": "Disponueshmëri e kufizuar mujore",
     "shift": {
       "heading": "Ndryshimi",
       "body": "Shumica e uebsajteve në heshtje e nënvlerësojnë biznesin pas tyre — të ngarkuar aty ku duhet të jenë të qartë, dekorativë aty ku duhet të jenë strukturorë. Ne dizajnojmë të kundërtën: një përvojë të qetë e editoriale që i udhëheq njerëzit e duhur nëpër një histori të vetme e të qëllimshme. E shpejtë, e menduar dhe pa dyshim e juaja — një shtëpi që më në fund e mban markën në vend që ta zvogëlojë."
     },
+    "eyebrow": "Angazhimi 02",
+    "includes": [
+      {
+        "label": "Websites",
+        "items": [
+          "Strategji uebsajti",
+          "UX & arkitekturë informacioni",
+          "Dizajn uebsajti",
+          "Zhvillim në Webflow",
+          "Faqe uljeje",
+          "Baza SEO",
+          "Optimizim i performancës"
+        ]
+      }
+    ],
+    "name": "Websites",
+    "slug": "websites",
+    "process": [
+      {
+        "n": "01",
+        "title": "Zbulimi",
+        "body": "Së pari kuptohen qëllimet, audienca dhe përmbajtja. Biem dakord çfarë duhet të arrijë uebsajti para se të dizajnojmë një ekran të vetëm."
+      },
+      {
+        "n": "02",
+        "title": "Strategji & strukturë",
+        "body": "Harta e faqes, arkitektura e informacionit dhe hierarkia e përmbajtjes — skeleti i qetë që e bën gjithë përvojën të duket pa mund."
+      },
+      {
+        "n": "03",
+        "title": "Dizajni",
+        "body": "Dizajn faqesh editorial, në linjë me markën. Një ide udhëheq çdo ekran, kurrë disa që konkurrojnë për syrin."
+      },
+      {
+        "n": "04",
+        "title": "Ndërtimi",
+        "body": "Zhvillim, integrime, baza SEO dhe performancë — të projektuara për të qenë të shpejta, të aksesueshme dhe të lehta për t'u përdorur."
+      },
+      {
+        "n": "05",
+        "title": "Lançim & mbështetje",
+        "body": "Testim i kujdesshëm, një lançim i qetë dhe kujdes pas tij — plus një udhëzim që të mos mbeteni kurrë në pikëpyetje se si funksionon."
+      }
+    ],
+    "heroAlt": "Një mur me faqe editoriale dhe raste studimore të fiksuara në studion e noova.",
     "tiers": [
       {
         "name": "Essential",
@@ -178,47 +219,10 @@
         ]
       }
     ],
-    "includes": [
-      {
-        "label": "Websites",
-        "items": [
-          "Strategji uebsajti",
-          "UX & arkitekturë informacioni",
-          "Dizajn uebsajti",
-          "Zhvillim në Webflow",
-          "Faqe uljeje",
-          "Baza SEO",
-          "Optimizim i performancës"
-        ]
-      }
-    ],
-    "process": [
-      {
-        "n": "01",
-        "title": "Zbulimi",
-        "body": "Së pari kuptohen qëllimet, audienca dhe përmbajtja. Biem dakord çfarë duhet të arrijë uebsajti para se të dizajnojmë një ekran të vetëm."
-      },
-      {
-        "n": "02",
-        "title": "Strategji & strukturë",
-        "body": "Harta e faqes, arkitektura e informacionit dhe hierarkia e përmbajtjes — skeleti i qetë që e bën gjithë përvojën të duket pa mund."
-      },
-      {
-        "n": "03",
-        "title": "Dizajni",
-        "body": "Dizajn faqesh editorial, në linjë me markën. Një ide udhëheq çdo ekran, kurrë disa që konkurrojnë për syrin."
-      },
-      {
-        "n": "04",
-        "title": "Ndërtimi",
-        "body": "Zhvillim, integrime, baza SEO dhe performancë — të projektuara për të qenë të shpejta, të aksesueshme dhe të lehta për t'u përdorur."
-      },
-      {
-        "n": "05",
-        "title": "Lançim & mbështetje",
-        "body": "Testim i kujdesshëm, një lançim i qetë dhe kujdes pas tij — plus një udhëzim që të mos mbeteni kurrë në pikëpyetje se si funksionon."
-      }
-    ],
+    "cadence": "4–8 javë",
+    "headline": "Një uebsajt po aq i menduar sa marka pas tij.",
+    "booking": "Disponueshmëri e kufizuar mujore",
+    "offer": "Një ndërtim dixhital i rafinuar katër deri në tetë javë që e shndërron markën tuaj në një uebsajt elegant e të qetë — i punuar me dizajn të qëllimshëm, strukturë strategjike dhe një përvojë përdoruesi të klasit botëror.",
     "faqs": [
       {
         "q": "Në cilën platformë ndërtoni?",
@@ -243,63 +247,12 @@
     ]
   },
   "marketing": {
-    "slug": "marketing",
-    "eyebrow": "Angazhimi 03",
-    "name": "Marketing & Growth",
     "heroImage": "/hero/marketing.jpg",
-    "heroAlt": "Pamje nga lart e faqeve të ditarit noova duke u shtruar e redaktuar mbi një tavolinë.",
-    "headline": "Një prani te e cila ia vlen të kthehesh.",
-    "offer": "Një partneritet i vazhdueshëm marketingu që e kthen markën tuaj në një botim të gjallë — duke bashkuar përmbajtjen editoriale, fushatat e menduara dhe sistemet inteligjente në një prani të vetme koherente, të projektuar për të arritur njerëzit e duhur, për të ndërtuar besim afatgjatë dhe për t'u rritur me qëllim e jo me zhurmë.",
-    "cadence": "Partneritet i vazhdueshëm",
-    "booking": "Nisje mujore e vazhdueshme",
     "shift": {
       "heading": "Ndryshimi",
       "body": "Shumica e marketingut bëhet për të mbushur një kalendar — më i zhurmshëm, më i shpejtë, i harruar deri në mëngjes. Ne ndërtojmë të kundërtën: një trup pune te i cili ia vlen të kthehesh. Çdo kanal bëhet një botim i të njëjtit publikim, që mban një zë e një nivel kujdesi. Prani mbi shpeshtësi, kuptim mbi vëllim — një markë që flet kur ka diçka që ia vlen të thuhet, dhe rritet për shkak të kësaj."
     },
-    "tiers": [
-      {
-        "name": "Essential",
-        "price": "Nga €300 / muaj",
-        "summary": "Një prani e qëndrueshme e e menduar në një kanal.",
-        "scope": [
-          "Strategji përmbajtjeje",
-          "Strategji për rrjete sociale — një kanal",
-          "Kalendarë përmbajtjeje",
-          "Shkrim tekstesh",
-          "8–10 postime / muaj",
-          "Analitikë marketingu — raport mujor"
-        ]
-      },
-      {
-        "name": "Signature",
-        "price": "Nga €600 / muaj",
-        "summary": "Publikimi, plus fushata që lënë gjurmë.",
-        "builds": "Essential",
-        "scope": [
-          "Planifikim editorial",
-          "Drejtim fotografie",
-          "Koncepte fushatash & planifikim lançimi",
-          "Marketing me email",
-          "12–16 postime / muaj + storie — dy kanale",
-          "Panel GA4 & Looker Studio"
-        ],
-        "featured": true
-      },
-      {
-        "name": "Bespoke",
-        "price": "Nga €1,200 / muaj",
-        "summary": "Një partneritet i plotë rritjeje me sisteme pas tij.",
-        "builds": "Signature",
-        "scope": [
-          "Prodhim përmbajtjeje me ndihmën e AI",
-          "Partneritete me influencues & bashkëpunime me krijues",
-          "Automatizim marketingu & zbatim CRM",
-          "Sisteme për gjenerimin e kontakteve",
-          "Optimizim konvertimesh",
-          "Plane rritjeje"
-        ]
-      }
-    ],
+    "eyebrow": "Angazhimi 03",
     "includes": [
       {
         "label": "Content",
@@ -350,6 +303,8 @@
         ]
       }
     ],
+    "name": "Marketing & Growth",
+    "slug": "marketing",
     "process": [
       {
         "n": "01",
@@ -377,6 +332,55 @@
         "body": "Një partneritet i vazhdueshëm: botim, rishikim dhe përsosje — duke rritur praninë dhe besimin me kalimin e kohës."
       }
     ],
+    "heroAlt": "Pamje nga lart e faqeve të ditarit noova duke u shtruar e redaktuar mbi një tavolinë.",
+    "tiers": [
+      {
+        "name": "Essential",
+        "price": "Nga €300 / muaj",
+        "summary": "Një prani e qëndrueshme e e menduar në një kanal.",
+        "scope": [
+          "Strategji përmbajtjeje",
+          "Strategji për rrjete sociale — një kanal",
+          "Kalendarë përmbajtjeje",
+          "Shkrim tekstesh",
+          "8–10 postime / muaj",
+          "Analitikë marketingu — raport mujor"
+        ]
+      },
+      {
+        "name": "Signature",
+        "price": "Nga €600 / muaj",
+        "summary": "Publikimi, plus fushata që lënë gjurmë.",
+        "builds": "Essential",
+        "scope": [
+          "Planifikim editorial",
+          "Drejtim fotografie",
+          "Koncepte fushatash & planifikim lançimi",
+          "Marketing me email",
+          "12–16 postime / muaj + storie — dy kanale",
+          "Panel GA4 & Looker Studio"
+        ],
+        "featured": true
+      },
+      {
+        "name": "Bespoke",
+        "price": "Nga €1,200 / muaj",
+        "summary": "Një partneritet i plotë rritjeje me sisteme pas tij.",
+        "builds": "Signature",
+        "scope": [
+          "Prodhim përmbajtjeje me ndihmën e AI",
+          "Partneritete me influencues & bashkëpunime me krijues",
+          "Automatizim marketingu & zbatim CRM",
+          "Sisteme për gjenerimin e kontakteve",
+          "Optimizim konvertimesh",
+          "Plane rritjeje"
+        ]
+      }
+    ],
+    "cadence": "Partneritet i vazhdueshëm",
+    "headline": "Një prani te e cila ia vlen të kthehesh.",
+    "booking": "Nisje mujore e vazhdueshme",
+    "offer": "Një partneritet i vazhdueshëm marketingu që e kthen markën tuaj në një botim të gjallë — duke bashkuar përmbajtjen editoriale, fushatat e menduara dhe sistemet inteligjente në një prani të vetme koherente, të projektuar për të arritur njerëzit e duhur, për të ndërtuar besim afatgjatë dhe për t'u rritur me qëllim e jo me zhurmë.",
     "faqs": [
       {
         "q": "A ka një angazhim minimal?",
@@ -401,19 +405,56 @@
     ]
   },
   "automation": {
-    "slug": "automation",
-    "eyebrow": "Angazhimi 04",
-    "name": "AI & Automation",
     "heroImage": "/hero/automation.jpg",
-    "heroAlt": "Një panel analitik në një tablet pranë materialeve të markës mbi një sipërfaqe të errët studioje.",
-    "headline": "Sistemet inteligjente pas markës.",
-    "offer": "Një ndërtim i automatizimeve, funneleve dhe rrjedhave të punës me AI që i lejojnë një biznesi ambicioz të rritet pa shtuar staf — gjenerim kontaktesh, CRM, email dhe operacione, të lidhura në një sistem të vetëm, të qetë e të besueshëm.",
-    "cadence": "3–6 javë",
-    "booking": "Disponueshmëri e kufizuar mujore",
     "shift": {
       "heading": "Ndryshimi",
       "body": "Rritja zakonisht do të thotë më shumë punë — më shumë ndjekje manuale, më shumë tabela, më shumë gjëra që rrëshqasin. Nuk ka pse të jetë kështu. Sistemet e duhura e bëjnë punën e përsëritur në sfond: kapin kontaktet, i ushqejnë ato, përditësojnë CRM-në tuaj, dhe ju lirojnë për punën që vetëm ju mund ta bëni. Jo më shumë vegla të shtuara — një sistem i vetëm i lidhur, i ndërtuar rreth mënyrës si funksionon vërtet biznesi juaj."
     },
+    "eyebrow": "Angazhimi 04",
+    "includes": [
+      {
+        "label": "AI & Systems",
+        "items": [
+          "Rrjedha pune me AI",
+          "Automatizim marketingu",
+          "Zbatim CRM",
+          "Sisteme biznesi",
+          "Rrugëtimi i klientit",
+          "Sisteme për gjenerimin e kontakteve",
+          "Optimizim procesesh"
+        ]
+      }
+    ],
+    "name": "AI & Automation",
+    "slug": "automation",
+    "process": [
+      {
+        "n": "01",
+        "title": "Harta",
+        "body": "Hartojmë si funksionon vërtet biznesi juaj — kontaktet, ndjekjet, dorëzimet — dhe gjejmë ku humbet koha."
+      },
+      {
+        "n": "02",
+        "title": "Dizajni",
+        "body": "Dizajnojmë sistemin — funnelin, rrjedhat, të dhënat, mjetet — në letër para se të ndërtohet çdo gjë."
+      },
+      {
+        "n": "03",
+        "title": "Ndërtimi",
+        "body": "E ndërtojmë dhe e lidhim — automatizime, CRM, email, rrjedha me AI — si një sistem i vetëm i besueshëm."
+      },
+      {
+        "n": "04",
+        "title": "Testimi",
+        "body": "Testojmë çdo rrugë, e dokumentojmë me gjuhë të thjeshtë dhe ua dorëzojmë, që ta kuptoni saktësisht si funksionon."
+      },
+      {
+        "n": "05",
+        "title": "Optimizimi",
+        "body": "Ndjekim numrat dhe përsosim — shtrëngojmë atë që konverton, heqim atë që s'funksionon."
+      }
+    ],
+    "heroAlt": "Një panel analitik në një tablet pranë materialeve të markës mbi një sipërfaqe të errët studioje.",
     "tiers": [
       {
         "name": "Essential",
@@ -454,47 +495,10 @@
         ]
       }
     ],
-    "includes": [
-      {
-        "label": "AI & Systems",
-        "items": [
-          "Rrjedha pune me AI",
-          "Automatizim marketingu",
-          "Zbatim CRM",
-          "Sisteme biznesi",
-          "Rrugëtimi i klientit",
-          "Sisteme për gjenerimin e kontakteve",
-          "Optimizim procesesh"
-        ]
-      }
-    ],
-    "process": [
-      {
-        "n": "01",
-        "title": "Harta",
-        "body": "Hartojmë si funksionon vërtet biznesi juaj — kontaktet, ndjekjet, dorëzimet — dhe gjejmë ku humbet koha."
-      },
-      {
-        "n": "02",
-        "title": "Dizajni",
-        "body": "Dizajnojmë sistemin — funnelin, rrjedhat, të dhënat, mjetet — në letër para se të ndërtohet çdo gjë."
-      },
-      {
-        "n": "03",
-        "title": "Ndërtimi",
-        "body": "E ndërtojmë dhe e lidhim — automatizime, CRM, email, rrjedha me AI — si një sistem i vetëm i besueshëm."
-      },
-      {
-        "n": "04",
-        "title": "Testimi",
-        "body": "Testojmë çdo rrugë, e dokumentojmë me gjuhë të thjeshtë dhe ua dorëzojmë, që ta kuptoni saktësisht si funksionon."
-      },
-      {
-        "n": "05",
-        "title": "Optimizimi",
-        "body": "Ndjekim numrat dhe përsosim — shtrëngojmë atë që konverton, heqim atë që s'funksionon."
-      }
-    ],
+    "cadence": "3–6 javë",
+    "headline": "Sistemet inteligjente pas markës.",
+    "booking": "Disponueshmëri e kufizuar mujore",
+    "offer": "Një ndërtim i automatizimeve, funneleve dhe rrjedhave të punës me AI që i lejojnë një biznesi ambicioz të rritet pa shtuar staf — gjenerim kontaktesh, CRM, email dhe operacione, të lidhura në një sistem të vetëm, të qetë e të besueshëm.",
     "faqs": [
       {
         "q": "Me cilat mjete ndërtoni?",

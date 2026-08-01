@@ -207,32 +207,6 @@ export default async function OfferPage({ slug }: { slug: Offer["slug"] }) {
           </div>
         </section>
 
-        {/* The process */}
-        <section className="wrap py-[clamp(5rem,12vh,8rem)]">
-          <div className="mx-auto max-w-4xl">
-            <FadeUp>
-              <p className="eyebrow text-grey">{t("howItUnfolds")}</p>
-            </FadeUp>
-            <div className="mt-12 divide-y divide-rule">
-              {offer.process.map((phase, i) => (
-                <FadeUp key={phase.n} delay={i * 0.05}>
-                  <div className="grid grid-cols-[auto_1fr] gap-x-8 py-8 md:grid-cols-[6rem_14rem_1fr] md:gap-x-12">
-                    <span className="font-serif italic text-[1.5rem] text-light">
-                      {phase.n}
-                    </span>
-                    <h3 className="font-serif text-[1.4rem] text-ink">
-                      {phase.title}
-                    </h3>
-                    <p className="col-span-2 mt-3 font-sans text-[1rem] leading-[1.8] text-grey md:col-span-1 md:mt-0">
-                      {phase.body}
-                    </p>
-                  </div>
-                </FadeUp>
-              ))}
-            </div>
-          </div>
-        </section>
-
         {/* A glimpse into selected work */}
         <section className="bg-charcoal py-[clamp(3rem,7vh,4.5rem)]">
           <div className="wrap">

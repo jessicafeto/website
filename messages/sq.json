@@ -6,20 +6,20 @@
     "fieldName": "Emri",
     "error": "Diçka shkoi keq. Ju lutemi provoni sërish, ose na shkruani në hello@noovadata.com.",
     "intro": "Na tregoni për biznesin tuaj, ambiciet tuaja, ose thjesht nga ku dëshironi të filloni.",
-    "location": "Londër · Mbretëria e Bashkuar",
-    "submit": "Nisni bisedën →",
+    "location": "Londër • Tirana",
+    "submit": "Fillo bisedën →",
     "sent": "Faleminderit. Do t'ju kontaktojmë së shpejti.",
     "sending": "Duke dërguar…",
     "fieldProject": "Projekti"
   },
   "welcome": {
     "label": "MIRË SE VINI TE NOOVA",
-    "heading": "Për bizneset që duan të ndërtojnë një markë, jo thjesht një logo.",
-    "intro": "noova është një studio kreative me bazë në Londër që bashkon strategjinë, dizajnin, uebsajtet, marketingun dhe teknologjinë për të ndërtuar marka të forta dhe të qëndrueshme. Për bizneset që kanë evoluar përtej imazhit të tyre.",
+    "heading": "Më shumë se një logo. Një partner për rritje.",
+    "intro": "noova është një studio kreative me bazë në Londër që bashkon strategjinë, ndërtimin e markës, zhvillimin e uebsajteve, marketingun dhe automatizimin për të krijuar biznese më të forta, më efikase dhe të ndërtuara për rritje.",
     "brandDesc": "Strategji, identitet dhe drejtim kreativ që i japin bizneseve një themel të qartë.",
     "websitesDesc": "Uebsajte editoriale të dizajnuara me qartësi, saktësi dhe fokus te performanca.",
-    "growthDesc": "Marketing, përmbajtje dhe fushata që ndihmojnë bizneset ambicioze të rriten.",
-    "automationDesc": "Gjenerim kontaktesh, CRM dhe rrjedha pune me AI — sistemet që e bëjnë rritjen të ecë vetë."
+    "growthDesc": "Marketing strategjik dhe krijim përmbajtjeje që sjellin rritje të qëndrueshme.",
+    "automationDesc": "CRM, workflows, chatbot-e, automatizim me AI dhe gjenerim kontaktesh, sisteme të ndërtuara për të mbështetur rritjen e biznesit."
   },
   "nav": {
     "aboutStudio": "Rreth Studios",
@@ -28,9 +28,9 @@
     "contact": "Kontakt"
   },
   "meta": {
-    "title": "noova — Branding, Websites & Marketing · Londër",
-    "description": "noova është një studio kreative me bazë në Londër që bashkon strategjinë, dizajnin, uebsajtet, marketingun dhe teknologjinë për të ndërtuar marka të forta dhe të qëndrueshme. Për bizneset që kanë evoluar përtej imazhit të tyre.",
-    "ogDescription": "Ne ndërtojmë marka që i japin formë biznesit. Për bizneset që imazhi nuk i përfaqëson më."
+    "title": "noova — Marketing, Websites, Branding, Automation · Londër",
+    "description": "noova është një studio kreative me bazë në Londër që bashkon strategjinë, ndërtimin e markës, zhvillimin e uebsajteve, marketingun dhe automatizimin për të krijuar marka të forta, efikase dhe të qëndrueshme.",
+    "ogDescription": "Më shumë se një logo. Më shumë se një markë. Një sistem i ndërtuar për rritj"
   },
   "clients": {
     "label": "Klientë të përzgjedhur"
@@ -73,9 +73,9 @@
     "viewAll": "Shiko të gjitha projektet →",
     "meta01": "Teknologji · Branding, Marketing & Events",
     "meta02": "Bukuri · Branding, Creative & Marketing",
-    "meta03": "Mikpritje · Branding, Website & Marketing",
+    "meta03": "Hoteleri Turizem · Branding, Website & Marketing",
     "meta04": "Modë · Branding, Website & Creative",
-    "meta05": "Mikpritje · Branding",
+    "meta05": "Hoteleri Turizem · Branding",
     "meta06": "Komunitet · Branding, Creative"
   },
   "studio": {
@@ -108,7 +108,7 @@
     "service2": "Websites",
     "service3": "Branding",
     "service4": "Automation",
-    "tagline": "Për bizneset që duan të ndërtojnë një markë, jo thjesht një logo.",
+    "tagline": "Për bizneset që kërkojnë më shumë se një logo.",
     "scroll": ""
   },
   "footer": {
@@ -123,10 +123,10 @@
     "rights": "© 2026 NOOVA. TË GJITHA TË DREJTAT E REZERVUARA.",
     "journal": "Journal",
     "connectHeading": "Lidhuni me ne",
-    "description": "Ne ndërtojmë marka nga brenda jashtë — duke bashkuar strategjinë, brandingun, uebsajtet, marketingun dhe sistemet inteligjente në një tërësi të vetme dhe të integruar. Rezultati është një markë që më në fund përputhet me biznesin që qëndron pas saj.",
+    "description": "Ne ndërtojmë marka nga brenda jashtë, duke bashkuar strategjinë, brandingun, uebsajtet, marketingun dhe sistemet inteligjente në një tërësi të vetme dhe të integruar. Rezultati është një markë që më në fund përputhet me biznesin që qëndron pas saj.",
     "services": "Shërbimet",
     "studioLabel": "STUDIO BRANDINGU & INOVACIONI",
-    "home": "Ballina",
+    "home": "Kryefaqja",
     "navHeading": "Navigimi"
   },
   "offer": {

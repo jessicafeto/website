@@ -100,13 +100,6 @@ function CookiesEn() {
         </a>
         .
       </P>
-
-      <P>
-        <em>
-          This document is a template provided for implementation. Please have it
-          reviewed by a qualified legal professional before publishing.
-        </em>
-      </P>
     </>
   );
 }
@@ -183,13 +176,6 @@ function CookiesSq() {
           Politikën tonë të Privatësisë
         </a>
         .
-      </P>
-
-      <P>
-        <em>
-          Ky dokument është një model i ofruar për zbatim. Ju lutemi ta rishikoni
-          nga një profesionist i kualifikuar ligjor para publikimit.
-        </em>
       </P>
     </>
   );

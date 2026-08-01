@@ -155,14 +155,6 @@ function PrivacyEn() {
         We may update this policy from time to time. The date above shows when it
         was last revised.
       </P>
-
-      <P>
-        <em>
-          This document is a template provided for implementation. Please have it
-          reviewed by a qualified legal professional and complete your company
-          details before publishing.
-        </em>
-      </P>
     </>
   );
 }
@@ -300,14 +292,6 @@ function PrivacySq() {
       <P>
         Ne mund ta përditësojmë këtë politikë herë pas here. Data më sipër tregon
         kur është rishikuar për herë të fundit.
-      </P>
-
-      <P>
-        <em>
-          Ky dokument është një model i ofruar për zbatim. Ju lutemi ta rishikoni
-          nga një profesionist i kualifikuar ligjor dhe të plotësoni të dhënat e
-          kompanisë suaj para publikimit.
-        </em>
       </P>
     </>
   );

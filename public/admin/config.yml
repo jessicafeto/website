@@ -1,0 +1,4108 @@
+# Decap CMS configuration — generated from the site's actual JSON content files.
+# Edit content at /admin. To change what's editable, adjust the JSON files' shape
+# and re-run the generator, or hand-edit the field list below.
+
+backend:
+  name: "github"
+  repo: "jessicafeto/website"
+  branch: "main"
+  base_url: "https://noovadata.com"
+  auth_endpoint: "api/decap/auth"
+publish_mode: "simple"
+media_folder: "public/img"
+public_folder: "/img"
+site_url: "https://noovadata.com"
+logo_url: "/brand/monogram-ink.png"
+collections:
+  - name: "site_text_en"
+    label: "Site Text — English"
+    files:
+      - file: "messages/en.json"
+        label: "English Site Copy"
+        name: "en"
+        fields:
+          - label: "Meta"
+            name: "meta"
+            widget: "object"
+            required: false
+            fields:
+              - label: "Title"
+                name: "title"
+                widget: "string"
+                required: false
+              - label: "Description"
+                name: "description"
+                widget: "text"
+                required: false
+              - label: "Open Graph Description"
+                name: "ogDescription"
+                widget: "text"
+                required: false
+          - label: "Nav"
+            name: "nav"
+            widget: "object"
+            required: false
+            fields:
+              - label: "About Studio"
+                name: "aboutStudio"
+                widget: "string"
+                required: false
+              - label: "Portfolio"
+                name: "portfolio"
+                widget: "string"
+                required: false
+              - label: "Services"
+                name: "services"
+                widget: "string"
+                required: false
+              - label: "Contact"
+                name: "contact"
+                widget: "string"
+                required: false
+          - label: "Hero"
+            name: "hero"
+            widget: "object"
+            required: false
+            fields:
+              - label: "Service1"
+                name: "service1"
+                widget: "string"
+                required: false
+              - label: "Service2"
+                name: "service2"
+                widget: "string"
+                required: false
+              - label: "Service3"
+                name: "service3"
+                widget: "string"
+                required: false
+              - label: "Service4"
+                name: "service4"
+                widget: "string"
+                required: false
+              - label: "Tagline"
+                name: "tagline"
+                widget: "string"
+                required: false
+              - label: "Scroll"
+                name: "scroll"
+                widget: "string"
+                required: false
+          - label: "Welcome"
+            name: "welcome"
+            widget: "object"
+            required: false
+            fields:
+              - label: "Label"
+                name: "label"
+                widget: "string"
+                required: false
+              - label: "Heading"
+                name: "heading"
+                widget: "string"
+                required: false
+              - label: "Intro"
+                name: "intro"
+                widget: "text"
+                required: false
+              - label: "Brand Desc"
+                name: "brandDesc"
+                widget: "string"
+                required: false
+              - label: "Websites Desc"
+                name: "websitesDesc"
+                widget: "string"
+                required: false
+              - label: "Growth Desc"
+                name: "growthDesc"
+                widget: "string"
+                required: false
+              - label: "Automation Desc"
+                name: "automationDesc"
+                widget: "string"
+                required: false
+          - label: "Founder"
+            name: "founder"
+            widget: "object"
+            required: false
+            fields:
+              - label: "Label"
+                name: "label"
+                widget: "string"
+                required: false
+              - label: "Heading (line 1)"
+                name: "headingA"
+                widget: "string"
+                required: false
+              - label: "Heading (line 2)"
+                name: "headingB"
+                widget: "string"
+                required: false
+              - label: "Paragraph 1"
+                name: "p1"
+                widget: "text"
+                required: false
+              - label: "Paragraph 2"
+                name: "p2"
+                widget: "string"
+                required: false
+              - label: "Paragraph 3"
+                name: "p3"
+                widget: "text"
+                required: false
+              - label: "Cta"
+                name: "cta"
+                widget: "string"
+                required: false
+          - label: "Services"
+            name: "services"
+            widget: "object"
+            required: false
+            fields:
+              - label: "Label"
+                name: "label"
+                widget: "string"
+                required: false
+              - label: "Categories"
+                name: "categories"
+                widget: "list"
+                required: false
+                fields:
+                  - label: "Title"
+                    name: "t"
+                    widget: "string"
+                    required: false
+                  - label: "Details"
+                    name: "d"
+                    widget: "list"
+                    required: false
+          - label: "Work"
+            name: "work"
+            widget: "object"
+            required: false
+            fields:
+              - label: "Label"
+                name: "label"
+                widget: "string"
+                required: false
+              - label: "View All"
+                name: "viewAll"
+                widget: "string"
+                required: false
+              - label: "Work 1 — Meta line"
+                name: "meta01"
+                widget: "string"
+                required: false
+              - label: "Work 2 — Meta line"
+                name: "meta02"
+                widget: "string"
+                required: false
+              - label: "Work 3 — Meta line"
+                name: "meta03"
+                widget: "string"
+                required: false
+              - label: "Work 4 — Meta line"
+                name: "meta04"
+                widget: "string"
+                required: false
+              - label: "Work 5 — Meta line"
+                name: "meta05"
+                widget: "string"
+                required: false
+              - label: "Work 6 — Meta line"
+                name: "meta06"
+                widget: "string"
+                required: false
+          - label: "Case Study"
+            name: "caseStudy"
+            widget: "object"
+            required: false
+            fields:
+              - label: "The Project"
+                name: "theProject"
+                widget: "string"
+                required: false
+              - label: "Industry"
+                name: "industry"
+                widget: "string"
+                required: false
+              - label: "Services"
+                name: "services"
+                widget: "string"
+                required: false
+              - label: "Timeline"
+                name: "timeline"
+                widget: "string"
+                required: false
+              - label: "Deliverables"
+                name: "deliverables"
+                widget: "string"
+                required: false
+              - label: "Next Project"
+                name: "nextProject"
+                widget: "string"
+                required: false
+          - label: "Contact"
+            name: "contact"
+            widget: "object"
+            required: false
+            fields:
+              - label: "Heading"
+                name: "heading"
+                widget: "string"
+                required: false
+              - label: "Intro"
+                name: "intro"
+                widget: "string"
+                required: false
+              - label: "Field Name"
+                name: "fieldName"
+                widget: "string"
+                required: false
+              - label: "Field Email"
+                name: "fieldEmail"
+                widget: "string"
+                required: false
+              - label: "Field Company"
+                name: "fieldCompany"
+                widget: "string"
+                required: false
+              - label: "Field Project"
+                name: "fieldProject"
+                widget: "string"
+                required: false
+              - label: "Submit"
+                name: "submit"
+                widget: "string"
+                required: false
+              - label: "Sending"
+                name: "sending"
+                widget: "string"
+                required: false
+              - label: "Sent"
+                name: "sent"
+                widget: "string"
+                required: false
+              - label: "Error"
+                name: "error"
+                widget: "string"
+                required: false
+              - label: "Location"
+                name: "location"
+                widget: "string"
+                required: false
+          - label: "Footer"
+            name: "footer"
+            widget: "object"
+            required: false
+            fields:
+              - label: "Tagline"
+                name: "tagline"
+                widget: "string"
+                required: false
+              - label: "Description"
+                name: "description"
+                widget: "text"
+                required: false
+              - label: "Nav Heading"
+                name: "navHeading"
+                widget: "string"
+                required: false
+              - label: "Home"
+                name: "home"
+                widget: "string"
+                required: false
+              - label: "Services"
+                name: "services"
+                widget: "string"
+                required: false
+              - label: "Portfolio"
+                name: "portfolio"
+                widget: "string"
+                required: false
+              - label: "Journal"
+                name: "journal"
+                widget: "string"
+                required: false
+              - label: "Contact"
+                name: "contact"
+                widget: "string"
+                required: false
+              - label: "Connect Heading"
+                name: "connectHeading"
+                widget: "string"
+                required: false
+              - label: "London Heading"
+                name: "londonHeading"
+                widget: "string"
+                required: false
+              - label: "Tirana Heading"
+                name: "tiranaHeading"
+                widget: "string"
+                required: false
+              - label: "Privacy"
+                name: "privacy"
+                widget: "string"
+                required: false
+              - label: "Cookie Policy"
+                name: "cookiePolicy"
+                widget: "string"
+                required: false
+              - label: "Cookie Settings"
+                name: "cookieSettings"
+                widget: "string"
+                required: false
+              - label: "Rights"
+                name: "rights"
+                widget: "string"
+                required: false
+              - label: "Studio Label"
+                name: "studioLabel"
+                widget: "string"
+                required: false
+          - label: "Cookie Banner"
+            name: "cookieBanner"
+            widget: "object"
+            required: false
+            fields:
+              - label: "Title"
+                name: "title"
+                widget: "string"
+                required: false
+              - label: "Body"
+                name: "body"
+                widget: "text"
+                required: false
+                hint: "Keep the <tag>...</tag> markers — they turn into links automatically."
+              - label: "Accept All"
+                name: "acceptAll"
+                widget: "string"
+                required: false
+              - label: "Reject"
+                name: "reject"
+                widget: "string"
+                required: false
+              - label: "Preferences"
+                name: "preferences"
+                widget: "string"
+                required: false
+          - label: "Cookie Modal"
+            name: "cookieModal"
+            widget: "object"
+            required: false
+            fields:
+              - label: "Title"
+                name: "title"
+                widget: "string"
+                required: false
+              - label: "Intro"
+                name: "intro"
+                widget: "string"
+                required: false
+              - label: "Close"
+                name: "close"
+                widget: "string"
+                required: false
+              - label: "Close Aria"
+                name: "closeAria"
+                widget: "string"
+                required: false
+              - label: "Essential Name"
+                name: "essentialName"
+                widget: "string"
+                required: false
+              - label: "Essential Desc"
+                name: "essentialDesc"
+                widget: "text"
+                required: false
+              - label: "Essential Aria"
+                name: "essentialAria"
+                widget: "string"
+                required: false
+              - label: "Analytics Name"
+                name: "analyticsName"
+                widget: "string"
+                required: false
+              - label: "Analytics Desc"
+                name: "analyticsDesc"
+                widget: "string"
+                required: false
+              - label: "Analytics Aria"
+                name: "analyticsAria"
+                widget: "string"
+                required: false
+              - label: "Marketing Name"
+                name: "marketingName"
+                widget: "string"
+                required: false
+              - label: "Marketing Desc"
+                name: "marketingDesc"
+                widget: "string"
+                required: false
+              - label: "Marketing Aria"
+                name: "marketingAria"
+                widget: "string"
+                required: false
+              - label: "Accept All"
+                name: "acceptAll"
+                widget: "string"
+                required: false
+              - label: "Save"
+                name: "save"
+                widget: "string"
+                required: false
+          - label: "Clients"
+            name: "clients"
+            widget: "object"
+            required: false
+            fields:
+              - label: "Label"
+                name: "label"
+                widget: "string"
+                required: false
+          - label: "Offer"
+            name: "offer"
+            widget: "object"
+            required: false
+            fields:
+              - label: "Start Project"
+                name: "startProject"
+                widget: "string"
+                required: false
+              - label: "What Is"
+                name: "whatIs"
+                widget: "string"
+                required: false
+                hint: "Keep the {placeholder} exactly as written — it fills in automatically."
+              - label: "Timeline"
+                name: "timeline"
+                widget: "string"
+                required: false
+              - label: "Booking"
+                name: "booking"
+                widget: "string"
+                required: false
+              - label: "Investment"
+                name: "investment"
+                widget: "string"
+                required: false
+              - label: "Packages"
+                name: "packages"
+                widget: "string"
+                required: false
+              - label: "Packages Intro"
+                name: "packagesIntro"
+                widget: "text"
+                required: false
+              - label: "Most Chosen"
+                name: "mostChosen"
+                widget: "string"
+                required: false
+              - label: "Everything In"
+                name: "everythingIn"
+                widget: "string"
+                required: false
+                hint: "Keep the {placeholder} exactly as written — it fills in automatically."
+              - label: "Enquire Short"
+                name: "enquireShort"
+                widget: "string"
+                required: false
+              - label: "Whats Inside"
+                name: "whatsInside"
+                widget: "string"
+                required: false
+              - label: "How It Unfolds"
+                name: "howItUnfolds"
+                widget: "string"
+                required: false
+              - label: "Selected-work Band Label"
+                name: "glimpseLabel"
+                widget: "string"
+                required: false
+              - label: "View Projects"
+                name: "viewProjects"
+                widget: "string"
+                required: false
+              - label: "FAQ Heading"
+                name: "faqHeading"
+                widget: "string"
+                required: false
+              - label: "Begin"
+                name: "begin"
+                widget: "string"
+                required: false
+              - label: "Enquire Heading"
+                name: "enquireHeading"
+                widget: "string"
+                required: false
+                hint: "Keep the {placeholder} exactly as written — it fills in automatically."
+              - label: "Enquire Intro"
+                name: "enquireIntro"
+                widget: "text"
+                required: false
+              - label: "Location"
+                name: "location"
+                widget: "string"
+                required: false
+              - label: "Other Engagements"
+                name: "otherEngagements"
+                widget: "string"
+                required: false
+              - label: "Form"
+                name: "form"
+                widget: "object"
+                required: false
+                fields:
+                  - label: "Name"
+                    name: "name"
+                    widget: "string"
+                    required: false
+                  - label: "Email"
+                    name: "email"
+                    widget: "string"
+                    required: false
+                  - label: "Business"
+                    name: "business"
+                    widget: "string"
+                    required: false
+                  - label: "Timeline"
+                    name: "timeline"
+                    widget: "string"
+                    required: false
+                  - label: "Budget"
+                    name: "budget"
+                    widget: "string"
+                    required: false
+                  - label: "Submit"
+                    name: "submit"
+                    widget: "string"
+                    required: false
+                  - label: "Sending"
+                    name: "sending"
+                    widget: "string"
+                    required: false
+                  - label: "Sent"
+                    name: "sent"
+                    widget: "string"
+                    required: false
+                  - label: "Error"
+                    name: "error"
+                    widget: "string"
+                    required: false
+          - label: "Studio"
+            name: "studio"
+            widget: "object"
+            required: false
+            fields:
+              - label: "Meta Title"
+                name: "metaTitle"
+                widget: "string"
+                required: false
+              - label: "Meta Desc"
+                name: "metaDesc"
+                widget: "text"
+                required: false
+              - label: "Eyebrow"
+                name: "eyebrow"
+                widget: "string"
+                required: false
+              - label: "Headline"
+                name: "headline"
+                widget: "string"
+                required: false
+              - label: "Intro"
+                name: "intro"
+                widget: "text"
+                required: false
+              - label: "Heading 1"
+                name: "h1"
+                widget: "string"
+                required: false
+              - label: "Paragraph 1"
+                name: "p1"
+                widget: "text"
+                required: false
+              - label: "Heading 2"
+                name: "h2"
+                widget: "string"
+                required: false
+              - label: "Paragraph 2"
+                name: "p2"
+                widget: "text"
+                required: false
+              - label: "Heading 3"
+                name: "h3"
+                widget: "string"
+                required: false
+              - label: "Paragraph 3"
+                name: "p3"
+                widget: "text"
+                required: false
+              - label: "Heading 4"
+                name: "h4"
+                widget: "string"
+                required: false
+              - label: "Paragraph 4"
+                name: "p4"
+                widget: "text"
+                required: false
+              - label: "Story CTA Link"
+                name: "storyCta"
+                widget: "string"
+                required: false
+              - label: "Contact CTA Link"
+                name: "contactCta"
+                widget: "string"
+                required: false
+  - name: "site_text_sq"
+    label: "Site Text — Albanian"
+    files:
+      - file: "messages/sq.json"
+        label: "Albanian Site Copy"
+        name: "sq"
+        fields:
+          - label: "Meta"
+            name: "meta"
+            widget: "object"
+            required: false
+            fields:
+              - label: "Title"
+                name: "title"
+                widget: "string"
+                required: false
+              - label: "Description"
+                name: "description"
+                widget: "text"
+                required: false
+              - label: "Open Graph Description"
+                name: "ogDescription"
+                widget: "text"
+                required: false
+          - label: "Nav"
+            name: "nav"
+            widget: "object"
+            required: false
+            fields:
+              - label: "About Studio"
+                name: "aboutStudio"
+                widget: "string"
+                required: false
+              - label: "Portfolio"
+                name: "portfolio"
+                widget: "string"
+                required: false
+              - label: "Services"
+                name: "services"
+                widget: "string"
+                required: false
+              - label: "Contact"
+                name: "contact"
+                widget: "string"
+                required: false
+          - label: "Hero"
+            name: "hero"
+            widget: "object"
+            required: false
+            fields:
+              - label: "Service1"
+                name: "service1"
+                widget: "string"
+                required: false
+              - label: "Service2"
+                name: "service2"
+                widget: "string"
+                required: false
+              - label: "Service3"
+                name: "service3"
+                widget: "string"
+                required: false
+              - label: "Service4"
+                name: "service4"
+                widget: "string"
+                required: false
+              - label: "Tagline"
+                name: "tagline"
+                widget: "string"
+                required: false
+              - label: "Scroll"
+                name: "scroll"
+                widget: "string"
+                required: false
+          - label: "Welcome"
+            name: "welcome"
+            widget: "object"
+            required: false
+            fields:
+              - label: "Label"
+                name: "label"
+                widget: "string"
+                required: false
+              - label: "Heading"
+                name: "heading"
+                widget: "string"
+                required: false
+              - label: "Intro"
+                name: "intro"
+                widget: "text"
+                required: false
+              - label: "Brand Desc"
+                name: "brandDesc"
+                widget: "string"
+                required: false
+              - label: "Websites Desc"
+                name: "websitesDesc"
+                widget: "string"
+                required: false
+              - label: "Growth Desc"
+                name: "growthDesc"
+                widget: "string"
+                required: false
+              - label: "Automation Desc"
+                name: "automationDesc"
+                widget: "string"
+                required: false
+          - label: "Founder"
+            name: "founder"
+            widget: "object"
+            required: false
+            fields:
+              - label: "Label"
+                name: "label"
+                widget: "string"
+                required: false
+              - label: "Heading (line 1)"
+                name: "headingA"
+                widget: "string"
+                required: false
+              - label: "Heading (line 2)"
+                name: "headingB"
+                widget: "string"
+                required: false
+              - label: "Paragraph 1"
+                name: "p1"
+                widget: "text"
+                required: false
+              - label: "Paragraph 2"
+                name: "p2"
+                widget: "string"
+                required: false
+              - label: "Paragraph 3"
+                name: "p3"
+                widget: "text"
+                required: false
+              - label: "Cta"
+                name: "cta"
+                widget: "string"
+                required: false
+          - label: "Services"
+            name: "services"
+            widget: "object"
+            required: false
+            fields:
+              - label: "Label"
+                name: "label"
+                widget: "string"
+                required: false
+              - label: "Categories"
+                name: "categories"
+                widget: "list"
+                required: false
+                fields:
+                  - label: "Title"
+                    name: "t"
+                    widget: "string"
+                    required: false
+                  - label: "Details"
+                    name: "d"
+                    widget: "list"
+                    required: false
+          - label: "Work"
+            name: "work"
+            widget: "object"
+            required: false
+            fields:
+              - label: "Label"
+                name: "label"
+                widget: "string"
+                required: false
+              - label: "View All"
+                name: "viewAll"
+                widget: "string"
+                required: false
+              - label: "Work 1 — Meta line"
+                name: "meta01"
+                widget: "string"
+                required: false
+              - label: "Work 2 — Meta line"
+                name: "meta02"
+                widget: "string"
+                required: false
+              - label: "Work 3 — Meta line"
+                name: "meta03"
+                widget: "string"
+                required: false
+              - label: "Work 4 — Meta line"
+                name: "meta04"
+                widget: "string"
+                required: false
+              - label: "Work 5 — Meta line"
+                name: "meta05"
+                widget: "string"
+                required: false
+              - label: "Work 6 — Meta line"
+                name: "meta06"
+                widget: "string"
+                required: false
+          - label: "Case Study"
+            name: "caseStudy"
+            widget: "object"
+            required: false
+            fields:
+              - label: "The Project"
+                name: "theProject"
+                widget: "string"
+                required: false
+              - label: "Industry"
+                name: "industry"
+                widget: "string"
+                required: false
+              - label: "Services"
+                name: "services"
+                widget: "string"
+                required: false
+              - label: "Timeline"
+                name: "timeline"
+                widget: "string"
+                required: false
+              - label: "Deliverables"
+                name: "deliverables"
+                widget: "string"
+                required: false
+              - label: "Next Project"
+                name: "nextProject"
+                widget: "string"
+                required: false
+          - label: "Contact"
+            name: "contact"
+            widget: "object"
+            required: false
+            fields:
+              - label: "Heading"
+                name: "heading"
+                widget: "string"
+                required: false
+              - label: "Intro"
+                name: "intro"
+                widget: "string"
+                required: false
+              - label: "Field Name"
+                name: "fieldName"
+                widget: "string"
+                required: false
+              - label: "Field Email"
+                name: "fieldEmail"
+                widget: "string"
+                required: false
+              - label: "Field Company"
+                name: "fieldCompany"
+                widget: "string"
+                required: false
+              - label: "Field Project"
+                name: "fieldProject"
+                widget: "string"
+                required: false
+              - label: "Submit"
+                name: "submit"
+                widget: "string"
+                required: false
+              - label: "Sending"
+                name: "sending"
+                widget: "string"
+                required: false
+              - label: "Sent"
+                name: "sent"
+                widget: "string"
+                required: false
+              - label: "Error"
+                name: "error"
+                widget: "string"
+                required: false
+              - label: "Location"
+                name: "location"
+                widget: "string"
+                required: false
+          - label: "Footer"
+            name: "footer"
+            widget: "object"
+            required: false
+            fields:
+              - label: "Tagline"
+                name: "tagline"
+                widget: "string"
+                required: false
+              - label: "Description"
+                name: "description"
+                widget: "text"
+                required: false
+              - label: "Nav Heading"
+                name: "navHeading"
+                widget: "string"
+                required: false
+              - label: "Home"
+                name: "home"
+                widget: "string"
+                required: false
+              - label: "Services"
+                name: "services"
+                widget: "string"
+                required: false
+              - label: "Portfolio"
+                name: "portfolio"
+                widget: "string"
+                required: false
+              - label: "Journal"
+                name: "journal"
+                widget: "string"
+                required: false
+              - label: "Contact"
+                name: "contact"
+                widget: "string"
+                required: false
+              - label: "Connect Heading"
+                name: "connectHeading"
+                widget: "string"
+                required: false
+              - label: "London Heading"
+                name: "londonHeading"
+                widget: "string"
+                required: false
+              - label: "Tirana Heading"
+                name: "tiranaHeading"
+                widget: "string"
+                required: false
+              - label: "Privacy"
+                name: "privacy"
+                widget: "string"
+                required: false
+              - label: "Cookie Policy"
+                name: "cookiePolicy"
+                widget: "string"
+                required: false
+              - label: "Cookie Settings"
+                name: "cookieSettings"
+                widget: "string"
+                required: false
+              - label: "Rights"
+                name: "rights"
+                widget: "string"
+                required: false
+              - label: "Studio Label"
+                name: "studioLabel"
+                widget: "string"
+                required: false
+          - label: "Cookie Banner"
+            name: "cookieBanner"
+            widget: "object"
+            required: false
+            fields:
+              - label: "Title"
+                name: "title"
+                widget: "string"
+                required: false
+              - label: "Body"
+                name: "body"
+                widget: "text"
+                required: false
+                hint: "Keep the <tag>...</tag> markers — they turn into links automatically."
+              - label: "Accept All"
+                name: "acceptAll"
+                widget: "string"
+                required: false
+              - label: "Reject"
+                name: "reject"
+                widget: "string"
+                required: false
+              - label: "Preferences"
+                name: "preferences"
+                widget: "string"
+                required: false
+          - label: "Cookie Modal"
+            name: "cookieModal"
+            widget: "object"
+            required: false
+            fields:
+              - label: "Title"
+                name: "title"
+                widget: "string"
+                required: false
+              - label: "Intro"
+                name: "intro"
+                widget: "string"
+                required: false
+              - label: "Close"
+                name: "close"
+                widget: "string"
+                required: false
+              - label: "Close Aria"
+                name: "closeAria"
+                widget: "string"
+                required: false
+              - label: "Essential Name"
+                name: "essentialName"
+                widget: "string"
+                required: false
+              - label: "Essential Desc"
+                name: "essentialDesc"
+                widget: "text"
+                required: false
+              - label: "Essential Aria"
+                name: "essentialAria"
+                widget: "string"
+                required: false
+              - label: "Analytics Name"
+                name: "analyticsName"
+                widget: "string"
+                required: false
+              - label: "Analytics Desc"
+                name: "analyticsDesc"
+                widget: "string"
+                required: false
+              - label: "Analytics Aria"
+                name: "analyticsAria"
+                widget: "string"
+                required: false
+              - label: "Marketing Name"
+                name: "marketingName"
+                widget: "string"
+                required: false
+              - label: "Marketing Desc"
+                name: "marketingDesc"
+                widget: "string"
+                required: false
+              - label: "Marketing Aria"
+                name: "marketingAria"
+                widget: "string"
+                required: false
+              - label: "Accept All"
+                name: "acceptAll"
+                widget: "string"
+                required: false
+              - label: "Save"
+                name: "save"
+                widget: "string"
+                required: false
+          - label: "Clients"
+            name: "clients"
+            widget: "object"
+            required: false
+            fields:
+              - label: "Label"
+                name: "label"
+                widget: "string"
+                required: false
+          - label: "Offer"
+            name: "offer"
+            widget: "object"
+            required: false
+            fields:
+              - label: "Start Project"
+                name: "startProject"
+                widget: "string"
+                required: false
+              - label: "What Is"
+                name: "whatIs"
+                widget: "string"
+                required: false
+                hint: "Keep the {placeholder} exactly as written — it fills in automatically."
+              - label: "Timeline"
+                name: "timeline"
+                widget: "string"
+                required: false
+              - label: "Booking"
+                name: "booking"
+                widget: "string"
+                required: false
+              - label: "Investment"
+                name: "investment"
+                widget: "string"
+                required: false
+              - label: "Packages"
+                name: "packages"
+                widget: "string"
+                required: false
+              - label: "Packages Intro"
+                name: "packagesIntro"
+                widget: "text"
+                required: false
+              - label: "Most Chosen"
+                name: "mostChosen"
+                widget: "string"
+                required: false
+              - label: "Everything In"
+                name: "everythingIn"
+                widget: "string"
+                required: false
+                hint: "Keep the {placeholder} exactly as written — it fills in automatically."
+              - label: "Enquire Short"
+                name: "enquireShort"
+                widget: "string"
+                required: false
+              - label: "Whats Inside"
+                name: "whatsInside"
+                widget: "string"
+                required: false
+              - label: "How It Unfolds"
+                name: "howItUnfolds"
+                widget: "string"
+                required: false
+              - label: "Selected-work Band Label"
+                name: "glimpseLabel"
+                widget: "string"
+                required: false
+              - label: "View Projects"
+                name: "viewProjects"
+                widget: "string"
+                required: false
+              - label: "FAQ Heading"
+                name: "faqHeading"
+                widget: "string"
+                required: false
+              - label: "Begin"
+                name: "begin"
+                widget: "string"
+                required: false
+              - label: "Enquire Heading"
+                name: "enquireHeading"
+                widget: "string"
+                required: false
+                hint: "Keep the {placeholder} exactly as written — it fills in automatically."
+              - label: "Enquire Intro"
+                name: "enquireIntro"
+                widget: "text"
+                required: false
+              - label: "Location"
+                name: "location"
+                widget: "string"
+                required: false
+              - label: "Other Engagements"
+                name: "otherEngagements"
+                widget: "string"
+                required: false
+              - label: "Form"
+                name: "form"
+                widget: "object"
+                required: false
+                fields:
+                  - label: "Name"
+                    name: "name"
+                    widget: "string"
+                    required: false
+                  - label: "Email"
+                    name: "email"
+                    widget: "string"
+                    required: false
+                  - label: "Business"
+                    name: "business"
+                    widget: "string"
+                    required: false
+                  - label: "Timeline"
+                    name: "timeline"
+                    widget: "string"
+                    required: false
+                  - label: "Budget"
+                    name: "budget"
+                    widget: "string"
+                    required: false
+                  - label: "Submit"
+                    name: "submit"
+                    widget: "string"
+                    required: false
+                  - label: "Sending"
+                    name: "sending"
+                    widget: "string"
+                    required: false
+                  - label: "Sent"
+                    name: "sent"
+                    widget: "string"
+                    required: false
+                  - label: "Error"
+                    name: "error"
+                    widget: "string"
+                    required: false
+          - label: "Studio"
+            name: "studio"
+            widget: "object"
+            required: false
+            fields:
+              - label: "Meta Title"
+                name: "metaTitle"
+                widget: "string"
+                required: false
+              - label: "Meta Desc"
+                name: "metaDesc"
+                widget: "text"
+                required: false
+              - label: "Eyebrow"
+                name: "eyebrow"
+                widget: "string"
+                required: false
+              - label: "Headline"
+                name: "headline"
+                widget: "string"
+                required: false
+              - label: "Intro"
+                name: "intro"
+                widget: "text"
+                required: false
+              - label: "Heading 1"
+                name: "h1"
+                widget: "string"
+                required: false
+              - label: "Paragraph 1"
+                name: "p1"
+                widget: "text"
+                required: false
+              - label: "Heading 2"
+                name: "h2"
+                widget: "string"
+                required: false
+              - label: "Paragraph 2"
+                name: "p2"
+                widget: "text"
+                required: false
+              - label: "Heading 3"
+                name: "h3"
+                widget: "string"
+                required: false
+              - label: "Paragraph 3"
+                name: "p3"
+                widget: "text"
+                required: false
+              - label: "Heading 4"
+                name: "h4"
+                widget: "string"
+                required: false
+              - label: "Paragraph 4"
+                name: "p4"
+                widget: "text"
+                required: false
+              - label: "Story CTA Link"
+                name: "storyCta"
+                widget: "string"
+                required: false
+              - label: "Contact CTA Link"
+                name: "contactCta"
+                widget: "string"
+                required: false
+  - name: "offers_en"
+    label: "Service Pages — English"
+    files:
+      - file: "content/offers.en.json"
+        label: "English Service Pages"
+        name: "offers_en"
+        fields:
+          - label: "Branding"
+            name: "branding"
+            widget: "object"
+            required: false
+            fields:
+              - label: "Slug"
+                name: "slug"
+                widget: "string"
+                required: false
+              - label: "Eyebrow"
+                name: "eyebrow"
+                widget: "string"
+                required: false
+              - label: "Name"
+                name: "name"
+                widget: "string"
+                required: false
+              - label: "Hero Image"
+                name: "heroImage"
+                widget: "image"
+                required: false
+              - label: "Hero Alt"
+                name: "heroAlt"
+                widget: "string"
+                required: false
+              - label: "Headline"
+                name: "headline"
+                widget: "string"
+                required: false
+              - label: "Offer"
+                name: "offer"
+                widget: "text"
+                required: false
+              - label: "Cadence"
+                name: "cadence"
+                widget: "string"
+                required: false
+              - label: "Booking"
+                name: "booking"
+                widget: "string"
+                required: false
+              - label: "Shift"
+                name: "shift"
+                widget: "object"
+                required: false
+                fields:
+                  - label: "Heading"
+                    name: "heading"
+                    widget: "string"
+                    required: false
+                  - label: "Body"
+                    name: "body"
+                    widget: "text"
+                    required: false
+              - label: "Tiers"
+                name: "tiers"
+                widget: "list"
+                required: false
+                fields:
+                  - label: "Name"
+                    name: "name"
+                    widget: "string"
+                    required: false
+                  - label: "Price"
+                    name: "price"
+                    widget: "string"
+                    required: false
+                  - label: "Summary"
+                    name: "summary"
+                    widget: "string"
+                    required: false
+                  - label: "Scope"
+                    name: "scope"
+                    widget: "list"
+                    required: false
+                  - label: "Builds"
+                    name: "builds"
+                    widget: "string"
+                    required: false
+                  - label: "Featured"
+                    name: "featured"
+                    widget: "string"
+                    required: false
+              - label: "Includes"
+                name: "includes"
+                widget: "list"
+                required: false
+                fields:
+                  - label: "Label"
+                    name: "label"
+                    widget: "string"
+                    required: false
+                  - label: "Items"
+                    name: "items"
+                    widget: "list"
+                    required: false
+              - label: "Process"
+                name: "process"
+                widget: "list"
+                required: false
+                fields:
+                  - label: "Number"
+                    name: "n"
+                    widget: "string"
+                    required: false
+                  - label: "Title"
+                    name: "title"
+                    widget: "string"
+                    required: false
+                  - label: "Body"
+                    name: "body"
+                    widget: "text"
+                    required: false
+              - label: "FAQs"
+                name: "faqs"
+                widget: "list"
+                required: false
+                fields:
+                  - label: "Question"
+                    name: "q"
+                    widget: "string"
+                    required: false
+                  - label: "Answer"
+                    name: "a"
+                    widget: "text"
+                    required: false
+          - label: "Websites"
+            name: "websites"
+            widget: "object"
+            required: false
+            fields:
+              - label: "Slug"
+                name: "slug"
+                widget: "string"
+                required: false
+              - label: "Eyebrow"
+                name: "eyebrow"
+                widget: "string"
+                required: false
+              - label: "Name"
+                name: "name"
+                widget: "string"
+                required: false
+              - label: "Hero Image"
+                name: "heroImage"
+                widget: "image"
+                required: false
+              - label: "Hero Alt"
+                name: "heroAlt"
+                widget: "string"
+                required: false
+              - label: "Headline"
+                name: "headline"
+                widget: "string"
+                required: false
+              - label: "Offer"
+                name: "offer"
+                widget: "text"
+                required: false
+              - label: "Cadence"
+                name: "cadence"
+                widget: "string"
+                required: false
+              - label: "Booking"
+                name: "booking"
+                widget: "string"
+                required: false
+              - label: "Shift"
+                name: "shift"
+                widget: "object"
+                required: false
+                fields:
+                  - label: "Heading"
+                    name: "heading"
+                    widget: "string"
+                    required: false
+                  - label: "Body"
+                    name: "body"
+                    widget: "text"
+                    required: false
+              - label: "Tiers"
+                name: "tiers"
+                widget: "list"
+                required: false
+                fields:
+                  - label: "Name"
+                    name: "name"
+                    widget: "string"
+                    required: false
+                  - label: "Price"
+                    name: "price"
+                    widget: "string"
+                    required: false
+                  - label: "Summary"
+                    name: "summary"
+                    widget: "string"
+                    required: false
+                  - label: "Scope"
+                    name: "scope"
+                    widget: "list"
+                    required: false
+                  - label: "Builds"
+                    name: "builds"
+                    widget: "string"
+                    required: false
+                  - label: "Featured"
+                    name: "featured"
+                    widget: "string"
+                    required: false
+              - label: "Includes"
+                name: "includes"
+                widget: "list"
+                required: false
+                fields:
+                  - label: "Label"
+                    name: "label"
+                    widget: "string"
+                    required: false
+                  - label: "Items"
+                    name: "items"
+                    widget: "list"
+                    required: false
+              - label: "Process"
+                name: "process"
+                widget: "list"
+                required: false
+                fields:
+                  - label: "Number"
+                    name: "n"
+                    widget: "string"
+                    required: false
+                  - label: "Title"
+                    name: "title"
+                    widget: "string"
+                    required: false
+                  - label: "Body"
+                    name: "body"
+                    widget: "text"
+                    required: false
+              - label: "FAQs"
+                name: "faqs"
+                widget: "list"
+                required: false
+                fields:
+                  - label: "Question"
+                    name: "q"
+                    widget: "string"
+                    required: false
+                  - label: "Answer"
+                    name: "a"
+                    widget: "text"
+                    required: false
+          - label: "Marketing"
+            name: "marketing"
+            widget: "object"
+            required: false
+            fields:
+              - label: "Slug"
+                name: "slug"
+                widget: "string"
+                required: false
+              - label: "Eyebrow"
+                name: "eyebrow"
+                widget: "string"
+                required: false
+              - label: "Name"
+                name: "name"
+                widget: "string"
+                required: false
+              - label: "Hero Image"
+                name: "heroImage"
+                widget: "image"
+                required: false
+              - label: "Hero Alt"
+                name: "heroAlt"
+                widget: "string"
+                required: false
+              - label: "Headline"
+                name: "headline"
+                widget: "string"
+                required: false
+              - label: "Offer"
+                name: "offer"
+                widget: "text"
+                required: false
+              - label: "Cadence"
+                name: "cadence"
+                widget: "string"
+                required: false
+              - label: "Booking"
+                name: "booking"
+                widget: "string"
+                required: false
+              - label: "Shift"
+                name: "shift"
+                widget: "object"
+                required: false
+                fields:
+                  - label: "Heading"
+                    name: "heading"
+                    widget: "string"
+                    required: false
+                  - label: "Body"
+                    name: "body"
+                    widget: "text"
+                    required: false
+              - label: "Tiers"
+                name: "tiers"
+                widget: "list"
+                required: false
+                fields:
+                  - label: "Name"
+                    name: "name"
+                    widget: "string"
+                    required: false
+                  - label: "Price"
+                    name: "price"
+                    widget: "string"
+                    required: false
+                  - label: "Summary"
+                    name: "summary"
+                    widget: "string"
+                    required: false
+                  - label: "Scope"
+                    name: "scope"
+                    widget: "list"
+                    required: false
+                  - label: "Builds"
+                    name: "builds"
+                    widget: "string"
+                    required: false
+                  - label: "Featured"
+                    name: "featured"
+                    widget: "string"
+                    required: false
+              - label: "Includes"
+                name: "includes"
+                widget: "list"
+                required: false
+                fields:
+                  - label: "Label"
+                    name: "label"
+                    widget: "string"
+                    required: false
+                  - label: "Items"
+                    name: "items"
+                    widget: "list"
+                    required: false
+              - label: "Process"
+                name: "process"
+                widget: "list"
+                required: false
+                fields:
+                  - label: "Number"
+                    name: "n"
+                    widget: "string"
+                    required: false
+                  - label: "Title"
+                    name: "title"
+                    widget: "string"
+                    required: false
+                  - label: "Body"
+                    name: "body"
+                    widget: "text"
+                    required: false
+              - label: "FAQs"
+                name: "faqs"
+                widget: "list"
+                required: false
+                fields:
+                  - label: "Question"
+                    name: "q"
+                    widget: "string"
+                    required: false
+                  - label: "Answer"
+                    name: "a"
+                    widget: "text"
+                    required: false
+          - label: "Automation"
+            name: "automation"
+            widget: "object"
+            required: false
+            fields:
+              - label: "Slug"
+                name: "slug"
+                widget: "string"
+                required: false
+              - label: "Eyebrow"
+                name: "eyebrow"
+                widget: "string"
+                required: false
+              - label: "Name"
+                name: "name"
+                widget: "string"
+                required: false
+              - label: "Hero Image"
+                name: "heroImage"
+                widget: "image"
+                required: false
+              - label: "Hero Alt"
+                name: "heroAlt"
+                widget: "string"
+                required: false
+              - label: "Headline"
+                name: "headline"
+                widget: "string"
+                required: false
+              - label: "Offer"
+                name: "offer"
+                widget: "text"
+                required: false
+              - label: "Cadence"
+                name: "cadence"
+                widget: "string"
+                required: false
+              - label: "Booking"
+                name: "booking"
+                widget: "string"
+                required: false
+              - label: "Shift"
+                name: "shift"
+                widget: "object"
+                required: false
+                fields:
+                  - label: "Heading"
+                    name: "heading"
+                    widget: "string"
+                    required: false
+                  - label: "Body"
+                    name: "body"
+                    widget: "text"
+                    required: false
+              - label: "Tiers"
+                name: "tiers"
+                widget: "list"
+                required: false
+                fields:
+                  - label: "Name"
+                    name: "name"
+                    widget: "string"
+                    required: false
+                  - label: "Price"
+                    name: "price"
+                    widget: "string"
+                    required: false
+                  - label: "Summary"
+                    name: "summary"
+                    widget: "string"
+                    required: false
+                  - label: "Scope"
+                    name: "scope"
+                    widget: "list"
+                    required: false
+                  - label: "Builds"
+                    name: "builds"
+                    widget: "string"
+                    required: false
+                  - label: "Featured"
+                    name: "featured"
+                    widget: "string"
+                    required: false
+              - label: "Includes"
+                name: "includes"
+                widget: "list"
+                required: false
+                fields:
+                  - label: "Label"
+                    name: "label"
+                    widget: "string"
+                    required: false
+                  - label: "Items"
+                    name: "items"
+                    widget: "list"
+                    required: false
+              - label: "Process"
+                name: "process"
+                widget: "list"
+                required: false
+                fields:
+                  - label: "Number"
+                    name: "n"
+                    widget: "string"
+                    required: false
+                  - label: "Title"
+                    name: "title"
+                    widget: "string"
+                    required: false
+                  - label: "Body"
+                    name: "body"
+                    widget: "text"
+                    required: false
+              - label: "FAQs"
+                name: "faqs"
+                widget: "list"
+                required: false
+                fields:
+                  - label: "Question"
+                    name: "q"
+                    widget: "string"
+                    required: false
+                  - label: "Answer"
+                    name: "a"
+                    widget: "text"
+                    required: false
+  - name: "offers_sq"
+    label: "Service Pages — Albanian"
+    files:
+      - file: "content/offers.sq.json"
+        label: "Albanian Service Pages"
+        name: "offers_sq"
+        fields:
+          - label: "Branding"
+            name: "branding"
+            widget: "object"
+            required: false
+            fields:
+              - label: "Slug"
+                name: "slug"
+                widget: "string"
+                required: false
+              - label: "Eyebrow"
+                name: "eyebrow"
+                widget: "string"
+                required: false
+              - label: "Name"
+                name: "name"
+                widget: "string"
+                required: false
+              - label: "Hero Image"
+                name: "heroImage"
+                widget: "image"
+                required: false
+              - label: "Hero Alt"
+                name: "heroAlt"
+                widget: "string"
+                required: false
+              - label: "Headline"
+                name: "headline"
+                widget: "string"
+                required: false
+              - label: "Offer"
+                name: "offer"
+                widget: "text"
+                required: false
+              - label: "Cadence"
+                name: "cadence"
+                widget: "string"
+                required: false
+              - label: "Booking"
+                name: "booking"
+                widget: "string"
+                required: false
+              - label: "Shift"
+                name: "shift"
+                widget: "object"
+                required: false
+                fields:
+                  - label: "Heading"
+                    name: "heading"
+                    widget: "string"
+                    required: false
+                  - label: "Body"
+                    name: "body"
+                    widget: "text"
+                    required: false
+              - label: "Tiers"
+                name: "tiers"
+                widget: "list"
+                required: false
+                fields:
+                  - label: "Name"
+                    name: "name"
+                    widget: "string"
+                    required: false
+                  - label: "Price"
+                    name: "price"
+                    widget: "string"
+                    required: false
+                  - label: "Summary"
+                    name: "summary"
+                    widget: "string"
+                    required: false
+                  - label: "Scope"
+                    name: "scope"
+                    widget: "list"
+                    required: false
+                  - label: "Builds"
+                    name: "builds"
+                    widget: "string"
+                    required: false
+                  - label: "Featured"
+                    name: "featured"
+                    widget: "string"
+                    required: false
+              - label: "Includes"
+                name: "includes"
+                widget: "list"
+                required: false
+                fields:
+                  - label: "Label"
+                    name: "label"
+                    widget: "string"
+                    required: false
+                  - label: "Items"
+                    name: "items"
+                    widget: "list"
+                    required: false
+              - label: "Process"
+                name: "process"
+                widget: "list"
+                required: false
+                fields:
+                  - label: "Number"
+                    name: "n"
+                    widget: "string"
+                    required: false
+                  - label: "Title"
+                    name: "title"
+                    widget: "string"
+                    required: false
+                  - label: "Body"
+                    name: "body"
+                    widget: "text"
+                    required: false
+              - label: "FAQs"
+                name: "faqs"
+                widget: "list"
+                required: false
+                fields:
+                  - label: "Question"
+                    name: "q"
+                    widget: "string"
+                    required: false
+                  - label: "Answer"
+                    name: "a"
+                    widget: "text"
+                    required: false
+          - label: "Websites"
+            name: "websites"
+            widget: "object"
+            required: false
+            fields:
+              - label: "Slug"
+                name: "slug"
+                widget: "string"
+                required: false
+              - label: "Eyebrow"
+                name: "eyebrow"
+                widget: "string"
+                required: false
+              - label: "Name"
+                name: "name"
+                widget: "string"
+                required: false
+              - label: "Hero Image"
+                name: "heroImage"
+                widget: "image"
+                required: false
+              - label: "Hero Alt"
+                name: "heroAlt"
+                widget: "string"
+                required: false
+              - label: "Headline"
+                name: "headline"
+                widget: "string"
+                required: false
+              - label: "Offer"
+                name: "offer"
+                widget: "text"
+                required: false
+              - label: "Cadence"
+                name: "cadence"
+                widget: "string"
+                required: false
+              - label: "Booking"
+                name: "booking"
+                widget: "string"
+                required: false
+              - label: "Shift"
+                name: "shift"
+                widget: "object"
+                required: false
+                fields:
+                  - label: "Heading"
+                    name: "heading"
+                    widget: "string"
+                    required: false
+                  - label: "Body"
+                    name: "body"
+                    widget: "text"
+                    required: false
+              - label: "Tiers"
+                name: "tiers"
+                widget: "list"
+                required: false
+                fields:
+                  - label: "Name"
+                    name: "name"
+                    widget: "string"
+                    required: false
+                  - label: "Price"
+                    name: "price"
+                    widget: "string"
+                    required: false
+                  - label: "Summary"
+                    name: "summary"
+                    widget: "string"
+                    required: false
+                  - label: "Scope"
+                    name: "scope"
+                    widget: "list"
+                    required: false
+                  - label: "Builds"
+                    name: "builds"
+                    widget: "string"
+                    required: false
+                  - label: "Featured"
+                    name: "featured"
+                    widget: "string"
+                    required: false
+              - label: "Includes"
+                name: "includes"
+                widget: "list"
+                required: false
+                fields:
+                  - label: "Label"
+                    name: "label"
+                    widget: "string"
+                    required: false
+                  - label: "Items"
+                    name: "items"
+                    widget: "list"
+                    required: false
+              - label: "Process"
+                name: "process"
+                widget: "list"
+                required: false
+                fields:
+                  - label: "Number"
+                    name: "n"
+                    widget: "string"
+                    required: false
+                  - label: "Title"
+                    name: "title"
+                    widget: "string"
+                    required: false
+                  - label: "Body"
+                    name: "body"
+                    widget: "text"
+                    required: false
+              - label: "FAQs"
+                name: "faqs"
+                widget: "list"
+                required: false
+                fields:
+                  - label: "Question"
+                    name: "q"
+                    widget: "string"
+                    required: false
+                  - label: "Answer"
+                    name: "a"
+                    widget: "text"
+                    required: false
+          - label: "Marketing"
+            name: "marketing"
+            widget: "object"
+            required: false
+            fields:
+              - label: "Slug"
+                name: "slug"
+                widget: "string"
+                required: false
+              - label: "Eyebrow"
+                name: "eyebrow"
+                widget: "string"
+                required: false
+              - label: "Name"
+                name: "name"
+                widget: "string"
+                required: false
+              - label: "Hero Image"
+                name: "heroImage"
+                widget: "image"
+                required: false
+              - label: "Hero Alt"
+                name: "heroAlt"
+                widget: "string"
+                required: false
+              - label: "Headline"
+                name: "headline"
+                widget: "string"
+                required: false
+              - label: "Offer"
+                name: "offer"
+                widget: "text"
+                required: false
+              - label: "Cadence"
+                name: "cadence"
+                widget: "string"
+                required: false
+              - label: "Booking"
+                name: "booking"
+                widget: "string"
+                required: false
+              - label: "Shift"
+                name: "shift"
+                widget: "object"
+                required: false
+                fields:
+                  - label: "Heading"
+                    name: "heading"
+                    widget: "string"
+                    required: false
+                  - label: "Body"
+                    name: "body"
+                    widget: "text"
+                    required: false
+              - label: "Tiers"
+                name: "tiers"
+                widget: "list"
+                required: false
+                fields:
+                  - label: "Name"
+                    name: "name"
+                    widget: "string"
+                    required: false
+                  - label: "Price"
+                    name: "price"
+                    widget: "string"
+                    required: false
+                  - label: "Summary"
+                    name: "summary"
+                    widget: "string"
+                    required: false
+                  - label: "Scope"
+                    name: "scope"
+                    widget: "list"
+                    required: false
+                  - label: "Builds"
+                    name: "builds"
+                    widget: "string"
+                    required: false
+                  - label: "Featured"
+                    name: "featured"
+                    widget: "string"
+                    required: false
+              - label: "Includes"
+                name: "includes"
+                widget: "list"
+                required: false
+                fields:
+                  - label: "Label"
+                    name: "label"
+                    widget: "string"
+                    required: false
+                  - label: "Items"
+                    name: "items"
+                    widget: "list"
+                    required: false
+              - label: "Process"
+                name: "process"
+                widget: "list"
+                required: false
+                fields:
+                  - label: "Number"
+                    name: "n"
+                    widget: "string"
+                    required: false
+                  - label: "Title"
+                    name: "title"
+                    widget: "string"
+                    required: false
+                  - label: "Body"
+                    name: "body"
+                    widget: "text"
+                    required: false
+              - label: "FAQs"
+                name: "faqs"
+                widget: "list"
+                required: false
+                fields:
+                  - label: "Question"
+                    name: "q"
+                    widget: "string"
+                    required: false
+                  - label: "Answer"
+                    name: "a"
+                    widget: "text"
+                    required: false
+          - label: "Automation"
+            name: "automation"
+            widget: "object"
+            required: false
+            fields:
+              - label: "Slug"
+                name: "slug"
+                widget: "string"
+                required: false
+              - label: "Eyebrow"
+                name: "eyebrow"
+                widget: "string"
+                required: false
+              - label: "Name"
+                name: "name"
+                widget: "string"
+                required: false
+              - label: "Hero Image"
+                name: "heroImage"
+                widget: "image"
+                required: false
+              - label: "Hero Alt"
+                name: "heroAlt"
+                widget: "string"
+                required: false
+              - label: "Headline"
+                name: "headline"
+                widget: "string"
+                required: false
+              - label: "Offer"
+                name: "offer"
+                widget: "text"
+                required: false
+              - label: "Cadence"
+                name: "cadence"
+                widget: "string"
+                required: false
+              - label: "Booking"
+                name: "booking"
+                widget: "string"
+                required: false
+              - label: "Shift"
+                name: "shift"
+                widget: "object"
+                required: false
+                fields:
+                  - label: "Heading"
+                    name: "heading"
+                    widget: "string"
+                    required: false
+                  - label: "Body"
+                    name: "body"
+                    widget: "text"
+                    required: false
+              - label: "Tiers"
+                name: "tiers"
+                widget: "list"
+                required: false
+                fields:
+                  - label: "Name"
+                    name: "name"
+                    widget: "string"
+                    required: false
+                  - label: "Price"
+                    name: "price"
+                    widget: "string"
+                    required: false
+                  - label: "Summary"
+                    name: "summary"
+                    widget: "string"
+                    required: false
+                  - label: "Scope"
+                    name: "scope"
+                    widget: "list"
+                    required: false
+                  - label: "Builds"
+                    name: "builds"
+                    widget: "string"
+                    required: false
+                  - label: "Featured"
+                    name: "featured"
+                    widget: "string"
+                    required: false
+              - label: "Includes"
+                name: "includes"
+                widget: "list"
+                required: false
+                fields:
+                  - label: "Label"
+                    name: "label"
+                    widget: "string"
+                    required: false
+                  - label: "Items"
+                    name: "items"
+                    widget: "list"
+                    required: false
+              - label: "Process"
+                name: "process"
+                widget: "list"
+                required: false
+                fields:
+                  - label: "Number"
+                    name: "n"
+                    widget: "string"
+                    required: false
+                  - label: "Title"
+                    name: "title"
+                    widget: "string"
+                    required: false
+                  - label: "Body"
+                    name: "body"
+                    widget: "text"
+                    required: false
+              - label: "FAQs"
+                name: "faqs"
+                widget: "list"
+                required: false
+                fields:
+                  - label: "Question"
+                    name: "q"
+                    widget: "string"
+                    required: false
+                  - label: "Answer"
+                    name: "a"
+                    widget: "text"
+                    required: false
+  - name: "case_studies_en"
+    label: "Case Studies — English"
+    files:
+      - file: "content/caseStudies.en.json"
+        label: "English Case Studies"
+        name: "cases_en"
+        fields:
+          - label: "355"
+            name: "355"
+            widget: "object"
+            required: false
+            fields:
+              - label: "Slug"
+                name: "slug"
+                widget: "string"
+                required: false
+              - label: "Name"
+                name: "name"
+                widget: "string"
+                required: false
+              - label: "Category"
+                name: "category"
+                widget: "string"
+                required: false
+              - label: "Hero Image"
+                name: "heroImage"
+                widget: "image"
+                required: false
+              - label: "Overview Heading"
+                name: "overviewHeading"
+                widget: "string"
+                required: false
+              - label: "Overview"
+                name: "overview"
+                widget: "text"
+                required: false
+              - label: "Snapshot"
+                name: "snapshot"
+                widget: "object"
+                required: false
+                fields:
+                  - label: "Industry"
+                    name: "industry"
+                    widget: "string"
+                    required: false
+                  - label: "Services"
+                    name: "services"
+                    widget: "list"
+                    required: false
+                  - label: "Timeline"
+                    name: "timeline"
+                    widget: "string"
+                    required: false
+                  - label: "Deliverables"
+                    name: "deliverables"
+                    widget: "list"
+                    required: false
+              - label: "Image Blocks"
+                name: "blocks"
+                widget: "list"
+                required: false
+                types:
+                  - label: "Full-width Image"
+                    name: "full"
+                    widget: "object"
+                    fields:
+                      - label: "Kind"
+                        name: "kind"
+                        widget: "hidden"
+                        default: "full"
+                      - label: "Image"
+                        name: "src"
+                        widget: "image"
+                      - label: "Width (px)"
+                        name: "w"
+                        widget: "number"
+                        value_type: "int"
+                      - label: "Height (px)"
+                        name: "h"
+                        widget: "number"
+                        value_type: "int"
+                  - label: "Portrait Image"
+                    name: "portrait"
+                    widget: "object"
+                    fields:
+                      - label: "Kind"
+                        name: "kind"
+                        widget: "hidden"
+                        default: "portrait"
+                      - label: "Image"
+                        name: "src"
+                        widget: "image"
+                      - label: "Width (px)"
+                        name: "w"
+                        widget: "number"
+                        value_type: "int"
+                      - label: "Height (px)"
+                        name: "h"
+                        widget: "number"
+                        value_type: "int"
+                  - label: "Two-up Duo"
+                    name: "duo"
+                    widget: "object"
+                    fields:
+                      - label: "Kind"
+                        name: "kind"
+                        widget: "hidden"
+                        default: "duo"
+                      - label: "Images"
+                        name: "items"
+                        widget: "list"
+                        min: 2
+                        max: 2
+                        fields:
+                          - label: "Image"
+                            name: "src"
+                            widget: "image"
+                          - label: "Width (px)"
+                            name: "w"
+                            widget: "number"
+                            value_type: "int"
+                          - label: "Height (px)"
+                            name: "h"
+                            widget: "number"
+                            value_type: "int"
+                  - label: "Section Caption"
+                    name: "caption"
+                    widget: "object"
+                    fields:
+                      - label: "Kind"
+                        name: "kind"
+                        widget: "hidden"
+                        default: "caption"
+                      - label: "Label"
+                        name: "label"
+                        widget: "string"
+                      - label: "Note"
+                        name: "note"
+                        widget: "text"
+              - label: "Closing Image (optional)"
+                name: "finalImage"
+                widget: "object"
+                required: false
+                fields:
+                  - label: "Image"
+                    name: "src"
+                    widget: "image"
+                  - label: "Width (px)"
+                    name: "w"
+                    widget: "number"
+                    value_type: "int"
+                  - label: "Height (px)"
+                    name: "h"
+                    widget: "number"
+                    value_type: "int"
+          - label: "Intellimation"
+            name: "intellimation"
+            widget: "object"
+            required: false
+            fields:
+              - label: "Slug"
+                name: "slug"
+                widget: "string"
+                required: false
+              - label: "Name"
+                name: "name"
+                widget: "string"
+                required: false
+              - label: "Category"
+                name: "category"
+                widget: "string"
+                required: false
+              - label: "Hero Image"
+                name: "heroImage"
+                widget: "image"
+                required: false
+              - label: "Overview Heading"
+                name: "overviewHeading"
+                widget: "string"
+                required: false
+              - label: "Overview"
+                name: "overview"
+                widget: "text"
+                required: false
+              - label: "Snapshot"
+                name: "snapshot"
+                widget: "object"
+                required: false
+                fields:
+                  - label: "Industry"
+                    name: "industry"
+                    widget: "string"
+                    required: false
+                  - label: "Services"
+                    name: "services"
+                    widget: "list"
+                    required: false
+                  - label: "Timeline"
+                    name: "timeline"
+                    widget: "string"
+                    required: false
+                  - label: "Deliverables"
+                    name: "deliverables"
+                    widget: "list"
+                    required: false
+              - label: "Image Blocks"
+                name: "blocks"
+                widget: "list"
+                required: false
+                types:
+                  - label: "Full-width Image"
+                    name: "full"
+                    widget: "object"
+                    fields:
+                      - label: "Kind"
+                        name: "kind"
+                        widget: "hidden"
+                        default: "full"
+                      - label: "Image"
+                        name: "src"
+                        widget: "image"
+                      - label: "Width (px)"
+                        name: "w"
+                        widget: "number"
+                        value_type: "int"
+                      - label: "Height (px)"
+                        name: "h"
+                        widget: "number"
+                        value_type: "int"
+                  - label: "Portrait Image"
+                    name: "portrait"
+                    widget: "object"
+                    fields:
+                      - label: "Kind"
+                        name: "kind"
+                        widget: "hidden"
+                        default: "portrait"
+                      - label: "Image"
+                        name: "src"
+                        widget: "image"
+                      - label: "Width (px)"
+                        name: "w"
+                        widget: "number"
+                        value_type: "int"
+                      - label: "Height (px)"
+                        name: "h"
+                        widget: "number"
+                        value_type: "int"
+                  - label: "Two-up Duo"
+                    name: "duo"
+                    widget: "object"
+                    fields:
+                      - label: "Kind"
+                        name: "kind"
+                        widget: "hidden"
+                        default: "duo"
+                      - label: "Images"
+                        name: "items"
+                        widget: "list"
+                        min: 2
+                        max: 2
+                        fields:
+                          - label: "Image"
+                            name: "src"
+                            widget: "image"
+                          - label: "Width (px)"
+                            name: "w"
+                            widget: "number"
+                            value_type: "int"
+                          - label: "Height (px)"
+                            name: "h"
+                            widget: "number"
+                            value_type: "int"
+                  - label: "Section Caption"
+                    name: "caption"
+                    widget: "object"
+                    fields:
+                      - label: "Kind"
+                        name: "kind"
+                        widget: "hidden"
+                        default: "caption"
+                      - label: "Label"
+                        name: "label"
+                        widget: "string"
+                      - label: "Note"
+                        name: "note"
+                        widget: "text"
+              - label: "Closing Image (optional)"
+                name: "finalImage"
+                widget: "object"
+                required: false
+                fields:
+                  - label: "Image"
+                    name: "src"
+                    widget: "image"
+                  - label: "Width (px)"
+                    name: "w"
+                    widget: "number"
+                    value_type: "int"
+                  - label: "Height (px)"
+                    name: "h"
+                    widget: "number"
+                    value_type: "int"
+          - label: "Seereen"
+            name: "seereen"
+            widget: "object"
+            required: false
+            fields:
+              - label: "Slug"
+                name: "slug"
+                widget: "string"
+                required: false
+              - label: "Name"
+                name: "name"
+                widget: "string"
+                required: false
+              - label: "Category"
+                name: "category"
+                widget: "string"
+                required: false
+              - label: "Hero Image"
+                name: "heroImage"
+                widget: "image"
+                required: false
+              - label: "Overview Heading"
+                name: "overviewHeading"
+                widget: "string"
+                required: false
+              - label: "Overview"
+                name: "overview"
+                widget: "text"
+                required: false
+              - label: "Snapshot"
+                name: "snapshot"
+                widget: "object"
+                required: false
+                fields:
+                  - label: "Industry"
+                    name: "industry"
+                    widget: "string"
+                    required: false
+                  - label: "Services"
+                    name: "services"
+                    widget: "list"
+                    required: false
+                  - label: "Timeline"
+                    name: "timeline"
+                    widget: "string"
+                    required: false
+                  - label: "Deliverables"
+                    name: "deliverables"
+                    widget: "list"
+                    required: false
+              - label: "Image Blocks"
+                name: "blocks"
+                widget: "list"
+                required: false
+                types:
+                  - label: "Full-width Image"
+                    name: "full"
+                    widget: "object"
+                    fields:
+                      - label: "Kind"
+                        name: "kind"
+                        widget: "hidden"
+                        default: "full"
+                      - label: "Image"
+                        name: "src"
+                        widget: "image"
+                      - label: "Width (px)"
+                        name: "w"
+                        widget: "number"
+                        value_type: "int"
+                      - label: "Height (px)"
+                        name: "h"
+                        widget: "number"
+                        value_type: "int"
+                  - label: "Portrait Image"
+                    name: "portrait"
+                    widget: "object"
+                    fields:
+                      - label: "Kind"
+                        name: "kind"
+                        widget: "hidden"
+                        default: "portrait"
+                      - label: "Image"
+                        name: "src"
+                        widget: "image"
+                      - label: "Width (px)"
+                        name: "w"
+                        widget: "number"
+                        value_type: "int"
+                      - label: "Height (px)"
+                        name: "h"
+                        widget: "number"
+                        value_type: "int"
+                  - label: "Two-up Duo"
+                    name: "duo"
+                    widget: "object"
+                    fields:
+                      - label: "Kind"
+                        name: "kind"
+                        widget: "hidden"
+                        default: "duo"
+                      - label: "Images"
+                        name: "items"
+                        widget: "list"
+                        min: 2
+                        max: 2
+                        fields:
+                          - label: "Image"
+                            name: "src"
+                            widget: "image"
+                          - label: "Width (px)"
+                            name: "w"
+                            widget: "number"
+                            value_type: "int"
+                          - label: "Height (px)"
+                            name: "h"
+                            widget: "number"
+                            value_type: "int"
+                  - label: "Section Caption"
+                    name: "caption"
+                    widget: "object"
+                    fields:
+                      - label: "Kind"
+                        name: "kind"
+                        widget: "hidden"
+                        default: "caption"
+                      - label: "Label"
+                        name: "label"
+                        widget: "string"
+                      - label: "Note"
+                        name: "note"
+                        widget: "text"
+              - label: "Closing Image (optional)"
+                name: "finalImage"
+                widget: "object"
+                required: false
+                fields:
+                  - label: "Image"
+                    name: "src"
+                    widget: "image"
+                  - label: "Width (px)"
+                    name: "w"
+                    widget: "number"
+                    value_type: "int"
+                  - label: "Height (px)"
+                    name: "h"
+                    widget: "number"
+                    value_type: "int"
+          - label: "Opa Taverne"
+            name: "opa-taverne"
+            widget: "object"
+            required: false
+            fields:
+              - label: "Slug"
+                name: "slug"
+                widget: "string"
+                required: false
+              - label: "Name"
+                name: "name"
+                widget: "string"
+                required: false
+              - label: "Category"
+                name: "category"
+                widget: "string"
+                required: false
+              - label: "Hero Image"
+                name: "heroImage"
+                widget: "image"
+                required: false
+              - label: "Overview Heading"
+                name: "overviewHeading"
+                widget: "string"
+                required: false
+              - label: "Overview"
+                name: "overview"
+                widget: "text"
+                required: false
+              - label: "Snapshot"
+                name: "snapshot"
+                widget: "object"
+                required: false
+                fields:
+                  - label: "Industry"
+                    name: "industry"
+                    widget: "string"
+                    required: false
+                  - label: "Services"
+                    name: "services"
+                    widget: "list"
+                    required: false
+                  - label: "Timeline"
+                    name: "timeline"
+                    widget: "string"
+                    required: false
+                  - label: "Deliverables"
+                    name: "deliverables"
+                    widget: "list"
+                    required: false
+              - label: "Image Blocks"
+                name: "blocks"
+                widget: "list"
+                required: false
+                types:
+                  - label: "Full-width Image"
+                    name: "full"
+                    widget: "object"
+                    fields:
+                      - label: "Kind"
+                        name: "kind"
+                        widget: "hidden"
+                        default: "full"
+                      - label: "Image"
+                        name: "src"
+                        widget: "image"
+                      - label: "Width (px)"
+                        name: "w"
+                        widget: "number"
+                        value_type: "int"
+                      - label: "Height (px)"
+                        name: "h"
+                        widget: "number"
+                        value_type: "int"
+                  - label: "Portrait Image"
+                    name: "portrait"
+                    widget: "object"
+                    fields:
+                      - label: "Kind"
+                        name: "kind"
+                        widget: "hidden"
+                        default: "portrait"
+                      - label: "Image"
+                        name: "src"
+                        widget: "image"
+                      - label: "Width (px)"
+                        name: "w"
+                        widget: "number"
+                        value_type: "int"
+                      - label: "Height (px)"
+                        name: "h"
+                        widget: "number"
+                        value_type: "int"
+                  - label: "Two-up Duo"
+                    name: "duo"
+                    widget: "object"
+                    fields:
+                      - label: "Kind"
+                        name: "kind"
+                        widget: "hidden"
+                        default: "duo"
+                      - label: "Images"
+                        name: "items"
+                        widget: "list"
+                        min: 2
+                        max: 2
+                        fields:
+                          - label: "Image"
+                            name: "src"
+                            widget: "image"
+                          - label: "Width (px)"
+                            name: "w"
+                            widget: "number"
+                            value_type: "int"
+                          - label: "Height (px)"
+                            name: "h"
+                            widget: "number"
+                            value_type: "int"
+                  - label: "Section Caption"
+                    name: "caption"
+                    widget: "object"
+                    fields:
+                      - label: "Kind"
+                        name: "kind"
+                        widget: "hidden"
+                        default: "caption"
+                      - label: "Label"
+                        name: "label"
+                        widget: "string"
+                      - label: "Note"
+                        name: "note"
+                        widget: "text"
+              - label: "Closing Image (optional)"
+                name: "finalImage"
+                widget: "object"
+                required: false
+                fields:
+                  - label: "Image"
+                    name: "src"
+                    widget: "image"
+                  - label: "Width (px)"
+                    name: "w"
+                    widget: "number"
+                    value_type: "int"
+                  - label: "Height (px)"
+                    name: "h"
+                    widget: "number"
+                    value_type: "int"
+          - label: "Ame"
+            name: "ame"
+            widget: "object"
+            required: false
+            fields:
+              - label: "Slug"
+                name: "slug"
+                widget: "string"
+                required: false
+              - label: "Name"
+                name: "name"
+                widget: "string"
+                required: false
+              - label: "Category"
+                name: "category"
+                widget: "string"
+                required: false
+              - label: "Hero Image"
+                name: "heroImage"
+                widget: "image"
+                required: false
+              - label: "Overview Heading"
+                name: "overviewHeading"
+                widget: "string"
+                required: false
+              - label: "Overview"
+                name: "overview"
+                widget: "text"
+                required: false
+              - label: "Snapshot"
+                name: "snapshot"
+                widget: "object"
+                required: false
+                fields:
+                  - label: "Industry"
+                    name: "industry"
+                    widget: "string"
+                    required: false
+                  - label: "Services"
+                    name: "services"
+                    widget: "list"
+                    required: false
+                  - label: "Timeline"
+                    name: "timeline"
+                    widget: "string"
+                    required: false
+                  - label: "Deliverables"
+                    name: "deliverables"
+                    widget: "list"
+                    required: false
+              - label: "Image Blocks"
+                name: "blocks"
+                widget: "list"
+                required: false
+                types:
+                  - label: "Full-width Image"
+                    name: "full"
+                    widget: "object"
+                    fields:
+                      - label: "Kind"
+                        name: "kind"
+                        widget: "hidden"
+                        default: "full"
+                      - label: "Image"
+                        name: "src"
+                        widget: "image"
+                      - label: "Width (px)"
+                        name: "w"
+                        widget: "number"
+                        value_type: "int"
+                      - label: "Height (px)"
+                        name: "h"
+                        widget: "number"
+                        value_type: "int"
+                  - label: "Portrait Image"
+                    name: "portrait"
+                    widget: "object"
+                    fields:
+                      - label: "Kind"
+                        name: "kind"
+                        widget: "hidden"
+                        default: "portrait"
+                      - label: "Image"
+                        name: "src"
+                        widget: "image"
+                      - label: "Width (px)"
+                        name: "w"
+                        widget: "number"
+                        value_type: "int"
+                      - label: "Height (px)"
+                        name: "h"
+                        widget: "number"
+                        value_type: "int"
+                  - label: "Two-up Duo"
+                    name: "duo"
+                    widget: "object"
+                    fields:
+                      - label: "Kind"
+                        name: "kind"
+                        widget: "hidden"
+                        default: "duo"
+                      - label: "Images"
+                        name: "items"
+                        widget: "list"
+                        min: 2
+                        max: 2
+                        fields:
+                          - label: "Image"
+                            name: "src"
+                            widget: "image"
+                          - label: "Width (px)"
+                            name: "w"
+                            widget: "number"
+                            value_type: "int"
+                          - label: "Height (px)"
+                            name: "h"
+                            widget: "number"
+                            value_type: "int"
+                  - label: "Section Caption"
+                    name: "caption"
+                    widget: "object"
+                    fields:
+                      - label: "Kind"
+                        name: "kind"
+                        widget: "hidden"
+                        default: "caption"
+                      - label: "Label"
+                        name: "label"
+                        widget: "string"
+                      - label: "Note"
+                        name: "note"
+                        widget: "text"
+              - label: "Closing Image (optional)"
+                name: "finalImage"
+                widget: "object"
+                required: false
+                fields:
+                  - label: "Image"
+                    name: "src"
+                    widget: "image"
+                  - label: "Width (px)"
+                    name: "w"
+                    widget: "number"
+                    value_type: "int"
+                  - label: "Height (px)"
+                    name: "h"
+                    widget: "number"
+                    value_type: "int"
+          - label: "Her Club"
+            name: "her-club"
+            widget: "object"
+            required: false
+            fields:
+              - label: "Slug"
+                name: "slug"
+                widget: "string"
+                required: false
+              - label: "Name"
+                name: "name"
+                widget: "string"
+                required: false
+              - label: "Category"
+                name: "category"
+                widget: "string"
+                required: false
+              - label: "Hero Image"
+                name: "heroImage"
+                widget: "image"
+                required: false
+              - label: "Overview Heading"
+                name: "overviewHeading"
+                widget: "string"
+                required: false
+              - label: "Overview"
+                name: "overview"
+                widget: "text"
+                required: false
+              - label: "Snapshot"
+                name: "snapshot"
+                widget: "object"
+                required: false
+                fields:
+                  - label: "Industry"
+                    name: "industry"
+                    widget: "string"
+                    required: false
+                  - label: "Services"
+                    name: "services"
+                    widget: "list"
+                    required: false
+                  - label: "Timeline"
+                    name: "timeline"
+                    widget: "string"
+                    required: false
+                  - label: "Deliverables"
+                    name: "deliverables"
+                    widget: "list"
+                    required: false
+              - label: "Image Blocks"
+                name: "blocks"
+                widget: "list"
+                required: false
+                types:
+                  - label: "Full-width Image"
+                    name: "full"
+                    widget: "object"
+                    fields:
+                      - label: "Kind"
+                        name: "kind"
+                        widget: "hidden"
+                        default: "full"
+                      - label: "Image"
+                        name: "src"
+                        widget: "image"
+                      - label: "Width (px)"
+                        name: "w"
+                        widget: "number"
+                        value_type: "int"
+                      - label: "Height (px)"
+                        name: "h"
+                        widget: "number"
+                        value_type: "int"
+                  - label: "Portrait Image"
+                    name: "portrait"
+                    widget: "object"
+                    fields:
+                      - label: "Kind"
+                        name: "kind"
+                        widget: "hidden"
+                        default: "portrait"
+                      - label: "Image"
+                        name: "src"
+                        widget: "image"
+                      - label: "Width (px)"
+                        name: "w"
+                        widget: "number"
+                        value_type: "int"
+                      - label: "Height (px)"
+                        name: "h"
+                        widget: "number"
+                        value_type: "int"
+                  - label: "Two-up Duo"
+                    name: "duo"
+                    widget: "object"
+                    fields:
+                      - label: "Kind"
+                        name: "kind"
+                        widget: "hidden"
+                        default: "duo"
+                      - label: "Images"
+                        name: "items"
+                        widget: "list"
+                        min: 2
+                        max: 2
+                        fields:
+                          - label: "Image"
+                            name: "src"
+                            widget: "image"
+                          - label: "Width (px)"
+                            name: "w"
+                            widget: "number"
+                            value_type: "int"
+                          - label: "Height (px)"
+                            name: "h"
+                            widget: "number"
+                            value_type: "int"
+                  - label: "Section Caption"
+                    name: "caption"
+                    widget: "object"
+                    fields:
+                      - label: "Kind"
+                        name: "kind"
+                        widget: "hidden"
+                        default: "caption"
+                      - label: "Label"
+                        name: "label"
+                        widget: "string"
+                      - label: "Note"
+                        name: "note"
+                        widget: "text"
+              - label: "Closing Image (optional)"
+                name: "finalImage"
+                widget: "object"
+                required: false
+                fields:
+                  - label: "Image"
+                    name: "src"
+                    widget: "image"
+                  - label: "Width (px)"
+                    name: "w"
+                    widget: "number"
+                    value_type: "int"
+                  - label: "Height (px)"
+                    name: "h"
+                    widget: "number"
+                    value_type: "int"
+  - name: "case_studies_sq"
+    label: "Case Studies — Albanian"
+    files:
+      - file: "content/caseStudies.sq.json"
+        label: "Albanian Case Studies"
+        name: "cases_sq"
+        fields:
+          - label: "355"
+            name: "355"
+            widget: "object"
+            required: false
+            fields:
+              - label: "Slug"
+                name: "slug"
+                widget: "string"
+                required: false
+              - label: "Name"
+                name: "name"
+                widget: "string"
+                required: false
+              - label: "Category"
+                name: "category"
+                widget: "string"
+                required: false
+              - label: "Hero Image"
+                name: "heroImage"
+                widget: "image"
+                required: false
+              - label: "Overview Heading"
+                name: "overviewHeading"
+                widget: "string"
+                required: false
+              - label: "Overview"
+                name: "overview"
+                widget: "text"
+                required: false
+              - label: "Snapshot"
+                name: "snapshot"
+                widget: "object"
+                required: false
+                fields:
+                  - label: "Industry"
+                    name: "industry"
+                    widget: "string"
+                    required: false
+                  - label: "Services"
+                    name: "services"
+                    widget: "list"
+                    required: false
+                  - label: "Timeline"
+                    name: "timeline"
+                    widget: "string"
+                    required: false
+                  - label: "Deliverables"
+                    name: "deliverables"
+                    widget: "list"
+                    required: false
+              - label: "Image Blocks"
+                name: "blocks"
+                widget: "list"
+                required: false
+                types:
+                  - label: "Full-width Image"
+                    name: "full"
+                    widget: "object"
+                    fields:
+                      - label: "Kind"
+                        name: "kind"
+                        widget: "hidden"
+                        default: "full"
+                      - label: "Image"
+                        name: "src"
+                        widget: "image"
+                      - label: "Width (px)"
+                        name: "w"
+                        widget: "number"
+                        value_type: "int"
+                      - label: "Height (px)"
+                        name: "h"
+                        widget: "number"
+                        value_type: "int"
+                  - label: "Portrait Image"
+                    name: "portrait"
+                    widget: "object"
+                    fields:
+                      - label: "Kind"
+                        name: "kind"
+                        widget: "hidden"
+                        default: "portrait"
+                      - label: "Image"
+                        name: "src"
+                        widget: "image"
+                      - label: "Width (px)"
+                        name: "w"
+                        widget: "number"
+                        value_type: "int"
+                      - label: "Height (px)"
+                        name: "h"
+                        widget: "number"
+                        value_type: "int"
+                  - label: "Two-up Duo"
+                    name: "duo"
+                    widget: "object"
+                    fields:
+                      - label: "Kind"
+                        name: "kind"
+                        widget: "hidden"
+                        default: "duo"
+                      - label: "Images"
+                        name: "items"
+                        widget: "list"
+                        min: 2
+                        max: 2
+                        fields:
+                          - label: "Image"
+                            name: "src"
+                            widget: "image"
+                          - label: "Width (px)"
+                            name: "w"
+                            widget: "number"
+                            value_type: "int"
+                          - label: "Height (px)"
+                            name: "h"
+                            widget: "number"
+                            value_type: "int"
+                  - label: "Section Caption"
+                    name: "caption"
+                    widget: "object"
+                    fields:
+                      - label: "Kind"
+                        name: "kind"
+                        widget: "hidden"
+                        default: "caption"
+                      - label: "Label"
+                        name: "label"
+                        widget: "string"
+                      - label: "Note"
+                        name: "note"
+                        widget: "text"
+              - label: "Closing Image (optional)"
+                name: "finalImage"
+                widget: "object"
+                required: false
+                fields:
+                  - label: "Image"
+                    name: "src"
+                    widget: "image"
+                  - label: "Width (px)"
+                    name: "w"
+                    widget: "number"
+                    value_type: "int"
+                  - label: "Height (px)"
+                    name: "h"
+                    widget: "number"
+                    value_type: "int"
+          - label: "Intellimation"
+            name: "intellimation"
+            widget: "object"
+            required: false
+            fields:
+              - label: "Slug"
+                name: "slug"
+                widget: "string"
+                required: false
+              - label: "Name"
+                name: "name"
+                widget: "string"
+                required: false
+              - label: "Category"
+                name: "category"
+                widget: "string"
+                required: false
+              - label: "Hero Image"
+                name: "heroImage"
+                widget: "image"
+                required: false
+              - label: "Overview Heading"
+                name: "overviewHeading"
+                widget: "string"
+                required: false
+              - label: "Overview"
+                name: "overview"
+                widget: "text"
+                required: false
+              - label: "Snapshot"
+                name: "snapshot"
+                widget: "object"
+                required: false
+                fields:
+                  - label: "Industry"
+                    name: "industry"
+                    widget: "string"
+                    required: false
+                  - label: "Services"
+                    name: "services"
+                    widget: "list"
+                    required: false
+                  - label: "Timeline"
+                    name: "timeline"
+                    widget: "string"
+                    required: false
+                  - label: "Deliverables"
+                    name: "deliverables"
+                    widget: "list"
+                    required: false
+              - label: "Image Blocks"
+                name: "blocks"
+                widget: "list"
+                required: false
+                types:
+                  - label: "Full-width Image"
+                    name: "full"
+                    widget: "object"
+                    fields:
+                      - label: "Kind"
+                        name: "kind"
+                        widget: "hidden"
+                        default: "full"
+                      - label: "Image"
+                        name: "src"
+                        widget: "image"
+                      - label: "Width (px)"
+                        name: "w"
+                        widget: "number"
+                        value_type: "int"
+                      - label: "Height (px)"
+                        name: "h"
+                        widget: "number"
+                        value_type: "int"
+                  - label: "Portrait Image"
+                    name: "portrait"
+                    widget: "object"
+                    fields:
+                      - label: "Kind"
+                        name: "kind"
+                        widget: "hidden"
+                        default: "portrait"
+                      - label: "Image"
+                        name: "src"
+                        widget: "image"
+                      - label: "Width (px)"
+                        name: "w"
+                        widget: "number"
+                        value_type: "int"
+                      - label: "Height (px)"
+                        name: "h"
+                        widget: "number"
+                        value_type: "int"
+                  - label: "Two-up Duo"
+                    name: "duo"
+                    widget: "object"
+                    fields:
+                      - label: "Kind"
+                        name: "kind"
+                        widget: "hidden"
+                        default: "duo"
+                      - label: "Images"
+                        name: "items"
+                        widget: "list"
+                        min: 2
+                        max: 2
+                        fields:
+                          - label: "Image"
+                            name: "src"
+                            widget: "image"
+                          - label: "Width (px)"
+                            name: "w"
+                            widget: "number"
+                            value_type: "int"
+                          - label: "Height (px)"
+                            name: "h"
+                            widget: "number"
+                            value_type: "int"
+                  - label: "Section Caption"
+                    name: "caption"
+                    widget: "object"
+                    fields:
+                      - label: "Kind"
+                        name: "kind"
+                        widget: "hidden"
+                        default: "caption"
+                      - label: "Label"
+                        name: "label"
+                        widget: "string"
+                      - label: "Note"
+                        name: "note"
+                        widget: "text"
+              - label: "Closing Image (optional)"
+                name: "finalImage"
+                widget: "object"
+                required: false
+                fields:
+                  - label: "Image"
+                    name: "src"
+                    widget: "image"
+                  - label: "Width (px)"
+                    name: "w"
+                    widget: "number"
+                    value_type: "int"
+                  - label: "Height (px)"
+                    name: "h"
+                    widget: "number"
+                    value_type: "int"
+          - label: "Seereen"
+            name: "seereen"
+            widget: "object"
+            required: false
+            fields:
+              - label: "Slug"
+                name: "slug"
+                widget: "string"
+                required: false
+              - label: "Name"
+                name: "name"
+                widget: "string"
+                required: false
+              - label: "Category"
+                name: "category"
+                widget: "string"
+                required: false
+              - label: "Hero Image"
+                name: "heroImage"
+                widget: "image"
+                required: false
+              - label: "Overview Heading"
+                name: "overviewHeading"
+                widget: "string"
+                required: false
+              - label: "Overview"
+                name: "overview"
+                widget: "text"
+                required: false
+              - label: "Snapshot"
+                name: "snapshot"
+                widget: "object"
+                required: false
+                fields:
+                  - label: "Industry"
+                    name: "industry"
+                    widget: "string"
+                    required: false
+                  - label: "Services"
+                    name: "services"
+                    widget: "list"
+                    required: false
+                  - label: "Timeline"
+                    name: "timeline"
+                    widget: "string"
+                    required: false
+                  - label: "Deliverables"
+                    name: "deliverables"
+                    widget: "list"
+                    required: false
+              - label: "Image Blocks"
+                name: "blocks"
+                widget: "list"
+                required: false
+                types:
+                  - label: "Full-width Image"
+                    name: "full"
+                    widget: "object"
+                    fields:
+                      - label: "Kind"
+                        name: "kind"
+                        widget: "hidden"
+                        default: "full"
+                      - label: "Image"
+                        name: "src"
+                        widget: "image"
+                      - label: "Width (px)"
+                        name: "w"
+                        widget: "number"
+                        value_type: "int"
+                      - label: "Height (px)"
+                        name: "h"
+                        widget: "number"
+                        value_type: "int"
+                  - label: "Portrait Image"
+                    name: "portrait"
+                    widget: "object"
+                    fields:
+                      - label: "Kind"
+                        name: "kind"
+                        widget: "hidden"
+                        default: "portrait"
+                      - label: "Image"
+                        name: "src"
+                        widget: "image"
+                      - label: "Width (px)"
+                        name: "w"
+                        widget: "number"
+                        value_type: "int"
+                      - label: "Height (px)"
+                        name: "h"
+                        widget: "number"
+                        value_type: "int"
+                  - label: "Two-up Duo"
+                    name: "duo"
+                    widget: "object"
+                    fields:
+                      - label: "Kind"
+                        name: "kind"
+                        widget: "hidden"
+                        default: "duo"
+                      - label: "Images"
+                        name: "items"
+                        widget: "list"
+                        min: 2
+                        max: 2
+                        fields:
+                          - label: "Image"
+                            name: "src"
+                            widget: "image"
+                          - label: "Width (px)"
+                            name: "w"
+                            widget: "number"
+                            value_type: "int"
+                          - label: "Height (px)"
+                            name: "h"
+                            widget: "number"
+                            value_type: "int"
+                  - label: "Section Caption"
+                    name: "caption"
+                    widget: "object"
+                    fields:
+                      - label: "Kind"
+                        name: "kind"
+                        widget: "hidden"
+                        default: "caption"
+                      - label: "Label"
+                        name: "label"
+                        widget: "string"
+                      - label: "Note"
+                        name: "note"
+                        widget: "text"
+              - label: "Closing Image (optional)"
+                name: "finalImage"
+                widget: "object"
+                required: false
+                fields:
+                  - label: "Image"
+                    name: "src"
+                    widget: "image"
+                  - label: "Width (px)"
+                    name: "w"
+                    widget: "number"
+                    value_type: "int"
+                  - label: "Height (px)"
+                    name: "h"
+                    widget: "number"
+                    value_type: "int"
+          - label: "Opa Taverne"
+            name: "opa-taverne"
+            widget: "object"
+            required: false
+            fields:
+              - label: "Slug"
+                name: "slug"
+                widget: "string"
+                required: false
+              - label: "Name"
+                name: "name"
+                widget: "string"
+                required: false
+              - label: "Category"
+                name: "category"
+                widget: "string"
+                required: false
+              - label: "Hero Image"
+                name: "heroImage"
+                widget: "image"
+                required: false
+              - label: "Overview Heading"
+                name: "overviewHeading"
+                widget: "string"
+                required: false
+              - label: "Overview"
+                name: "overview"
+                widget: "text"
+                required: false
+              - label: "Snapshot"
+                name: "snapshot"
+                widget: "object"
+                required: false
+                fields:
+                  - label: "Industry"
+                    name: "industry"
+                    widget: "string"
+                    required: false
+                  - label: "Services"
+                    name: "services"
+                    widget: "list"
+                    required: false
+                  - label: "Timeline"
+                    name: "timeline"
+                    widget: "string"
+                    required: false
+                  - label: "Deliverables"
+                    name: "deliverables"
+                    widget: "list"
+                    required: false
+              - label: "Image Blocks"
+                name: "blocks"
+                widget: "list"
+                required: false
+                types:
+                  - label: "Full-width Image"
+                    name: "full"
+                    widget: "object"
+                    fields:
+                      - label: "Kind"
+                        name: "kind"
+                        widget: "hidden"
+                        default: "full"
+                      - label: "Image"
+                        name: "src"
+                        widget: "image"
+                      - label: "Width (px)"
+                        name: "w"
+                        widget: "number"
+                        value_type: "int"
+                      - label: "Height (px)"
+                        name: "h"
+                        widget: "number"
+                        value_type: "int"
+                  - label: "Portrait Image"
+                    name: "portrait"
+                    widget: "object"
+                    fields:
+                      - label: "Kind"
+                        name: "kind"
+                        widget: "hidden"
+                        default: "portrait"
+                      - label: "Image"
+                        name: "src"
+                        widget: "image"
+                      - label: "Width (px)"
+                        name: "w"
+                        widget: "number"
+                        value_type: "int"
+                      - label: "Height (px)"
+                        name: "h"
+                        widget: "number"
+                        value_type: "int"
+                  - label: "Two-up Duo"
+                    name: "duo"
+                    widget: "object"
+                    fields:
+                      - label: "Kind"
+                        name: "kind"
+                        widget: "hidden"
+                        default: "duo"
+                      - label: "Images"
+                        name: "items"
+                        widget: "list"
+                        min: 2
+                        max: 2
+                        fields:
+                          - label: "Image"
+                            name: "src"
+                            widget: "image"
+                          - label: "Width (px)"
+                            name: "w"
+                            widget: "number"
+                            value_type: "int"
+                          - label: "Height (px)"
+                            name: "h"
+                            widget: "number"
+                            value_type: "int"
+                  - label: "Section Caption"
+                    name: "caption"
+                    widget: "object"
+                    fields:
+                      - label: "Kind"
+                        name: "kind"
+                        widget: "hidden"
+                        default: "caption"
+                      - label: "Label"
+                        name: "label"
+                        widget: "string"
+                      - label: "Note"
+                        name: "note"
+                        widget: "text"
+              - label: "Closing Image (optional)"
+                name: "finalImage"
+                widget: "object"
+                required: false
+                fields:
+                  - label: "Image"
+                    name: "src"
+                    widget: "image"
+                  - label: "Width (px)"
+                    name: "w"
+                    widget: "number"
+                    value_type: "int"
+                  - label: "Height (px)"
+                    name: "h"
+                    widget: "number"
+                    value_type: "int"
+          - label: "Ame"
+            name: "ame"
+            widget: "object"
+            required: false
+            fields:
+              - label: "Slug"
+                name: "slug"
+                widget: "string"
+                required: false
+              - label: "Name"
+                name: "name"
+                widget: "string"
+                required: false
+              - label: "Category"
+                name: "category"
+                widget: "string"
+                required: false
+              - label: "Hero Image"
+                name: "heroImage"
+                widget: "image"
+                required: false
+              - label: "Overview Heading"
+                name: "overviewHeading"
+                widget: "string"
+                required: false
+              - label: "Overview"
+                name: "overview"
+                widget: "text"
+                required: false
+              - label: "Snapshot"
+                name: "snapshot"
+                widget: "object"
+                required: false
+                fields:
+                  - label: "Industry"
+                    name: "industry"
+                    widget: "string"
+                    required: false
+                  - label: "Services"
+                    name: "services"
+                    widget: "list"
+                    required: false
+                  - label: "Timeline"
+                    name: "timeline"
+                    widget: "string"
+                    required: false
+                  - label: "Deliverables"
+                    name: "deliverables"
+                    widget: "list"
+                    required: false
+              - label: "Image Blocks"
+                name: "blocks"
+                widget: "list"
+                required: false
+                types:
+                  - label: "Full-width Image"
+                    name: "full"
+                    widget: "object"
+                    fields:
+                      - label: "Kind"
+                        name: "kind"
+                        widget: "hidden"
+                        default: "full"
+                      - label: "Image"
+                        name: "src"
+                        widget: "image"
+                      - label: "Width (px)"
+                        name: "w"
+                        widget: "number"
+                        value_type: "int"
+                      - label: "Height (px)"
+                        name: "h"
+                        widget: "number"
+                        value_type: "int"
+                  - label: "Portrait Image"
+                    name: "portrait"
+                    widget: "object"
+                    fields:
+                      - label: "Kind"
+                        name: "kind"
+                        widget: "hidden"
+                        default: "portrait"
+                      - label: "Image"
+                        name: "src"
+                        widget: "image"
+                      - label: "Width (px)"
+                        name: "w"
+                        widget: "number"
+                        value_type: "int"
+                      - label: "Height (px)"
+                        name: "h"
+                        widget: "number"
+                        value_type: "int"
+                  - label: "Two-up Duo"
+                    name: "duo"
+                    widget: "object"
+                    fields:
+                      - label: "Kind"
+                        name: "kind"
+                        widget: "hidden"
+                        default: "duo"
+                      - label: "Images"
+                        name: "items"
+                        widget: "list"
+                        min: 2
+                        max: 2
+                        fields:
+                          - label: "Image"
+                            name: "src"
+                            widget: "image"
+                          - label: "Width (px)"
+                            name: "w"
+                            widget: "number"
+                            value_type: "int"
+                          - label: "Height (px)"
+                            name: "h"
+                            widget: "number"
+                            value_type: "int"
+                  - label: "Section Caption"
+                    name: "caption"
+                    widget: "object"
+                    fields:
+                      - label: "Kind"
+                        name: "kind"
+                        widget: "hidden"
+                        default: "caption"
+                      - label: "Label"
+                        name: "label"
+                        widget: "string"
+                      - label: "Note"
+                        name: "note"
+                        widget: "text"
+              - label: "Closing Image (optional)"
+                name: "finalImage"
+                widget: "object"
+                required: false
+                fields:
+                  - label: "Image"
+                    name: "src"
+                    widget: "image"
+                  - label: "Width (px)"
+                    name: "w"
+                    widget: "number"
+                    value_type: "int"
+                  - label: "Height (px)"
+                    name: "h"
+                    widget: "number"
+                    value_type: "int"
+          - label: "Her Club"
+            name: "her-club"
+            widget: "object"
+            required: false
+            fields:
+              - label: "Slug"
+                name: "slug"
+                widget: "string"
+                required: false
+              - label: "Name"
+                name: "name"
+                widget: "string"
+                required: false
+              - label: "Category"
+                name: "category"
+                widget: "string"
+                required: false
+              - label: "Hero Image"
+                name: "heroImage"
+                widget: "image"
+                required: false
+              - label: "Overview Heading"
+                name: "overviewHeading"
+                widget: "string"
+                required: false
+              - label: "Overview"
+                name: "overview"
+                widget: "text"
+                required: false
+              - label: "Snapshot"
+                name: "snapshot"
+                widget: "object"
+                required: false
+                fields:
+                  - label: "Industry"
+                    name: "industry"
+                    widget: "string"
+                    required: false
+                  - label: "Services"
+                    name: "services"
+                    widget: "list"
+                    required: false
+                  - label: "Timeline"
+                    name: "timeline"
+                    widget: "string"
+                    required: false
+                  - label: "Deliverables"
+                    name: "deliverables"
+                    widget: "list"
+                    required: false
+              - label: "Image Blocks"
+                name: "blocks"
+                widget: "list"
+                required: false
+                types:
+                  - label: "Full-width Image"
+                    name: "full"
+                    widget: "object"
+                    fields:
+                      - label: "Kind"
+                        name: "kind"
+                        widget: "hidden"
+                        default: "full"
+                      - label: "Image"
+                        name: "src"
+                        widget: "image"
+                      - label: "Width (px)"
+                        name: "w"
+                        widget: "number"
+                        value_type: "int"
+                      - label: "Height (px)"
+                        name: "h"
+                        widget: "number"
+                        value_type: "int"
+                  - label: "Portrait Image"
+                    name: "portrait"
+                    widget: "object"
+                    fields:
+                      - label: "Kind"
+                        name: "kind"
+                        widget: "hidden"
+                        default: "portrait"
+                      - label: "Image"
+                        name: "src"
+                        widget: "image"
+                      - label: "Width (px)"
+                        name: "w"
+                        widget: "number"
+                        value_type: "int"
+                      - label: "Height (px)"
+                        name: "h"
+                        widget: "number"
+                        value_type: "int"
+                  - label: "Two-up Duo"
+                    name: "duo"
+                    widget: "object"
+                    fields:
+                      - label: "Kind"
+                        name: "kind"
+                        widget: "hidden"
+                        default: "duo"
+                      - label: "Images"
+                        name: "items"
+                        widget: "list"
+                        min: 2
+                        max: 2
+                        fields:
+                          - label: "Image"
+                            name: "src"
+                            widget: "image"
+                          - label: "Width (px)"
+                            name: "w"
+                            widget: "number"
+                            value_type: "int"
+                          - label: "Height (px)"
+                            name: "h"
+                            widget: "number"
+                            value_type: "int"
+                  - label: "Section Caption"
+                    name: "caption"
+                    widget: "object"
+                    fields:
+                      - label: "Kind"
+                        name: "kind"
+                        widget: "hidden"
+                        default: "caption"
+                      - label: "Label"
+                        name: "label"
+                        widget: "string"
+                      - label: "Note"
+                        name: "note"
+                        widget: "text"
+              - label: "Closing Image (optional)"
+                name: "finalImage"
+                widget: "object"
+                required: false
+                fields:
+                  - label: "Image"
+                    name: "src"
+                    widget: "image"
+                  - label: "Width (px)"
+                    name: "w"
+                    widget: "number"
+                    value_type: "int"
+                  - label: "Height (px)"
+                    name: "h"
+                    widget: "number"
+                    value_type: "int"

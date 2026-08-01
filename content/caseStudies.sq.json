@@ -1,0 +1,324 @@
+{
+  "355": {
+    "slug": "355",
+    "name": "355",
+    "category": "Komunitet & Identitet",
+    "heroImage": "/img/work-1.jpg",
+    "overviewHeading": "Një identitet i qetë e i sigurt për një komunitet vetëm-me-ftesë.",
+    "overview": "355 është një komunitet anëtarësh i ndërtuar mbi takime të kuruara dhe lidhje të vërteta. Brandi duhej të ndihej ekskluziv pa qenë i ftohtë — një siguri e qetë që shpërblen ata që janë tashmë brenda. E trajtuam vetë numrin si ikonë: të kursyer, të paharrueshëm, paksa misterioz. Një paletë e errët e e prekshme dhe tipografi e rafinuar kalojnë nga kartat e anëtarësisë te ftesat e deri te web-i, që çdo pikëkontakt të ndihet pjesë e së njëjtës dhomë — e fituar, e menduar dhe padyshim për anëtarët.",
+    "snapshot": {
+      "industry": "Komunitet",
+      "services": [
+        "Strategji Brandi",
+        "Identitet Vizual",
+        "Print",
+        "Web"
+      ],
+      "timeline": "5 javë",
+      "deliverables": [
+        "Shenjë Brandi",
+        "Identitet",
+        "Karta Anëtarësie",
+        "Ftesa",
+        "Materiale Printi",
+        "Drejtim Web"
+      ]
+    },
+    "blocks": [
+      {
+        "kind": "caption",
+        "label": "Sistemi",
+        "note": "I errët, i prekshëm dhe i rafinuar — një brand që sinjalizon përkatësi, jo status."
+      },
+      {
+        "kind": "full",
+        "src": "/img/work-1.jpg",
+        "w": 1402,
+        "h": 1122
+      }
+    ]
+  },
+  "intellimation": {
+    "slug": "intellimation",
+    "name": "intellimation.ai",
+    "category": "Identitet Brandi & Sistem Marketingu",
+    "heroImage": "/img/iai 1.png",
+    "overviewHeading": "Ndërtimi i një identiteti modern enterprise për të ardhmen e Vertical AI.",
+    "overview": "intellimation.ai ndërton AI vertikale të pronësisë për shërbimet bankare dhe financiare — automatizim i krijuar posaçërisht për një industri që mbahet mbi besimin. Kompania kishte nevojë për një brand që të qëndronte pranë institucioneve si Barclays, Citi dhe Nomura pa trashëguar ngurtësinë e tyre: i besueshëm, modern dhe i qartë për një produkt kompleks. Ndërtuam identitetin, sistemin e mesazheve dhe një gamë të plotë materialesh — website, broshura, prezantime dhe një prani të drejtpërdrejtë në ekspozita. Rezultati është një identitet i njësuar enterprise që e bën AI-në e avancuar të ndihet e menduar, e lexueshme dhe gati për sallën ku po shitet.",
+    "snapshot": {
+      "industry": "Teknologji / AI",
+      "services": [
+        "Strategji Brandi",
+        "Identitet Vizual",
+        "Marketing",
+        "Website",
+        "Dizajn Printi",
+        "Evente"
+      ],
+      "timeline": "Në vazhdim",
+      "deliverables": [
+        "Logo",
+        "Identitet",
+        "Broshura",
+        "Website",
+        "Prezantim",
+        "Stendë Ekspozite",
+        "Materiale Printi",
+        "Materiale Eventi"
+      ]
+    },
+    "blocks": [
+      {
+        "kind": "caption",
+        "label": "Print & Materiale",
+        "note": "Një sistem i plotë broshurash e fletushkash që e bëjnë të lehtë dorëzimin e një produkti kompleks."
+      },
+      {
+        "kind": "full",
+        "src": "/img/iai 8.png",
+        "w": 1536,
+        "h": 1024
+      },
+      {
+        "kind": "portrait",
+        "src": "/img/iai 6.png",
+        "w": 1086,
+        "h": 1448
+      },
+      {
+        "kind": "full",
+        "src": "/img/iai 7.png",
+        "w": 1536,
+        "h": 1024
+      },
+      {
+        "kind": "caption",
+        "label": "Identitet & Letra",
+        "note": "Detaje të menduara — dosja, prezantimi, printi në duart e klientit."
+      },
+      {
+        "kind": "duo",
+        "items": [
+          {
+            "src": "/img/iai 2.png",
+            "w": 1254,
+            "h": 1254
+          },
+          {
+            "src": "/img/iai 3.png",
+            "w": 1254,
+            "h": 1254
+          }
+        ]
+      },
+      {
+        "kind": "caption",
+        "label": "Veshje & Ekstra",
+        "note": "Detaje që udhëtojnë — karta biznesi, një kartë konference dhe një polo e brenduar."
+      },
+      {
+        "kind": "full",
+        "src": "/img/iai-card.jpg",
+        "w": 1072,
+        "h": 852
+      },
+      {
+        "kind": "duo",
+        "items": [
+          {
+            "src": "/img/iai-badge.jpg",
+            "w": 1402,
+            "h": 1122
+          },
+          {
+            "src": "/img/iai-polo.jpg",
+            "w": 1402,
+            "h": 1122
+          }
+        ]
+      }
+    ],
+    "finalImage": {
+      "src": "/img/iai 4.png",
+      "w": 1448,
+      "h": 1086
+    }
+  },
+  "seereen": {
+    "slug": "seereen",
+    "name": "Seereen",
+    "category": "Identitet Brandi & Print",
+    "heroImage": "/img/seereen 1.png",
+    "overviewHeading": "Një identitet i qetë e i sigurt për një studio moderne flokësh dhe estetike.",
+    "overview": "Seereen është një studio flokësh dhe estetike e ndërtuar mbi kujdesin dhe mjeshtërinë. I duhej një identitet që të ndihej premium pa u bërë i ftohtë — një vend që i beson pamjen tënde dhe të pëlqen të hysh brenda. Krijuam wordmark-un, një sistem vizual të ngrohtë e me dritë, dhe materiale printi që nisin nga fytyra reale dhe rezultate reale. Nga tabela e sallonit te kartat e çmimeve e deri te rrjetet sociale, çdo pikëkontakt tani mbart të njëjtën mirëseardhje të qetë — të afrueshme, feminine dhe padyshim të vetën.",
+    "snapshot": {
+      "industry": "Bukuri & Mirëqenie",
+      "services": [
+        "Strategji Brandi",
+        "Identitet Vizual",
+        "Dizajn Printi",
+        "Rrjete Sociale"
+      ],
+      "timeline": "4 javë",
+      "deliverables": [
+        "Logo",
+        "Wordmark",
+        "Ngjyra & Tipografi",
+        "Materiale Printi",
+        "Fletushka Promocionale",
+        "Shabllone Sociale"
+      ]
+    },
+    "blocks": [
+      {
+        "kind": "caption",
+        "label": "Identitet Vizual",
+        "note": "Një wordmark i ngrohtë me shkronja të vogla dhe një paletë me dritë e japin tonin."
+      },
+      {
+        "kind": "duo",
+        "items": [
+          {
+            "src": "/img/seereen 2.png",
+            "w": 1122,
+            "h": 1402
+          },
+          {
+            "src": "/img/seereen 3.png",
+            "w": 1024,
+            "h": 1536
+          }
+        ]
+      },
+      {
+        "kind": "portrait",
+        "src": "/img/seereen 4.png",
+        "w": 1024,
+        "h": 1536
+      }
+    ],
+    "finalImage": {
+      "src": "/img/seereen-5.png",
+      "w": 1536,
+      "h": 1024
+    }
+  },
+  "opa-taverne": {
+    "slug": "opa-taverne",
+    "name": "Opa Taverne",
+    "category": "Branding Mikpritjeje",
+    "heroImage": "/img/work-2.jpg",
+    "overviewHeading": "Ngrohtësia e një tryeze mesdhetare, e mbyllur në një brand.",
+    "overview": "Opa Taverne është një tavernë mesdhetare ku ushqimi, familja dhe mbrëmjet e gjata janë thelbi. Brandi duhej ta mbante atë ngrohtësi jashtë pjatës — në çdo meny, tabelë dhe postim — ftues, bujar, kurrë turistik. Ndërtuam një identitet të punuar me dorë e mikpritës, në tone tokësore dhe materiale të prekshme, të krijuara për t'u prekur e mbajtur. Nga dera te tryeza e deri te Instagrami, tani ndihet si e njëjta mirëseardhje që merr në çastin që hyn.",
+    "snapshot": {
+      "industry": "Mikpritje",
+      "services": [
+        "Strategji Brandi",
+        "Identitet Vizual",
+        "Menu",
+        "Tabela",
+        "Rrjete Sociale"
+      ],
+      "timeline": "5 javë",
+      "deliverables": [
+        "Logo",
+        "Wordmark",
+        "Sistem Menyje",
+        "Tabela",
+        "Materiale Printi",
+        "Identitet Social"
+      ]
+    },
+    "blocks": [
+      {
+        "kind": "caption",
+        "label": "Identiteti",
+        "note": "I ngrohtë, i prekshëm dhe mikpritës — një brand i krijuar për t'u prekur e mbajtur."
+      },
+      {
+        "kind": "portrait",
+        "src": "/img/work-2.jpg",
+        "w": 900,
+        "h": 1600
+      }
+    ]
+  },
+  "ame": {
+    "slug": "ame",
+    "name": "AMË",
+    "category": "Modë & Drejtim Artistik",
+    "heroImage": "/img/work-3.jpg",
+    "overviewHeading": "Trashëgimia, e veshur përpara — një identitet shqiptar për rrugën.",
+    "overview": "AMË është një markë streetwear me trashëgimi që e mbart identitetin shqiptar në rrugët e Londrës e më tej. Duhej të ndihej krenare pa qenë nostalgjike — e rrënjosur në origjinë, por e prerë për sot. E ankoruam brandin te një ide e vetme, origjina si identitet, dhe e shprehëm përmes motivit të shqiponjës, një wordmark-u të sigurt dhe një palete të heshtur, editoriale. Fotografia në rrugë të lagura i jep qëndrimin: e përmbajtur, e sigurt në vetvete, padyshim e vetja — trashëgimi që do ta veshësh.",
+    "snapshot": {
+      "industry": "Modë",
+      "services": [
+        "Strategji Brandi",
+        "Identitet Vizual",
+        "Drejtim Artistik",
+        "Web"
+      ],
+      "timeline": "6 javë",
+      "deliverables": [
+        "Identitet",
+        "Motivi i Shqiponjës",
+        "Drejtim Artistik",
+        "Lookbook",
+        "Drejtim Web",
+        "Grafika Veshjesh"
+      ]
+    },
+    "blocks": [
+      {
+        "kind": "caption",
+        "label": "Drejtim Artistik",
+        "note": "Rrugë të lagura dhe një paletë e heshtur i japin markës sigurinë e saj të qetë."
+      },
+      {
+        "kind": "full",
+        "src": "/img/work-3.jpg",
+        "w": 2400,
+        "h": 1500
+      }
+    ]
+  },
+  "her-club": {
+    "slug": "her-club",
+    "name": "HER CLUB",
+    "category": "Komunitet & Anëtarësi",
+    "heroImage": "/img/problem.jpg",
+    "overviewHeading": "Aty ku ambicia takon motërzinë — një identitet i ngrohtë dhe i ngritur.",
+    "overview": "HER Club është një komunitet ku gratë ambicioze lidhen dhe rriten së bashku. Brandi duhej të ndihej njëkohësisht frymëzues dhe intim — mjaftueshëm i rafinuar për t'i besuar, mjaftueshëm i ngrohtë për t'iu bashkuar. E ndërtuam rreth ngrohtësisë dhe një sigurie të qetë: ari të butë, tipografi të rafinuar dhe një stemë që sinjalizon përkatësi pa përjashtim. Nga kartat e mirëseardhjes te materialet e anëtarësisë e deri te web-i, çdo pjesë ndihet personale — një dorë e zgjatur, jo një portë e ruajtur. Rezultati lexohet i ngritur dhe bujar njëkohësisht.",
+    "snapshot": {
+      "industry": "Komunitet",
+      "services": [
+        "Strategji Brandi",
+        "Identitet Vizual",
+        "Print",
+        "Web"
+      ],
+      "timeline": "5 javë",
+      "deliverables": [
+        "Stemë Brandi",
+        "Identitet",
+        "Materiale Mirëseardhjeje",
+        "Letra Zyrtare",
+        "Karta Anëtarësie",
+        "Drejtim Web"
+      ]
+    },
+    "blocks": [
+      {
+        "kind": "caption",
+        "label": "Identiteti",
+        "note": "Ari të butë dhe një stemë e rafinuar — përkatësi, pa një portë."
+      },
+      {
+        "kind": "full",
+        "src": "/img/problem.jpg",
+        "w": 1402,
+        "h": 1122
+      }
+    ]
+  }
+}

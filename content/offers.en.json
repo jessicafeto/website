@@ -1,0 +1,521 @@
+{
+  "branding": {
+    "slug": "branding",
+    "eyebrow": "Engagement 01",
+    "name": "Branding",
+    "heroImage": "/hero/branding.jpg",
+    "heroAlt": "Brand guidelines, paper stocks and typography samples laid across a studio table.",
+    "headline": "A brand that finally matches the business behind it.",
+    "offer": "A six-to-eight-week, end-to-end brand build — complete strategy, creative direction, and a visual identity system — designed to launch your brand with clarity, confidence, and a luxury presence.",
+    "cadence": "6–8 weeks",
+    "booking": "Limited monthly availability",
+    "shift": {
+      "heading": "The shift",
+      "body": "Businesses of real quality are rarely broken — they're scattered, their best work spread across parts that were never designed to work together. We don't decorate; we clarify. We begin at the core — what your business is, what it believes, and why it matters — and let everything visible grow from there. You leave with one coherent system instead of disconnected parts, and the confidence to stop apologising for how you look."
+    },
+    "tiers": [
+      {
+        "name": "Essential",
+        "price": "From £1,800",
+        "summary": "A clear, confident core for a business finding its feet.",
+        "scope": [
+          "Brand strategy — mission, values, audience",
+          "Positioning",
+          "Visual identity — primary logo & core system",
+          "Brand guidelines (mini PDF)",
+          "All logo & asset files"
+        ]
+      },
+      {
+        "name": "Signature",
+        "price": "From £3,200",
+        "summary": "The full end-to-end brand build — strategy to identity.",
+        "builds": "Essential",
+        "scope": [
+          "Naming & messaging",
+          "Tone of voice",
+          "Creative direction",
+          "Full visual identity — logo suite, colour & type",
+          "Comprehensive brand guidelines",
+          "Social media brand kit",
+          "Launch & rollout plan"
+        ],
+        "featured": true
+      },
+      {
+        "name": "Bespoke",
+        "price": "From £6,000",
+        "summary": "A landmark brand, crafted without limits.",
+        "builds": "Signature",
+        "scope": [
+          "Photography & art direction",
+          "Custom illustration or motion identity",
+          "Packaging or print collateral",
+          "Extended, printed brand book",
+          "Post-launch brand support"
+        ]
+      }
+    ],
+    "includes": [
+      {
+        "label": "Brand & Identity",
+        "items": [
+          "Brand strategy",
+          "Positioning",
+          "Naming & messaging",
+          "Visual identity",
+          "Brand guidelines",
+          "Tone of voice",
+          "Creative direction"
+        ]
+      }
+    ],
+    "process": [
+      {
+        "n": "01",
+        "title": "Immersion",
+        "body": "We start beneath the surface — understanding the business, its audience, and the truth it's built on. Strategy before anything visible."
+      },
+      {
+        "n": "02",
+        "title": "Strategy",
+        "body": "The foundation is set: positioning, messaging, and voice — the thinking every visible decision will grow from."
+      },
+      {
+        "n": "03",
+        "title": "Creative direction",
+        "body": "The world takes shape. Art direction and visual language, explored and agreed before a single asset is finalised."
+      },
+      {
+        "n": "04",
+        "title": "Identity system",
+        "body": "The complete system — logo suite, typography, colour, and the guidelines that keep it coherent everywhere it appears."
+      },
+      {
+        "n": "05",
+        "title": "Launch",
+        "body": "A considered rollout plan and a full handover, so the brand arrives with intention rather than noise."
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Can I customise or mix the packages?",
+        "a": "Yes. The tiers are starting points — we shape the exact scope together in our first conversation, so you only pay for what your brand genuinely needs."
+      },
+      {
+        "q": "How does payment work?",
+        "a": "A 50% deposit secures your start date; the balance is due before launch. For larger projects we can split it further."
+      },
+      {
+        "q": "How long does it take?",
+        "a": "A full Signature build usually runs six to eight weeks, depending on scope and how quickly feedback comes back."
+      },
+      {
+        "q": "What do you need from me to begin?",
+        "a": "An introduction to your business, your goals, and any existing materials. We guide every step from there."
+      },
+      {
+        "q": "What happens after launch?",
+        "a": "You receive every file and the brand guidelines, plus a walkthrough. Bespoke adds ongoing post-launch support."
+      }
+    ]
+  },
+  "websites": {
+    "slug": "websites",
+    "eyebrow": "Engagement 02",
+    "name": "Websites",
+    "heroImage": "/hero/websites.jpg",
+    "heroAlt": "A wall of pinned editorial layouts and case-study pages in the noova studio.",
+    "headline": "A website as considered as the brand behind it.",
+    "offer": "A refined four-to-eight-week digital build that transforms your brand into an elevated, seamless website — crafted with intentional design, strategic structure, and a world-class user experience.",
+    "cadence": "4–8 weeks",
+    "booking": "Limited monthly availability",
+    "shift": {
+      "heading": "The shift",
+      "body": "Most websites quietly undersell the business behind them — busy where they should be clear, decorative where they should be structural. We design the opposite: a calm, editorial experience that guides the right people through a single, deliberate story. Fast, considered, and unmistakably yours — a home that finally carries the brand instead of diminishing it."
+    },
+    "tiers": [
+      {
+        "name": "Essential",
+        "price": "From £1,500",
+        "summary": "A refined, compact site that reads beautifully.",
+        "scope": [
+          "Website strategy",
+          "Website design — editorial",
+          "Landing pages — up to 3 pages",
+          "SEO foundations",
+          "Launch + 1 week of support"
+        ]
+      },
+      {
+        "name": "Signature",
+        "price": "From £2,800",
+        "summary": "The full editorial website, built to perform.",
+        "builds": "Essential",
+        "scope": [
+          "UX & information architecture",
+          "Webflow development",
+          "Up to ~6 custom pages",
+          "CMS — blog / journal",
+          "Integrations & analytics",
+          "Performance optimisation",
+          "2 weeks of support + walkthrough"
+        ],
+        "featured": true
+      },
+      {
+        "name": "Bespoke",
+        "price": "From £5,000",
+        "summary": "A larger, tailored build with room to grow.",
+        "builds": "Signature",
+        "scope": [
+          "E-commerce or booking system",
+          "Advanced interactions & motion",
+          "Custom CMS collections",
+          "Multi-language ready",
+          "CRM & marketing-automation integrations",
+          "Optional maintenance retainer"
+        ]
+      }
+    ],
+    "includes": [
+      {
+        "label": "Websites",
+        "items": [
+          "Website strategy",
+          "UX & information architecture",
+          "Website design",
+          "Webflow development",
+          "Landing pages",
+          "SEO foundations",
+          "Performance optimisation"
+        ]
+      }
+    ],
+    "process": [
+      {
+        "n": "01",
+        "title": "Discovery",
+        "body": "Goals, audience, and content, understood first. We agree what the website has to achieve before we design a single screen."
+      },
+      {
+        "n": "02",
+        "title": "Strategy & structure",
+        "body": "Sitemap, information architecture, and content hierarchy — the quiet skeleton that makes the whole experience feel effortless."
+      },
+      {
+        "n": "03",
+        "title": "Design",
+        "body": "Editorial, brand-aligned page design. One idea leads each screen, never several competing for the eye."
+      },
+      {
+        "n": "04",
+        "title": "Build",
+        "body": "Development, integrations, SEO foundations, and performance — engineered to be fast, accessible, and easy to run."
+      },
+      {
+        "n": "05",
+        "title": "Launch & support",
+        "body": "Careful QA, a smooth launch, and aftercare — plus a walkthrough so you're never left guessing how it works."
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Which platform do you build on?",
+        "a": "Primarily Webflow — fast, reliable, and easy for you to edit. Other platforms are available on request."
+      },
+      {
+        "q": "Can I update the site myself afterwards?",
+        "a": "Yes. Signature and above include a CMS and a walkthrough, so you can add posts and edit content without a developer."
+      },
+      {
+        "q": "How does payment work?",
+        "a": "A 50% deposit books your slot; the balance is due before launch."
+      },
+      {
+        "q": "How long does a website take?",
+        "a": "Between four and eight weeks, depending on the tier and how ready your content is."
+      },
+      {
+        "q": "Do you offer ongoing support?",
+        "a": "One to two weeks of aftercare is included, and an optional maintenance retainer is available."
+      }
+    ]
+  },
+  "marketing": {
+    "slug": "marketing",
+    "eyebrow": "Engagement 03",
+    "name": "Marketing & Growth",
+    "heroImage": "/hero/marketing.jpg",
+    "heroAlt": "Overhead view of noova journal pages being laid out and edited across a desk.",
+    "headline": "A presence worth returning to.",
+    "offer": "An ongoing marketing partnership that turns your brand into a living publication — uniting editorial content, considered campaigns, and intelligent systems into one coherent presence, designed to reach the right people, build lasting trust, and grow with intention rather than noise.",
+    "cadence": "Ongoing partnership",
+    "booking": "Rolling monthly start",
+    "shift": {
+      "heading": "The shift",
+      "body": "Most marketing is made to fill a schedule — louder, faster, forgotten by morning. We build the opposite: a body of work worth returning to. Every channel becomes one edition of the same publication, carrying a single voice and level of care. Presence over frequency, meaning over volume — a brand that speaks when it has something worth saying, and grows because of it."
+    },
+    "tiers": [
+      {
+        "name": "Essential",
+        "price": "From £900 / month",
+        "summary": "A steady, considered presence on one channel.",
+        "scope": [
+          "Content strategy",
+          "Social media strategy — one channel",
+          "Content calendars",
+          "Copywriting",
+          "8–10 posts / month",
+          "Marketing analytics — monthly report"
+        ]
+      },
+      {
+        "name": "Signature",
+        "price": "From £1,500 / month",
+        "summary": "The publication, plus campaigns that land.",
+        "builds": "Essential",
+        "scope": [
+          "Editorial planning",
+          "Photography direction",
+          "Campaign concepts & launch planning",
+          "Email marketing",
+          "12–16 posts / month + stories — two channels",
+          "GA4 & Looker Studio dashboard"
+        ],
+        "featured": true
+      },
+      {
+        "name": "Bespoke",
+        "price": "From £2,800 / month",
+        "summary": "A full growth partnership with systems behind it.",
+        "builds": "Signature",
+        "scope": [
+          "AI-assisted content production",
+          "Influencer partnerships & creator collaborations",
+          "Marketing automation & CRM implementation",
+          "Lead generation systems",
+          "Conversion optimisation",
+          "Growth roadmaps"
+        ]
+      }
+    ],
+    "includes": [
+      {
+        "label": "Content",
+        "items": [
+          "Content strategy",
+          "Editorial planning",
+          "Social media strategy",
+          "Content calendars",
+          "Copywriting",
+          "Photography direction",
+          "AI-assisted content production"
+        ]
+      },
+      {
+        "label": "Campaigns",
+        "items": [
+          "Marketing strategy",
+          "Launch planning",
+          "Campaign concepts",
+          "Influencer partnerships",
+          "Creator collaborations",
+          "Brand activations",
+          "Community building"
+        ]
+      },
+      {
+        "label": "Growth",
+        "items": [
+          "Marketing analytics",
+          "GA4 & Looker Studio",
+          "CRM strategy",
+          "Email marketing",
+          "Conversion optimisation",
+          "Reporting dashboards",
+          "Growth roadmaps"
+        ]
+      },
+      {
+        "label": "AI & Systems",
+        "items": [
+          "AI workflows",
+          "Marketing automation",
+          "CRM implementation",
+          "Business systems",
+          "Customer journeys",
+          "Lead generation systems",
+          "Process optimisation"
+        ]
+      }
+    ],
+    "process": [
+      {
+        "n": "01",
+        "title": "Foundation",
+        "body": "We audit where you stand — voice, channels, and measurement — and define the themes the work will keep returning to."
+      },
+      {
+        "n": "02",
+        "title": "The publication",
+        "body": "A content strategy and editorial calendar noova can hold for years, not weeks — the same voice across every channel."
+      },
+      {
+        "n": "03",
+        "title": "Campaigns",
+        "body": "Considered launches, concepts, and collaborations — moments of intent rather than a constant, anxious stream."
+      },
+      {
+        "n": "04",
+        "title": "Systems",
+        "body": "The intelligent layer beneath it all — automation, CRM, and analytics that turn attention into relationships."
+      },
+      {
+        "n": "05",
+        "title": "Rhythm",
+        "body": "An ongoing partnership: publishing, reviewing, and refining — compounding presence and trust over time."
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Is there a minimum commitment?",
+        "a": "We ask for an initial three months, so the work has room to compound rather than being judged on a single post."
+      },
+      {
+        "q": "How does billing work?",
+        "a": "A simple monthly retainer, billed at the start of each month. You can move up or down a tier with a month's notice."
+      },
+      {
+        "q": "Is ad spend included?",
+        "a": "No — media budget is separate and paid directly to the platforms. We manage the campaigns; you keep control of the spend."
+      },
+      {
+        "q": "Which channels do you cover?",
+        "a": "Whatever fits your audience — most often Instagram and LinkedIn, plus email and your journal. We focus rather than spread thin."
+      },
+      {
+        "q": "What do you need from me?",
+        "a": "Access to your channels and a short monthly check-in. We handle strategy, creation, and reporting."
+      }
+    ]
+  },
+  "automation": {
+    "slug": "automation",
+    "eyebrow": "Engagement 04",
+    "name": "AI & Automation",
+    "heroImage": "/hero/automation.jpg",
+    "heroAlt": "An analytics dashboard on a tablet beside brand materials on a dark studio surface.",
+    "headline": "The intelligent systems behind the brand.",
+    "offer": "A build of the automations, funnels and AI workflows that let an ambitious business grow without adding headcount — lead generation, CRM, email and operations, connected into one quiet, reliable system.",
+    "cadence": "3–6 weeks",
+    "booking": "Limited monthly availability",
+    "shift": {
+      "heading": "The shift",
+      "body": "Growth usually means more work — more manual follow-up, more spreadsheets, more things slipping through. It doesn't have to. The right systems do the repetitive work in the background: capturing leads, nurturing them, updating your CRM, and freeing you for the work only you can do. Not more tools bolted on — one connected system, built around how your business actually runs."
+    },
+    "tiers": [
+      {
+        "name": "Essential",
+        "price": "From £900",
+        "summary": "One automation or lead funnel, built end to end.",
+        "scope": [
+          "A single automation or lead-gen funnel",
+          "Chat / DM capture (e.g. ManyChat)",
+          "Connected to your email tool",
+          "Tested and documented"
+        ]
+      },
+      {
+        "name": "Signature",
+        "price": "From £1,800",
+        "summary": "A connected growth system.",
+        "builds": "Essential",
+        "scope": [
+          "Lead-gen funnel + landing page or quiz",
+          "CRM setup & tagging",
+          "Email automation sequences",
+          "Analytics & lead notifications",
+          "A simple reporting dashboard"
+        ],
+        "featured": true
+      },
+      {
+        "name": "Bespoke",
+        "price": "From £3,500",
+        "summary": "Full operations & AI, automated.",
+        "builds": "Signature",
+        "scope": [
+          "Multi-step business automations",
+          "AI content & operations workflows",
+          "CRM implementation",
+          "Integrations across your tools",
+          "Ongoing optimisation"
+        ]
+      }
+    ],
+    "includes": [
+      {
+        "label": "AI & Systems",
+        "items": [
+          "AI workflows",
+          "Marketing automation",
+          "CRM implementation",
+          "Business systems",
+          "Customer journeys",
+          "Lead generation systems",
+          "Process optimisation"
+        ]
+      }
+    ],
+    "process": [
+      {
+        "n": "01",
+        "title": "Map",
+        "body": "We map how your business actually runs — the leads, the follow-ups, the handoffs — and find where time leaks."
+      },
+      {
+        "n": "02",
+        "title": "Design",
+        "body": "We design the system — the funnel, the flows, the data, the tools — on paper before anything is built."
+      },
+      {
+        "n": "03",
+        "title": "Build",
+        "body": "We build and connect it — automations, CRM, email, AI workflows — as one reliable system."
+      },
+      {
+        "n": "04",
+        "title": "Test",
+        "body": "We test every path, document it in plain language, and hand it over so you understand exactly how it runs."
+      },
+      {
+        "n": "05",
+        "title": "Optimise",
+        "body": "We watch the numbers and refine — tightening what converts, removing what doesn't."
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Which tools do you build with?",
+        "a": "Whatever fits — Make, Zapier, ManyChat, plus your CRM and email tool. We work with what you have, or recommend the simplest stack."
+      },
+      {
+        "q": "Do I need technical knowledge?",
+        "a": "No. We build it, document it in plain language, and walk you through it. You run it; we're here if it needs to change."
+      },
+      {
+        "q": "How does pricing work?",
+        "a": "Simple systems are a fixed project fee; larger, evolving ones can run as a monthly partnership. We agree the scope up front."
+      },
+      {
+        "q": "Will it work with my website and brand?",
+        "a": "Yes — that's the point. We build the systems to fit the brand, not the other way around, so everything stays coherent."
+      },
+      {
+        "q": "Is my data safe?",
+        "a": "We use reputable, secure platforms and give you full ownership and access. Nothing is locked to us."
+      }
+    ]
+  }
+}

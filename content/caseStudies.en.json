@@ -1,0 +1,324 @@
+{
+  "355": {
+    "slug": "355",
+    "name": "355",
+    "category": "Community & Identity",
+    "heroImage": "/img/work-1.jpg",
+    "overviewHeading": "A quiet, confident identity for an invitation-only community.",
+    "overview": "355 is a members' community built on curated gatherings and genuine connection. The brand had to feel exclusive without being cold — a quiet confidence that rewards the people already inside. We treated the number itself as the icon: spare, memorable, a little mysterious. A dark, tactile palette and refined type run from membership cards to invitations to the web, so every touchpoint feels like part of the same room — earned, considered, and unmistakably for members.",
+    "snapshot": {
+      "industry": "Community",
+      "services": [
+        "Brand Strategy",
+        "Visual Identity",
+        "Print",
+        "Web"
+      ],
+      "timeline": "5 weeks",
+      "deliverables": [
+        "Brand Mark",
+        "Identity",
+        "Membership Cards",
+        "Invitations",
+        "Print Collateral",
+        "Web Direction"
+      ]
+    },
+    "blocks": [
+      {
+        "kind": "caption",
+        "label": "The System",
+        "note": "Dark, tactile and refined — a brand that signals belonging, not status."
+      },
+      {
+        "kind": "full",
+        "src": "/img/work-1.jpg",
+        "w": 1402,
+        "h": 1122
+      }
+    ]
+  },
+  "intellimation": {
+    "slug": "intellimation",
+    "name": "intellimation.ai",
+    "category": "Brand Identity & Marketing System",
+    "heroImage": "/img/iai 1.png",
+    "overviewHeading": "Building a modern enterprise identity for the future of Vertical AI.",
+    "overview": "intellimation.ai builds proprietary, vertical AI for banking and financial services — automation purpose-built for an industry that runs on trust. The company needed a brand that could stand next to institutions like Barclays, Citi and Nomura without inheriting their stiffness: credible, modern, and clear about a complex product. We built the identity, the message system and a full suite of collateral — website, brochures, presentation decks and a live exhibition presence. The result is one coherent enterprise identity that makes advanced AI feel considered, legible and ready for the room it is selling into.",
+    "snapshot": {
+      "industry": "Technology / AI",
+      "services": [
+        "Brand Strategy",
+        "Visual Identity",
+        "Marketing",
+        "Website",
+        "Print Design",
+        "Events"
+      ],
+      "timeline": "Ongoing",
+      "deliverables": [
+        "Logo",
+        "Identity",
+        "Brochures",
+        "Website",
+        "Presentation Deck",
+        "Exhibition Booth",
+        "Print Collateral",
+        "Event Assets"
+      ]
+    },
+    "blocks": [
+      {
+        "kind": "caption",
+        "label": "Print & Collateral",
+        "note": "A full system of brochures and one-pagers that make a complex product easy to hand over."
+      },
+      {
+        "kind": "full",
+        "src": "/img/iai 8.png",
+        "w": 1536,
+        "h": 1024
+      },
+      {
+        "kind": "portrait",
+        "src": "/img/iai 6.png",
+        "w": 1086,
+        "h": 1448
+      },
+      {
+        "kind": "full",
+        "src": "/img/iai 7.png",
+        "w": 1536,
+        "h": 1024
+      },
+      {
+        "kind": "caption",
+        "label": "Identity & Stationery",
+        "note": "Considered details — the folder, the deck, the print in a client's hands."
+      },
+      {
+        "kind": "duo",
+        "items": [
+          {
+            "src": "/img/iai 2.png",
+            "w": 1254,
+            "h": 1254
+          },
+          {
+            "src": "/img/iai 3.png",
+            "w": 1254,
+            "h": 1254
+          }
+        ]
+      },
+      {
+        "kind": "caption",
+        "label": "Merch & Extras",
+        "note": "Details that travel — business cards, a conference badge and a branded polo."
+      },
+      {
+        "kind": "full",
+        "src": "/img/iai-card.jpg",
+        "w": 1072,
+        "h": 852
+      },
+      {
+        "kind": "duo",
+        "items": [
+          {
+            "src": "/img/iai-badge.jpg",
+            "w": 1402,
+            "h": 1122
+          },
+          {
+            "src": "/img/iai-polo.jpg",
+            "w": 1402,
+            "h": 1122
+          }
+        ]
+      }
+    ],
+    "finalImage": {
+      "src": "/img/iai 4.png",
+      "w": 1448,
+      "h": 1086
+    }
+  },
+  "seereen": {
+    "slug": "seereen",
+    "name": "Seereen",
+    "category": "Brand Identity & Print",
+    "heroImage": "/img/seereen 1.png",
+    "overviewHeading": "A calm, confident identity for a modern hair & aesthetics studio.",
+    "overview": "Seereen is a hair and aesthetics studio built on care and craft. It needed an identity that felt premium without turning cold — somewhere you would trust with how you look and enjoy walking into. We created the wordmark, a warm and sunlit visual system, and print collateral that leads with real faces and real results. From salon signage to price cards to social, every touchpoint now carries the same quiet welcome — approachable, feminine and unmistakably its own.",
+    "snapshot": {
+      "industry": "Beauty & Wellness",
+      "services": [
+        "Brand Strategy",
+        "Visual Identity",
+        "Print Design",
+        "Social"
+      ],
+      "timeline": "4 weeks",
+      "deliverables": [
+        "Logo",
+        "Wordmark",
+        "Colour & Type",
+        "Print Collateral",
+        "Promotional Flyers",
+        "Social Templates"
+      ]
+    },
+    "blocks": [
+      {
+        "kind": "caption",
+        "label": "Visual Identity",
+        "note": "A warm, lowercase wordmark and a sunlit palette set the tone."
+      },
+      {
+        "kind": "duo",
+        "items": [
+          {
+            "src": "/img/seereen 2.png",
+            "w": 1122,
+            "h": 1402
+          },
+          {
+            "src": "/img/seereen 3.png",
+            "w": 1024,
+            "h": 1536
+          }
+        ]
+      },
+      {
+        "kind": "portrait",
+        "src": "/img/seereen 4.png",
+        "w": 1024,
+        "h": 1536
+      }
+    ],
+    "finalImage": {
+      "src": "/img/seereen-5.png",
+      "w": 1536,
+      "h": 1024
+    }
+  },
+  "opa-taverne": {
+    "slug": "opa-taverne",
+    "name": "Opa Taverne",
+    "category": "Hospitality Branding",
+    "heroImage": "/img/work-2.jpg",
+    "overviewHeading": "Bottling the warmth of a Mediterranean table into a brand.",
+    "overview": "Opa Taverne is a Mediterranean taverna where food, family and long evenings are the whole point. The brand had to carry that warmth off the plate and onto every menu, sign and post — inviting, generous, never touristy. We built a hand-made, hospitable identity in earthy tones and tactile materials, designed to be touched and kept. From the door to the table to Instagram, it now feels like the same welcome you get the moment you walk in.",
+    "snapshot": {
+      "industry": "Hospitality",
+      "services": [
+        "Brand Strategy",
+        "Visual Identity",
+        "Menus",
+        "Signage",
+        "Social"
+      ],
+      "timeline": "5 weeks",
+      "deliverables": [
+        "Logo",
+        "Wordmark",
+        "Menu System",
+        "Signage",
+        "Print Collateral",
+        "Social Identity"
+      ]
+    },
+    "blocks": [
+      {
+        "kind": "caption",
+        "label": "The Identity",
+        "note": "Warm, tactile and hospitable — a brand designed to be touched and kept."
+      },
+      {
+        "kind": "portrait",
+        "src": "/img/work-2.jpg",
+        "w": 900,
+        "h": 1600
+      }
+    ]
+  },
+  "ame": {
+    "slug": "ame",
+    "name": "AMË",
+    "category": "Fashion & Art Direction",
+    "heroImage": "/img/work-3.jpg",
+    "overviewHeading": "Heritage, worn forward — an Albanian identity for the street.",
+    "overview": "AMË is a heritage streetwear label that carries Albanian identity onto the streets of London and beyond. It had to feel proud without being nostalgic — rooted in origin, but cut for now. We anchored the brand in a single idea, origin as identity, and expressed it through the eagle motif, a confident wordmark and a muted, editorial palette. Photography set on rain-slick streets gives it the attitude: understated, self-assured, unmistakably its own — heritage you want to wear.",
+    "snapshot": {
+      "industry": "Fashion",
+      "services": [
+        "Brand Strategy",
+        "Visual Identity",
+        "Art Direction",
+        "Web"
+      ],
+      "timeline": "6 weeks",
+      "deliverables": [
+        "Identity",
+        "Eagle Motif",
+        "Art Direction",
+        "Lookbook",
+        "Web Direction",
+        "Apparel Graphics"
+      ]
+    },
+    "blocks": [
+      {
+        "kind": "caption",
+        "label": "Art Direction",
+        "note": "Rain-slick streets and a muted palette give the label its quiet confidence."
+      },
+      {
+        "kind": "full",
+        "src": "/img/work-3.jpg",
+        "w": 2400,
+        "h": 1500
+      }
+    ]
+  },
+  "her-club": {
+    "slug": "her-club",
+    "name": "HER CLUB",
+    "category": "Community & Membership",
+    "heroImage": "/img/problem.jpg",
+    "overviewHeading": "Where ambition meets sisterhood — a warm, elevated identity.",
+    "overview": "HER Club is a community where ambitious women connect and grow together. The brand needed to feel both aspirational and intimate — polished enough to trust, warm enough to join. We built it around warmth and quiet confidence: soft golds, refined type and a crest that signals belonging without exclusion. From welcome cards to membership collateral to the web, every piece feels personal — a hand extended, not a gate kept. The result reads as elevated and generous at once.",
+    "snapshot": {
+      "industry": "Community",
+      "services": [
+        "Brand Strategy",
+        "Visual Identity",
+        "Print",
+        "Web"
+      ],
+      "timeline": "5 weeks",
+      "deliverables": [
+        "Brand Crest",
+        "Identity",
+        "Welcome Collateral",
+        "Stationery",
+        "Membership Cards",
+        "Web Direction"
+      ]
+    },
+    "blocks": [
+      {
+        "kind": "caption",
+        "label": "The Identity",
+        "note": "Soft golds and a refined crest — belonging, without a gate."
+      },
+      {
+        "kind": "full",
+        "src": "/img/problem.jpg",
+        "w": 1402,
+        "h": 1122
+      }
+    ]
+  }
+}

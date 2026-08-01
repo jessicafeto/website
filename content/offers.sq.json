@@ -513,24 +513,24 @@
     "offer": "Ndërtojmë sisteme me AI, automatizime dhe workflow që lidhin marketingun, shitjet dhe operacionet në një ekosistem të vetëm. Nga gjenerimi i kontakteve te CRM, email dhe proceset e brendshme, çdo hap punon së bashku për të kursyer kohë dhe për të mbështetur rritjen.",
     "faqs": [
       {
-        "q": "Me cilat mjete ndërtoni?",
-        "a": "Me ato që përshtaten — Make, Zapier, ManyChat, plus CRM-në dhe mjetin tuaj të email-it. Punojmë me atë që keni, ose rekomandojmë grupin më të thjeshtë."
+        "q": "Me cilat aplikacione ndërtoni?",
+        "a": "Përdorim mjetet që i përshtaten biznesit tuaj si Make, Zapier, ManyChat, CRM-në dhe platformën tuaj të email-it. Mund të punojmë me sistemet që përdorni tashmë ose t'ju rekomandojmë zgjidhjen më të përshtatshme."
       },
       {
         "q": "A më duhet njohuri teknike?",
-        "a": "Jo. Ne e ndërtojmë, e dokumentojmë me gjuhë të thjeshtë dhe ju udhëzojmë. Ju e drejtoni; ne jemi këtu nëse duhet ndryshuar."
+        "a": "Jo. Ne kujdesemi për ndërtimin, konfigurimin dhe dokumentimin e sistemit. Ju merreni me biznesin tuaj, ndërsa ne sigurohemi që gjithçka të funksionojë siç duhet."
       },
       {
         "q": "Si funksionon çmimi?",
-        "a": "Sistemet e thjeshta kanë një tarifë fikse projekti; ato më të mëdha e në zhvillim mund të shkojnë si partneritet mujor. E përcaktojmë fushën që në fillim."
+        "a": "Projektet më të vogla kanë një tarifë fikse. Për sisteme më të avancuara ose zhvillim të vazhdueshëm, punojmë me partneritete mujore. Pas bisedës fillestare, ju rekomandojmë zgjidhjen më të përshtatshme."
       },
       {
-        "q": "A do të punojë me uebsajtin dhe markën time?",
-        "a": "Po — ky është qëllimi. I ndërtojmë sistemet t'i përshtaten markës, jo e kundërta, që gjithçka të mbetet koherente."
+        "q": "A do të funksionojë me uebsajtin dhe markën time?",
+        "a": "Po. Çdo sistem ndërtohet rreth mënyrës si funksionon biznesi dhe marka juaj. Përshtatim gjithçka me proceset ekzistuese, në mënyrë që çdo gjë të funksionojë si një sistem i vetëm."
       },
       {
         "q": "A janë të dhënat e mia të sigurta?",
-        "a": "Përdorim platforma të besueshme e të sigurta dhe ju japim pronësi e qasje të plotë. Asgjë nuk mbetet e lidhur me ne."
+        "a": "Po. Përdorim platforma të besueshme dhe të sigurta, ndërsa ju mbeteni pronari i plotë i të dhënave dhe sistemeve tuaja. Nëse bashkëpunimi përfundon, gjithçka mbetet në kontrollin tuaj."
       }
     ]
   }

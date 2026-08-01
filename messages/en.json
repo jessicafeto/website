@@ -1,22 +1,16 @@
 {
-  "meta": {
-    "title": "noova — Branding, Websites & Marketing · London",
-    "description": "noova builds brands from the inside out — a London studio uniting strategy, design, websites, marketing and technology as one coherent system. For businesses that have outgrown their own image.",
-    "ogDescription": "We build brands from the inside out. For businesses that have outgrown their own image."
-  },
-  "nav": {
-    "aboutStudio": "About the Studio",
-    "portfolio": "Portfolio",
-    "services": "Services",
-    "contact": "Contact"
-  },
-  "hero": {
-    "service1": "Branding",
-    "service2": "Websites",
-    "service3": "Marketing",
-    "service4": "Automation",
-    "tagline": "For businesses that have outgrown their own image.",
-    "scroll": "Scroll"
+  "contact": {
+    "heading": "Work with us.",
+    "fieldEmail": "Email",
+    "fieldCompany": "Company",
+    "fieldName": "Name",
+    "error": "Something went wrong. Please try again, or email hello@noovadata.com.",
+    "intro": "Tell us about your business, your ambitions, or simply where you'd like to begin.",
+    "location": "London · United Kingdom",
+    "submit": "Begin the conversation →",
+    "sent": "Thank you. We'll be in touch shortly.",
+    "sending": "Sending…",
+    "fieldProject": "Project"
   },
   "welcome": {
     "label": "WELCOME TO NOOVA",
@@ -27,6 +21,37 @@
     "growthDesc": "Marketing, content and campaigns that build visibility, demand and lasting momentum.",
     "automationDesc": "Lead generation, CRM and AI workflows — the systems that make growth run itself."
   },
+  "nav": {
+    "aboutStudio": "About the Studio",
+    "portfolio": "Portfolio",
+    "services": "Services",
+    "contact": "Contact"
+  },
+  "meta": {
+    "title": "noova — Branding, Websites & Marketing · London",
+    "description": "noova builds brands from the inside out — a London studio uniting strategy, design, websites, marketing and technology as one coherent system. For businesses that have outgrown their own image.",
+    "ogDescription": "We build brands from the inside out. For businesses that have outgrown their own image."
+  },
+  "clients": {
+    "label": "Selected clients"
+  },
+  "cookieModal": {
+    "closeAria": "Close cookie preferences",
+    "intro": "Choose what you're comfortable with. You can change this at any time from the footer.",
+    "marketingAria": "Marketing cookies",
+    "analyticsAria": "Analytics cookies",
+    "marketingName": "Marketing",
+    "analyticsName": "Analytics",
+    "essentialAria": "Essential cookies (always on)",
+    "marketingDesc": "Used to measure campaigns and show relevant work across other platforms.",
+    "analyticsDesc": "Anonymous, aggregated insight into how the site is read, so we can make it better.",
+    "close": "Close",
+    "title": "Cookie preferences",
+    "essentialName": "Essential",
+    "acceptAll": "Accept all",
+    "save": "Save preferences",
+    "essentialDesc": "Required for the site to function — remembering your choices and keeping things secure. Always on."
+  },
   "founder": {
     "label": "ABOUT THE FOUNDER",
     "headingA": "Meet Jessica,",
@@ -36,34 +61,12 @@
     "p3": "Today I help ambitious businesses build from the inside out, bringing together strategy, identity, websites, marketing and intelligent systems into one connected practice. Every decision has a purpose. Every detail works together.",
     "cta": "Read the story →"
   },
-  "services": {
-    "label": "WHAT WE BUILD",
-    "categories": [
-      {
-        "t": "Brand & Identity",
-        "d": ["Brand strategy", "Positioning", "Naming & messaging", "Visual identity", "Brand guidelines", "Tone of voice", "Creative direction"]
-      },
-      {
-        "t": "Websites",
-        "d": ["Website strategy", "UX & information architecture", "Website design", "Webflow development", "Landing pages", "SEO foundations", "Performance optimisation"]
-      },
-      {
-        "t": "Content",
-        "d": ["Content strategy", "Editorial planning", "Social media strategy", "Content calendars", "Copywriting", "Photography direction", "AI-assisted content production"]
-      },
-      {
-        "t": "Campaigns",
-        "d": ["Marketing strategy", "Launch planning", "Campaign concepts", "Influencer partnerships", "Creator collaborations", "Brand activations", "Community building"]
-      },
-      {
-        "t": "Growth",
-        "d": ["Marketing analytics", "GA4 & Looker Studio", "CRM strategy", "Email marketing", "Conversion optimisation", "Reporting dashboards", "Growth roadmaps"]
-      },
-      {
-        "t": "AI & Systems",
-        "d": ["AI workflows", "Marketing automation", "CRM implementation", "Business systems", "Customer journeys", "Lead generation systems", "Process optimisation"]
-      }
-    ]
+  "cookieBanner": {
+    "title": "A note on cookies",
+    "body": "We use essential cookies to keep the site working, and — only with your permission — a few more to understand how it's read. You stay in control. See our <privacy>Privacy Policy</privacy> and <cookies>Cookie Policy</cookies>.",
+    "acceptAll": "Accept all",
+    "reject": "Reject non-essential",
+    "preferences": "Cookie preferences"
   },
   "work": {
     "label": "Selected Work",
@@ -75,6 +78,23 @@
     "meta05": "Hospitality · Branding",
     "meta06": "Community · Branding, Creative"
   },
+  "studio": {
+    "p1": "The most important part of a brand is the part no one sees first — the thinking beneath it. Before a business can be expressed, it has to be understood. So we start at the core: what a business is, what it believes, and why it matters. Everything visible grows from there.",
+    "p2": "Businesses of real quality are rarely broken — they're scattered, their best work spread across parts that were never designed to work together. We don't decorate; we clarify. Strategy, identity, words, websites and technology are built as one coherent system, in one room, rather than handed between departments.",
+    "p3": "The result isn't a new look. It's a brand that finally matches the business behind it — built to last, not to trend. A single, considered world across every touchpoint.",
+    "p4": "noova works between London and Tirana — two cities, one level of care. Wherever a project begins, it's held to the same rigour and the same restraint.",
+    "h1": "We build brands from the inside out.",
+    "eyebrow": "The Studio",
+    "h2": "One practice, not separate departments.",
+    "h3": "Coherence, never decoration.",
+    "h4": "Two studios, one standard.",
+    "intro": "noova is a studio working between London and Tirana, uniting strategy, branding, websites, marketing and intelligent systems into one coherent practice — so a business is expressed as clearly as it deserves.",
+    "contactCta": "Start a conversation →",
+    "metaTitle": "About the Studio",
+    "headline": "A creative partner for businesses that have outgrown their own image.",
+    "metaDesc": "noova is a studio between London and Tirana, uniting strategy, branding, websites, marketing and intelligent systems into one coherent practice.",
+    "storyCta": "Meet the founder →"
+  },
   "caseStudy": {
     "theProject": "The Project",
     "industry": "Industry",
@@ -83,112 +103,140 @@
     "deliverables": "Deliverables",
     "nextProject": "Next Project"
   },
-  "contact": {
-    "heading": "Work with us.",
-    "intro": "Tell us about your business, your ambitions, or simply where you'd like to begin.",
-    "fieldName": "Name",
-    "fieldEmail": "Email",
-    "fieldCompany": "Company",
-    "fieldProject": "Project",
-    "submit": "Begin the conversation →",
-    "sending": "Sending…",
-    "sent": "Thank you. We'll be in touch shortly.",
-    "error": "Something went wrong. Please try again, or email hello@noovadata.com.",
-    "location": "London · United Kingdom"
+  "hero": {
+    "service1": "Marketing",
+    "service2": "Websites",
+    "service3": "Branding",
+    "service4": "Automation",
+    "tagline": "For businesses that have outgrown their own image.",
+    "scroll": "Scroll"
   },
   "footer": {
-    "tagline": "noova is a creative partner for businesses that have outgrown their own image.",
-    "description": "We build brands from the inside out—bringing together strategy, branding, websites, marketing and intelligent systems into one coherent practice. The result is a brand that finally matches the business behind it.",
-    "navHeading": "Navigation",
-    "home": "Home",
-    "services": "Services",
-    "portfolio": "Portfolio",
-    "journal": "Journal",
     "contact": "Contact",
-    "connectHeading": "Connect",
+    "cookieSettings": "Cookie Settings",
+    "portfolio": "Portfolio",
+    "privacy": "Privacy Policy",
     "londonHeading": "London",
     "tiranaHeading": "Tirana",
-    "privacy": "Privacy Policy",
+    "tagline": "noova is a creative partner for businesses that have outgrown their own image.",
     "cookiePolicy": "Cookie Policy",
-    "cookieSettings": "Cookie Settings",
     "rights": "© 2026 NOOVA. ALL RIGHTS RESERVED.",
-    "studioLabel": "BRAND & INNOVATION STUDIO"
-  },
-  "cookieBanner": {
-    "title": "A note on cookies",
-    "body": "We use essential cookies to keep the site working, and — only with your permission — a few more to understand how it's read. You stay in control. See our <privacy>Privacy Policy</privacy> and <cookies>Cookie Policy</cookies>.",
-    "acceptAll": "Accept all",
-    "reject": "Reject non-essential",
-    "preferences": "Cookie preferences"
-  },
-  "cookieModal": {
-    "title": "Cookie preferences",
-    "intro": "Choose what you're comfortable with. You can change this at any time from the footer.",
-    "close": "Close",
-    "closeAria": "Close cookie preferences",
-    "essentialName": "Essential",
-    "essentialDesc": "Required for the site to function — remembering your choices and keeping things secure. Always on.",
-    "essentialAria": "Essential cookies (always on)",
-    "analyticsName": "Analytics",
-    "analyticsDesc": "Anonymous, aggregated insight into how the site is read, so we can make it better.",
-    "analyticsAria": "Analytics cookies",
-    "marketingName": "Marketing",
-    "marketingDesc": "Used to measure campaigns and show relevant work across other platforms.",
-    "marketingAria": "Marketing cookies",
-    "acceptAll": "Accept all",
-    "save": "Save preferences"
-  },
-  "clients": {
-    "label": "Selected clients"
+    "journal": "Journal",
+    "connectHeading": "Connect",
+    "description": "We build brands from the inside out—bringing together strategy, branding, websites, marketing and intelligent systems into one coherent practice. The result is a brand that finally matches the business behind it.",
+    "services": "Services",
+    "studioLabel": "BRAND & INNOVATION STUDIO",
+    "home": "Home",
+    "navHeading": "Navigation"
   },
   "offer": {
-    "startProject": "Start your project →",
-    "whatIs": "What is {name}?",
     "timeline": "Timeline",
-    "booking": "Booking",
-    "investment": "Investment",
-    "packages": "Packages",
-    "packagesIntro": "Three ways to begin. Every engagement is tailored — these are starting points, and the right scope is agreed in conversation.",
-    "mostChosen": "Most chosen",
-    "everythingIn": "Everything in {builds}, plus:",
-    "enquireShort": "Enquire →",
-    "whatsInside": "What's inside",
-    "howItUnfolds": "How it unfolds",
-    "glimpseLabel": "A glimpse into selected work",
-    "viewProjects": "View selected projects →",
-    "faqHeading": "Questions worth asking.",
-    "begin": "Begin",
-    "enquireHeading": "Enquire about {name}.",
-    "enquireIntro": "Tell us a little about your business and where you'd like to begin. We reply to every enquiry personally, within two working days.",
-    "location": "London · United Kingdom",
-    "otherEngagements": "The other engagements",
     "form": {
-      "name": "Your name",
-      "email": "Email",
       "business": "Business & industry",
       "timeline": "Ideal timeline",
       "budget": "Budget (optional)",
+      "error": "Something went wrong. Please try again, or email hello@noovadata.com.",
+      "name": "Your name",
       "submit": "Submit enquiry →",
-      "sending": "Sending…",
       "sent": "Thank you — we'll be in touch within two working days.",
-      "error": "Something went wrong. Please try again, or email hello@noovadata.com."
-    }
+      "sending": "Sending…",
+      "email": "Email"
+    },
+    "otherEngagements": "The other engagements",
+    "begin": "Begin",
+    "whatsInside": "What's inside",
+    "faqHeading": "Questions worth asking.",
+    "packages": "Packages",
+    "enquireShort": "Enquire →",
+    "whatIs": "What is {name}?",
+    "enquireHeading": "Enquire about {name}.",
+    "investment": "Investment",
+    "mostChosen": "Most chosen",
+    "location": "London · United Kingdom",
+    "startProject": "Start your project →",
+    "everythingIn": "Everything in {builds}, plus:",
+    "booking": "Booking",
+    "glimpseLabel": "A glimpse into selected work",
+    "enquireIntro": "Tell us a little about your business and where you'd like to begin. We reply to every enquiry personally, within two working days.",
+    "howItUnfolds": "How it unfolds",
+    "packagesIntro": "Three ways to begin. Every engagement is tailored — these are starting points, and the right scope is agreed in conversation.",
+    "viewProjects": "View selected projects →"
   },
-  "studio": {
-    "metaTitle": "About the Studio",
-    "metaDesc": "noova is a studio between London and Tirana, uniting strategy, branding, websites, marketing and intelligent systems into one coherent practice.",
-    "eyebrow": "The Studio",
-    "headline": "A creative partner for businesses that have outgrown their own image.",
-    "intro": "noova is a studio working between London and Tirana, uniting strategy, branding, websites, marketing and intelligent systems into one coherent practice — so a business is expressed as clearly as it deserves.",
-    "h1": "We build brands from the inside out.",
-    "p1": "The most important part of a brand is the part no one sees first — the thinking beneath it. Before a business can be expressed, it has to be understood. So we start at the core: what a business is, what it believes, and why it matters. Everything visible grows from there.",
-    "h2": "One practice, not separate departments.",
-    "p2": "Businesses of real quality are rarely broken — they're scattered, their best work spread across parts that were never designed to work together. We don't decorate; we clarify. Strategy, identity, words, websites and technology are built as one coherent system, in one room, rather than handed between departments.",
-    "h3": "Coherence, never decoration.",
-    "p3": "The result isn't a new look. It's a brand that finally matches the business behind it — built to last, not to trend. A single, considered world across every touchpoint.",
-    "h4": "Two studios, one standard.",
-    "p4": "noova works between London and Tirana — two cities, one level of care. Wherever a project begins, it's held to the same rigour and the same restraint.",
-    "storyCta": "Meet the founder →",
-    "contactCta": "Start a conversation →"
+  "services": {
+    "label": "WHAT WE BUILD",
+    "categories": [
+      {
+        "t": "Brand & Identity",
+        "d": [
+          "Brand strategy",
+          "Positioning",
+          "Naming & messaging",
+          "Visual identity",
+          "Brand guidelines",
+          "Tone of voice",
+          "Creative direction"
+        ]
+      },
+      {
+        "t": "Websites",
+        "d": [
+          "Website strategy",
+          "UX & information architecture",
+          "Website design",
+          "Webflow development",
+          "Landing pages",
+          "SEO foundations",
+          "Performance optimisation"
+        ]
+      },
+      {
+        "t": "Content",
+        "d": [
+          "Content strategy",
+          "Editorial planning",
+          "Social media strategy",
+          "Content calendars",
+          "Copywriting",
+          "Photography direction",
+          "AI-assisted content production"
+        ]
+      },
+      {
+        "t": "Campaigns",
+        "d": [
+          "Marketing strategy",
+          "Launch planning",
+          "Campaign concepts",
+          "Influencer partnerships",
+          "Creator collaborations",
+          "Brand activations",
+          "Community building"
+        ]
+      },
+      {
+        "t": "Growth",
+        "d": [
+          "Marketing analytics",
+          "GA4 & Looker Studio",
+          "CRM strategy",
+          "Email marketing",
+          "Conversion optimisation",
+          "Reporting dashboards",
+          "Growth roadmaps"
+        ]
+      },
+      {
+        "t": "AI & Systems",
+        "d": [
+          "AI workflows",
+          "Marketing automation",
+          "CRM implementation",
+          "Business systems",
+          "Customer journeys",
+          "Lead generation systems",
+          "Process optimisation"
+        ]
+      }
+    ]
   }
 }

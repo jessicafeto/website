@@ -128,20 +128,21 @@
     "heroImage": "/hero/websites.jpg",
     "shift": {
       "heading": "Ndryshimi",
-      "body": "Shumica e uebsajteve në heshtje e nënvlerësojnë biznesin pas tyre — të ngarkuar aty ku duhet të jenë të qartë, dekorativë aty ku duhet të jenë strukturorë. Ne dizajnojmë të kundërtën: një përvojë të qetë e editoriale që i udhëheq njerëzit e duhur nëpër një histori të vetme e të qëllimshme. E shpejtë, e menduar dhe pa dyshim e juaja — një shtëpi që më në fund e mban markën në vend që ta zvogëlojë."
+      "body": "Shumë uebsajte nuk e përfaqësojnë si duhet biznesin që qëndron pas tyre. Janë të ngarkuara aty ku duhet të jenë të qarta, dhe dekorative aty ku duhet të jenë funksionale. \n\nNe krijojmë uebsajte të qeta, të menduara me kujdes dhe të ndërtuara rreth përdoruesit. Çdo faqe ka një qëllim, çdo detaj mbështet markën, dhe çdo element punon së bashku për një përvojë të qartë dhe të natyrshme. \n\nRezultati është një uebsajt që e përfaqëson biznesin tuaj me dinjitet."
     },
     "eyebrow": "Angazhimi 02",
     "includes": [
       {
         "label": "Websites",
         "items": [
-          "Strategji uebsajti",
-          "UX & arkitekturë informacioni",
-          "Dizajn uebsajti",
-          "Zhvillim në Webflow",
-          "Faqe uljeje",
-          "Baza SEO",
-          "Optimizim i performancës"
+          "UX dhe arkitektura e informacionit",
+          "zhvillimi në Webflow",
+          "deri në 6 faqe të personalizuara",
+          "CMS dinamik",
+          "bazat e SEO-s",
+          "optimizimi për celular",
+          "animacione të lehta",
+          "lançimi dhe një rishikim pas dorëzimit."
         ]
       }
     ],
@@ -179,13 +180,15 @@
       {
         "name": "Essential",
         "price": "Nga €500",
-        "summary": "Një sajt i rafinuar e kompakt që lexohet bukur.",
+        "summary": "Një uebsajt i rafinuar, i ndërtuar për qartësi dhe performancë.",
         "scope": [
-          "Strategji uebsajti",
-          "Dizajn uebsajti — editorial",
-          "Faqe uljeje — deri në 3 faqe",
-          "Baza SEO",
-          "Lançim + 1 javë mbështetje"
+          "Strategjia e uebsajtit",
+          "dizajni editorial",
+          "deri në 3 faqe",
+          "bazat e SEO-s",
+          "konfigurimi i CMS-së",
+          "optimizimi për celular",
+          "lançimi dhe një rishikim pas dorëzimit."
         ]
       },
       {
@@ -194,55 +197,57 @@
         "summary": "Uebsajti i plotë editorial, i ndërtuar për të performuar.",
         "builds": "Essential",
         "scope": [
-          "UX & arkitekturë informacioni",
-          "Zhvillim në Webflow",
-          "Deri në ~6 faqe të personalizuara",
-          "CMS — blog / ditar",
-          "Integrime & analitikë",
-          "Optimizim i performancës",
-          "2 javë mbështetje + udhëzim"
+          "UX dhe arkitektura e informacionit",
+          "zhvillimi në Webflow",
+          "deri në 6 faqe të personalizuara",
+          "CMS dinamik",
+          "bazat e SEO-s",
+          "optimizimi për celular",
+          "animacione të lehta",
+          "lançimi dhe një rishikim pas dorëzimit."
         ],
         "featured": true
       },
       {
         "name": "Bespoke",
         "price": "Nga €2,000",
-        "summary": "Një ndërtim më i madh e i personalizuar, me hapësirë për t'u rritur.",
+        "summary": "Një zgjidhje e personalizuar, e ndërtuar sipas objektivave të biznesit tuaj.",
         "builds": "Signature",
         "scope": [
           "Sistem e-commerce ose rezervimesh",
-          "Ndërveprime & lëvizje të avancuara",
-          "Koleksione CMS të personalizuara",
-          "Gati për shumë gjuhë",
-          "Integrime CRM & automatizim marketingu",
-          "Kontratë mirëmbajtjeje opsionale"
+          "ndërveprime dhe animacione të avancuara",
+          "koleksione dinamike CMS",
+          "integrime me platforma të jashtme",
+          "optimizim i avancuar i SEO-s",
+          "performancë e lartë",
+          "lançimi dhe mbështetje pas dorëzimit."
         ]
       }
     ],
     "cadence": "4–8 javë",
-    "headline": "Një uebsajt po aq i menduar sa marka pas tij.",
-    "booking": "Disponueshmëri e kufizuar mujore",
-    "offer": "Një ndërtim dixhital i rafinuar katër deri në tetë javë që e shndërron markën tuaj në një uebsajt elegant e të qetë — i punuar me dizajn të qëllimshëm, strukturë strategjike dhe një përvojë përdoruesi të klasit botëror.",
+    "headline": "Një uebsajt që pasqyron markën tuaj.",
+    "booking": "Vende të kufizuara.",
+    "offer": "Një proces 4–8 javor për krijimin e një uebsajti të menduar në çdo detaj, me dizajn të qëllimshëm, strukturë strategjike dhe një përvojë përdoruesi të rafinuar.",
     "faqs": [
       {
         "q": "Në cilën platformë ndërtoni?",
-        "a": "Kryesisht Webflow — i shpejtë, i besueshëm dhe i lehtë për ta redaktuar. Platforma të tjera me kërkesë."
+        "a": "Kryesisht në Webflow, sepse është i shpejtë, i besueshëm dhe i lehtë për t'u menaxhuar. Sipas nevojës, punojmë edhe me platforma të tjera."
       },
       {
         "q": "A mund ta përditësoj vetë sajtin më pas?",
-        "a": "Po. Signature e lart përfshin një CMS dhe një udhëzim, që të shtoni postime e të redaktoni përmbajtjen pa një programues."
+        "a": "Po. Paketat Signature dhe Bespoke përfshijnë CMS dhe një udhëzim të thjeshtë, që të mund ta përditësoni përmbajtjen pa ndihmën e një programuesi."
       },
       {
         "q": "Si funksionon pagesa?",
-        "a": "Një depozitë prej 50% e rezervon vendin tuaj; pjesa tjetër paguhet para lançimit."
+        "a": "Një depozitë prej 50% rezervon projektin tuaj. Pjesa tjetër paguhet para lançimit. Për projekte më të mëdha, mund të dakordësojmë pagesa me këste."
       },
       {
         "q": "Sa zgjat një uebsajt?",
-        "a": "Nga katër deri në tetë javë, në varësi të nivelit dhe sa gati është përmbajtja juaj."
+        "a": "Zakonisht 4 deri në 8 javë, në varësi të paketës dhe sa gati është përmbajtja juaj."
       },
       {
         "q": "A ofroni mbështetje të vazhdueshme?",
-        "a": "Përfshihet një deri në dy javë kujdes pas lançimit, dhe ofrohet një kontratë mirëmbajtjeje opsionale."
+        "a": "Po. Çdo projekt përfshin 2 javë mbështetje pas lançimit. Nëse keni nevojë, ofrojmë edhe mirëmbajtje të vazhdueshme."
       }
     ]
   },

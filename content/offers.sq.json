@@ -1,61 +1,11 @@
 {
   "branding": {
-    "slug": "branding",
-    "eyebrow": "Angazhimi 01",
-    "name": "Branding",
     "heroImage": "/hero/branding.jpg",
-    "heroAlt": "Udhëzues brendi, mostra letrash dhe shembuj tipografie të shtrira mbi një tavolinë studioje.",
-    "headline": "Një markë që më në fund përputhet me biznesin që qëndron pas saj.",
-    "offer": "Një ndërtim i plotë brendi gjashtë deri në tetë javë — strategji e plotë, drejtim kreativ dhe një sistem identiteti vizual — i dizajnuar për ta lançuar markën tuaj me qartësi, besim dhe një prani luksi.",
-    "cadence": "6–8 javë",
-    "booking": "Disponueshmëri e kufizuar mujore",
     "shift": {
       "heading": "Ndryshimi",
-      "body": "Bizneset me cilësi të vërtetë rrallë janë të prishura — janë të shpërndara, me punën e tyre më të mirë të ndarë nëpër pjesë që kurrë nuk u menduan të funksiononin bashkë. Ne nuk zbukurojmë; ne sqarojmë. Nisim nga thelbi — çfarë është biznesi juaj, çfarë beson dhe pse ka rëndësi — dhe lëmë çdo gjë të dukshme të rritet prej andej. Largoheni me një sistem të vetëm koherent në vend të pjesëve të shkëputura, dhe me besimin për të mos kërkuar më falje për pamjen tuaj."
+      "body": "Bizneset me cilësi të vërtetë rrallë kanë nevojë për më shumë dizajn. Ato kanë nevojë për më shumë qartësi. Puna e tyre më e mirë shpesh është e shpërndarë në pjesë që nuk janë menduar të funksionojnë së bashku. \n\nNe nuk krijojmë vetëm identitete vizuale. Ne ndërtojmë sisteme që funksionojnë. Fillojmë nga thelbi i biznesit tuaj: çfarë është, çfarë përfaqëson dhe pse ka rëndësi. Më pas ndërtojmë një sistem të vetëm, ku çdo element lidhet natyrshëm me tjetrin."
     },
-    "tiers": [
-      {
-        "name": "Essential",
-        "price": "Nga €700",
-        "summary": "Një bazë e qartë dhe e sigurt për një biznes që po gjen veten.",
-        "scope": [
-          "Brand Strategy",
-          "Positioning",
-          "Visual Identity — Primary Logo",
-          "Brand Guidelines — Short PDF",
-          "Logo & Asset Files"
-        ]
-      },
-      {
-        "name": "Signature",
-        "price": "Nga €1,400",
-        "summary": "Ndërtimi i plotë i brendit — nga strategjia te identiteti.",
-        "builds": "Essential",
-        "scope": [
-          "Naming & Messaging",
-          "Tone of Voice",
-          "Creative Direction",
-          "Visual Identity — Full Suite",
-          "Brand Guidelines — Comprehensive",
-          "Social Media Brand Kit",
-          "Launch & Rollout Plan"
-        ],
-        "featured": true
-      },
-      {
-        "name": "Bespoke",
-        "price": "Nga €2,800",
-        "summary": "Një markë e paharrueshme, e krijuar pa kufij.",
-        "builds": "Signature",
-        "scope": [
-          "Photography & Art Direction",
-          "Custom Illustration or Motion Identity",
-          "Packaging or Print Collateral",
-          "Brand Book — Printed",
-          "Post-Launch Support"
-        ]
-      }
-    ],
+    "eyebrow": "Angazhimi 01",
     "includes": [
       {
         "label": "Brand & Identity",
@@ -70,6 +20,8 @@
         ]
       }
     ],
+    "name": "Ndërtim Marke",
+    "slug": "branding",
     "process": [
       {
         "n": "01",
@@ -97,87 +49,84 @@
         "body": "Një plan i menduar shpërndarjeje dhe një dorëzim i plotë, që marka të mbërrijë me qëllim e jo me zhurmë."
       }
     ],
-    "faqs": [
-      {
-        "q": "A mund t'i personalizoj ose kombinoj paketat?",
-        "a": "Po. Nivelet janë pika nisjeje — fushën e saktë e formësojmë së bashku në bisedën e parë, që të paguani vetëm për atë që i duhet vërtet markës suaj."
-      },
-      {
-        "q": "Si funksionon pagesa?",
-        "a": "Një depozitë prej 50% e siguron datën e nisjes; pjesa tjetër paguhet para lançimit. Për projekte më të mëdha mund ta ndajmë më tej."
-      },
-      {
-        "q": "Sa zgjat?",
-        "a": "Një ndërtim i plotë Signature zakonisht zgjat gjashtë deri në tetë javë, në varësi të fushës dhe shpejtësisë së reagimeve."
-      },
-      {
-        "q": "Çfarë ju nevojitet nga unë për të nisur?",
-        "a": "Një prezantim i biznesit tuaj, qëllimet tuaja dhe çdo material ekzistues. Ne ju udhëheqim në çdo hap."
-      },
-      {
-        "q": "Çfarë ndodh pas lançimit?",
-        "a": "Merrni të gjitha skedarët dhe udhëzuesit e brendit, plus një udhëzim. Bespoke shton mbështetje pas lançimit."
-      }
-    ]
-  },
-  "websites": {
-    "slug": "websites",
-    "eyebrow": "Angazhimi 02",
-    "name": "Websites",
-    "heroImage": "/hero/websites.jpg",
-    "heroAlt": "Një mur me faqe editoriale dhe raste studimore të fiksuara në studion e noova.",
-    "headline": "Një uebsajt po aq i menduar sa marka pas tij.",
-    "offer": "Një ndërtim dixhital i rafinuar katër deri në tetë javë që e shndërron markën tuaj në një uebsajt elegant e të qetë — i punuar me dizajn të qëllimshëm, strukturë strategjike dhe një përvojë përdoruesi të klasit botëror.",
-    "cadence": "4–8 javë",
-    "booking": "Disponueshmëri e kufizuar mujore",
-    "shift": {
-      "heading": "Ndryshimi",
-      "body": "Shumica e uebsajteve në heshtje e nënvlerësojnë biznesin pas tyre — të ngarkuar aty ku duhet të jenë të qartë, dekorativë aty ku duhet të jenë strukturorë. Ne dizajnojmë të kundërtën: një përvojë të qetë e editoriale që i udhëheq njerëzit e duhur nëpër një histori të vetme e të qëllimshme. E shpejtë, e menduar dhe pa dyshim e juaja — një shtëpi që më në fund e mban markën në vend që ta zvogëlojë."
-    },
+    "heroAlt": "Udhëzues marke, mostra letrash dhe shembuj tipografie të shtrira mbi një tavolinë studioje.",
     "tiers": [
       {
         "name": "Essential",
-        "price": "Nga €500",
-        "summary": "Një sajt i rafinuar e kompakt që lexohet bukur.",
+        "price": "Nga €400",
+        "summary": "Një bazë e qartë dhe e sigurt për një biznes që po gjen veten.",
         "scope": [
-          "Website Strategy",
-          "Editorial Website Design",
-          "Landing Pages — Up to 3 Pages",
-          "SEO Foundations",
-          "Launch + 1 Week Support"
+          "Brand Strategy",
+          "Positioning",
+          "Visual Identity — Primary Logo",
+          "Brand Guidelines — Short PDF",
+          "Logo & Asset Files"
         ]
       },
       {
         "name": "Signature",
-        "price": "Nga €1,100",
-        "summary": "Uebsajti i plotë editorial, i ndërtuar për të performuar.",
+        "price": "Nga €900",
+        "summary": "Një markë e ndërtuar nga strategjia te identiteti.",
         "builds": "Essential",
         "scope": [
-          "UX & Information Architecture",
-          "Webflow Development",
-          "Up to 6 Custom Pages",
-          "CMS — Blog / Journal",
-          "Integrations & Analytics",
-          "Performance Optimisation",
-          "2 Weeks Support + Walkthrough"
+          "Naming & Messaging",
+          "Tone of Voice",
+          "Creative Direction",
+          "Visual Identity — Full Suite",
+          "Brand Guidelines — Comprehensive",
+          "Social Media Brand Kit",
+          "Launch & Rollout Plan"
         ],
         "featured": true
       },
       {
         "name": "Bespoke",
-        "price": "Nga €2,000",
-        "summary": "Një ndërtim më i madh e i personalizuar, me hapësirë për t'u rritur.",
+        "price": "Nga €1400",
+        "summary": "Një identitet i veçantë, i krijuar pa kufij.",
         "builds": "Signature",
         "scope": [
-          "E-Commerce or Booking System",
-          "Advanced Interactions & Motion",
-          "Custom CMS Collections",
-          "Multi-Language Ready",
-          "CRM & Marketing Automation Integrations",
-          "Optional Maintenance Retainer"
+          "Photography & Art Direction",
+          "Custom Illustration or Motion Identity",
+          "Packaging or Print Collateral",
+          "Brand Book — Printed",
+          "Post-Launch Support"
         ]
       }
     ],
+    "cadence": "6–8 javë",
+    "headline": "Një markë që më në fund përputhet me biznesin që qëndron pas saj.",
+    "booking": "Vende të kufizuara.",
+    "offer": "Një proces i plotë për ndërtimin e markës, që zgjat 6–8 javë, me strategji, drejtim kreativ dhe një sistem identiteti vizual, i krijuar për ta lançuar markën tuaj me qartësi, besim dhe një prani premium.",
+    "faqs": [
+      {
+        "q": "A mund t'i personalizoj ose kombinoj paketat?",
+        "a": "Po. Paketat janë pika nisjeje. Gjatë bisedës së parë përcaktojmë së bashku shërbimet që i duhen vërtet biznesit tuaj, në mënyrë që të paguani vetëm për atë që ju nevojitet."
+      },
+      {
+        "q": "Si funksionon pagesa?",
+        "a": "Një depozitë prej 50% rezervon datën e nisjes. Pjesa tjetër paguhet përpara dorëzimit. Për projekte më të mëdha, mund të dakordësojmë një plan pagese."
+      },
+      {
+        "q": "Sa zgjat?",
+        "a": "Kohëzgjatja varet nga paketa. Një projekt Signature zakonisht përfundon brenda 6–8 javësh, në varësi të kompleksitetit dhe ritmit të bashkëpunimit."
+      },
+      {
+        "q": "Çfarë ju nevojitet nga unë për të nisur?",
+        "a": "Mjafton të ndani me ne biznesin, objektivat dhe çdo material ekzistues. Ne ju udhëheqim gjatë gjithë procesit."
+      },
+      {
+        "q": "Çfarë ndodh pas lançimit?",
+        "a": "Pas dorëzimit, merrni të gjitha skedarët, udhëzuesin e markës dhe gjithçka që ju nevojitet për ta përdorur markën me besim. Paketa Bespoke përfshin edhe mbështetje pas lançimit."
+      }
+    ]
+  },
+  "websites": {
+    "heroImage": "/hero/websites.jpg",
+    "shift": {
+      "heading": "Ndryshimi",
+      "body": "Shumë uebsajte nuk e përfaqësojnë si duhet biznesin që qëndron pas tyre. Janë të ngarkuara aty ku duhet të jenë të qarta, dhe dekorative aty ku duhet të jenë funksionale. \n\nNe krijojmë uebsajte të qeta, të menduara me kujdes dhe të ndërtuara rreth përdoruesit. Çdo faqe ka një qëllim, çdo detaj mbështet markën, dhe çdo element punon së bashku për një përvojë të qartë dhe të natyrshme. \n\nRezultati është një uebsajt që e përfaqëson biznesin tuaj me dinjitet."
+    },
+    "eyebrow": "Angazhimi 02",
     "includes": [
       {
         "label": "Websites",
@@ -192,6 +141,8 @@
         ]
       }
     ],
+    "name": "Websites",
+    "slug": "websites",
     "process": [
       {
         "n": "01",
@@ -219,87 +170,85 @@
         "body": "Testim i kujdesshëm, një lançim i qetë dhe kujdes pas tij — plus një udhëzim që të mos mbeteni kurrë në pikëpyetje se si funksionon."
       }
     ],
-    "faqs": [
-      {
-        "q": "Në cilën platformë ndërtoni?",
-        "a": "Kryesisht Webflow — i shpejtë, i besueshëm dhe i lehtë për ta redaktuar. Platforma të tjera me kërkesë."
-      },
-      {
-        "q": "A mund ta përditësoj vetë sajtin më pas?",
-        "a": "Po. Signature e lart përfshin një CMS dhe një udhëzim, që të shtoni postime e të redaktoni përmbajtjen pa një programues."
-      },
-      {
-        "q": "Si funksionon pagesa?",
-        "a": "Një depozitë prej 50% e rezervon vendin tuaj; pjesa tjetër paguhet para lançimit."
-      },
-      {
-        "q": "Sa zgjat një uebsajt?",
-        "a": "Nga katër deri në tetë javë, në varësi të nivelit dhe sa gati është përmbajtja juaj."
-      },
-      {
-        "q": "A ofroni mbështetje të vazhdueshme?",
-        "a": "Përfshihet një deri në dy javë kujdes pas lançimit, dhe ofrohet një kontratë mirëmbajtjeje opsionale."
-      }
-    ]
-  },
-  "marketing": {
-    "slug": "marketing",
-    "eyebrow": "Angazhimi 03",
-    "name": "Marketing & Growth",
-    "heroImage": "/hero/marketing.jpg",
-    "heroAlt": "Pamje nga lart e faqeve të ditarit noova duke u shtruar e redaktuar mbi një tavolinë.",
-    "headline": "Një prani te e cila ia vlen të kthehesh.",
-    "offer": "Një partneritet i vazhdueshëm marketingu që e kthen markën tuaj në një botim të gjallë — duke bashkuar përmbajtjen editoriale, fushatat e menduara dhe sistemet inteligjente në një prani të vetme koherente, të projektuar për të arritur njerëzit e duhur, për të ndërtuar besim afatgjatë dhe për t'u rritur me qëllim e jo me zhurmë.",
-    "cadence": "Partneritet i vazhdueshëm",
-    "booking": "Nisje mujore e vazhdueshme",
-    "shift": {
-      "heading": "Ndryshimi",
-      "body": "Shumica e marketingut bëhet për të mbushur një kalendar — më i zhurmshëm, më i shpejtë, i harruar deri në mëngjes. Ne ndërtojmë të kundërtën: një trup pune te i cili ia vlen të kthehesh. Çdo kanal bëhet një botim i të njëjtit publikim, që mban një zë e një nivel kujdesi. Prani mbi shpeshtësi, kuptim mbi vëllim — një markë që flet kur ka diçka që ia vlen të thuhet, dhe rritet për shkak të kësaj."
-    },
+    "heroAlt": "Një mur me faqe editoriale dhe raste studimore të fiksuara në studion e noova.",
     "tiers": [
       {
         "name": "Essential",
-        "price": "Nga €300 / muaj",
-        "summary": "Një prani e qëndrueshme e e menduar në një kanal.",
+        "price": "Nga €500",
+        "summary": "Një uebsajt i rafinuar, i ndërtuar për qartësi dhe performancë.",
         "scope": [
-          "Content Strategy",
-          "Social Media Strategy — One Channel",
-          "Content Calendars",
-          "Copywriting",
-          "8–10 Posts / Month",
-          "Marketing Analytics — Monthly Report"
+          "Website Strategy",
+          "Editorial Website Design",
+          "Landing Pages — Up to 3 Pages",
+          "SEO Foundations",
+          "Launch + 1 Week Support"
         ]
       },
       {
         "name": "Signature",
-        "price": "Nga €600 / muaj",
-        "summary": "Publikimi, plus fushata që lënë gjurmë.",
+        "price": "Nga €1,100",
+        "summary": "Uebsajti i plotë editorial, i ndërtuar për të performuar.",
         "builds": "Essential",
         "scope": [
-          "Editorial Planning",
-          "Photography Direction",
-          "Campaign Strategy & Campaign Planning",
-          "Email Marketing",
-          "12–16 Posts / Month + Stories — Two Channels",
-          "GA4 & Looker Studio Dashboard"
+          "UX & Information Architecture",
+          "Webflow Development",
+          "Up to 6 Custom Pages",
+          "CMS — Blog / Journal",
+          "Integrations & Analytics",
+          "Performance Optimisation",
+          "2 Weeks Support + Walkthrough"
         ],
         "featured": true
       },
       {
         "name": "Bespoke",
-        "price": "Nga €1,200 / muaj",
-        "summary": "Një partneritet i plotë rritjeje me sisteme pas tij.",
+        "price": "Nga €2,000",
+        "summary": "Një zgjidhje e personalizuar, e ndërtuar sipas objektivave të biznesit tuaj.",
         "builds": "Signature",
         "scope": [
-          "AI-Assisted Content Production",
-          "Influencer Partnerships & Creator Collaborations",
-          "Marketing Automation & CRM Implementation",
-          "Lead Generation Systems",
-          "Conversion Optimisation",
-          "Growth Roadmaps"
+          "E-Commerce or Booking System",
+          "Advanced Interactions & Motion",
+          "Custom CMS Collections",
+          "Multi-Language Ready",
+          "CRM & Marketing Automation Integrations",
+          "Optional Maintenance Retainer"
         ]
       }
     ],
+    "cadence": "4–8 javë",
+    "headline": "Një uebsajt që pasqyron markën tuaj.",
+    "booking": "Vende të kufizuara.",
+    "offer": "Një proces 4–8 javor për krijimin e një uebsajti të menduar në çdo detaj, me dizajn të qëllimshëm, strukturë strategjike dhe një përvojë përdoruesi të rafinuar.",
+    "faqs": [
+      {
+        "q": "Në cilën platformë ndërtoni?",
+        "a": "Kryesisht në Webflow, sepse është i shpejtë, i besueshëm dhe i lehtë për t'u menaxhuar. Sipas nevojës, punojmë edhe me platforma të tjera."
+      },
+      {
+        "q": "A mund ta përditësoj vetë sajtin më pas?",
+        "a": "Po. Paketat Signature dhe Bespoke përfshijnë CMS dhe një udhëzim të thjeshtë, që të mund ta përditësoni përmbajtjen pa ndihmën e një programuesi."
+      },
+      {
+        "q": "Si funksionon pagesa?",
+        "a": "Një depozitë prej 50% rezervon projektin tuaj. Pjesa tjetër paguhet para lançimit. Për projekte më të mëdha, mund të dakordësojmë pagesa me këste."
+      },
+      {
+        "q": "Sa zgjat një uebsajt?",
+        "a": "Zakonisht 4 deri në 8 javë, në varësi të paketës dhe sa gati është përmbajtja juaj."
+      },
+      {
+        "q": "A ofroni mbështetje të vazhdueshme?",
+        "a": "Po. Çdo projekt përfshin 2 javë mbështetje pas lançimit. Nëse keni nevojë, ofrojmë edhe mirëmbajtje të vazhdueshme."
+      }
+    ]
+  },
+  "marketing": {
+    "heroImage": "/hero/marketing.jpg",
+    "shift": {
+      "heading": "Përtej marketingut",
+      "body": "Shumë marka publikojnë çdo ditë, por pak kanë diçka që ia vlen të dëgjohet. Ne nuk krijojmë përmbajtje vetëm për të qenë aktivë. Ndërtojmë një sistem ku strategjia, përmbajtja, fushatat dhe automatizimi punojnë së bashku. Rezultati është një prezencë online që ndërton besim dhe rritet bashkë me biznesin tuaj."
+    },
+    "eyebrow": "Angazhimi 03",
     "includes": [
       {
         "label": "Content",
@@ -318,11 +267,11 @@
         "items": [
           "Marketing Strategy",
           "Campaign Planning",
-          "Campaign Strategy",
+          "Campaign Concepts",
           "Influencer Partnerships",
           "Creator Collaborations",
           "Brand Activations",
-          "Community Building"
+          "Paid Media"
         ]
       },
       {
@@ -332,8 +281,8 @@
           "GA4 & Looker Studio",
           "CRM Strategy",
           "Email Marketing",
-          "Conversion Optimisation",
-          "Reporting Dashboards",
+          "CRO",
+          "KPI Dashboards",
           "Growth Roadmaps"
         ]
       },
@@ -341,15 +290,17 @@
         "label": "AI & Systems",
         "items": [
           "AI Workflows",
+          "AI Agents",
           "Marketing Automation",
           "CRM Implementation",
           "Business Automation",
-          "Customer Journeys",
-          "Lead Generation Systems",
+          "Customer Journey Mapping",
           "Process Optimisation"
         ]
       }
     ],
+    "name": "Marketing",
+    "slug": "marketing",
     "process": [
       {
         "n": "01",
@@ -377,97 +328,103 @@
         "body": "Një partneritet i vazhdueshëm: botim, rishikim dhe përsosje — duke rritur praninë dhe besimin me kalimin e kohës."
       }
     ],
-    "faqs": [
-      {
-        "q": "A ka një angazhim minimal?",
-        "a": "Kërkojmë tre muaj fillestarë, që puna të ketë hapësirë të shtohet e të mos gjykohet nga një postim i vetëm."
-      },
-      {
-        "q": "Si funksionon faturimi?",
-        "a": "Një tarifë e thjeshtë mujore, e faturuar në fillim të çdo muaji. Mund të lëvizni lart ose poshtë një nivel me një muaj paralajmërim."
-      },
-      {
-        "q": "A përfshihet buxheti i reklamave?",
-        "a": "Jo — buxheti i medias është i ndarë dhe paguhet drejtpërdrejt te platformat. Ne menaxhojmë fushatat; ju mbani kontrollin e shpenzimit."
-      },
-      {
-        "q": "Cilat kanale mbuloni?",
-        "a": "Ato që i përshtaten audiencës suaj — më së shpeshti Instagram dhe LinkedIn, plus email dhe ditari juaj. Ne fokusohemi, në vend që të shpërndahemi."
-      },
-      {
-        "q": "Çfarë ju nevojitet nga unë?",
-        "a": "Qasje te kanalet tuaja dhe një takim i shkurtër mujor. Ne kujdesemi për strategjinë, krijimin dhe raportimin."
-      }
-    ]
-  },
-  "automation": {
-    "slug": "automation",
-    "eyebrow": "Angazhimi 04",
-    "name": "AI & Automation",
-    "heroImage": "/hero/automation.jpg",
-    "heroAlt": "Një panel analitik në një tablet pranë materialeve të markës mbi një sipërfaqe të errët studioje.",
-    "headline": "Sistemet inteligjente pas markës.",
-    "offer": "Një ndërtim i automatizimeve, funneleve dhe rrjedhave të punës me AI që i lejojnë një biznesi ambicioz të rritet pa shtuar staf — gjenerim kontaktesh, CRM, email dhe operacione, të lidhura në një sistem të vetëm, të qetë e të besueshëm.",
-    "cadence": "3–6 javë",
-    "booking": "Disponueshmëri e kufizuar mujore",
-    "shift": {
-      "heading": "Ndryshimi",
-      "body": "Rritja zakonisht do të thotë më shumë punë — më shumë ndjekje manuale, më shumë tabela, më shumë gjëra që rrëshqasin. Nuk ka pse të jetë kështu. Sistemet e duhura e bëjnë punën e përsëritur në sfond: kapin kontaktet, i ushqejnë ato, përditësojnë CRM-në tuaj, dhe ju lirojnë për punën që vetëm ju mund ta bëni. Jo më shumë vegla të shtuara — një sistem i vetëm i lidhur, i ndërtuar rreth mënyrës si funksionon vërtet biznesi juaj."
-    },
+    "heroAlt": "Pamje nga lart e faqeve të ditarit noova duke u shtruar e redaktuar mbi një tavolinë.",
     "tiers": [
       {
         "name": "Essential",
-        "price": "Nga €400",
-        "summary": "Një automatizim ose funnel kontaktesh, i ndërtuar plotësisht.",
+        "price": "Nga €300 / muaj",
+        "summary": "Një prani e qëndrueshme e e menduar në një kanal.",
         "scope": [
-          "Lead Generation Funnel or Automation",
-          "Chat / DM Capture — ManyChat",
-          "Email Tool Integration",
-          "Tested & Documented"
+          "Content Strategy",
+          "Social Media Strategy — One Channel",
+          "Content Calendars",
+          "Copywriting",
+          "8–10 Posts / Month",
+          "Marketing Analytics — Monthly Report"
         ]
       },
       {
         "name": "Signature",
-        "price": "Nga €800",
-        "summary": "Një sistem rritjeje i lidhur.",
+        "price": "Nga €600 / muaj",
+        "summary": "Content, plus Paid Ads që sjellin rezultate",
         "builds": "Essential",
         "scope": [
-          "Lead Generation Funnel + Landing Page or Quiz",
-          "CRM Setup & Tagging",
-          "Email Automation Sequences",
-          "Analytics & Lead Notifications",
-          "Simple Reporting Dashboard"
+          "Editorial Planning",
+          "Creative Direction",
+          "Campaign Planning",
+          "Paid Social",
+          "Email Marketing",
+          "12–16 Posts / Month — Two Channels",
+          "GA4 & Looker Studio Dashboard"
         ],
         "featured": true
       },
       {
         "name": "Bespoke",
-        "price": "Nga €1,600",
-        "summary": "Operacione & AI, plotësisht të automatizuara.",
+        "price": "Nga €1,200 / muaj",
+        "summary": "Partneritet afatgjatë për rritje të qëndrueshme.",
         "builds": "Signature",
         "scope": [
-          "Multi-Step Business Automations",
-          "AI Workflows — Content & Operations",
-          "CRM Implementation",
-          "Tool Integrations",
-          "Ongoing Optimisation"
+          "AI-Assisted Content Production",
+          "Creator Partnerships",
+          "Paid Advertising",
+          "Marketing Automation & CRM Implementation",
+          "Lead Generation Systems",
+          "Conversion Optimisation",
+          "Growth Roadmaps"
         ]
       }
     ],
+    "cadence": "Partneritet i vazhdueshëm",
+    "headline": "Një prezencë online e ndërtuar për t'u rritur.",
+    "booking": "Nisje mujore e vazhdueshme",
+    "offer": "Një partneritet i vazhdueshëm që mban markën tuaj aktive dhe në rritje. \n\nKombinojmë përmbajtjen editoriale, fushatat, analizat dhe automatizimin në një sistem të vetëm, për të ndërtuar besim, për të tërhequr klientët e duhur dhe për të krijuar rritje afatgjatë.",
+    "faqs": [
+      {
+        "q": "A ka një angazhim minimal?",
+        "a": "Po. Kërkojmë një angazhim minimal prej tre muajsh, që strategjia të ketë kohë të japë rezultate."
+      },
+      {
+        "q": "Si funksionon pagesa?",
+        "a": "Pagesa bëhet në fillim të çdo muaji. Paketën mund ta ndryshoni ose ta anuloni me një muaj njoftim paraprak."
+      },
+      {
+        "q": "A përfshihet buxheti i reklamave?",
+        "a": "Jo. Buxheti për Paid Ads paguhet veçmas, drejtpërdrejt te platformat. Ne kujdesemi për strategjinë, menaxhimin dhe optimizimin e fushatave."
+      },
+      {
+        "q": "Cilat kanale mbuloni?",
+        "a": "Zgjedhim kanalet që i përshtaten më mirë biznesit dhe audiencës suaj. Më shpesh punojmë me Instagram, LinkedIn, Email Marketing dhe blogun e uebsajtit."
+      },
+      {
+        "q": "Çfarë ju nevojitet nga unë?",
+        "a": "Akses në kanalet tuaja, një takim i shkurtër çdo muaj dhe komunikim i hapur. Ne kujdesemi për strategjinë, krijimin, publikimin dhe raportimin."
+      }
+    ]
+  },
+  "automation": {
+    "heroImage": "/hero/automation.jpg",
+    "shift": {
+      "heading": "Ndryshimi",
+      "body": "Rritja nuk duhet të krijojë më shumë kaos. Sistemet e duhura automatizojnë punën e përsëritur, organizojnë kontaktet, përditësojnë CRM-në dhe lidhin proceset në një rrjedhë të vetme. Kështu kurseni kohë, shmangni gabimet dhe krijoni një biznes që funksionon më zgjuar."
+    },
+    "eyebrow": "Angazhimi 04",
     "includes": [
       {
         "label": "AI & Systems",
         "items": [
           "AI Workflows",
+          "AI Agents",
           "Marketing Automation",
           "CRM Implementation",
           "Business Automation",
-          "Customer Journeys",
-          "Lead Generation Systems",
+          "Customer Journey Mapping",
           "Process Optimisation"
         ]
       }
     ],
+    "name": "AI & Automation",
+    "slug": "automation",
     "process": [
       {
         "n": "01",
@@ -495,26 +452,71 @@
         "body": "Ndjekim numrat dhe përsosim — shtrëngojmë atë që konverton, heqim atë që s'funksionon."
       }
     ],
+    "heroAlt": "Një panel analitik në një tablet pranë materialeve të markës mbi një sipërfaqe të errët studioje.",
+    "tiers": [
+      {
+        "name": "Essential",
+        "price": "Nga €400",
+        "summary": "Një sistem automatizimi, i ndërtuar për ju.",
+        "scope": [
+          "Lead Generation Funnel or Automation",
+          "Chat / DM Capture — ManyChat",
+          "Email Tool Integration",
+          "Tested & Documented"
+        ]
+      },
+      {
+        "name": "Signature",
+        "price": "Nga €800",
+        "summary": "Një sistem inteligjent për rritjen e biznesit.",
+        "builds": "Essential",
+        "scope": [
+          "Lead Generation Funnel + Landing Page or Quiz",
+          "CRM Setup & Tagging",
+          "Email Automation Sequences",
+          "Analytics & Lead Notifications",
+          "Simple Reporting Dashboard"
+        ],
+        "featured": true
+      },
+      {
+        "name": "Bespoke",
+        "price": "Nga €1,600",
+        "summary": "AI & Automation për veprimtari inteligjente.",
+        "builds": "Signature",
+        "scope": [
+          "Multi-Step Business Automations",
+          "AI Workflows — Content & Operations",
+          "CRM Implementation",
+          "Tool Integrations",
+          "Ongoing Optimisation"
+        ]
+      }
+    ],
+    "cadence": "3–6 javë",
+    "headline": "Automatizim që kursen kohë.",
+    "booking": "Vende të kufizuara.",
+    "offer": "Ndërtojmë sisteme me AI, automatizime dhe workflow që lidhin marketingun, shitjet dhe operacionet në një ekosistem të vetëm. Nga gjenerimi i kontakteve te CRM, email dhe proceset e brendshme, çdo hap punon së bashku për të kursyer kohë dhe për të mbështetur rritjen.",
     "faqs": [
       {
-        "q": "Me cilat mjete ndërtoni?",
-        "a": "Me ato që përshtaten — Make, Zapier, ManyChat, plus CRM-në dhe mjetin tuaj të email-it. Punojmë me atë që keni, ose rekomandojmë grupin më të thjeshtë."
+        "q": "Me cilat aplikacione ndërtoni?",
+        "a": "Përdorim mjetet që i përshtaten biznesit tuaj si Make, Zapier, ManyChat, CRM-në dhe platformën tuaj të email-it. Mund të punojmë me sistemet që përdorni tashmë ose t'ju rekomandojmë zgjidhjen më të përshtatshme."
       },
       {
         "q": "A më duhet njohuri teknike?",
-        "a": "Jo. Ne e ndërtojmë, e dokumentojmë me gjuhë të thjeshtë dhe ju udhëzojmë. Ju e drejtoni; ne jemi këtu nëse duhet ndryshuar."
+        "a": "Jo. Ne kujdesemi për ndërtimin, konfigurimin dhe dokumentimin e sistemit. Ju merreni me biznesin tuaj, ndërsa ne sigurohemi që gjithçka të funksionojë siç duhet."
       },
       {
         "q": "Si funksionon çmimi?",
-        "a": "Sistemet e thjeshta kanë një tarifë fikse projekti; ato më të mëdha e në zhvillim mund të shkojnë si partneritet mujor. E përcaktojmë fushën që në fillim."
+        "a": "Projektet më të vogla kanë një tarifë fikse. Për sisteme më të avancuara ose zhvillim të vazhdueshëm, punojmë me partneritete mujore. Pas bisedës fillestare, ju rekomandojmë zgjidhjen më të përshtatshme."
       },
       {
-        "q": "A do të punojë me uebsajtin dhe markën time?",
-        "a": "Po — ky është qëllimi. I ndërtojmë sistemet t'i përshtaten markës, jo e kundërta, që gjithçka të mbetet koherente."
+        "q": "A do të funksionojë me uebsajtin dhe markën time?",
+        "a": "Po. Çdo sistem ndërtohet rreth mënyrës si funksionon biznesi dhe marka juaj. Përshtatim gjithçka me proceset ekzistuese, në mënyrë që çdo gjë të funksionojë si një sistem i vetëm."
       },
       {
         "q": "A janë të dhënat e mia të sigurta?",
-        "a": "Përdorim platforma të besueshme e të sigurta dhe ju japim pronësi e qasje të plotë. Asgjë nuk mbetet e lidhur me ne."
+        "a": "Po. Përdorim platforma të besueshme dhe të sigurta, ndërsa ju mbeteni pronari i plotë i të dhënave dhe sistemeve tuaja. Nëse bashkëpunimi përfundon, gjithçka mbetet në kontrollin tuaj."
       }
     ]
   }

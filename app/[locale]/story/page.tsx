@@ -22,7 +22,7 @@ function P({ children }: { children: React.ReactNode }) {
 /** A chapter heading within the story. */
 function H({ children }: { children: React.ReactNode }) {
   return (
-    <h2 className="mt-20 font-serif text-[clamp(1.6rem,2.6vw,2.2rem)] leading-tight text-ink">
+    <h2 className="mt-20 font-sans font-bold tracking-[-0.01em] text-[clamp(1.4rem,2.3vw,1.9rem)] leading-tight text-ink">
       {children}
     </h2>
   );

@@ -27,7 +27,7 @@ export default function CookieBanner() {
           transition={{ duration: 0.6, ease: EASE }}
           className="fixed inset-x-4 bottom-4 z-[130] mx-auto max-w-[31rem] rounded-xl border border-rule bg-white p-7 shadow-[0_10px_40px_-12px_rgba(30,26,22,0.22)] sm:inset-x-auto sm:left-6"
         >
-          <h2 className="font-serif text-[1.5rem] leading-tight text-ink">
+          <h2 className="font-sans font-bold tracking-[-0.01em] text-[1.3rem] leading-tight text-ink">
             {t("title")}
           </h2>
 

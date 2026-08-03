@@ -220,7 +220,7 @@ export default function BrandAudit() {
           </div>
 
           <FadeUp key={qi} delay={0}>
-            <h2 className="mt-10 font-serif text-ink text-[clamp(1.5rem,3vw,2.1rem)] leading-[1.3]">
+            <h2 className="mt-10 font-sans font-bold tracking-[-0.01em] text-ink text-[clamp(1.3rem,2.6vw,1.8rem)] leading-[1.35]">
               {QUESTIONS[qi].q}
             </h2>
             <div className="mt-8 flex flex-col gap-3">
@@ -295,7 +295,7 @@ export default function BrandAudit() {
             <p className="mt-6 font-sans text-[0.8rem] uppercase tracking-[0.22em] text-light">
               Coherence score {score} / 20
             </p>
-            <p className="mx-auto mt-8 max-w-[46ch] font-serif text-ink text-[clamp(1.2rem,2.4vw,1.6rem)] leading-[1.5]">
+            <p className="mx-auto mt-8 max-w-[46ch] font-sans font-light text-ink text-[clamp(1rem,1.9vw,1.25rem)] leading-[1.7]">
               {tier.body}
             </p>
             <Link

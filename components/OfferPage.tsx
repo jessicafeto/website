@@ -126,7 +126,7 @@ export default async function OfferPage({ slug }: { slug: Offer["slug"] }) {
                     }`}
                   >
                     <div className="flex items-baseline justify-between">
-                      <h3 className="font-serif text-[1.5rem] text-ink">
+                      <h3 className="font-sans font-bold tracking-[-0.01em] text-[1.3rem] text-ink">
                         {tier.name}
                       </h3>
                       {tier.featured && (
@@ -186,7 +186,7 @@ export default async function OfferPage({ slug }: { slug: Offer["slug"] }) {
                 {offer.includes.map((group, i) => (
                   <FadeUp key={group.label} delay={i * 0.06}>
                     <div className="border-t border-rule pt-6">
-                      <h2 className="font-serif text-[1.35rem] text-oxblood">
+                      <h2 className="font-sans font-bold tracking-[-0.01em] text-[1.2rem] text-oxblood">
                         {group.label}
                       </h2>
                       <ul className="mt-5 grid gap-x-16 gap-y-3 sm:grid-cols-2 lg:grid-cols-3">
@@ -227,7 +227,7 @@ export default async function OfferPage({ slug }: { slug: Offer["slug"] }) {
           <div className="wrap">
             <div className="mx-auto max-w-6xl">
               <FadeUp>
-                <h2 className="max-w-[16ch] font-serif text-ink text-[clamp(2rem,4vw,3.4rem)] leading-[1.1]">
+                <h2 className="max-w-[16ch] font-sans font-bold tracking-[-0.01em] text-ink text-[clamp(1.7rem,3.4vw,2.8rem)] leading-[1.15]">
                   {t("faqHeading")}
                 </h2>
               </FadeUp>
@@ -307,7 +307,7 @@ export default async function OfferPage({ slug }: { slug: Offer["slug"] }) {
                   href={`/${o.slug}`}
                   className="group flex items-center justify-between border border-rule px-8 py-7 transition-colors duration-500 hover:bg-paper"
                 >
-                  <span className="font-serif text-[1.3rem] text-ink">
+                  <span className="font-sans font-bold tracking-[-0.01em] text-[1.15rem] text-ink">
                     {o.name}
                   </span>
                   <span className="eyebrow text-oxblood opacity-0 transition-opacity duration-500 group-hover:opacity-100">

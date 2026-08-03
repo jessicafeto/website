@@ -58,7 +58,7 @@ export default async function StudioPage() {
             {sections.map((s, i) => (
               <FadeUp key={s.h}>
                 <h2
-                  className={`font-serif text-[clamp(1.6rem,2.6vw,2.2rem)] leading-tight text-ink ${
+                  className={`font-sans font-bold tracking-[-0.01em] text-[clamp(1.4rem,2.3vw,1.9rem)] leading-tight text-ink ${
                     i === 0 ? "mt-4" : "mt-20"
                   }`}
                 >

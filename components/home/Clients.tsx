@@ -28,7 +28,7 @@ export default function Clients() {
               {CLIENTS.map((client) => (
                 <span
                   key={client}
-                  className="font-serif text-[1.2rem] leading-none text-light transition-colors duration-500 hover:text-ink"
+                  className="font-sans text-[1.05rem] leading-none text-light transition-colors duration-500 hover:text-ink"
                 >
                   {client}
                 </span>

@@ -22,7 +22,7 @@ export function LegalLayout({
         <div className="wrap pb-[clamp(4rem,10vh,8rem)] pt-[calc(82px+clamp(3rem,8vh,6rem))]">
           <div className="mx-auto max-w-[46rem]">
             <p className="eyebrow text-oxblood">{eyebrow}</p>
-            <h1 className="mt-6 font-serif leading-[1.08] text-ink text-[clamp(2.4rem,5vw,3.5rem)]">
+            <h1 className="mt-6 font-sans font-bold tracking-[-0.01em] leading-[1.12] text-ink text-[clamp(2rem,4.2vw,2.9rem)]">
               {title}
             </h1>
             <p className="eyebrow mt-5 text-grey">{updatedLabel}</p>
@@ -37,7 +37,7 @@ export function LegalLayout({
 
 export function H2({ children }: { children: ReactNode }) {
   return (
-    <h2 className="mt-14 font-serif leading-tight text-ink text-[clamp(1.5rem,2.6vw,2rem)]">
+    <h2 className="mt-14 font-sans font-bold tracking-[-0.01em] leading-tight text-ink text-[clamp(1.3rem,2.3vw,1.75rem)]">
       {children}
     </h2>
   );

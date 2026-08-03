@@ -43,7 +43,7 @@ export default function LanguagePopup() {
     >
       <div className="w-full max-w-sm border border-rule bg-paper px-10 py-12 text-center">
         <p className="eyebrow text-grey">noova</p>
-        <h2 className="mt-4 font-serif text-[1.7rem] leading-tight text-ink">
+        <h2 className="mt-4 font-sans font-bold tracking-[-0.01em] text-[1.45rem] leading-tight text-ink">
           Choose your language
         </h2>
         <p className="mt-1 font-serif italic text-[1.15rem] text-grey">

@@ -51,7 +51,7 @@ function Row({
   return (
     <div className="flex items-start justify-between gap-6 border-t border-rule py-5">
       <div>
-        <h3 className="font-serif text-[1.2rem] leading-tight text-ink">{name}</h3>
+        <h3 className="font-sans font-bold tracking-[-0.01em] text-[1.05rem] leading-tight text-ink">{name}</h3>
         <p className="mt-1.5 font-sans text-[0.9rem] leading-relaxed text-grey">
           {description}
         </p>
@@ -129,7 +129,7 @@ export default function PreferencesModal() {
 
             <h2
               id="cookie-prefs-title"
-              className="font-serif text-[1.9rem] leading-tight text-ink"
+              className="font-sans font-bold tracking-[-0.01em] text-[1.6rem] leading-tight text-ink"
             >
               {t("title")}
             </h2>

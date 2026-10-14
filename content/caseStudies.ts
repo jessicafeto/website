@@ -27,6 +27,7 @@ export type Block =
 export type Snapshot = {
   industry: string;
   services: string[];
+  /** Leave empty ("") to hide the Timeline column. */
   timeline: string;
   deliverables: string[];
 };
@@ -44,6 +45,7 @@ export type CaseStudy = {
 };
 
 export const CASE_ORDER: string[] = [
+  "solea",
   "intellimation",
   "seereen",
   "opa-taverne",

@@ -1,4 +1,107 @@
 {
+  "solea": {
+    "slug": "solea",
+    "name": "Soléa Aesthetics",
+    "category": "Brand Identity & Creative Direction",
+    "heroImage": "/img/solea/solea-hero.webp",
+    "overviewHeading": "A refined visual identity for a modern aesthetic clinic.",
+    "overview": "Soléa Aesthetics is a London clinic for subtle, natural-looking treatments. The brand had to earn trust before anyone books: calm and professional, but warm enough to feel personal. We built the identity around a custom-lettered wordmark with a delicate accent on the é, an interlaced SA monogram and an embossed pattern, set in a palette of ivory, stone, taupe, mocha and espresso. The system carries through the treatment menu, aftercare and appointment cards, packaging, social content and a London Underground campaign: Subtle enhancements. Real confidence.",
+    "snapshot": {
+      "industry": "Aesthetics & Beauty",
+      "services": [
+        "Brand Strategy",
+        "Visual Identity",
+        "Creative Direction",
+        "Social Media Art Direction"
+      ],
+      "timeline": "",
+      "deliverables": [
+        "Custom Wordmark",
+        "SA Monogram System",
+        "Brand Pattern",
+        "Colour & Type",
+        "Business Cards",
+        "Treatment Menu & Aftercare",
+        "Packaging",
+        "Social Templates",
+        "Campaign Concept"
+      ]
+    },
+    "blocks": [
+      {
+        "kind": "caption",
+        "label": "Identity",
+        "note": "Custom lettering, an interlaced SA monogram and an earthy palette: calm, reassuring and premium."
+      },
+      {
+        "kind": "duo",
+        "items": [
+          {
+            "src": "/img/solea/solea-01.webp",
+            "w": 1080,
+            "h": 1350
+          },
+          {
+            "src": "/img/solea/solea-02.webp",
+            "w": 1080,
+            "h": 1350
+          }
+        ]
+      },
+      {
+        "kind": "duo",
+        "items": [
+          {
+            "src": "/img/solea/solea-03.webp",
+            "w": 1080,
+            "h": 1350
+          },
+          {
+            "src": "/img/solea/solea-04.webp",
+            "w": 1080,
+            "h": 1350
+          }
+        ]
+      },
+      {
+        "kind": "caption",
+        "label": "In the world",
+        "note": "From a gloved hand holding the card to a poster on the Underground."
+      },
+      {
+        "kind": "portrait",
+        "src": "/img/solea/solea-05.webp",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "kind": "duo",
+        "items": [
+          {
+            "src": "/img/solea/solea-06.webp",
+            "w": 1080,
+            "h": 1350
+          },
+          {
+            "src": "/img/solea/solea-07.webp",
+            "w": 1080,
+            "h": 1350
+          }
+        ]
+      },
+      {
+        "kind": "portrait",
+        "src": "/img/solea/solea-08.webp",
+        "w": 1080,
+        "h": 1350
+      }
+    ],
+    "finalImage": {
+      "src": "/img/solea/solea-final.webp",
+      "w": 1254,
+      "h": 1254
+    }
+  },
   "355": {
     "slug": "355",
     "name": "355",

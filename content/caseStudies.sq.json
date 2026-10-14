@@ -1,4 +1,107 @@
 {
+  "solea": {
+    "slug": "solea",
+    "name": "Soléa Aesthetics",
+    "category": "Identitet Marke & Drejtim Kreativ",
+    "heroImage": "/img/solea/solea-hero.webp",
+    "overviewHeading": "Një identitet vizual i rafinuar për një klinikë moderne estetike.",
+    "overview": "Soléa Aesthetics është një klinikë në Londër për trajtime të holla, me rezultat natyral. Marka duhej të fitonte besimin përpara rezervimit: e qetë dhe profesionale, por mjaftueshëm e ngrohtë për t’u ndjerë personale. Identitetin e ndërtuam rreth një logoje me shkronja të personalizuara dhe një theks delikat mbi é, një monogrami SA të ndërthurur dhe një motivi të reliefuar, në një paletë fildishi, guri, taupe, moka dhe espreso. Sistemi shtrihet te menuja e trajtimeve, kartat e kujdesit pas trajtimit dhe të takimeve, paketimi, përmbajtja për rrjetet sociale dhe një fushatë në metronë e Londrës.",
+    "snapshot": {
+      "industry": "Estetikë & Bukuri",
+      "services": [
+        "Strategji Marke",
+        "Identitet Vizual",
+        "Drejtim Kreativ",
+        "Art Direction për Rrjetet Sociale"
+      ],
+      "timeline": "",
+      "deliverables": [
+        "Logo me shkronja të personalizuara",
+        "Sistemi i monogramit SA",
+        "Motivi i markës",
+        "Ngjyra & Tipografi",
+        "Karta biznesi",
+        "Menuja e trajtimeve & kujdesi pas trajtimit",
+        "Paketim",
+        "Shabllone për rrjetet sociale",
+        "Koncept fushate"
+      ]
+    },
+    "blocks": [
+      {
+        "kind": "caption",
+        "label": "Identiteti",
+        "note": "Shkronja të personalizuara, një monogram SA i ndërthurur dhe një paletë e tokës: e qetë, e besueshme dhe premium."
+      },
+      {
+        "kind": "duo",
+        "items": [
+          {
+            "src": "/img/solea/solea-01.webp",
+            "w": 1080,
+            "h": 1350
+          },
+          {
+            "src": "/img/solea/solea-02.webp",
+            "w": 1080,
+            "h": 1350
+          }
+        ]
+      },
+      {
+        "kind": "duo",
+        "items": [
+          {
+            "src": "/img/solea/solea-03.webp",
+            "w": 1080,
+            "h": 1350
+          },
+          {
+            "src": "/img/solea/solea-04.webp",
+            "w": 1080,
+            "h": 1350
+          }
+        ]
+      },
+      {
+        "kind": "caption",
+        "label": "Në botën reale",
+        "note": "Nga karta në një dorë me dorezë, te posteri në metro."
+      },
+      {
+        "kind": "portrait",
+        "src": "/img/solea/solea-05.webp",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "kind": "duo",
+        "items": [
+          {
+            "src": "/img/solea/solea-06.webp",
+            "w": 1080,
+            "h": 1350
+          },
+          {
+            "src": "/img/solea/solea-07.webp",
+            "w": 1080,
+            "h": 1350
+          }
+        ]
+      },
+      {
+        "kind": "portrait",
+        "src": "/img/solea/solea-08.webp",
+        "w": 1080,
+        "h": 1350
+      }
+    ],
+    "finalImage": {
+      "src": "/img/solea/solea-final.webp",
+      "w": 1254,
+      "h": 1254
+    }
+  },
   "355": {
     "heroImage": "/img/work-1.jpg",
     "snapshot": {

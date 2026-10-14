@@ -187,7 +187,9 @@ export default async function CaseStudyPage({ slug }: { slug: string }) {
             <div className="mx-auto grid max-w-[980px] grid-cols-2 gap-x-8 gap-y-12 text-center md:grid-cols-4">
               <SnapCol label={t("industry")} items={[cs.snapshot.industry]} />
               <SnapCol label={t("services")} items={cs.snapshot.services} />
-              <SnapCol label={t("timeline")} items={[cs.snapshot.timeline]} />
+              {cs.snapshot.timeline && (
+                <SnapCol label={t("timeline")} items={[cs.snapshot.timeline]} />
+              )}
               <SnapCol
                 label={t("deliverables")}
                 items={cs.snapshot.deliverables}

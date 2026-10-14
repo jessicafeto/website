@@ -3,6 +3,17 @@
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
 import CookieSettingsLink from "@/components/consent/CookieSettingsLink";
+import { aiPageVisible } from "@/content/aiApproach";
+
+/** Footer navigation — real routes, so the links work from every page. */
+const FOOTER_LINKS = [
+  { key: "home", href: "/" },
+  { key: "portfolio", href: "/#work" },
+  { key: "services", href: "/#welcome" },
+  { key: "studio", href: "/studio" },
+  { key: "ai", href: "/ai" },
+  { key: "contact", href: "/#contact" },
+] as const;
 
 /** Editorial footer — the back cover of the noova journal. */
 export default function Footer() {
@@ -57,45 +68,16 @@ export default function Footer() {
               </p>
 
               <div className="flex flex-col gap-3">
-                <a
-                  href="#hero"
-                  className="font-sans text-[0.92rem] transition-opacity duration-300 hover:opacity-100"
-                  style={{ color: "rgba(255,255,255,0.82)" }}
-                >
-                  {t("home")}
-                </a>
-
-                <a
-                  href="#welcome"
-                  className="font-sans text-[0.92rem] transition-opacity duration-300 hover:opacity-100"
-                  style={{ color: "rgba(255,255,255,0.82)" }}
-                >
-                  {t("services")}
-                </a>
-
-                <a
-                  href="#portfolio"
-                  className="font-sans text-[0.92rem] transition-opacity duration-300 hover:opacity-100"
-                  style={{ color: "rgba(255,255,255,0.82)" }}
-                >
-                  {t("portfolio")}
-                </a>
-
-                <a
-                  href="#journal"
-                  className="font-sans text-[0.92rem] transition-opacity duration-300 hover:opacity-100"
-                  style={{ color: "rgba(255,255,255,0.82)" }}
-                >
-                  {t("journal")}
-                </a>
-
-                <a
-                  href="#contact"
-                  className="font-sans text-[0.92rem] transition-opacity duration-300 hover:opacity-100"
-                  style={{ color: "rgba(255,255,255,0.82)" }}
-                >
-                  {t("contact")}
-                </a>
+                {FOOTER_LINKS.filter((l) => l.key !== "ai" || aiPageVisible()).map((l) => (
+                  <Link
+                    key={l.key}
+                    href={l.href}
+                    className="font-sans text-[0.92rem] transition-opacity duration-300 hover:opacity-100"
+                    style={{ color: "rgba(255,255,255,0.82)" }}
+                  >
+                    {t(l.key)}
+                  </Link>
+                ))}
               </div>
             </div>
 

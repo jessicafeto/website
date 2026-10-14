@@ -22,9 +22,9 @@
     "automationDesc": "CRM, workflows, chatbot-e, automatizim me AI dhe gjenerim kontaktesh, sisteme të ndërtuara për të mbështetur rritjen e biznesit."
   },
   "nav": {
-    "aboutStudio": "Rreth Studios",
-    "portfolio": "Portofoli",
-    "services": "Shërbimet",
+    "aboutStudio": "Studio",
+    "portfolio": "Puna",
+    "services": "Praktika",
     "contact": "Kontakt"
   },
   "meta": {
@@ -114,20 +114,21 @@
   "footer": {
     "contact": "Kontakt",
     "cookieSettings": "Cilësimet e Cookies",
-    "portfolio": "Portofoli",
+    "portfolio": "Puna",
     "privacy": "Politika e Privatësisë",
     "londonHeading": "Londër",
     "tiranaHeading": "Tiranë",
     "tagline": "noova është partneri kreativ për bizneset që kërkojnë më shumë se një logo.",
     "cookiePolicy": "Politika e Cookies",
     "rights": "© 2026 NOOVA. TË GJITHA TË DREJTAT E REZERVUARA.",
-    "journal": "Journal",
     "connectHeading": "Lidhuni me ne",
     "description": "Ne bashkojmë strategjinë, ndërtimin e markës, zhvillimin e uebsajteve, marketingun dhe automatizimin për të krijuar marka që pasqyrojnë vlerën e biznesit që përfaqësojnë.",
-    "services": "Shërbimet",
+    "services": "Praktika",
     "studioLabel": "STUDIO KREATIVE & TEKNOLOGJIE ",
     "home": "Kryefaqja",
-    "navHeading": "Navigim"
+    "navHeading": "Navigim",
+    "studio": "Studio",
+    "ai": "AI & gjykimi"
   },
   "offer": {
     "timeline": "Kohëzgjatja",

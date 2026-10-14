@@ -22,7 +22,7 @@ const SHOWN_KEY = "noova-return-shown"; // sessionStorage: greeted this session
 const LANG_COOKIE = "noova-lang-chosen";
 
 const OXBLOOD = "#5E1414";
-const ESPRESSO = "#2B1E17";
+const INK = "#1a1917";
 
 function store(kind: "local" | "session") {
   try {
@@ -152,7 +152,7 @@ export default function ReturnVisitPopup() {
         className={`relative w-full max-w-[26rem] bg-paper px-9 pb-10 pt-12 text-center shadow-[0_24px_60px_-20px_rgba(28,26,23,0.45)] sm:px-12 sm:pb-12 sm:pt-14 motion-safe:transition-transform motion-safe:duration-700 motion-safe:ease-[cubic-bezier(0.2,0.6,0.2,1)] ${
           visible ? "translate-y-0" : "motion-safe:translate-y-3"
         }`}
-        style={{ color: ESPRESSO }}
+        style={{ color: INK }}
       >
         {/* Hairline frame, inset — the editorial touch */}
         <span

@@ -9,7 +9,7 @@ const SERVICES = [
   { no: "01", title: "Brand", image: "/img/brand-solea.webp", descKey: "brandDesc", href: "/branding" },
   { no: "02", title: "Websites", image: "/img/websites-ame.webp", descKey: "websitesDesc", href: "/websites" },
   { no: "03", title: "Marketing", image: "/img/marketing.png", descKey: "growthDesc", href: "/marketing" },
-  { no: "04", title: "Automation", image: "/img/automation.png", descKey: "automationDesc", href: "/automation" },
+  { no: "04", title: "Automation", image: "/img/automation-flow.webp", descKey: "automationDesc", href: "/automation" },
 ] as const;
 
 export default function Belief() {

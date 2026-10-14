@@ -45,9 +45,9 @@ export default function SiteHeader() {
         </Link>
 
         <div className="site-header__links">
-          <Link href="/studio">{t("aboutStudio")}</Link>
           <Link href="/#work">{t("portfolio")}</Link>
           <Link href="/#welcome">{t("services")}</Link>
+          <Link href="/studio">{t("aboutStudio")}</Link>
         </div>
 
         <div className="flex items-center gap-5">

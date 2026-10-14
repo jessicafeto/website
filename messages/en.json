@@ -22,9 +22,9 @@
     "automationDesc": "Lead generation, CRM and AI workflows — the systems that make growth run itself."
   },
   "nav": {
-    "aboutStudio": "About the Studio",
-    "portfolio": "Portfolio",
-    "services": "Services",
+    "aboutStudio": "Studio",
+    "portfolio": "Work",
+    "services": "Practice",
     "contact": "Contact"
   },
   "meta": {
@@ -114,20 +114,21 @@
   "footer": {
     "contact": "Contact",
     "cookieSettings": "Cookie Settings",
-    "portfolio": "Portfolio",
+    "portfolio": "Work",
     "privacy": "Privacy Policy",
     "londonHeading": "London",
     "tiranaHeading": "Tirana",
     "tagline": "noova is a creative partner for businesses that have outgrown their own image.",
     "cookiePolicy": "Cookie Policy",
     "rights": "© 2026 NOOVA. ALL RIGHTS RESERVED.",
-    "journal": "Journal",
     "connectHeading": "Connect",
     "description": "We start with what a business truly is, then build everything around it — strategy, branding, websites, marketing and intelligent systems in one coherent practice. The result is a brand that finally matches the business behind it.",
-    "services": "Services",
+    "services": "Practice",
     "studioLabel": "BRAND & INNOVATION STUDIO",
     "home": "Home",
-    "navHeading": "Navigation"
+    "navHeading": "Navigation",
+    "studio": "Studio",
+    "ai": "AI & judgement"
   },
   "offer": {
     "timeline": "Duration",

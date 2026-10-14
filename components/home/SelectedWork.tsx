@@ -14,11 +14,7 @@ import { FadeUp } from "./Motion";
 const PROJECTS = [
   { no: "01", meta: "metaSolea", name: "Soléa Aesthetics", slug: "solea", img: "/img/solea/solea-hero.webp", span: "lg:col-span-12", aspect: "aspect-[4/5] lg:aspect-[16/9]", offset: "lg:mb-16" },
   { no: "02", meta: "meta01", name: "intellimation.ai", slug: "intellimation", img: "/img/iai 4.png", span: "lg:col-span-7", aspect: "aspect-[4/3]", offset: "" },
-  { no: "03", meta: "meta02", name: "Seereen", slug: "seereen", img: "/img/seereen 1.png", span: "lg:col-span-5", aspect: "aspect-[4/5]", offset: "lg:mt-32" },
-  { no: "04", meta: "meta03", name: "Opa Taverne", slug: "opa-taverne", img: "/img/work-2.jpg", span: "lg:col-span-5", aspect: "aspect-[3/4]", offset: "" },
-  { no: "05", meta: "meta04", name: "AMË", slug: "ame", img: "/img/work-3.jpg", span: "lg:col-span-7", aspect: "aspect-[3/4]", offset: "lg:mt-20" },
-  { no: "06", meta: "meta05", name: "355", slug: "355", img: "/img/work-1.jpg", span: "lg:col-span-6", aspect: "aspect-[4/5]", offset: "lg:mt-10" },
-  { no: "07", meta: "meta06", name: "HER CLUB", slug: "her-club", img: "/img/problem.jpg", span: "lg:col-span-6", aspect: "aspect-[4/5]", offset: "" },
+  { no: "03", meta: "meta04", name: "AMË", slug: "ame", img: "/img/work-3.jpg", span: "lg:col-span-5", aspect: "aspect-[4/5]", offset: "lg:mt-32" },
 ] as const;
 
 export default function SelectedWork() {

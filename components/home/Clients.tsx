@@ -11,10 +11,6 @@ import { FadeUp } from "./Motion";
 const CLIENTS = [
   "Soléa Aesthetics",
   "intellimation.ai",
-  "Seereen",
-  "Opa Taverne",
-  "355",
-  "The Her Club",
 ];
 
 export default function Clients() {

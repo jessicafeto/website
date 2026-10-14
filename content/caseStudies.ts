@@ -44,15 +44,12 @@ export type CaseStudy = {
   finalImage?: Img;
 };
 
-export const CASE_ORDER: string[] = [
-  "solea",
-  "intellimation",
-  "seereen",
-  "opa-taverne",
-  "ame",
-  "355",
-  "her-club",
-];
+/**
+ * The projects shown on the site, in order. Only these slugs get a page;
+ * others stay in the JSON (seereen, opa-taverne, 355, her-club are paused)
+ * and can be brought back by adding their slug here and to SelectedWork.
+ */
+export const CASE_ORDER: string[] = ["solea", "intellimation", "ame"];
 
 const CASES_EN = casesEnData as unknown as Record<string, CaseStudy>;
 const CASES_SQ = casesSqData as unknown as Record<string, CaseStudy>;

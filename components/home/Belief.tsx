@@ -6,10 +6,10 @@ import { Link } from "@/i18n/navigation";
 import { FadeUp } from "./Motion";
 
 const SERVICES = [
-  { title: "BRAND", image: "/img/brand.png", descKey: "brandDesc", href: "/branding" },
-  { title: "WEBSITES", image: "/img/website.png", descKey: "websitesDesc", href: "/websites" },
-  { title: "MARKETING", image: "/img/marketing.png", descKey: "growthDesc", href: "/marketing" },
-  { title: "AUTOMATION", image: "/img/automation.png", descKey: "automationDesc", href: "/automation" },
+  { no: "01", title: "Brand", image: "/img/brand-solea.webp", descKey: "brandDesc", href: "/branding" },
+  { no: "02", title: "Websites", image: "/img/website.png", descKey: "websitesDesc", href: "/websites" },
+  { no: "03", title: "Marketing", image: "/img/marketing.png", descKey: "growthDesc", href: "/marketing" },
+  { no: "04", title: "Automation", image: "/img/automation.png", descKey: "automationDesc", href: "/automation" },
 ] as const;
 
 export default function Belief() {
@@ -39,12 +39,23 @@ export default function Belief() {
           </p>
         </FadeUp>
 
-        {/* Cards */}
+        {/* Practice index — numbered, editorial: a hairline, the number, the name */}
         <FadeUp delay={0.35}>
-          <div className="mt-20 grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
+          <div className="mt-20 grid gap-x-8 gap-y-14 sm:grid-cols-2 lg:grid-cols-4">
             {SERVICES.map((item) => (
-              <Link key={item.title} href={item.href} className="group block">
-                <div className="overflow-hidden border border-rule">
+              <Link
+                key={item.title}
+                href={item.href}
+                className="group block border-t border-ink/80 pt-5"
+              >
+                <div className="flex items-baseline gap-4">
+                  <span className="eyebrow text-oxblood">{item.no}</span>
+                  <h3 className="font-serif italic leading-none text-ink text-[clamp(1.9rem,2.4vw,2.4rem)] transition-colors duration-500 group-hover:text-oxblood">
+                    {item.title}
+                  </h3>
+                </div>
+
+                <div className="mt-7 overflow-hidden">
                   <Image
                     src={item.image}
                     alt={item.title}
@@ -55,11 +66,7 @@ export default function Belief() {
                   />
                 </div>
 
-                <h3 className="mt-8 eyebrow text-ink transition-colors duration-500 group-hover:text-oxblood">
-                  {item.title} →
-                </h3>
-
-                <p className="mt-5 font-sans text-[1rem] leading-relaxed text-grey">
+                <p className="mt-6 font-sans text-[1rem] leading-relaxed text-grey">
                   {t(item.descKey)}
                 </p>
               </Link>

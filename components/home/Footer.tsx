@@ -3,7 +3,6 @@
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
 import CookieSettingsLink from "@/components/consent/CookieSettingsLink";
-import { aiPageVisible } from "@/content/aiApproach";
 
 /** Footer navigation — real routes, so the links work from every page. */
 const FOOTER_LINKS = [
@@ -11,7 +10,6 @@ const FOOTER_LINKS = [
   { key: "portfolio", href: "/#work" },
   { key: "services", href: "/#welcome" },
   { key: "studio", href: "/studio" },
-  { key: "ai", href: "/ai" },
   { key: "contact", href: "/#contact" },
 ] as const;
 
@@ -68,7 +66,7 @@ export default function Footer() {
               </p>
 
               <div className="flex flex-col gap-3">
-                {FOOTER_LINKS.filter((l) => l.key !== "ai" || aiPageVisible()).map((l) => (
+                {FOOTER_LINKS.map((l) => (
                   <Link
                     key={l.key}
                     href={l.href}
@@ -197,6 +195,14 @@ export default function Footer() {
             {t("studioLabel")}
           </p>
         </div>
+
+        {/* AI disclosure — one plain line */}
+        <p
+          className="mt-8 text-center font-sans text-[0.75rem] leading-relaxed"
+          style={{ color: "rgba(255,255,255,0.45)" }}
+        >
+          {t("aiNote")}
+        </p>
       </div>
     </footer>
   );

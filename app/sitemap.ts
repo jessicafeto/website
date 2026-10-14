@@ -1,7 +1,6 @@
 import type { MetadataRoute } from "next";
 import { routing } from "@/i18n/routing";
 import { CASE_ORDER } from "@/content/caseStudies";
-import { AI_PAGE_PUBLISHED } from "@/content/aiApproach";
 
 const BASE_URL = "https://noovadata.com";
 
@@ -18,7 +17,6 @@ const PATHS = [
   "/privacy",
   "/cookies",
   ...CASE_ORDER.map((slug) => `/work/${slug}`),
-  ...(AI_PAGE_PUBLISHED ? ["/ai"] : []),
 ];
 
 function localizedUrl(locale: string, path: string) {

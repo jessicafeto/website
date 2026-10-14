@@ -13,8 +13,8 @@ export default function Hero() {
   return (
     <section className="hero" aria-label="noova">
       <Image
-        src="/hero/hero-studio-hires.jpg"
-        alt="A founder at work in a calm, material-led studio — daylight across concrete, travertine and printed matter."
+        src="/hero/hero-gallery.jpg"
+        alt="A founder walks through a quiet concrete gallery — window light falling across travertine, books and steel."
         fill
         priority
         sizes="100vw"

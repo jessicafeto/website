@@ -170,7 +170,7 @@ p {
 }
 .hero-media {
   object-fit: cover;
-  object-position: 50% 42%; /* subject is centred; hold her through the crop */
+  object-position: 50% 52%; /* hold the walking figure; window rhythm left */
   filter: contrast(1.04) saturate(1.02); /* counter upscale softness, gently */
 }
 /* Film grain — masks softness, adds editorial texture (Vol II: grain like paper).

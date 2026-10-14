@@ -7,18 +7,6 @@ import EnquiryForm from "@/components/EnquiryForm";
 import { FadeUp } from "@/components/home/Motion";
 import { getOffer, OFFER_ORDER, type Offer } from "@/content/offers";
 
-/** One entry in the Timeline / Booking / Investment meta row. */
-function Meta({ label, value }: { label: string; value: string }) {
-  return (
-    <div>
-      <p className="eyebrow text-grey">{label}</p>
-      <p className="mt-3 font-sans text-[0.9rem] font-bold uppercase tracking-[0.14em] text-ink">
-        {value}
-      </p>
-    </div>
-  );
-}
-
 /**
  * The template shared by all three engagement pages (/branding, /websites,
  * /marketing), in both locales. Content comes from content/offers.ts (per
@@ -80,98 +68,100 @@ export default async function OfferPage({ slug }: { slug: Offer["slug"] }) {
           </div>
         </section>
 
-        {/* What it is + meta row (Timeline · Booking · Investment) */}
+        {/* In short — the offer in one considered paragraph */}
         <section className="border-y border-rule py-[clamp(4rem,10vh,7rem)]">
           <div className="wrap">
-            <div className="mx-auto grid max-w-5xl gap-12 lg:grid-cols-[1.5fr_1fr] lg:gap-20">
-              <div>
-                <FadeUp>
-                  <p className="eyebrow text-grey">
-                    {t("whatIs", { name: offer.name })}
-                  </p>
-                </FadeUp>
-                <FadeUp delay={0.1}>
-                  <p className="mt-6 whitespace-pre-line font-sans font-light text-ink text-[clamp(1rem,1.6vw,1.25rem)] leading-[1.7]">
-                    {offer.shift.body}
-                  </p>
-                </FadeUp>
-              </div>
-              <FadeUp delay={0.16}>
-                <div className="flex flex-col gap-8 border-t border-rule pt-8 lg:h-full lg:justify-center lg:border-l lg:border-t-0 lg:pl-16 lg:pt-0">
-                  <Meta label={t("timeline")} value={offer.cadence} />
-                  <Meta label={t("booking")} value={offer.booking} />
-                  <Meta label={t("investment")} value={offer.tiers[0].price} />
-                </div>
+            <div className="mx-auto max-w-3xl">
+              <FadeUp>
+                <p className="eyebrow text-grey">
+                  {t("whatIs", { name: offer.name })}
+                </p>
+              </FadeUp>
+              <FadeUp delay={0.1}>
+                <p className="mt-6 whitespace-pre-line font-sans font-light text-ink text-[clamp(1rem,1.6vw,1.25rem)] leading-[1.7]">
+                  {offer.shift.body}
+                </p>
               </FadeUp>
             </div>
           </div>
         </section>
 
-        {/* Packages */}
+        {/* Packages — a numbered price index, read top to bottom */}
         <section className="wrap py-[clamp(5rem,12vh,8rem)]">
           <div className="mx-auto max-w-5xl">
             <FadeUp>
               <p className="eyebrow text-grey">{t("packages")}</p>
-              <p className="mt-4 max-w-[46ch] font-sans text-[0.95rem] leading-[1.7] text-light">
+              <p className="mt-4 max-w-[46ch] font-sans text-[0.95rem] leading-[1.7] text-grey">
                 {t("packagesIntro")}
+              </p>
+              <p className="mt-6 font-sans text-[0.85rem] text-ink">
+                <span className="text-grey">{t("timeline")}:</span> {offer.cadence}
+                <span className="mx-3 text-light" aria-hidden>
+                  ·
+                </span>
+                <span className="text-grey">{t("booking")}:</span> {offer.booking}
               </p>
             </FadeUp>
 
-            <div className="mt-12 grid gap-6 md:grid-cols-3">
+            <ol className="mt-14">
               {offer.tiers.map((tier, i) => (
-                <FadeUp key={tier.name} delay={i * 0.08}>
-                  <div
-                    className={`flex h-full flex-col border p-8 ${
-                      tier.featured ? "border-oxblood bg-paper" : "border-rule"
-                    }`}
-                  >
-                    <div className="flex items-baseline justify-between">
-                      <h3 className="font-sans font-bold tracking-[-0.01em] text-[1.3rem] text-ink">
+                <FadeUp
+                  key={tier.name}
+                  as="li"
+                  delay={i * 0.06}
+                  className="grid gap-6 border-t border-ink/80 py-10 md:grid-cols-[5.5rem_1fr_13rem] md:gap-10"
+                >
+                    <span className="eyebrow pt-2 text-oxblood">
+                      No. {String(i + 1).padStart(2, "0")}
+                    </span>
+
+                    <div>
+                      <h3 className="font-serif italic leading-none text-ink text-[clamp(2rem,3vw,2.6rem)]">
                         {tier.name}
+                        {tier.featured && (
+                          <span className="eyebrow ml-4 align-middle text-oxblood not-italic">
+                            {t("mostChosen")}
+                          </span>
+                        )}
                       </h3>
-                      {tier.featured && (
-                        <span className="font-sans text-[0.65rem] uppercase tracking-[0.18em] text-oxblood">
-                          {t("mostChosen")}
-                        </span>
-                      )}
-                    </div>
-                    <p className="mt-2 font-sans text-[1.1rem] text-oxblood">
-                      {tier.price}
-                    </p>
-                    <p className="mt-4 font-sans text-[0.95rem] leading-[1.7] text-grey">
-                      {tier.summary}
-                    </p>
-                    <div className="mt-6 border-t border-rule pt-6">
+                      <p className="mt-4 max-w-[52ch] font-sans text-[0.98rem] leading-[1.7] text-grey">
+                        {tier.summary}
+                      </p>
                       {tier.builds && (
-                        <p className="mb-4 font-serif italic text-[0.95rem] text-ink">
+                        <p className="mt-6 font-serif italic text-[1rem] text-ink">
                           {t("everythingIn", { builds: tier.builds })}
                         </p>
                       )}
-                      <ul className="space-y-2.5">
-                        {tier.scope.map((s) => (
+                      <ul className="mt-4 grid gap-x-10 gap-y-2 sm:grid-cols-2">
+                        {tier.scope.map((item) => (
                           <li
-                            key={s}
-                            className="flex gap-2.5 font-sans text-[0.9rem] leading-relaxed text-grey"
+                            key={item}
+                            className="flex gap-3 font-sans text-[0.92rem] leading-relaxed text-grey"
                           >
                             <span
-                              className="mt-[0.5em] h-[3px] w-[3px] flex-none rounded-full bg-oxblood"
+                              className="mt-[0.7em] h-px w-3 flex-none bg-oxblood"
                               aria-hidden
                             />
-                            <span>{s}</span>
+                            <span>{item}</span>
                           </li>
                         ))}
                       </ul>
                     </div>
-                    <a
-                      href="#enquire"
-                      className="eyebrow mt-8 inline-block text-oxblood transition-opacity duration-500 hover:opacity-60"
-                    >
-                      {t("enquireShort")}
-                    </a>
-                  </div>
+
+                    <div className="flex flex-col items-start gap-4 md:items-end md:text-right">
+                      <p className="font-sans text-[1.15rem] tracking-[-0.01em] text-ink">
+                        {tier.price}
+                      </p>
+                      <a
+                        href="#enquire"
+                        className="eyebrow text-oxblood transition-opacity duration-500 hover:opacity-60"
+                      >
+                        {t("enquireShort")}
+                      </a>
+                    </div>
                 </FadeUp>
               ))}
-            </div>
+            </ol>
           </div>
         </section>
 

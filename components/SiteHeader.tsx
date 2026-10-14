@@ -45,9 +45,19 @@ export default function SiteHeader() {
         </Link>
 
         <div className="site-header__links">
-          <Link href="/#work">{t("portfolio")}</Link>
-          <Link href="/#welcome">{t("services")}</Link>
-          <Link href="/studio">{t("aboutStudio")}</Link>
+          {/* Indexed like the practice cards — noova's numbering system */}
+          <Link href="/#work">
+            <span className="site-header__no" aria-hidden>01</span>
+            {t("portfolio")}
+          </Link>
+          <Link href="/#welcome">
+            <span className="site-header__no" aria-hidden>02</span>
+            {t("services")}
+          </Link>
+          <Link href="/studio">
+            <span className="site-header__no" aria-hidden>03</span>
+            {t("aboutStudio")}
+          </Link>
         </div>
 
         <div className="flex items-center gap-5">

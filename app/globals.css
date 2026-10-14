@@ -378,6 +378,12 @@ p {
 .site-header__links a:hover {
   opacity: 0.5;
 }
+.site-header__no {
+  color: var(--color-oxblood);
+  font-size: 9.5px;
+  letter-spacing: 0.12em;
+  margin-right: 0.7em;
+}
 @media (max-width: 720px) {
   .site-header__links {
     display: none;

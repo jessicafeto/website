@@ -10,17 +10,17 @@ import Footer from "./Footer";
 
 /**
  * Everything below the hero — read like a printed journal:
- * belief → the problem → the founder → what we build → proof →
- * (the wax-seal opening) → the Journal → the invitation.
+ * what we build → the work → who we've worked with → the founder →
+ * the invitation.
  */
 export default function Home() {
   return (
     <MotionConfig reducedMotion="user">
       <main>
         <Belief />
+        <SelectedWork />
         <Clients />
         <Founder />
-        <SelectedWork />
         <Invitation />
       </main>
       <Footer />

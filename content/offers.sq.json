@@ -96,26 +96,26 @@
     "cadence": "6–8 javë",
     "headline": "Një markë që më në fund përputhet me biznesin që qëndron pas saj.",
     "booking": "Vende të kufizuara.",
-    "offer": "Një proces i plotë për ndërtimin e markës, që zgjat 6–8 javë, me strategji, drejtim kreativ dhe një sistem identiteti vizual, i krijuar për ta lançuar markën tuaj me qartësi, besim dhe një prani premium.",
+    "offer": "Gjashtë deri në tetë javë për ta ndërtuar markën si duhet: nisim nga ajo që është biznesi dhe për kë është, pastaj vendosim strategjinë, drejtimin kreativ dhe një sistem të plotë identiteti, gati për lançim.",
     "faqs": [
       {
-        "q": "A mund t'i personalizoj ose kombinoj paketat?",
+        "q": "A është fiks fushëveprimi?",
         "a": "Po. Paketat janë pika nisjeje. Gjatë bisedës së parë përcaktojmë së bashku shërbimet që i duhen vërtet biznesit tuaj, në mënyrë që të paguani vetëm për atë që ju nevojitet."
       },
       {
-        "q": "Si funksionon pagesa?",
+        "q": "Cilat janë kushtet e pagesës?",
         "a": "Një depozitë prej 50% rezervon datën e nisjes. Pjesa tjetër paguhet përpara dorëzimit. Për projekte më të mëdha, mund të dakordësojmë një plan pagese."
       },
       {
-        "q": "Sa zgjat?",
+        "q": "Kur do të jetë gati?",
         "a": "Kohëzgjatja varet nga paketa. Një projekt Signature zakonisht përfundon brenda 6–8 javësh, në varësi të kompleksitetit dhe ritmit të bashkëpunimit."
       },
       {
-        "q": "Çfarë ju nevojitet nga unë për të nisur?",
+        "q": "Çfarë duhet të përgatis?",
         "a": "Mjafton të ndani me ne biznesin, objektivat dhe çdo material ekzistues. Ne ju udhëheqim gjatë gjithë procesit."
       },
       {
-        "q": "Çfarë ndodh pas lançimit?",
+        "q": "Po pasi të dalë live?",
         "a": "Pas dorëzimit, merrni të gjitha skedarët, udhëzuesin e markës dhe gjithçka që ju nevojitet për ta përdorur markën me besim. Paketa Bespoke përfshin edhe mbështetje pas lançimit."
       }
     ]
@@ -218,7 +218,7 @@
     "cadence": "4–8 javë",
     "headline": "Një uebsajt që pasqyron markën tuaj.",
     "booking": "Vende të kufizuara.",
-    "offer": "Një proces 4–8 javor për krijimin e një uebsajti të menduar në çdo detaj, me dizajn të qëllimshëm, strukturë strategjike dhe një përvojë përdoruesi të rafinuar.",
+    "offer": "Katër deri në tetë javë për të dizajnuar dhe ndërtuar një uebsajt që e mbart markën tuaj si duhet: strukturë e qartë, dizajn editorial dhe ndërtim i shpejtë në Webflow që mund ta menaxhoni vetë.",
     "faqs": [
       {
         "q": "Në cilën platformë ndërtoni?",
@@ -229,15 +229,15 @@
         "a": "Po. Paketat Signature dhe Bespoke përfshijnë CMS dhe një udhëzim të thjeshtë, që të mund ta përditësoni përmbajtjen pa ndihmën e një programuesi."
       },
       {
-        "q": "Si funksionon pagesa?",
+        "q": "Cilat janë kushtet e pagesës?",
         "a": "Një depozitë prej 50% rezervon projektin tuaj. Pjesa tjetër paguhet para lançimit. Për projekte më të mëdha, mund të dakordësojmë pagesa me këste."
       },
       {
-        "q": "Sa zgjat një uebsajt?",
+        "q": "Kur do të jetë gati?",
         "a": "Zakonisht 4 deri në 8 javë, në varësi të paketës dhe sa gati është përmbajtja juaj."
       },
       {
-        "q": "A ofroni mbështetje të vazhdueshme?",
+        "q": "A kujdeseni për të më pas?",
         "a": "Po. Çdo projekt përfshin 2 javë mbështetje pas lançimit. Nëse keni nevojë, ofrojmë edhe mirëmbajtje të vazhdueshme."
       }
     ]
@@ -385,7 +385,7 @@
         "a": "Po. Kërkojmë një angazhim minimal prej tre muajsh, që strategjia të ketë kohë të japë rezultate."
       },
       {
-        "q": "Si funksionon pagesa?",
+        "q": "Cilat janë kushtet e pagesës?",
         "a": "Pagesa bëhet në fillim të çdo muaji. Paketën mund ta ndryshoni ose ta anuloni me një muaj njoftim paraprak."
       },
       {

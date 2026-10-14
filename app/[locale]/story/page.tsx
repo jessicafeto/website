@@ -61,10 +61,10 @@ export default function StoryPage() {
           <div className="wrap">
             <div className="mx-auto max-w-[34rem]">
               <Image
-                src="/img/founder.JPEG"
+                src="/img/founder-studio.webp"
                 alt="Jessica Feto, founder of noova, at work in the studio."
-                width={1206}
-                height={1532}
+                width={1122}
+                height={1402}
                 priority
                 sizes="(max-width: 768px) 100vw, 34rem"
                 className="h-auto w-full"
@@ -103,7 +103,7 @@ export default function StoryPage() {
             <FadeUp>
               <H>One continuous mind</H>
               <P>
-                My path was never linear. I trained as a computer engineer, then
+                I didn&rsquo;t arrive by the usual route. I trained as a computer engineer, then
                 took a Master&rsquo;s in data science, before finding my way into
                 branding and marketing across startups, technology companies and
                 growth teams. Engineering taught me to think in systems and
@@ -147,7 +147,7 @@ export default function StoryPage() {
                 and where quality is made to outlast trend.
               </P>
               <P>
-                So noova builds brands from the inside out. Not by decorating
+                So noova starts beneath the surface. Not by decorating
                 the surface, but by beginning with what a business truly is, and
                 letting everything visible grow from there. Coherence, never
                 decoration. The result isn&rsquo;t a new look. It&rsquo;s a

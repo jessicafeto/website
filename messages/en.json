@@ -14,8 +14,8 @@
   },
   "welcome": {
     "label": "WHAT WE BUILD",
-    "heading": "More than a logo. A partner in growth.",
-    "intro": "noova is a creative studio combining strategy, branding, websites, marketing and intelligent systems into one coherent practice. Every decision is connected. Every touchpoint is designed together. Nothing feels bolted on.",
+    "heading": "One studio. Every part of the brand.",
+    "intro": "noova is a creative studio where strategy, branding, websites, marketing and intelligent systems are made together — by the same people, from the same brief — so the whole business finally reads as one.",
     "brandDesc": "Strategy, identity and creative direction that give businesses a clear foundation.",
     "websitesDesc": "Editorial websites designed with clarity, precision and performance in mind.",
     "growthDesc": "Marketing, content and campaigns that build visibility, demand and lasting momentum.",
@@ -29,11 +29,11 @@
   },
   "meta": {
     "title": "noova — Marketing, Websites, Branding & Automation · London",
-    "description": "noova is a creative studio combining strategy, branding, websites, marketing and intelligent systems into one coherent practice. Every decision is connected. Every touchpoint is designed together. Nothing feels bolted on.",
-    "ogDescription": "We build brands from the inside out. For businesses that have outgrown their own image."
+    "description": "noova is a London creative studio where strategy, branding, websites, marketing and intelligent systems are made together, so the whole business finally reads as one.",
+    "ogDescription": "Understood first, designed second. For businesses that have outgrown their own image."
   },
   "clients": {
-    "label": "Selected clients"
+    "label": "In good company"
   },
   "cookieModal": {
     "closeAria": "Close cookie preferences",
@@ -53,13 +53,13 @@
     "essentialDesc": "Required for the site to function — remembering your choices and keeping things secure. Always on."
   },
   "founder": {
-    "label": "ABOUT THE FOUNDER",
-    "headingA": "Meet Jessica,",
-    "headingB": "founder of noova.",
+    "label": "THE FOUNDER",
+    "headingA": "Engineer by training.",
+    "headingB": "Brand builder by choice.",
     "p1": "My career began in computer engineering and later expanded into data science, marketing and technology. Working across startups, AI companies and growth teams taught me that most businesses don't have a design problem, they have a clarity problem.",
     "p2": "That's why I founded noova.",
-    "p3": "Today I help ambitious businesses build from the inside out, bringing together strategy, identity, websites, marketing and intelligent systems into one connected practice. Every decision has a purpose. Every detail works together.",
-    "cta": "Read the story →"
+    "p3": "Today I bring strategy, identity, websites, marketing and intelligent systems together for ambitious businesses — one connected practice, so nothing is designed in isolation.",
+    "cta": "The longer version →"
   },
   "cookieBanner": {
     "title": "A note on cookies",
@@ -83,7 +83,7 @@
     "p2": "Businesses of real quality are rarely broken — they're scattered, their best work spread across parts that were never designed to work together. We don't decorate; we clarify. Strategy, identity, words, websites and technology are built as one coherent system, in one room, rather than handed between departments.",
     "p3": "The result isn't a new look. It's a brand that finally matches the business behind it — built to last, not to trend. A single, considered world across every touchpoint.",
     "p4": "noova works between London and Tirana — two cities, one level of care. Wherever a project begins, it's held to the same rigour and the same restraint.",
-    "h1": "We build brands from the inside out.",
+    "h1": "We understand a business before we design it.",
     "eyebrow": "The Studio",
     "h2": "One practice, not separate departments.",
     "h3": "Coherence, never decoration.",
@@ -93,7 +93,7 @@
     "metaTitle": "About the Studio",
     "headline": "A creative partner for businesses that have outgrown their own image.",
     "metaDesc": "noova is a studio between London and Tirana, uniting strategy, branding, websites, marketing and intelligent systems into one coherent practice.",
-    "storyCta": "Meet the founder →"
+    "storyCta": "The founder's story →"
   },
   "caseStudy": {
     "theProject": "The Project",
@@ -123,14 +123,14 @@
     "rights": "© 2026 NOOVA. ALL RIGHTS RESERVED.",
     "journal": "Journal",
     "connectHeading": "Connect",
-    "description": "We build brands from the inside out—bringing together strategy, branding, websites, marketing and intelligent systems into one coherent practice. The result is a brand that finally matches the business behind it.",
+    "description": "We start with what a business truly is, then build everything around it — strategy, branding, websites, marketing and intelligent systems in one coherent practice. The result is a brand that finally matches the business behind it.",
     "services": "Services",
     "studioLabel": "BRAND & INNOVATION STUDIO",
     "home": "Home",
     "navHeading": "Navigation"
   },
   "offer": {
-    "timeline": "Timeline",
+    "timeline": "Duration",
     "form": {
       "business": "Business & industry",
       "timeline": "Ideal timeline",
@@ -148,19 +148,19 @@
     "faqHeading": "Questions worth asking.",
     "packages": "Packages",
     "enquireShort": "Enquire →",
-    "whatIs": "What is {name}?",
+    "whatIs": "{name}, in short",
     "enquireHeading": "Enquire about {name}.",
-    "investment": "Investment",
+    "investment": "Starting point",
     "mostChosen": "Most chosen",
     "location": "London · United Kingdom",
-    "startProject": "Start your project →",
+    "startProject": "Let's talk →",
     "everythingIn": "Everything in {builds}, plus:",
-    "booking": "Booking",
-    "glimpseLabel": "A glimpse into selected work",
+    "booking": "Availability",
+    "glimpseLabel": "See it in practice",
     "enquireIntro": "Tell us a little about your business and where you'd like to begin. We reply to every enquiry personally, within two working days.",
     "howItUnfolds": "How it unfolds",
     "packagesIntro": "Three ways to begin. Every engagement is tailored — these are starting points, and the right scope is agreed in conversation.",
-    "viewProjects": "View selected projects →"
+    "viewProjects": "Browse the work →"
   },
   "services": {
     "label": "WHAT WE BUILD",
@@ -238,5 +238,11 @@
         ]
       }
     ]
+  },
+  "returnPopup": {
+    "close": "Close",
+    "headline": "Back for more?",
+    "text": "We must be doing something right.",
+    "button": "Take a look around"
   }
 }

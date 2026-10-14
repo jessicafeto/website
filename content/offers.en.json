@@ -6,7 +6,7 @@
     "heroImage": "/hero/branding.jpg",
     "heroAlt": "Brand guidelines, paper stocks and typography samples laid across a studio table.",
     "headline": "A brand that finally matches the business behind it.",
-    "offer": "A six-to-eight-week, end-to-end brand build — complete strategy, creative direction, and a visual identity system — designed to launch your brand with clarity, confidence, and a luxury presence.",
+    "offer": "Six to eight weeks to build your brand properly: we start with what the business is and who it's for, then set the strategy, the creative direction and a complete identity system, ready to launch.",
     "cadence": "6–8 weeks",
     "booking": "Limited monthly availability",
     "shift": {
@@ -99,23 +99,23 @@
     ],
     "faqs": [
       {
-        "q": "Can I customise or mix the packages?",
+        "q": "Is the scope fixed?",
         "a": "Yes. The tiers are starting points — we shape the exact scope together in our first conversation, so you only pay for what your brand genuinely needs."
       },
       {
-        "q": "How does payment work?",
+        "q": "What are the payment terms?",
         "a": "A 50% deposit secures your start date; the balance is due before launch. For larger projects we can split it further."
       },
       {
-        "q": "How long does it take?",
+        "q": "When will it be ready?",
         "a": "A full Signature build usually runs six to eight weeks, depending on scope and how quickly feedback comes back."
       },
       {
-        "q": "What do you need from me to begin?",
+        "q": "What should I prepare?",
         "a": "An introduction to your business, your goals, and any existing materials. We guide every step from there."
       },
       {
-        "q": "What happens after launch?",
+        "q": "And once it's live?",
         "a": "You receive every file and the brand guidelines, plus a walkthrough. Bespoke adds ongoing post-launch support."
       }
     ]
@@ -127,7 +127,7 @@
     "heroImage": "/hero/websites.jpg",
     "heroAlt": "A wall of pinned editorial layouts and case-study pages in the noova studio.",
     "headline": "A website as considered as the brand behind it.",
-    "offer": "A refined four-to-eight-week digital build that transforms your brand into an elevated, seamless website — crafted with intentional design, strategic structure, and a world-class user experience.",
+    "offer": "Four to eight weeks to design and build a website that carries your brand properly — clear structure, editorial design and a fast Webflow build you can run yourself.",
     "cadence": "4–8 weeks",
     "booking": "Limited monthly availability",
     "shift": {
@@ -229,15 +229,15 @@
         "a": "Yes. Signature and above include a CMS and a walkthrough, so you can add posts and edit content without a developer."
       },
       {
-        "q": "How does payment work?",
+        "q": "What are the payment terms?",
         "a": "A 50% deposit books your slot; the balance is due before launch."
       },
       {
-        "q": "How long does a website take?",
+        "q": "When will it be ready?",
         "a": "Between four and eight weeks, depending on the tier and how ready your content is."
       },
       {
-        "q": "Do you offer ongoing support?",
+        "q": "Will you look after it afterwards?",
         "a": "One to two weeks of aftercare is included, and an optional maintenance retainer is available."
       }
     ]
@@ -395,7 +395,7 @@
         "a": "Whatever fits your audience — most often Instagram and LinkedIn, plus email and your journal. We focus rather than spread thin."
       },
       {
-        "q": "What do you need from me?",
+        "q": "What should I prepare?",
         "a": "Access to your channels and a short monthly check-in. We handle strategy, creation, and reporting."
       }
     ]

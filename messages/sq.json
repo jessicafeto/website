@@ -14,7 +14,7 @@
   },
   "welcome": {
     "label": "ÇFARË NDËRTOJMË",
-    "heading": "Më shumë se një logo. Një partner për rritje.",
+    "heading": "Një studio. Çdo pjesë e markës.",
     "intro": "noova është një studio kreative me bazë në Londër që bashkon strategjinë, ndërtimin e markës, zhvillimin e uebsajteve, marketingun dhe automatizimin për të krijuar biznese më të forta, më efikase dhe të ndërtuara për rritje.",
     "brandDesc": "Strategji, identitet dhe drejtim kreativ që i japin bizneseve një themel të qartë.",
     "websitesDesc": "Uebsajte editoriale të dizajnuara me qartësi, saktësi dhe fokus te performanca.",
@@ -33,7 +33,7 @@
     "ogDescription": "Më shumë se një logo. Më shumë se një markë. Një sistem i ndërtuar për rritj"
   },
   "clients": {
-    "label": "Klientë të përzgjedhur"
+    "label": "Në shoqëri të mirë"
   },
   "cookieModal": {
     "closeAria": "Mbyll cilësimet e cookies",
@@ -54,12 +54,12 @@
   },
   "founder": {
     "label": "Kush qëndron pas noova?",
-    "headingA": "Njihuni me Xhesikën,",
-    "headingB": "themeluesen e noova.",
+    "headingA": "Inxhiniere nga formimi.",
+    "headingB": "Krijuese markash nga zgjedhja.",
     "p1": "Karriera ime nuk nisi në dizajn apo marketing, por në inxhinieri, shkencën e të dhënave dhe teknologji. Puna me startup-e, kompani të inteligjencës artificiale dhe ekipe të fokusuara në rritje më tregoi se shumica e bizneseve nuk kanë problem dizajni, por mungesë qartësie.",
     "p2": "Pikërisht për këtë arsye lindi noova.",
-    "p3": "Sot ndihmoj bizneset të ndërtojnë marka që pasqyrojnë atë që janë në të vërtetë, duke bashkuar strategjinë, ndërtimin e markës, zhvillimin e uebsajteve, marketingun dhe automatizimin në një sistem të vetëm. Çdo vendim ka një qëllim. Çdo detaj është menduar me kujdes.",
-    "cta": "Lexo më shume→"
+    "p3": "Sot bashkoj strategjinë, identitetin, uebsajtet, marketingun dhe sistemet inteligjente për bizneset ambicioze, në një praktikë të vetme, që asgjë të mos krijohet e izoluar.",
+    "cta": "Historia e plotë →"
   },
   "cookieBanner": {
     "title": "Përdorimi i cookies",
@@ -93,7 +93,7 @@
     "metaTitle": "Rreth Studios",
     "headline": "Për bizneset që duan të ndërtojnë një markë, jo vetëm një logo.",
     "metaDesc": "noova është një studio kreative me bazë në Londër dhe Tiranë, që bashkon strategjinë, ndërtimin e markës, zhvillimin e uebsajteve, marketingun dhe automatizimin në një sistem të vetëm.",
-    "storyCta": "Njihuni me themeluesen →"
+    "storyCta": "Historia e themelueses →"
   },
   "caseStudy": {
     "theProject": "Projekti",
@@ -148,19 +148,19 @@
     "faqHeading": "Pyetje të shpeshta",
     "packages": "Paketat",
     "enquireShort": "Zgjidh→",
-    "whatIs": "Çfarë është {name}?",
+    "whatIs": "{name}, shkurt",
     "enquireHeading": "Interesohuni për {name}.",
-    "investment": "Investimi",
+    "investment": "Pikënisja",
     "mostChosen": "Më e zgjedhura",
     "location": "Londër • Tiranë",
-    "startProject": "Nisni projektin tuaj →",
+    "startProject": "Le të flasim →",
     "everythingIn": "Përfshin gjithçka nga {builds}, plus:",
-    "booking": "Rezervimi",
-    "glimpseLabel": "Projektet e përzgjedhura",
+    "booking": "Disponueshmëria",
+    "glimpseLabel": "Shikojeni në praktikë",
     "enquireIntro": "Na tregoni për biznesin tuaj dhe objektivat që dëshironi të arrini. Çdo kërkesë trajtohet personalisht dhe merr përgjigje brenda dy ditëve pune.",
     "howItUnfolds": "Si funksionon",
     "packagesIntro": "Tre mënyra për të nisur. Çdo bashkëpunim është i personalizuar. Këto janë pika nisjeje, ndërsa shtrirja e projektit përcaktohet së bashku gjatë bisedës. ",
-    "viewProjects": "Shiko projektet →"
+    "viewProjects": "Shfletoni punën →"
   },
   "services": {
     "label": "ÇFARË NDËRTOJMË",
@@ -238,5 +238,11 @@
         ]
       }
     ]
+  },
+  "returnPopup": {
+    "close": "Mbyll",
+    "headline": "Erdhët për më shumë?",
+    "text": "Duket se po bëjmë diçka si duhet.",
+    "button": "Hidhini një sy"
   }
 }

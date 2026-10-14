@@ -7,7 +7,7 @@ import { FadeUp } from "./Motion";
 
 /**
  * Founder — editorial profile.
- * Premium editorial layout inspired by luxury studios.
+ * Portrait on the right, text leading on the left.
  */
 export default function Founder() {
   const t = useTranslations("founder");
@@ -17,11 +17,11 @@ export default function Founder() {
       <div className="wrap py-[clamp(4.5rem,8vw,6rem)]">
         <div className="grid items-start gap-[clamp(2rem,3vw,3.5rem)] lg:grid-cols-[1fr_1fr]">
           {/* Portrait */}
-          <FadeUp>
+          <FadeUp className="lg:order-2">
             <div className="relative aspect-[5/6] overflow-hidden">
               <Image
-                src="/img/founder.JPEG"
-                alt="Jessica Feto, founder of noova."
+                src="/img/founder-studio.webp"
+                alt="Jessica Feto, founder of noova, reviewing a noova brand book in the studio."
                 fill
                 sizes="(max-width:768px) 100vw, 48vw"
                 className="object-cover"
@@ -31,7 +31,7 @@ export default function Founder() {
           </FadeUp>
 
           {/* Content */}
-          <div className="pt-2">
+          <div className="pt-2 lg:order-1">
             <FadeUp>
               <p className="eyebrow mb-6 tracking-[0.22em] text-grey">
                 {t("label")}
@@ -41,7 +41,7 @@ export default function Founder() {
             <FadeUp delay={0.08}>
               <h2
                 className="
-                  max-w-[11ch]
+                  max-w-[13ch]
                   font-serif
                   italic
                   leading-[0.94]

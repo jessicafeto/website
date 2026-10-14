@@ -251,6 +251,7 @@ p {
   justify-content: center;
   row-gap: 6px;
   color: rgba(246, 241, 231, 0.95);
+  text-shadow: 0 1px 14px rgba(0, 0, 0, 0.55); /* legible over the sunlit floor */
   margin-bottom: 16px;
   font-size: clamp(0.6875rem, 1.2vw, 0.8125rem);
   letter-spacing: 0.26em;

@@ -4,9 +4,9 @@ import Image from "next/image";
 import { useTranslations } from "next-intl";
 
 /**
- * The cover page. A full 100vh cinematic photograph with a quiet lower-left
- * lockup: monogram → services → one editorial line. No navigation competes
- * with it. The photograph carries the emotion; type quietly supports.
+ * The cover page. A full 100vh cinematic photograph with a quiet, centred
+ * lockup: monogram → services. No navigation competes with it. The
+ * photograph carries the emotion; type quietly supports.
  */
 export default function Hero() {
   const t = useTranslations("hero");
@@ -47,7 +47,6 @@ export default function Hero() {
           </span>
           {t("service4")}
         </p>
-        <p className="hero-tag">{t("tagline")}</p>
       </div>
     </section>
   );

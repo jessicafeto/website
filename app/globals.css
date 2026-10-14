@@ -358,11 +358,13 @@ p {
   display: block;
 }
 
-/* Navigation — sits centred between the monogram and Contact */
+/* Navigation — aligned left, just after the monogram; Contact stays right */
 .site-header__links {
   display: flex;
   align-items: center;
   gap: clamp(1.75rem, 3vw, 2.75rem);
+  margin-left: clamp(2.25rem, 4vw, 3.5rem);
+  margin-right: auto;
 }
 .site-header__links a {
   font-family: var(--font-sans);

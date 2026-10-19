@@ -50,6 +50,31 @@ function BlockView({ block, alt }: { block: Block; alt: string }) {
     );
   }
 
+  if (block.kind === "findings") {
+    return (
+      <div className="wrap">
+        <FadeUp>
+          <div className="mx-auto max-w-[880px]">
+            <p className="eyebrow text-center text-oxblood">{block.label}</p>
+            <dl className="mt-8 border-t border-rule">
+              {block.items.map((it) => (
+                <div
+                  key={it.k}
+                  className="grid grid-cols-1 gap-2 border-b border-rule py-6 md:grid-cols-[220px_1fr] md:gap-8"
+                >
+                  <dt className="eyebrow pt-1 text-grey">{it.k}</dt>
+                  <dd className="font-sans text-[1rem] leading-[1.8] text-ink">
+                    {it.v}
+                  </dd>
+                </div>
+              ))}
+            </dl>
+          </div>
+        </FadeUp>
+      </div>
+    );
+  }
+
   if (block.kind === "duo") {
     return (
       <div className="mx-auto w-full max-w-[1600px] px-[clamp(1.25rem,5vw,5rem)]">
@@ -204,7 +229,7 @@ export default async function CaseStudyPage({ slug }: { slug: string }) {
             const prev = cs.blocks[i - 1];
             const afterCaption = prev?.kind === "caption";
             const gap =
-              b.kind === "caption"
+              b.kind === "caption" || b.kind === "findings"
                 ? "mt-[clamp(5.5rem,15vh,11rem)]"
                 : afterCaption
                   ? "mt-[clamp(1.75rem,4vh,3rem)]"

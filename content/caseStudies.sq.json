@@ -443,5 +443,221 @@
     "slug": "her-club",
     "overview": "HER Club është një komunitet ku gratë ambicioze lidhen dhe rriten së bashku. Brandi duhej të ndihej njëkohësisht frymëzues dhe intim — mjaftueshëm i rafinuar për t'i besuar, mjaftueshëm i ngrohtë për t'iu bashkuar. E ndërtuam rreth ngrohtësisë dhe një sigurie të qetë: ari të butë, tipografi të rafinuar dhe një stemë që sinjalizon përkatësi pa përjashtim. Nga kartat e mirëseardhjes te materialet e anëtarësisë e deri te web-i, çdo pjesë ndihet personale — një dorë e zgjatur, jo një portë e ruajtur. Rezultati lexohet i ngritur dhe bujar njëkohësisht.",
     "category": "Komunitet & Anëtarësi"
+  },
+  "vs-2026": {
+    "slug": "vs-2026",
+    "name": "Victoria’s Secret Fashion Show 2026",
+    "category": "Studim Rasti · Inteligjencë Marketingu",
+    "heroImage": "/img/vs-2026/hero.webp",
+    "overviewHeading": "Pasuria më e madhe e Victoria’s Secret nuk janë të brendshmet. Është pritja.",
+    "overview": "Brenda 24 orëve nga shfaqja e 18 tetorit 2026 në Los Angeles, ndoqëm se si Victoria’s Secret e ktheu një pasarelë në një ngjarje marketingu në shumë kanale. Mblodhëm të dhëna publike nga YouTube, TikTok, Instagram dhe Google Search, i krahasuam me 2025-ën në kushte të njëjta dhe ndamë atë që numrat tregojnë nga ajo që vetëm sugjerojnë. Përfundimi: shfaqja është finalja e një serie përmbajtjeje 25-ditore, jo një transmetim i një nate. Ajo ndërtohet mbi pritjen, aksesin në prapaskenë dhe një gjuhë vizuale të pagabueshme, me një dyqan pranë çdo momenti.",
+    "snapshot": {
+      "industry": "Modë & Retail",
+      "services": [
+        "Analitikë Marketingu",
+        "Analizë Sociale & Kërkimesh",
+        "Psikologji e Konsumatorit",
+        "Drejtim Artistik Editorial"
+      ],
+      "timeline": "Kërkuar brenda 24 orëve",
+      "deliverables": [
+        "Raport Kërkimor",
+        "Dataset (535 vëzhgime)",
+        "Analizë në Python",
+        "Karusel Instagram",
+        "Regjistër Burimesh"
+      ]
+    },
+    "blocks": [
+      {
+        "kind": "caption",
+        "label": "Pyetja",
+        "note": "Si e kthen Victoria’s Secret një shfaqje mode në një ngjarje marketingu në shumë kanale, dhe çfarë mund të mësojnë markat më të vogla nga qasja e saj ndaj vëmendjes, ndikimit dhe tregtisë?"
+      },
+      {
+        "kind": "duo",
+        "items": [
+          {
+            "src": "/img/vs-2026/slide-01.webp",
+            "w": 1080,
+            "h": 1350
+          },
+          {
+            "src": "/img/vs-2026/slide-02.webp",
+            "w": 1080,
+            "h": 1350
+          }
+        ]
+      },
+      {
+        "kind": "findings",
+        "label": "Çfarë tregojnë të dhënat publike",
+        "items": [
+          {
+            "k": "Një seri, jo një natë",
+            "v": "144 TikTok-e të markës në 25 ditë, 85 prej tyre më shumë se 24 orë para shfaqjes. Një docuseri kastingu me gjashtë episode arriti 19.4M shikime në YouTube para pasarelës."
+          },
+          {
+            "k": "Më shpejt se 2025",
+            "v": "Transmetimi zyrtar në YouTube kishte 10.3M shikime pas 3.3 orësh dhe 21.0M pas 20.5 orësh: rreth 13% përpara 2025-ës në të njëjtën pikë (diapazon −2% deri +16%)."
+          },
+          {
+            "k": "Vëmendje më e gjerë, më e lehtë",
+            "v": "Pëlqimet për shikim ranë nga 0.050 në 0.031. Kërkimet botërore në Google për shfaqjen ishin 44% më poshtë se 2025 ditën e shfaqjes (SHBA −7%, MB +12%), ndërkohë që shikimet u rritën."
+          },
+          {
+            "k": "Nostalgji kundrejt risisë",
+            "v": "TikTok-et më të shikuara ishin klipe prapaskene para shfaqjes, dy prej tyre me Angels legjendare (11.1M, 9.8M). Postimi i Kylie Jenner me Fantasy Bra solli më shumë bisedë në Instagram: 35K komente kundrejt 20K, me ~3M pëlqime secili."
+          },
+          {
+            "k": "Tregtia në sallë",
+            "v": "Një After Party LIVE zyrtar në TikTok Shop nisi menjëherë pas shfaqjes, dhe faqja hapej me “Shop the Fashion Show”."
+          }
+        ]
+      },
+      {
+        "kind": "full",
+        "src": "/img/vs-2026/01_livestream_trajectory.webp",
+        "w": 1600,
+        "h": 1000
+      },
+      {
+        "kind": "caption",
+        "label": "Pritja është produkti",
+        "note": "Numërimet mbrapsht, një zbulim i mbajtur fshehur dhe një histori kastingu në episode e kthyen pritjen tre-javore në përmbajtje. Pritja, kurioziteti dhe zhytja në rrëfim janë nxitës të dokumentuar të vlerës. Të dhënat këtu përputhen me to; nuk vërtetojnë se ato e shkaktuan rezultatin."
+      },
+      {
+        "kind": "duo",
+        "items": [
+          {
+            "src": "/img/vs-2026/slide-03.webp",
+            "w": 1080,
+            "h": 1350
+          },
+          {
+            "src": "/img/vs-2026/slide-04.webp",
+            "w": 1080,
+            "h": 1350
+          }
+        ]
+      },
+      {
+        "kind": "full",
+        "src": "/img/vs-2026/04_docuseries_episodes.webp",
+        "w": 1600,
+        "h": 900
+      },
+      {
+        "kind": "caption",
+        "label": "Celebriteti blen bisedë. Trashëgimia blen shtrirje.",
+        "note": "Kylie Jenner veshi Fantasy Bra 2026 nga Jacob & Co. (vlerësuar $50M, sipas Vogue). Postimi i saj kryesoi në komente dhe interes kërkimi, ndërsa Angels legjendare kryesuan në shikime. Kushtet e saj tregtare nuk u bënë publike."
+      },
+      {
+        "kind": "duo",
+        "items": [
+          {
+            "src": "/img/vs-2026/slide-05.webp",
+            "w": 1080,
+            "h": 1350
+          },
+          {
+            "src": "/img/vs-2026/slide-06.webp",
+            "w": 1080,
+            "h": 1350
+          }
+        ]
+      },
+      {
+        "kind": "full",
+        "src": "/img/vs-2026/02_tiktok_category_medians.webp",
+        "w": 1600,
+        "h": 1000
+      },
+      {
+        "kind": "caption",
+        "label": "Një shfaqje. Dhjetëra dyer.",
+        "note": "Live në YouTube, TikTok, Instagram dhe në kinematë AMC, pastaj 15 ngarkime në YouTube dhe 44 TikTok-e në 20 orët pasuese: një transmetim i prerë në shumë pika hyrjeje."
+      },
+      {
+        "kind": "duo",
+        "items": [
+          {
+            "src": "/img/vs-2026/slide-07.webp",
+            "w": 1080,
+            "h": 1350
+          },
+          {
+            "src": "/img/vs-2026/slide-08.webp",
+            "w": 1080,
+            "h": 1350
+          }
+        ]
+      },
+      {
+        "kind": "full",
+        "src": "/img/vs-2026/03_trends_yoy.webp",
+        "w": 2200,
+        "h": 720
+      },
+      {
+        "kind": "findings",
+        "label": "Çfarë nuk na tregojnë të dhënat publike",
+        "items": [
+          {
+            "k": "Shitjet",
+            "v": "Sa shitje solli shfaqja dhe sa shikues u bënë blerës. VS&Co raporton tremujorin që përfshin shfaqjen rreth dhjetorit 2026."
+          },
+          {
+            "k": "Kthimi",
+            "v": "Nëse shfaqja e ktheu koston e saj. Shpenzimet për prodhim, talente dhe media nuk janë publike."
+          },
+          {
+            "k": "Shtrirja",
+            "v": "Sa njerëz unikë arriti. Shikimet mbivendosen mes platformave dhe shikuesve që kthehen."
+          },
+          {
+            "k": "Talenti",
+            "v": "Sa nga zhurma rreth Kylie u kthye në të ardhura. Kjo kërkon të dhëna të brendshme dhe një test brand-lift."
+          }
+        ]
+      },
+      {
+        "kind": "duo",
+        "items": [
+          {
+            "src": "/img/vs-2026/slide-09.webp",
+            "w": 1080,
+            "h": 1350
+          },
+          {
+            "src": "/img/vs-2026/slide-10.webp",
+            "w": 1080,
+            "h": 1350
+          }
+        ]
+      },
+      {
+        "kind": "findings",
+        "label": "Metoda & burimet",
+        "items": [
+          {
+            "k": "Mbledhur",
+            "v": "19 tetor 2026, 19:15–20:35 BST, 19.5–21 orë pas nisjes së transmetimit. Çdo numër është një pamje e çastit që vazhdon të rritet."
+          },
+          {
+            "k": "Të dhënat",
+            "v": "35 video zyrtare në YouTube, 144 postime TikTok, 12 postime Instagram, Google Trends (2025 dhe 2026 të normalizuara bashkë), arkiva të Internet Archive për transmetimin e 2025-ës, njoftime për investitorët nga VS&Co dhe shtypi i specializuar."
+          },
+          {
+            "k": "Rregullat",
+            "v": "Shikimet nuk janë shikues unikë dhe nuk mblidhen kurrë mes platformave. Vlerat e Trends janë indekse relative, jo numër kërkimesh. Shifrat e kompanisë shënohen si të raportuara nga kompania."
+          },
+          {
+            "k": "Fotografia",
+            "v": "Fotografi nga Victoria’s Secret Fashion Show 2026. Krediti do të konfirmohet."
+          }
+        ]
+      }
+    ]
   }
 }

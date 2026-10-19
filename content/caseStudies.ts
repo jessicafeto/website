@@ -22,7 +22,9 @@ export type Block =
   | { kind: "full"; src: string; w: number; h: number }
   | { kind: "portrait"; src: string; w: number; h: number }
   | { kind: "duo"; items: [Img, Img] }
-  | { kind: "caption"; label: string; note: string };
+  | { kind: "caption"; label: string; note: string }
+  /** A short labelled list — key findings, sources or limitations. */
+  | { kind: "findings"; label: string; items: { k: string; v: string }[] };
 
 export type Snapshot = {
   industry: string;
@@ -49,7 +51,7 @@ export type CaseStudy = {
  * others stay in the JSON (seereen, opa-taverne, 355, her-club are paused)
  * and can be brought back by adding their slug here and to SelectedWork.
  */
-export const CASE_ORDER: string[] = ["solea", "intellimation", "ame"];
+export const CASE_ORDER: string[] = ["solea", "intellimation", "ame", "vs-2026"];
 
 const CASES_EN = casesEnData as unknown as Record<string, CaseStudy>;
 const CASES_SQ = casesSqData as unknown as Record<string, CaseStudy>;

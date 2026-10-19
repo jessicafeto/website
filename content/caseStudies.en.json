@@ -423,5 +423,221 @@
         "h": 1122
       }
     ]
+  },
+  "vs-2026": {
+    "slug": "vs-2026",
+    "name": "Victoria’s Secret Fashion Show 2026",
+    "category": "Marketing Intelligence Case Study",
+    "heroImage": "/img/vs-2026/hero.webp",
+    "overviewHeading": "Victoria’s Secret’s greatest asset isn’t lingerie. It’s anticipation.",
+    "overview": "Within 24 hours of the 18 October 2026 show in Los Angeles, we tracked how Victoria’s Secret turned a runway into a multi-channel marketing event. We collected public data from YouTube, TikTok, Instagram and Google Search, compared it like-for-like with 2025, and separated what the numbers show from what they only suggest. The result: the show is the finale of a 25-day content series, not a one-night broadcast. It is built on anticipation, backstage access and one unmistakable visual language, with a shop placed next to every moment.",
+    "snapshot": {
+      "industry": "Fashion & Retail",
+      "services": [
+        "Marketing Analytics",
+        "Social & Search Analysis",
+        "Consumer Psychology",
+        "Editorial Art Direction"
+      ],
+      "timeline": "Researched within 24 hours",
+      "deliverables": [
+        "Research Report",
+        "Dataset (535 observations)",
+        "Python Analysis",
+        "Instagram Carousel",
+        "Source Register"
+      ]
+    },
+    "blocks": [
+      {
+        "kind": "caption",
+        "label": "The question",
+        "note": "How does Victoria’s Secret turn a fashion show into a multi-channel marketing event, and what can smaller brands learn from its approach to attention, influence and commerce?"
+      },
+      {
+        "kind": "duo",
+        "items": [
+          {
+            "src": "/img/vs-2026/slide-01.webp",
+            "w": 1080,
+            "h": 1350
+          },
+          {
+            "src": "/img/vs-2026/slide-02.webp",
+            "w": 1080,
+            "h": 1350
+          }
+        ]
+      },
+      {
+        "kind": "findings",
+        "label": "What the public data shows",
+        "items": [
+          {
+            "k": "A series, not a night",
+            "v": "144 brand TikToks in 25 days, 85 of them more than 24 hours before the show. A six-episode casting docuseries reached 19.4M YouTube views before the runway."
+          },
+          {
+            "k": "Faster than 2025",
+            "v": "The official YouTube stream had 10.3M views after 3.3 hours and 21.0M after 20.5 hours: about 13% ahead of 2025 at the same point (range −2% to +16%)."
+          },
+          {
+            "k": "Broader, lighter attention",
+            "v": "Likes per view fell from 0.050 to 0.031. Worldwide Google searches for the show were 44% below 2025 on show day (US −7%, UK +12%) even as views rose."
+          },
+          {
+            "k": "Nostalgia vs novelty",
+            "v": "The most-viewed TikToks were pre-show backstage clips, two led by legacy Angels (11.1M, 9.8M). Kylie Jenner’s Fantasy Bra post drew the most Instagram conversation: 35K comments vs 20K at ~3M likes each."
+          },
+          {
+            "k": "Commerce in the room",
+            "v": "An official After Party LIVE on TikTok Shop started straight after the show, and the site led with “Shop the Fashion Show”."
+          }
+        ]
+      },
+      {
+        "kind": "full",
+        "src": "/img/vs-2026/01_livestream_trajectory.webp",
+        "w": 1600,
+        "h": 1000
+      },
+      {
+        "kind": "caption",
+        "label": "The wait is the product",
+        "note": "Countdowns, a withheld reveal and a serialised casting story turned three weeks of waiting into content. Anticipation, curiosity and narrative transportation are well-documented drivers of value. The data here is consistent with them; it does not prove they caused the result."
+      },
+      {
+        "kind": "duo",
+        "items": [
+          {
+            "src": "/img/vs-2026/slide-03.webp",
+            "w": 1080,
+            "h": 1350
+          },
+          {
+            "src": "/img/vs-2026/slide-04.webp",
+            "w": 1080,
+            "h": 1350
+          }
+        ]
+      },
+      {
+        "kind": "full",
+        "src": "/img/vs-2026/04_docuseries_episodes.webp",
+        "w": 1600,
+        "h": 900
+      },
+      {
+        "kind": "caption",
+        "label": "Celebrity buys talk. Heritage buys reach.",
+        "note": "Kylie Jenner wore the 2026 Fantasy Bra by Jacob & Co. (estimated $50M, per Vogue). Her post led on comments and search interest, while legacy Angels led on views. Her commercial terms were not disclosed."
+      },
+      {
+        "kind": "duo",
+        "items": [
+          {
+            "src": "/img/vs-2026/slide-05.webp",
+            "w": 1080,
+            "h": 1350
+          },
+          {
+            "src": "/img/vs-2026/slide-06.webp",
+            "w": 1080,
+            "h": 1350
+          }
+        ]
+      },
+      {
+        "kind": "full",
+        "src": "/img/vs-2026/02_tiktok_category_medians.webp",
+        "w": 1600,
+        "h": 1000
+      },
+      {
+        "kind": "caption",
+        "label": "One show. Dozens of doors.",
+        "note": "Live on YouTube, TikTok, Instagram and in AMC cinemas, then 15 YouTube uploads and 44 TikToks in the next 20 hours: one broadcast cut into many entry points."
+      },
+      {
+        "kind": "duo",
+        "items": [
+          {
+            "src": "/img/vs-2026/slide-07.webp",
+            "w": 1080,
+            "h": 1350
+          },
+          {
+            "src": "/img/vs-2026/slide-08.webp",
+            "w": 1080,
+            "h": 1350
+          }
+        ]
+      },
+      {
+        "kind": "full",
+        "src": "/img/vs-2026/03_trends_yoy.webp",
+        "w": 2200,
+        "h": 720
+      },
+      {
+        "kind": "findings",
+        "label": "What the public data can’t tell us",
+        "items": [
+          {
+            "k": "Sales",
+            "v": "How many sales the show drove, and how many viewers became buyers. VS&Co reports the quarter that includes the show around December 2026."
+          },
+          {
+            "k": "Return",
+            "v": "Whether the show earned back its cost. Production, talent and media spend are not public."
+          },
+          {
+            "k": "Reach",
+            "v": "How many unique people it reached. Views overlap across platforms and repeat viewers."
+          },
+          {
+            "k": "Talent",
+            "v": "How much of Kylie’s buzz turned into revenue. That needs first-party data and a brand-lift test."
+          }
+        ]
+      },
+      {
+        "kind": "duo",
+        "items": [
+          {
+            "src": "/img/vs-2026/slide-09.webp",
+            "w": 1080,
+            "h": 1350
+          },
+          {
+            "src": "/img/vs-2026/slide-10.webp",
+            "w": 1080,
+            "h": 1350
+          }
+        ]
+      },
+      {
+        "kind": "findings",
+        "label": "Method & sources",
+        "items": [
+          {
+            "k": "Collected",
+            "v": "19 October 2026, 19:15–20:35 BST, 19.5–21 hours after the livestream began. Every count is a snapshot that keeps growing."
+          },
+          {
+            "k": "Data",
+            "v": "35 official YouTube videos, 144 TikTok posts, 12 Instagram posts, Google Trends (2025 and 2026 normalised together), Internet Archive captures of the 2025 stream, VS&Co investor releases and trade press."
+          },
+          {
+            "k": "Rules",
+            "v": "Views are not unique viewers and are never summed across platforms. Trends values are relative indices, not search counts. Company figures are labelled as company-reported."
+          },
+          {
+            "k": "Photography",
+            "v": "Event photography from the Victoria’s Secret Fashion Show 2026. Credit to be confirmed."
+          }
+        ]
+      }
+    ]
   }
 }

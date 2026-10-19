@@ -24,7 +24,17 @@ export type Block =
   | { kind: "duo"; items: [Img, Img] }
   | { kind: "caption"; label: string; note: string }
   /** A short labelled list — key findings, sources or limitations. */
-  | { kind: "findings"; label: string; items: { k: string; v: string }[] };
+  | { kind: "findings"; label: string; items: { k: string; v: string }[] }
+  /*
+   * Report blocks — long-form analysis pages (e.g. the VS 2026 study).
+   * Text fields accept **bold** and [label](https://url) inline markup.
+   */
+  | { kind: "heading"; text: string; eyebrow?: string }
+  | { kind: "prose"; paras: string[] }
+  | { kind: "list"; items: string[]; ordered?: boolean }
+  | { kind: "stats"; items: { value: string; label: string }[] }
+  | { kind: "chart"; src: string; w: number; h: number; alt: string; caption: string }
+  | { kind: "table"; head: string[]; rows: string[][]; note?: string };
 
 export type Snapshot = {
   industry: string;

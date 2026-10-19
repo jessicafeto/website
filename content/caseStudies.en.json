@@ -427,216 +427,403 @@
   "vs-2026": {
     "slug": "vs-2026",
     "name": "Victoria’s Secret Fashion Show 2026",
-    "category": "Marketing Intelligence Case Study",
-    "heroImage": "/img/vs-2026/hero.webp",
-    "overviewHeading": "Victoria’s Secret’s greatest asset isn’t lingerie. It’s anticipation.",
-    "overview": "Within 24 hours of the 18 October 2026 show in Los Angeles, we tracked how Victoria’s Secret turned a runway into a multi-channel marketing event. We collected public data from YouTube, TikTok, Instagram and Google Search, compared it like-for-like with 2025, and separated what the numbers show from what they only suggest. The result: the show is the finale of a 25-day content series, not a one-night broadcast. It is built on anticipation, backstage access and one unmistakable visual language, with a shop placed next to every moment.",
+    "category": "Marketing Intelligence Report",
+    "heroImage": "/img/vs-2026/hero-finale.webp",
+    "overviewHeading": "The Data Behind the Spectacle: Victoria’s Secret’s greatest asset isn’t lingerie. It’s anticipation.",
+    "overview": "On Sunday 18 October 2026, Victoria’s Secret returned to Los Angeles for the first time in 19 years and streamed its show free on YouTube, TikTok and Instagram. Most coverage asked who walked. We asked how the brand turns a runway into a multi-channel marketing event, and what other brands can learn from it. Within 21 hours of the livestream we collected public data from YouTube, TikTok, Instagram and Google Search, compared it like-for-like with 2025, and separated what the numbers show from what they only suggest.",
     "snapshot": {
       "industry": "Fashion & Retail",
       "services": [
         "Marketing Analytics",
         "Social & Search Analysis",
         "Consumer Psychology",
-        "Editorial Art Direction"
+        "Research & Reporting"
       ],
       "timeline": "Researched within 24 hours",
       "deliverables": [
         "Research Report",
         "Dataset (535 observations)",
         "Python Analysis",
-        "Instagram Carousel",
+        "Data Visualisation",
         "Source Register"
       ]
     },
     "blocks": [
       {
-        "kind": "caption",
-        "label": "The question",
-        "note": "How does Victoria’s Secret turn a fashion show into a multi-channel marketing event, and what can smaller brands learn from its approach to attention, influence and commerce?"
-      },
-      {
-        "kind": "duo",
+        "kind": "stats",
         "items": [
           {
-            "src": "/img/vs-2026/slide-01.webp",
-            "w": 1080,
-            "h": 1350
+            "value": "21.0M",
+            "label": "YouTube views of the official stream after 20.5 hours"
           },
           {
-            "src": "/img/vs-2026/slide-02.webp",
-            "w": 1080,
-            "h": 1350
+            "value": "+13%",
+            "label": "vs the 2025 stream at the same point"
+          },
+          {
+            "value": "144",
+            "label": "brand TikToks in the 25 days to the show"
+          },
+          {
+            "value": "−44%",
+            "label": "worldwide Google search interest vs 2025 on show day"
           }
         ]
       },
       {
-        "kind": "findings",
-        "label": "What the public data shows",
-        "items": [
-          {
-            "k": "A series, not a night",
-            "v": "144 brand TikToks in 25 days, 85 of them more than 24 hours before the show. A six-episode casting docuseries reached 19.4M YouTube views before the runway."
-          },
-          {
-            "k": "Faster than 2025",
-            "v": "The official YouTube stream had 10.3M views after 3.3 hours and 21.0M after 20.5 hours: about 13% ahead of 2025 at the same point (range −2% to +16%)."
-          },
-          {
-            "k": "Broader, lighter attention",
-            "v": "Likes per view fell from 0.050 to 0.031. Worldwide Google searches for the show were 44% below 2025 on show day (US −7%, UK +12%) even as views rose."
-          },
-          {
-            "k": "Nostalgia vs novelty",
-            "v": "The most-viewed TikToks were pre-show backstage clips, two led by legacy Angels (11.1M, 9.8M). Kylie Jenner’s Fantasy Bra post drew the most Instagram conversation: 35K comments vs 20K at ~3M likes each."
-          },
-          {
-            "k": "Commerce in the room",
-            "v": "An official After Party LIVE on TikTok Shop started straight after the show, and the site led with “Shop the Fashion Show”."
-          }
+        "kind": "heading",
+        "eyebrow": "The question",
+        "text": "How does Victoria’s Secret turn a fashion show into a multi-channel marketing event?"
+      },
+      {
+        "kind": "prose",
+        "paras": [
+          "The show was staged at Sony Pictures Studios in Culver City, streamed free on three platforms and screened live in ten AMC cinemas ([Hola, 16 Oct 2026](https://www.hola.com/us/entertainment/20261016929609/victorias-secret-fashion-show-2026-when-where-watch/); [W Magazine, 19 Oct 2026](https://www.wmagazine.com/fashion/victorias-secret-fashion-show-2026-photos-kylie-jenner-all-the-looks)). We wanted to know what public data can tell us about how that attention was built, distributed and turned into commerce, and where public data stops.",
+          "The short answer: **Victoria’s Secret doesn’t sell a night. It sells the wait.**"
         ]
       },
       {
-        "kind": "full",
-        "src": "/img/vs-2026/01_livestream_trajectory.webp",
-        "w": 1600,
-        "h": 1000
+        "kind": "heading",
+        "eyebrow": "Finding 01",
+        "text": "The show is the finale of a 25-day series"
       },
       {
-        "kind": "caption",
-        "label": "The wait is the product",
-        "note": "Countdowns, a withheld reveal and a serialised casting story turned three weeks of waiting into content. Anticipation, curiosity and narrative transportation are well-documented drivers of value. The data here is consistent with them; it does not prove they caused the result."
-      },
-      {
-        "kind": "duo",
-        "items": [
-          {
-            "src": "/img/vs-2026/slide-03.webp",
-            "w": 1080,
-            "h": 1350
-          },
-          {
-            "src": "/img/vs-2026/slide-04.webp",
-            "w": 1080,
-            "h": 1350
-          }
+        "kind": "prose",
+        "paras": [
+          "The official @victoriassecret TikTok account published **144 posts between 25 September and 19 October**, and 85 of them came more than 24 hours before the show ([TikTok @victoriassecret](https://www.tiktok.com/@victoriassecret), observed 19 Oct, ~20:24 BST). A six-episode YouTube casting docuseries, Angels Among Us, had **19.4 million cumulative views by the day after the show** ([Victoria’s Secret YouTube](https://www.youtube.com/@VictoriasSecret/videos)). That is close to the full show stream’s 21.0 million, but the two aren’t equivalent: episode 1 had been online for 22 days, the stream for less than one.",
+          "The three most-viewed brand TikToks were all **backstage clips posted before the show began**: “First things first: let’s talk about the GLAM” (12M views), an Adriana Lima backstage clip (11.1M), and Adriana Lima with Alessandra Ambrosio (9.8M)."
         ]
       },
       {
-        "kind": "full",
+        "kind": "chart",
         "src": "/img/vs-2026/04_docuseries_episodes.webp",
         "w": 1600,
-        "h": 900
+        "h": 900,
+        "alt": "Bar chart: YouTube views per Angels Among Us docuseries episode, from 7.0 million for episode 1 to 1.2 million for episode 6.",
+        "caption": "Angels Among Us views per episode on YouTube, collected 19 Oct 2026. Earlier episodes have had longer to accumulate views, so the decline is partly an age effect."
       },
       {
-        "kind": "caption",
-        "label": "Celebrity buys talk. Heritage buys reach.",
-        "note": "Kylie Jenner wore the 2026 Fantasy Bra by Jacob & Co. (estimated $50M, per Vogue). Her post led on comments and search interest, while legacy Angels led on views. Her commercial terms were not disclosed."
-      },
-      {
-        "kind": "duo",
-        "items": [
-          {
-            "src": "/img/vs-2026/slide-05.webp",
-            "w": 1080,
-            "h": 1350
-          },
-          {
-            "src": "/img/vs-2026/slide-06.webp",
-            "w": 1080,
-            "h": 1350
-          }
-        ]
-      },
-      {
-        "kind": "full",
+        "kind": "chart",
         "src": "/img/vs-2026/02_tiktok_category_medians.webp",
         "w": 1600,
-        "h": 1000
+        "h": 1000,
+        "alt": "Bar chart: median TikTok views per post by content category, posts from 24 hours before to 2 hours after go-live. Wings 3.6M (1 post), backstage 3.4M (7), docuseries 3.1M (1), casting reveal 1.5M (3), tune-in 1.4M (7), commerce 1.3M (1).",
+        "caption": "Median views per post by content category, @victoriassecret TikTok, posts from 24 hours before to 2 hours after go-live (n per category in brackets). Categories with one post are shown for completeness, not as evidence."
       },
       {
-        "kind": "caption",
-        "label": "One show. Dozens of doors.",
-        "note": "Live on YouTube, TikTok, Instagram and in AMC cinemas, then 15 YouTube uploads and 44 TikToks in the next 20 hours: one broadcast cut into many entry points."
+        "kind": "heading",
+        "eyebrow": "Finding 02",
+        "text": "More views, faster, than 2025"
       },
       {
-        "kind": "duo",
-        "items": [
-          {
-            "src": "/img/vs-2026/slide-07.webp",
-            "w": 1080,
-            "h": 1350
-          },
-          {
-            "src": "/img/vs-2026/slide-08.webp",
-            "w": 1080,
-            "h": 1350
-          }
+        "kind": "prose",
+        "paras": [
+          "The official full-show stream had **10.3 million views 3.3 hours after going live** ([Internet Archive capture](https://web.archive.org/web/20261019020843/https://www.youtube.com/watch?v=zJOaqPMHs7Y)) and **20,973,365 views at 20.5 hours** ([YouTube](https://www.youtube.com/watch?v=zJOaqPMHs7Y), read 19 Oct, 20:18 BST).",
+          "To compare fairly, we read the 2025 stream’s public view counter from Internet Archive captures taken at similar points after it went live: 5.4 million at 2.8 hours ([capture](https://web.archive.org/web/20251016011035/https://www.youtube.com/watch?v=SdSSPF1S-Uc)), 18.1 million at 19.3 hours ([capture](https://web.archive.org/web/20251016174218/https://www.youtube.com/watch?v=SdSSPF1S-Uc)) and 21.3 million at 27.5 hours ([capture](https://web.archive.org/web/20251017015525/https://www.youtube.com/watch?v=SdSSPF1S-Uc)). Interpolating between the last two, 2026 was **about 13% ahead at the same age**. The honest range, using either bracketing capture, is −2% to +16%."
         ]
       },
       {
-        "kind": "full",
+        "kind": "chart",
+        "src": "/img/vs-2026/01_livestream_trajectory.webp",
+        "w": 1600,
+        "h": 1000,
+        "alt": "Line chart: cumulative YouTube views of the official full-show livestream by hours after go-live. 2026 reaches 21.0 million at 20.5 hours; 2025 reached about 18.6 million at the same point.",
+        "caption": "Cumulative views of the official full-show YouTube stream, 2025 vs 2026, by hours after go-live. Source: YouTube public counters via Internet Archive captures and a direct read on 19 Oct 2026, 20:18 BST. Views are not unique viewers."
+      },
+      {
+        "kind": "heading",
+        "eyebrow": "Finding 03",
+        "text": "More views, lighter engagement"
+      },
+      {
+        "kind": "prose",
+        "paras": [
+          "At 20 hours the 2026 stream had **651,736 likes**, against roughly 925,000 for 2025 at the same age: **0.031 likes per view, down from 0.050**. One plausible reading is a broader, more casual audience. Public data can’t confirm it."
+        ]
+      },
+      {
+        "kind": "heading",
+        "eyebrow": "Finding 04",
+        "text": "More views. Less search."
+      },
+      {
+        "kind": "prose",
+        "paras": [
+          "[Google Trends](https://trends.google.com/trends/explore) lets us put the 2025 and 2026 show windows on the same scale. Despite attracting more views than in 2025, Google search interest for the show **fell by 44% worldwide** and **7% in the US**, while **rising by 12% in Great Britain**.",
+          "This divergence suggests that audience attention may increasingly be captured within social and video platforms rather than reflected in search activity. However, Google Trends measures relative search interest, not actual search volumes, and public data cannot establish the reasons behind this shift or whether increased viewership translated into purchases."
+        ]
+      },
+      {
+        "kind": "chart",
         "src": "/img/vs-2026/03_trends_yoy.webp",
         "w": 2200,
-        "h": 720
+        "h": 720,
+        "alt": "Three line charts of Google search interest for victoria's secret fashion show around show day, 2025 vs 2026, for the US, Great Britain and worldwide.",
+        "caption": "Google search interest for “victoria’s secret fashion show”, 2025 vs 2026 show windows. One request per region, so both years share the same 0–100 scale. Collected 19 Oct 2026, 20:31 BST; 19 Oct was a partial day."
       },
       {
-        "kind": "findings",
-        "label": "What the public data can’t tell us",
-        "items": [
-          {
-            "k": "Sales",
-            "v": "How many sales the show drove, and how many viewers became buyers. VS&Co reports the quarter that includes the show around December 2026."
-          },
-          {
-            "k": "Return",
-            "v": "Whether the show earned back its cost. Production, talent and media spend are not public."
-          },
-          {
-            "k": "Reach",
-            "v": "How many unique people it reached. Views overlap across platforms and repeat viewers."
-          },
-          {
-            "k": "Talent",
-            "v": "How much of Kylie’s buzz turned into revenue. That needs first-party data and a brand-lift test."
-          }
+        "kind": "heading",
+        "eyebrow": "Finding 05",
+        "text": "Kylie got the conversation. The Angels got the views."
+      },
+      {
+        "kind": "prose",
+        "paras": [
+          "Kylie Jenner closed the show wearing the returning **Fantasy Bra**, made with Jacob & Co. Victoria’s Secret’s own TikTok confirmed it: “@Kylie Jenner made history tonight when she walked down the runway in the Fantasy Bra.” The widely reported value of **$50 million is an estimate attributed to Vogue**, not a sale price ([Yahoo / Cover Media, 19 Oct](https://www.yahoo.com/entertainment/celebrity/articles/kylie-jenner-dazzles-fantasy-bra-080448156.html)). Chief creative officer Adam Selman said Jenner “extends beyond fashion, beyond culture, beyond TV”, as reported from a Vogue interview ([E! News, 19 Oct](https://www.eonline.com/news/1437189/victorias-secret-defends-kylie-jenner-wearing-fantasy-bra-at-fashion-show)). Whether she was paid, or holds an ambassador role, has not been disclosed."
         ]
       },
       {
-        "kind": "duo",
+        "kind": "list",
         "items": [
-          {
-            "src": "/img/vs-2026/slide-09.webp",
-            "w": 1080,
-            "h": 1350
-          },
-          {
-            "src": "/img/vs-2026/slide-10.webp",
-            "w": 1080,
-            "h": 1350
-          }
+          "**Instagram:** same likes (about 3 million each), but Kylie’s post drew 35,000 comments to Adriana Lima’s 20,000 ([Kylie’s Reel](https://www.instagram.com/reel/DeqKHJLOPxl/), [Adriana’s Reel](https://www.instagram.com/reel/DeqQoHllWjL/)).",
+          "**TikTok:** her five posts from the first six hours after the show started had a median of 1.3 million views, level with the brand’s other clips from the same hours. The biggest view counts went to legacy Angels and backstage content.",
+          "**Search:** “kylie jenner” and “fantasy bra” both spiked on Google Trends the day after the show."
         ]
       },
       {
-        "kind": "findings",
-        "label": "Method & sources",
-        "items": [
-          {
-            "k": "Collected",
-            "v": "19 October 2026, 19:15–20:35 BST, 19.5–21 hours after the livestream began. Every count is a snapshot that keeps growing."
-          },
-          {
-            "k": "Data",
-            "v": "35 official YouTube videos, 144 TikTok posts, 12 Instagram posts, Google Trends (2025 and 2026 normalised together), Internet Archive captures of the 2025 stream, VS&Co investor releases and trade press."
-          },
-          {
-            "k": "Rules",
-            "v": "Views are not unique viewers and are never summed across platforms. Trends values are relative indices, not search counts. Company figures are labelled as company-reported."
-          },
-          {
-            "k": "Photography",
-            "v": "Photos: Michael Buckner, Gilbert Flores, Dimitrios Kambouris, Taylor Hill and Kevin Mazur/Getty Images. Cover photograph and the gold-wings runway photograph: credit to be confirmed."
-          }
+        "kind": "prose",
+        "paras": [
+          "On this evidence, **celebrity drives conversation; heritage drives reach.**"
         ]
+      },
+      {
+        "kind": "heading",
+        "eyebrow": "Finding 06",
+        "text": "One show. Dozens of doors."
+      },
+      {
+        "kind": "prose",
+        "paras": [
+          "The show ran live on three free platforms and in cinemas. In the following 20 hours the brand published **15 YouTube uploads and 44 TikToks**. At least six TikToks promoted an official **“After Party LIVE on TikTok Shop”** at 8:45 PM ET, straight after the runway, and the UK site led with “Shop Fashion Show” and a limited-edition “Backstage Edit” ([victoriassecret.co.uk](https://www.victoriassecret.co.uk/), observed 19 Oct). One wings-only TikTok, “800 pounds arriving tomorrow”, drew **3.6 million views**: a reminder of how much a single distinctive brand asset can carry."
+        ]
+      },
+      {
+        "kind": "heading",
+        "eyebrow": "Method",
+        "text": "How we did it"
+      },
+      {
+        "kind": "list",
+        "items": [
+          "**Collection window:** 19 October 2026, 19:15–20:35 BST, 19.5–21 hours after go-live. Every count is a snapshot that keeps growing.",
+          "**YouTube:** 35 official videos; views, likes, comments, publish time and live start/end read from each public watch page.",
+          "**2025 benchmark:** the same fields from Internet Archive captures of the 2025 stream page.",
+          "**TikTok:** all 144 posts visible on the official profile. Each post’s creation time was decoded from its ID, so we could place it before, during or after the show.",
+          "**Instagram:** the 12 most recent posts, which is all a logged-out visitor can see.",
+          "**Google Trends:** one request per region covering both years’ windows, so 2025 and 2026 share the same 0–100 scale.",
+          "**Categorisation:** posts were hand-coded by content type (backstage, runway, performance, casting reveal, countdown, docuseries, commerce, Fantasy Bra, wings) and by talent. The coding is stored with the data so anyone can challenge it.",
+          "**Calculations:** likes per view, comments per 1,000 likes, medians alongside means, and linear interpolation for the 2025 comparison, all reproduced in a Python/pandas script against a 535-row observation table with a source URL on every row."
+        ]
+      },
+      {
+        "kind": "heading",
+        "eyebrow": "Evidence",
+        "text": "What’s fact, what’s calculated, what’s interpretation"
+      },
+      {
+        "kind": "table",
+        "head": [
+          "Type",
+          "Examples"
+        ],
+        "rows": [
+          [
+            "**Observed fact**",
+            "20,973,365 views on the 2026 stream at 20:18 BST; 144 TikTok posts; Kylie Jenner wore the Fantasy Bra"
+          ],
+          [
+            "**Derived calculation**",
+            "+13% vs 2025 at the same age; 0.031 likes per view; −44% worldwide search interest; median 1.3M views for Kylie’s TikToks"
+          ],
+          [
+            "**Company-reported**",
+            "16,000+ creator programme members ([Glossy, 26 Jun 2026](https://www.glossy.co/pop/victorias-secret-is-betting-on-creators-to-fuel-its-biggest-fashion-show-yet/)); “Green Teddy” searches up 3000% (Instagram caption; metric undefined, not used as evidence)"
+          ],
+          [
+            "**Third-party estimate**",
+            "$50M Fantasy Bra value (Vogue); 2.5M peak concurrent viewers in **2025** ([Streams Charts](https://streamscharts.com/news/victorias-secret-enters-top-10-livestream-channels-2025))"
+          ],
+          [
+            "**Strategic interpretation**",
+            "Attention is moving inside platforms; celebrity buys conversation; anticipation is the product"
+          ]
+        ]
+      },
+      {
+        "kind": "heading",
+        "eyebrow": "Limits",
+        "text": "What public data can’t tell us"
+      },
+      {
+        "kind": "list",
+        "items": [
+          "**Views are not people.** One person can watch three times on two platforms. We never add platform totals together and call it reach.",
+          "**Sales.** No sales, traffic or conversion figure has been tied to the show. Victoria’s Secret & Co. reports the quarter that includes it around December 2026, and even then quarterly revenue mixes every channel and has no counterfactual.",
+          "**Return on spend.** Production, talent and media costs aren’t public.",
+          "**Kylie’s value.** Without her terms and a brand-lift test, nobody outside the company can say how much of her buzz turned into revenue.",
+          "**Live shopping.** TikTok Shop results from the After Party aren’t public.",
+          "**2026 creator, earned-media and peak-viewer figures** hadn’t been published at the time of research."
+        ]
+      },
+      {
+        "kind": "prose",
+        "paras": [
+          "Answering these needs first-party data: daily sales by channel, site analytics by traffic source, TikTok Shop data, talent and production costs, and a holdout test or marketing-mix model."
+        ]
+      },
+      {
+        "kind": "heading",
+        "eyebrow": "For founders",
+        "text": "Steal the system, not the budget"
+      },
+      {
+        "kind": "list",
+        "ordered": true,
+        "items": [
+          "**Make the launch a series:** countdown, reveal, finale. Most of Victoria’s Secret’s best-performing content came before the show.",
+          "**Own one asset people know without your name.** A TikTok of nothing but wings drew 3.6 million views.",
+          "**Film backstage.** It often outperforms the main event.",
+          "**Plan the clips before the day.** One broadcast became 59 YouTube and TikTok entry points within 20 hours.",
+          "**Put the checkout one tap from the moment.**",
+          "**Decide what you’ll measure before you post**, or you’ll be left counting views."
+        ]
+      },
+      {
+        "kind": "heading",
+        "eyebrow": "Conclusion",
+        "text": "Beautiful stops the scroll. Evidence earns the decision."
+      },
+      {
+        "kind": "prose",
+        "paras": [
+          "Victoria’s Secret’s greatest asset isn’t lingerie. It’s anticipation: built over weeks, distributed everywhere and placed next to a shop. The public numbers show the strategy working on attention. Only first-party data can show whether it worked on revenue.",
+          "That gap is where noova works: connecting brand, creative, analytics and growth, so you know why your marketing works, not just how it looks."
+        ]
+      },
+      {
+        "kind": "heading",
+        "eyebrow": "References",
+        "text": "Sources & methodology"
+      },
+      {
+        "kind": "table",
+        "head": [
+          "Source",
+          "Supports",
+          "Type",
+          "Limitations"
+        ],
+        "rows": [
+          [
+            "[Victoria’s Secret YouTube: Fashion Show 2026 stream](https://www.youtube.com/watch?v=zJOaqPMHs7Y)",
+            "20,973,365 views, 651,736 likes, live start/end (19 Oct 2026, 20:18 BST)",
+            "Observed platform data",
+            "Cumulative; views ≠ unique viewers"
+          ],
+          [
+            "[Victoria’s Secret YouTube: 2025 stream](https://www.youtube.com/watch?v=SdSSPF1S-Uc)",
+            "2025 benchmark",
+            "Observed platform data",
+            "Today’s count is a year old"
+          ],
+          [
+            "Internet Archive captures of the 2025 stream: [2.8h](https://web.archive.org/web/20251016011035/https://www.youtube.com/watch?v=SdSSPF1S-Uc), [19.3h](https://web.archive.org/web/20251016174218/https://www.youtube.com/watch?v=SdSSPF1S-Uc), [27.5h](https://web.archive.org/web/20251017015525/https://www.youtube.com/watch?v=SdSSPF1S-Uc)",
+            "2025 views at matched ages",
+            "Archived platform data",
+            "Capture time used as measurement time"
+          ],
+          [
+            "[Internet Archive capture of the 2026 stream](https://web.archive.org/web/20261019020843/https://www.youtube.com/watch?v=zJOaqPMHs7Y)",
+            "10.3M views at 3.3h",
+            "Archived platform data",
+            "As above"
+          ],
+          [
+            "[Victoria’s Secret YouTube channel](https://www.youtube.com/@VictoriasSecret/videos)",
+            "Docuseries views (19.4M); clip uploads",
+            "Observed platform data",
+            "Earlier episodes have had longer to accumulate"
+          ],
+          [
+            "[Victoria’s Secret TikTok](https://www.tiktok.com/@victoriassecret)",
+            "144 posts, views, captions (TikTok Shop, Fantasy Bra, wings)",
+            "Observed platform data",
+            "Counts rounded to 3 significant figures"
+          ],
+          [
+            "[Victoria’s Secret Instagram](https://www.instagram.com/victoriassecret/)",
+            "Likes and comments on the 12 latest posts",
+            "Observed platform data",
+            "Logged-out view; likes rounded; plays not visible"
+          ],
+          [
+            "[Google Trends](https://trends.google.com/trends/explore)",
+            "Relative search interest, 2025 vs 2026 (19 Oct 2026, 20:31 BST)",
+            "Observed platform data",
+            "Relative index, sampled; 19 Oct partial"
+          ],
+          [
+            "[Victoria’s Secret & Co. Q2 2026 results (SEC 8-K), 3 Sep 2026](https://www.sec.gov/Archives/edgar/data/0001856437/000185643726000019/ex991vsxyq22026earningsrel.htm)",
+            "Sales context; “increasing our strategic marketing investment”",
+            "Primary (company filing)",
+            "Quarter ends before the show"
+          ],
+          [
+            "[Victoria’s Secret & Co. press releases](https://www.victoriassecretandco.com/investors/financial-information/press-releases)",
+            "Angels Among Us announcement, 1 Sep 2026",
+            "Primary (company)",
+            "—"
+          ],
+          [
+            "[victoriassecret.co.uk](https://www.victoriassecret.co.uk/)",
+            "“Shop Fashion Show”, “Backstage Edit” (19 Oct)",
+            "Observed",
+            "UK site operated by Next Retail Ltd"
+          ],
+          [
+            "[W Magazine, 19 Oct 2026](https://www.wmagazine.com/fashion/victorias-secret-fashion-show-2026-photos-kylie-jenner-all-the-looks)",
+            "First LA show in 19 years; Kylie’s surprise appearance",
+            "Press report",
+            "—"
+          ],
+          [
+            "[Hola, 16 Oct 2026](https://www.hola.com/us/entertainment/20261016929609/victorias-secret-fashion-show-2026-when-where-watch/)",
+            "Venue, AMC screenings, platforms, start time",
+            "Press report (pre-event)",
+            "—"
+          ],
+          [
+            "[Yahoo / Cover Media, 19 Oct 2026](https://www.yahoo.com/entertainment/celebrity/articles/kylie-jenner-dazzles-fantasy-bra-080448156.html)",
+            "$50M estimate attributed to Vogue",
+            "Press report",
+            "No appraiser named"
+          ],
+          [
+            "[E! News, 19 Oct 2026](https://www.eonline.com/news/1437189/victorias-secret-defends-kylie-jenner-wearing-fantasy-bra-at-fashion-show)",
+            "Adam Selman quote (via Vogue); Fantasy Bra specifications",
+            "Press report",
+            "Value unattributed"
+          ],
+          [
+            "[Glossy, 26 Jun 2026](https://www.glossy.co/pop/victorias-secret-is-betting-on-creators-to-fuel-its-biggest-fashion-show-yet/)",
+            "16,000+ creator programme members",
+            "Company-reported via trade press",
+            "Definitions not given"
+          ],
+          [
+            "[Streams Charts, 16 Oct 2025](https://streamscharts.com/news/victorias-secret-enters-top-10-livestream-channels-2025)",
+            "2025 peak of 2.5M+ concurrent viewers",
+            "Third-party estimate",
+            "2025 only"
+          ],
+          [
+            "Loewenstein (1987), Economic Journal ([doi:10.2307/2232929](https://doi.org/10.2307/2232929)); Loewenstein (1994), Psychological Bulletin ([doi:10.1037/0033-2909.116.1.75](https://doi.org/10.1037/0033-2909.116.1.75)); Green & Brock (2000), JPSP ([doi:10.1037/0022-3514.79.5.701](https://doi.org/10.1037/0022-3514.79.5.701))",
+            "Anticipation, curiosity and narrative as drivers of value",
+            "Peer-reviewed",
+            "General findings, not specific to Victoria’s Secret"
+          ]
+        ],
+        "note": "Hero photograph: Taylor Hill/Getty Images. All counts were collected on 19 October 2026 and will have grown since. Charts and calculations are reproducible from the dataset and Python script behind this report."
       }
     ]
   }

@@ -15,7 +15,7 @@ const PROJECTS = [
   { no: "01", meta: "metaSolea", name: "Soléa Aesthetics", slug: "solea", img: "/img/solea/solea-hero.webp", span: "lg:col-span-12", aspect: "aspect-[4/5] lg:aspect-[16/9]", offset: "lg:mb-16" },
   { no: "02", meta: "meta01", name: "intellimation.ai", slug: "intellimation", img: "/img/iai 4.png", span: "lg:col-span-7", aspect: "aspect-[4/3]", offset: "" },
   { no: "03", meta: "meta04", name: "AMË", slug: "ame", img: "/img/work-3.jpg", span: "lg:col-span-5", aspect: "aspect-[4/5]", offset: "lg:mt-32" },
-  { no: "04", meta: "metaVs2026", name: "Victoria’s Secret Fashion Show 2026", slug: "vs-2026", img: "/img/vs-2026/hero.webp", span: "lg:col-span-12", aspect: "aspect-[4/5] lg:aspect-[16/9]", offset: "lg:mt-16" },
+  { no: "04", meta: "metaVs2026", name: "Victoria’s Secret Fashion Show 2026", slug: "vs-2026", img: "/img/vs-2026/hero-finale.webp", span: "lg:col-span-12", aspect: "aspect-[4/5] lg:aspect-[16/9]", offset: "lg:mt-16" },
 ] as const;
 
 export default function SelectedWork() {

@@ -12,7 +12,12 @@ const nextConfig: NextConfig = {
   // and monograms from disk, so ship those files with the report function.
   serverExternalPackages: ["@react-pdf/renderer"],
   outputFileTracingIncludes: {
-    "/api/audit/report": ["./lib/audit/pdf-assets/**"],
+    // pdfkit loads its built-in font metrics with a dynamic require that
+    // file tracing can't see.
+    "/api/audit/report": [
+      "./lib/audit/pdf-assets/**",
+      "./node_modules/pdfkit/js/standard-fonts/**",
+    ],
   },
   // The older Brand Coherence Audit was replaced by the Brand & Growth Audit.
   async redirects() {

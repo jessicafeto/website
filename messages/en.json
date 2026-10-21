@@ -110,7 +110,11 @@
     "service3": "Branding",
     "service4": "Automation",
     "tagline": "For businesses that have outgrown their own image.",
-    "scroll": "Scroll"
+    "scroll": "Scroll",
+    "intro": "Strategy, branding, websites, marketing and intelligent systems, built together so your business finally looks as good as it is.",
+    "ctaCall": "Book a discovery call",
+    "ctaWork": "See our work",
+    "note": "Studios in London & Tirana"
   },
   "footer": {
     "contact": "Contact",

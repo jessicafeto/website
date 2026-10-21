@@ -223,9 +223,9 @@ p {
   background: linear-gradient(
     180deg,
     rgba(18, 16, 14, 0.28) 0%,
-    rgba(18, 16, 14, 0.06) 26%,
-    rgba(18, 16, 14, 0.04) 54%,
-    rgba(18, 16, 14, 0.58) 100%
+    rgba(18, 16, 14, 0.08) 24%,
+    rgba(18, 16, 14, 0.22) 50%,
+    rgba(18, 16, 14, 0.72) 100%
   );
   z-index: 1;
 }
@@ -233,16 +233,16 @@ p {
   position: relative;
   z-index: 2;
   width: 100%;
-  padding-bottom: 12vh;
+  padding-bottom: clamp(3rem, 9vh, 6rem);
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
 }
 .hero-mono {
-  height: clamp(48px, 6vw, 74px);
+  height: clamp(40px, 4.5vw, 58px);
   width: auto;
-  margin-bottom: 28px;
+  margin-bottom: 22px;
   filter: drop-shadow(0 2px 16px rgba(0, 0, 0, 0.4));
 }
 .hero-services {
@@ -261,6 +261,75 @@ p {
   margin: 0 0.7em;
   font-size: 0.85em;
   vertical-align: middle;
+}
+/* Intent + two ways in */
+.hero-intro {
+  margin-top: clamp(1.25rem, 3vh, 2rem);
+  max-width: 34rem;
+  font-family: var(--font-sans);
+  font-weight: 300;
+  font-size: clamp(0.95rem, 1.3vw, 1.08rem);
+  line-height: 1.65;
+  color: rgba(246, 241, 231, 0.9);
+  text-shadow: 0 1px 14px rgba(0, 0, 0, 0.5);
+}
+.hero-actions {
+  margin-top: clamp(1.5rem, 3.4vh, 2.25rem);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+}
+.hero-btn {
+  font-family: var(--font-sans);
+  font-weight: 500;
+  font-size: 11px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  padding: 15px 28px;
+  border: 1px solid transparent;
+  transition:
+    background var(--dur-fast) var(--ease-noova),
+    color var(--dur-fast) var(--ease-noova),
+    border-color var(--dur-fast) var(--ease-noova);
+}
+.hero-btn--light {
+  background: #faf8f3;
+  color: var(--color-ink);
+}
+.hero-btn--light:hover {
+  background: transparent;
+  color: #faf8f3;
+  border-color: #faf8f3;
+}
+.hero-btn--oxblood {
+  background: var(--color-oxblood);
+  color: #fff;
+}
+.hero-btn--oxblood:hover {
+  background: #5e1414;
+}
+.hero-btn:focus-visible {
+  outline: 1px solid #faf8f3;
+  outline-offset: 3px;
+}
+.hero-note {
+  margin-top: 18px;
+  font-family: var(--font-sans);
+  font-size: 10.5px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: rgba(246, 241, 231, 0.7);
+}
+@media (max-width: 640px) {
+  .hero-btn {
+    width: 100%;
+    text-align: center;
+  }
+  .hero-actions {
+    width: 100%;
+    max-width: 22rem;
+  }
 }
 .hero-tag {
   font-family: var(--font-serif);

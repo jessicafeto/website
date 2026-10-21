@@ -110,7 +110,11 @@
     "service3": "Branding",
     "service4": "Automation",
     "tagline": "Për bizneset që kërkojnë më shumë se një logo.",
-    "scroll": ""
+    "scroll": "",
+    "intro": "Strategji, markë, uebsajte, marketing dhe sisteme inteligjente, të ndërtuara së bashku që biznesi juaj të duket aq mirë sa është.",
+    "ctaCall": "Rezervoni një bisedë njohjeje",
+    "ctaWork": "Shikoni punën tonë",
+    "note": "Studio në Londër & Tiranë"
   },
   "footer": {
     "contact": "Kontakt",

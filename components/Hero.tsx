@@ -2,11 +2,13 @@
 
 import Image from "next/image";
 import { useTranslations } from "next-intl";
+import { Link } from "@/i18n/navigation";
 
 /**
- * The cover page. A full 100vh cinematic photograph with a quiet, centred
- * lockup: monogram → services. No navigation competes with it. The
- * photograph carries the emotion; type quietly supports.
+ * The cover page. A full-bleed cinematic photograph with a centred lockup:
+ * monogram → services → one line of intent → two ways in
+ * (book a call, see the work). The photograph carries the emotion; type
+ * quietly supports.
  */
 export default function Hero() {
   const t = useTranslations("hero");
@@ -47,6 +49,18 @@ export default function Hero() {
           </span>
           {t("service4")}
         </p>
+
+        <p className="hero-intro">{t("intro")}</p>
+
+        <div className="hero-actions">
+          <Link href="/#contact" className="hero-btn hero-btn--light">
+            {t("ctaCall")}
+          </Link>
+          <Link href="/#work" className="hero-btn hero-btn--oxblood">
+            {t("ctaWork")}
+          </Link>
+        </div>
+        <p className="hero-note">{t("note")}</p>
       </div>
     </section>
   );

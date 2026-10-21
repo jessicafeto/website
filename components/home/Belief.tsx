@@ -4,6 +4,7 @@ import Image from "next/image";
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
 import { FadeUp } from "./Motion";
+import BrochureBand from "./BrochureBand";
 
 const SERVICES = [
   { no: "01", title: "Brand", image: "/img/brand-solea.webp", descKey: "brandDesc", href: "/branding" },
@@ -73,6 +74,9 @@ export default function Belief() {
             ))}
           </div>
         </FadeUp>
+
+        {/* The services brochure — a printed companion to the index above */}
+        <BrochureBand />
       </div>
     </section>
   );

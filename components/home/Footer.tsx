@@ -1,8 +1,9 @@
 "use client";
 
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
 import CookieSettingsLink from "@/components/consent/CookieSettingsLink";
+import { BROCHURES } from "@/components/home/BrochureBand";
 
 /** Footer navigation — real routes, so the links work from every page. */
 const FOOTER_LINKS = [
@@ -16,6 +17,7 @@ const FOOTER_LINKS = [
 /** Editorial footer — the back cover of the noova journal. */
 export default function Footer() {
   const t = useTranslations("footer");
+  const brochure = BROCHURES[useLocale() === "sq" ? "sq" : "en"];
 
   return (
     <footer className="border-t border-white/10 bg-[#4a1a1e]">
@@ -76,6 +78,16 @@ export default function Footer() {
                     {t(l.key)}
                   </Link>
                 ))}
+                <a
+                  href={brochure.href}
+                  target="_blank"
+                  rel="noopener"
+                  type="application/pdf"
+                  className="font-sans text-[0.92rem] transition-opacity duration-300 hover:opacity-100"
+                  style={{ color: "rgba(255,255,255,0.82)" }}
+                >
+                  {t("brochure")}
+                </a>
               </div>
             </div>
 

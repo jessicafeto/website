@@ -130,7 +130,8 @@
     "home": "Kryefaqja",
     "navHeading": "Navigim",
     "studio": "Studio",
-    "aiNote": "Disa nga imazhet në këtë faqe janë gjeneruar me AI, nën drejtimin kreativ të noova."
+    "aiNote": "Disa nga imazhet në këtë faqe janë gjeneruar me AI, nën drejtimin kreativ të noova.",
+    "brochure": "Broshura e shërbimeve (PDF)"
   },
   "offer": {
     "timeline": "Kohëzgjatja",
@@ -247,5 +248,13 @@
     "headline": "Erdhët për më shumë?",
     "text": "Duket se po bëjmë diçka si duhet.",
     "button": "Hidhini një sy"
+  },
+  "brochure": {
+    "label": "Broshura e shërbimeve · 2026",
+    "heading": "Gjithçka që bëjmë, në një vend.",
+    "intro": "Një përmbledhje 16-faqëshe e shërbimeve, paketave dhe mënyrës sonë të punës. Lexojeni tani ose ruajeni për ta ndarë me ekipin tuaj.",
+    "newTab": "hapet në një skedë të re",
+    "talk": "Preferoni ta diskutojmë bashkë?",
+    "talkCta": "Nisni një bisedë →"
   }
 }

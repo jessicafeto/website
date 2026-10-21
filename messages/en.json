@@ -130,7 +130,8 @@
     "home": "Home",
     "navHeading": "Navigation",
     "studio": "Studio",
-    "aiNote": "Selected imagery on this site is AI-generated, under noova's creative direction."
+    "aiNote": "Selected imagery on this site is AI-generated, under noova's creative direction.",
+    "brochure": "Services brochure (PDF)"
   },
   "offer": {
     "timeline": "Duration",
@@ -247,5 +248,13 @@
     "headline": "Back for more?",
     "text": "We must be doing something right.",
     "button": "Take a look around"
+  },
+  "brochure": {
+    "label": "Services brochure · 2026",
+    "heading": "Everything we do, in one place.",
+    "intro": "A 16-page overview of our services, packages and way of working. Read it now, or keep it to share with your team.",
+    "newTab": "opens in a new tab",
+    "talk": "Prefer to talk it through?",
+    "talkCta": "Start a conversation →"
   }
 }

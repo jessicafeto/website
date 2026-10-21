@@ -6,16 +6,17 @@ import { Link } from "@/i18n/navigation";
 import { FadeUp } from "./Motion";
 
 /**
- * Selected Work — an editorial gallery, not an equal grid.
- * Asymmetric spans, alternating portrait/landscape, staggered vertical offsets.
+ * Selected Work — an even 2 × 2 grid. Every image shares one shape and lines
+ * up row by row; each caption sits beneath it (hairline, number, italic name,
+ * sector), so the section reads as one ordered set.
  *
  * Each tile links to its case study at /work/[slug] (see content/caseStudies.ts).
  */
 const PROJECTS = [
-  { no: "01", meta: "metaSolea", name: "Soléa Aesthetics", slug: "solea", img: "/img/solea/solea-hero.webp", span: "lg:col-span-12", aspect: "aspect-[4/5] lg:aspect-[16/9]", offset: "lg:mb-16" },
-  { no: "02", meta: "meta01", name: "intellimation.ai", slug: "intellimation", img: "/img/iai 4.png", span: "lg:col-span-7", aspect: "aspect-[4/3]", offset: "" },
-  { no: "03", meta: "meta04", name: "AMË", slug: "ame", img: "/img/work-3.jpg", span: "lg:col-span-5", aspect: "aspect-[4/5]", offset: "lg:mt-32" },
-  { no: "04", meta: "metaVs2026", name: "Victoria’s Secret Fashion Show 2026", slug: "vs-2026", img: "/img/vs-2026/hero-finale.webp", span: "lg:col-span-12", aspect: "aspect-[4/5] lg:aspect-[16/9]", offset: "lg:mt-16" },
+  { no: "01", meta: "metaSolea", name: "Soléa Aesthetics", slug: "solea", img: "/img/solea/solea-hero.webp" },
+  { no: "02", meta: "meta01", name: "intellimation.ai", slug: "intellimation", img: "/img/iai 4.png" },
+  { no: "03", meta: "meta04", name: "AMË", slug: "ame", img: "/img/work-3.jpg" },
+  { no: "04", meta: "metaVs2026", name: "Victoria’s Secret Fashion Show 2026", slug: "vs-2026", img: "/img/vs-2026/hero-finale.webp" },
 ] as const;
 
 export default function SelectedWork() {
@@ -25,39 +26,27 @@ export default function SelectedWork() {
     <section id="work" className="border-t border-rule bg-white">
       <div className="wrap py-[clamp(6rem,15vh,10rem)]">
         <FadeUp>
-          <div className="mb-16 flex items-baseline justify-between">
-            <p className="eyebrow text-grey">{t("label")}</p>
-            <a
-              href="#work"
-              className="eyebrow text-ink transition-opacity duration-500 hover:opacity-50"
-            >
-              {t("viewAll")}
-            </a>
-          </div>
+          <p className="eyebrow mb-14 text-center text-grey">{t("label")}</p>
         </FadeUp>
 
-        <div className="grid grid-cols-1 gap-y-16 lg:grid-cols-12 lg:gap-x-[clamp(1.5rem,3vw,3rem)] lg:gap-y-4">
+        <div className="grid gap-x-[clamp(1.5rem,3vw,3rem)] gap-y-16 md:grid-cols-2">
           {PROJECTS.map((p, i) => (
-            <FadeUp
-              key={p.name}
-              delay={(i % 2) * 0.1}
-              className={`${p.span} ${p.offset}`}
-            >
+            <FadeUp key={p.slug} delay={(i % 2) * 0.1}>
               <Link href={`/work/${p.slug}`} className="group block">
-                <div className={`relative ${p.aspect} overflow-hidden`}>
+                <div className="relative aspect-[4/3] overflow-hidden">
                   <Image
                     src={p.img}
                     alt={`${p.name} — ${t("label")}`}
                     fill
-                    sizes="(max-width:1024px) 100vw, 55vw"
+                    sizes="(max-width:768px) 100vw, 50vw"
                     className="object-cover transition-transform duration-[1600ms] ease-[cubic-bezier(0.2,0.6,0.2,1)] group-hover:scale-[1.04]"
                   />
                 </div>
 
-                <div className="mt-6 flex items-baseline gap-5">
+                <div className="mt-6 flex items-baseline gap-4 border-t border-ink/80 pt-5">
                   <span className="eyebrow text-oxblood">{p.no}</span>
-                  <div>
-                    <h3 className="font-sans font-bold tracking-[-0.01em] text-[clamp(1.3rem,1.8vw,1.7rem)] leading-tight text-ink transition-colors duration-500 group-hover:text-oxblood">
+                  <div className="min-w-0">
+                    <h3 className="font-serif italic leading-[1.05] text-ink text-[clamp(1.7rem,2.3vw,2.2rem)] transition-colors duration-500 group-hover:text-oxblood">
                       {p.name}
                     </h3>
                     <p className="eyebrow mt-2 text-grey">{t(p.meta)}</p>

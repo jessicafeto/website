@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages, getTranslations, setRequestLocale } from "next-intl/server";
-import { cormorant, lato } from "../fonts";
+import { playfair, lato } from "../fonts";
 import { routing, type Locale } from "@/i18n/routing";
 import CookieConsent from "@/components/consent/CookieConsent";
 import LanguagePopup from "@/components/LanguagePopup";
@@ -61,7 +61,7 @@ export default async function LocaleLayout({
   const messages = await getMessages();
 
   return (
-    <html lang={locale} className={`${cormorant.variable} ${lato.variable}`}>
+    <html lang={locale} className={`${playfair.variable} ${lato.variable}`}>
       <body>
         <NextIntlClientProvider messages={messages}>
           <LanguagePopup />

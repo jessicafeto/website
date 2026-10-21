@@ -5,10 +5,9 @@ import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
 
 /**
- * The cover page. A full-bleed cinematic photograph with a centred lockup:
- * monogram → services → one line of intent → two ways in
- * (book a call, see the work). The photograph carries the emotion; type
- * quietly supports.
+ * The cover page. A full-bleed cinematic photograph with one centred column:
+ * monogram → services → hairline → one line of intent → two equal buttons →
+ * studios note. The photograph carries the emotion; type quietly supports.
  */
 export default function Hero() {
   const t = useTranslations("hero");
@@ -34,21 +33,28 @@ export default function Hero() {
           width={74}
           height={67}
         />
+        {/* Services in two balanced pairs — one line on desktop, two on phones */}
         <p className="eyebrow hero-services">
-          {t("service1")}
-          <span className="sep" aria-hidden>
+          <span className="hero-services__pair">
+            {t("service1")}
+            <span className="sep" aria-hidden>
+              ·
+            </span>
+            {t("service2")}
+          </span>
+          <span className="sep hero-services__mid" aria-hidden>
             ·
           </span>
-          {t("service2")}
-          <span className="sep" aria-hidden>
-            ·
+          <span className="hero-services__pair">
+            {t("service3")}
+            <span className="sep" aria-hidden>
+              ·
+            </span>
+            {t("service4")}
           </span>
-          {t("service3")}
-          <span className="sep" aria-hidden>
-            ·
-          </span>
-          {t("service4")}
         </p>
+
+        <span className="hero-rule" aria-hidden />
 
         <p className="hero-intro">{t("intro")}</p>
 

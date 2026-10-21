@@ -3,23 +3,23 @@ import localFont from "next/font/local";
 /**
  * Self-hosted type — no runtime request, deterministic builds, fast LCP.
  * Two families, one job each (Brand Book §13). Latin subset only.
- * Cormorant Garamond ships as a variable font (weight axis 300–700);
+ * Playfair Display ships as a variable font (weight axis 400–900, OFL 1.1);
  * one file for roman, one for italic. Lato is static (Light/Regular/Bold).
  */
-export const cormorant = localFont({
+export const playfair = localFont({
   src: [
     {
-      path: "./fonts/cormorant-variable.woff2",
-      weight: "300 600",
+      path: "./fonts/playfair-variable.woff2",
+      weight: "400 900",
       style: "normal",
     },
     {
-      path: "./fonts/cormorant-variable-italic.woff2",
-      weight: "300 600",
+      path: "./fonts/playfair-variable-italic.woff2",
+      weight: "400 900",
       style: "italic",
     },
   ],
-  variable: "--font-cormorant",
+  variable: "--font-playfair",
   display: "swap",
   fallback: ["Georgia", "Times New Roman", "serif"],
 });

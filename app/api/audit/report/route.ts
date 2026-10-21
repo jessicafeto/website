@@ -32,12 +32,21 @@ export async function GET(req: Request) {
       },
     });
   }
-  const pdf = await renderToBuffer(
-    ReportDocument({
-      result: score(verified.responses),
-      issuedAt: verified.issuedAt,
-    })
-  );
+  let pdf: Buffer;
+  try {
+    pdf = await renderToBuffer(
+      ReportDocument({
+        result: score(verified.responses),
+        issuedAt: verified.issuedAt,
+      })
+    );
+  } catch (e) {
+    console.error("[audit] report generation failed", e);
+    return new Response(`Report generation failed: ${(e as Error).message}`, {
+      status: 500,
+      headers: { "content-type": "text/plain; charset=utf-8" },
+    });
+  }
   return new Response(new Uint8Array(pdf), {
     headers: {
       "content-type": "application/pdf",

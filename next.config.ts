@@ -23,7 +23,10 @@ const nextConfig: NextConfig = {
   async redirects() {
     return [
       { source: "/audit", destination: "/brand-growth-audit", permanent: true },
-      { source: "/sq/audit", destination: "/sq/brand-growth-audit", permanent: true },
+      { source: "/sq/audit", destination: "/brand-growth-audit", permanent: true },
+      // The audit is English-only for now (see middleware.ts).
+      { source: "/sq/brand-growth-audit/:path*", destination: "/brand-growth-audit/:path*", permanent: false },
+      { source: "/en/brand-growth-audit/:path*", destination: "/brand-growth-audit/:path*", permanent: false },
     ];
   },
 };

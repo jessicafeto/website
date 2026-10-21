@@ -13,7 +13,6 @@ const PATHS = [
   "/marketing",
   "/automation",
   "/story",
-  "/brand-growth-audit",
   "/privacy",
   "/cookies",
   ...CASE_ORDER.map((slug) => `/work/${slug}`),
@@ -24,16 +23,26 @@ function localizedUrl(locale: string, path: string) {
   return `${BASE_URL}${prefix}${path}`;
 }
 
+/** Pages that only exist in English (served at the English URL in every locale). */
+const ENGLISH_ONLY = ["/brand-growth-audit"];
+
 export default function sitemap(): MetadataRoute.Sitemap {
-  return PATHS.flatMap((path) =>
-    routing.locales.map((locale) => ({
-      url: localizedUrl(locale, path),
-      lastModified: new Date(),
-      alternates: {
-        languages: Object.fromEntries(
-          routing.locales.map((l) => [l, localizedUrl(l, path)]),
-        ),
-      },
-    })),
-  );
+  const englishOnly = ENGLISH_ONLY.map((path) => ({
+    url: `${BASE_URL}${path}`,
+    lastModified: new Date(),
+  }));
+  return [
+    ...englishOnly,
+    ...PATHS.flatMap((path) =>
+      routing.locales.map((locale) => ({
+        url: localizedUrl(locale, path),
+        lastModified: new Date(),
+        alternates: {
+          languages: Object.fromEntries(
+            routing.locales.map((l) => [l, localizedUrl(l, path)])
+          ),
+        },
+      }))
+    ),
+  ];
 }

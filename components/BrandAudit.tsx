@@ -117,7 +117,7 @@ const TIERS = [
   {
     min: 0,
     name: "Scattered",
-    body: "Your business has outgrown its image. The good news: you're not broken — just scattered, your best work spread across parts that were never designed to work together. This is exactly what we rebuild, starting at the core.",
+    body: "Your business has outgrown its image. The good news: you're not broken — just scattered, your best work spread across parts that were never planned as one. This is exactly what we rebuild, starting at the core.",
     cta: "Start a conversation",
     href: "/#contact",
   },

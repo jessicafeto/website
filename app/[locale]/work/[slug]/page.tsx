@@ -17,7 +17,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const cs = CASE_ORDER.includes(slug) ? getCaseStudy(locale, slug) : undefined;
   if (!cs) return {};
   return {
-    title: `${cs.name} — Selected Work`,
+    title: `${cs.name} — Work`,
     description: `${cs.category}. ${cs.overviewHeading}`,
     alternates: {
       canonical: locale === "en" ? `/work/${slug}` : `/${locale}/work/${slug}`,

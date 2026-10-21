@@ -6,7 +6,7 @@ import { Link } from "@/i18n/navigation";
 import { FadeUp } from "./Motion";
 
 /**
- * Selected Work — an even 2 × 2 grid. Every image shares one shape and lines
+ * Recent work — an even 2 × 2 grid. Every image shares one shape and lines
  * up row by row; each caption sits beneath it (hairline, number, italic name,
  * sector), so the section reads as one ordered set.
  *

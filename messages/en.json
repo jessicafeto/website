@@ -69,7 +69,7 @@
     "preferences": "Cookie preferences"
   },
   "work": {
-    "label": "Selected Work",
+    "label": "Recent work",
     "viewAll": "View all work →",
     "meta01": "Technology · Branding, Marketing & Events",
     "meta02": "Beauty · Branding, Creative & Marketing",
@@ -82,7 +82,7 @@
   },
   "studio": {
     "p1": "The most important part of a brand is the part no one sees first — the thinking beneath it. Before a business can be expressed, it has to be understood. So we start at the core: what a business is, what it believes, and why it matters. Everything visible grows from there.",
-    "p2": "Businesses of real quality are rarely broken — they're scattered, their best work spread across parts that were never designed to work together. We don't decorate; we clarify. Strategy, identity, words, websites and technology are built as one coherent system, in one room, rather than handed between departments.",
+    "p2": "Businesses of real quality are rarely broken — they're scattered, their best work spread across parts that were never planned as one. We don't decorate; we clarify. Strategy, identity, words, websites and technology are built as one coherent system, in one room, rather than handed between departments.",
     "p3": "The result isn't a new look. It's a brand that finally matches the business behind it — built to last, not to trend. A single, considered world across every touchpoint.",
     "p4": "noova works between London and Tirana — two cities, one level of care. Wherever a project begins, it's held to the same rigour and the same restraint.",
     "h1": "We understand a business before we design it.",
@@ -128,7 +128,7 @@
     "cookiePolicy": "Cookie Policy",
     "rights": "© 2026 NOOVA. ALL RIGHTS RESERVED.",
     "connectHeading": "Connect",
-    "description": "We start with what a business truly is, then build everything around it — strategy, branding, websites, marketing and intelligent systems in one coherent practice. The result is a brand that finally matches the business behind it.",
+    "description": "We start with what a business truly is, then build everything around it — strategy, branding, websites, marketing and intelligent systems in one coherent practice. So the brand finally matches the business behind it.",
     "services": "Practice",
     "studioLabel": "BRAND & INNOVATION STUDIO",
     "home": "Home",

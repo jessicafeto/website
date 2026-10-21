@@ -245,11 +245,5 @@
         ]
       }
     ]
-  },
-  "returnPopup": {
-    "close": "Close",
-    "headline": "Back for more?",
-    "text": "We must be doing something right.",
-    "button": "Take a look around"
   }
 }

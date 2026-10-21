@@ -6,7 +6,6 @@ import { cormorant, lato } from "../fonts";
 import { routing, type Locale } from "@/i18n/routing";
 import CookieConsent from "@/components/consent/CookieConsent";
 import LanguagePopup from "@/components/LanguagePopup";
-import ReturnVisitPopup from "@/components/ReturnVisitPopup";
 import "../globals.css";
 
 /** Pre-render a page for each locale at build time. */
@@ -66,10 +65,7 @@ export default async function LocaleLayout({
       <body>
         <NextIntlClientProvider messages={messages}>
           <LanguagePopup />
-          <CookieConsent>
-            {children}
-            <ReturnVisitPopup />
-          </CookieConsent>
+          <CookieConsent>{children}</CookieConsent>
         </NextIntlClientProvider>
       </body>
     </html>

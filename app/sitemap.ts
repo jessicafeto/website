@@ -13,7 +13,7 @@ const PATHS = [
   "/marketing",
   "/automation",
   "/story",
-  "/audit",
+  "/brand-growth-audit",
   "/privacy",
   "/cookies",
   ...CASE_ORDER.map((slug) => `/work/${slug}`),

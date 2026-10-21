@@ -6,9 +6,11 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "test:audit": "esbuild lib/audit/scoring.test.ts --bundle --platform=node --format=esm --log-level=warning --outfile=.next/cache/audit-test.mjs && node --test .next/cache/audit-test.mjs"
   },
   "dependencies": {
+    "@react-pdf/renderer": "^4.9.0",
     "framer-motion": "^12.42.2",
     "gsap": "^3.15.0",
     "next": "^15.5.4",

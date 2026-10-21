@@ -8,6 +8,19 @@ const nextConfig: NextConfig = {
   },
   // Calm is fast. Keep the runtime lean.
   reactStrictMode: true,
+  // The audit's PDF renderer runs as a plain Node package, and reads its fonts
+  // and monograms from disk, so ship those files with the report function.
+  serverExternalPackages: ["@react-pdf/renderer"],
+  outputFileTracingIncludes: {
+    "/api/audit/report": ["./lib/audit/pdf-assets/**"],
+  },
+  // The older Brand Coherence Audit was replaced by the Brand & Growth Audit.
+  async redirects() {
+    return [
+      { source: "/audit", destination: "/brand-growth-audit", permanent: true },
+      { source: "/sq/audit", destination: "/sq/brand-growth-audit", permanent: true },
+    ];
+  },
 };
 
 // Wires next-intl into the build and points it at the request config.

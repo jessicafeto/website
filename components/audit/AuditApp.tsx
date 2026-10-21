@@ -519,7 +519,7 @@ export default function AuditApp({ emailEnabled }: { emailEnabled: boolean }) {
               id="step-q"
               ref={headingRef}
               tabIndex={-1}
-              className="mt-4 font-serif italic text-ink leading-[1.15] text-[clamp(1.65rem,3.6vw,2.4rem)] outline-none"
+              className="mt-4 font-sans font-normal tracking-[-0.01em] text-ink leading-[1.35] text-[clamp(1.35rem,2.8vw,1.85rem)] outline-none"
             >
               {q ? (
                 <Md text={q.prompt} />

@@ -12,6 +12,36 @@ import {
   type CaseStudy,
 } from "@/content/caseStudies";
 
+/**
+ * Inline markup for report text: **bold** and [label](https://url).
+ * Rendered as React nodes (no raw HTML), links open in a new tab.
+ */
+function Inline({ text }: { text: string }) {
+  const parts = text.split(/(\*\*[^*]+\*\*|\[[^\]]+\]\([^)\s]+\))/g);
+  return (
+    <>
+      {parts.map((p, i) => {
+        const bold = p.match(/^\*\*([^*]+)\*\*$/);
+        if (bold) return <strong key={i} className="font-bold text-ink">{bold[1]}</strong>;
+        const link = p.match(/^\[([^\]]+)\]\(([^)\s]+)\)$/);
+        if (link)
+          return (
+            <a
+              key={i}
+              href={link[2]}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-oxblood underline decoration-rule underline-offset-[3px] transition-colors duration-300 hover:decoration-oxblood"
+            >
+              {link[1]}
+            </a>
+          );
+        return <span key={i}>{p}</span>;
+      })}
+    </>
+  );
+}
+
 /** A minimal snapshot column — label over a stacked list, centred, no icons. */
 function SnapCol({ label, items }: { label: string; items: string[] }) {
   return (
@@ -46,6 +76,155 @@ function BlockView({ block, alt }: { block: Block; alt: string }) {
             </p>
           </div>
         </FadeUp>
+      </div>
+    );
+  }
+
+  if (block.kind === "findings") {
+    return (
+      <div className="wrap">
+        <FadeUp>
+          <div className="mx-auto max-w-[880px]">
+            <p className="eyebrow text-center text-oxblood">{block.label}</p>
+            <dl className="mt-8 border-t border-rule">
+              {block.items.map((it) => (
+                <div
+                  key={it.k}
+                  className="grid grid-cols-1 gap-2 border-b border-rule py-6 md:grid-cols-[220px_1fr] md:gap-8"
+                >
+                  <dt className="eyebrow pt-1 text-grey">{it.k}</dt>
+                  <dd className="font-sans text-[1rem] leading-[1.8] text-ink">
+                    {it.v}
+                  </dd>
+                </div>
+              ))}
+            </dl>
+          </div>
+        </FadeUp>
+      </div>
+    );
+  }
+
+  if (block.kind === "heading") {
+    return (
+      <div className="wrap">
+        <div className="mx-auto max-w-[760px]">
+          {block.eyebrow && <p className="eyebrow text-oxblood">{block.eyebrow}</p>}
+          <h2 className="mt-4 font-sans font-bold text-ink text-[clamp(1.45rem,2.6vw,2.05rem)] leading-[1.2] tracking-[-0.01em]">
+            {block.text}
+          </h2>
+        </div>
+      </div>
+    );
+  }
+
+  if (block.kind === "prose") {
+    return (
+      <div className="wrap">
+        <div className="mx-auto max-w-[760px] space-y-6">
+          {block.paras.map((p, i) => (
+            <p key={i} className="font-sans text-[1.05rem] leading-[1.85] text-grey">
+              <Inline text={p} />
+            </p>
+          ))}
+        </div>
+      </div>
+    );
+  }
+
+  if (block.kind === "list") {
+    const Tag = block.ordered ? "ol" : "ul";
+    return (
+      <div className="wrap">
+        <Tag
+          className={`mx-auto max-w-[760px] space-y-3 pl-6 font-sans text-[1.05rem] leading-[1.8] text-grey ${block.ordered ? "list-decimal" : "list-disc"} marker:text-oxblood`}
+        >
+          {block.items.map((it, i) => (
+            <li key={i}>
+              <Inline text={it} />
+            </li>
+          ))}
+        </Tag>
+      </div>
+    );
+  }
+
+  if (block.kind === "stats") {
+    return (
+      <div className="wrap">
+        <FadeUp>
+          <dl className="mx-auto grid max-w-[980px] grid-cols-2 gap-x-8 gap-y-10 border-y border-rule py-10 text-center md:grid-cols-4">
+            {block.items.map((it) => (
+              <div key={it.label}>
+                <dt className="sr-only">{it.label}</dt>
+                <dd className="font-serif text-oxblood text-[clamp(2rem,4vw,3rem)] leading-none">
+                  {it.value}
+                </dd>
+                <p className="mx-auto mt-3 max-w-[200px] font-sans text-[0.85rem] leading-snug text-grey">
+                  {it.label}
+                </p>
+              </div>
+            ))}
+          </dl>
+        </FadeUp>
+      </div>
+    );
+  }
+
+  if (block.kind === "chart") {
+    return (
+      <div className="wrap">
+        <FadeUp>
+          <figure className="mx-auto max-w-[980px]">
+            <Image
+              src={block.src}
+              alt={block.alt}
+              width={block.w}
+              height={block.h}
+              sizes="(max-width:980px) 100vw, 980px"
+              className="h-auto w-full"
+            />
+            <figcaption className="mx-auto mt-4 max-w-[760px] font-sans text-[0.85rem] leading-relaxed text-grey">
+              <Inline text={block.caption} />
+            </figcaption>
+          </figure>
+        </FadeUp>
+      </div>
+    );
+  }
+
+  if (block.kind === "table") {
+    return (
+      <div className="wrap">
+        <div className="mx-auto max-w-[980px] overflow-x-auto">
+          <table className="w-full min-w-[640px] border-collapse text-left font-sans text-[0.9rem] leading-relaxed">
+            <thead>
+              <tr className="border-b border-ink">
+                {block.head.map((h) => (
+                  <th key={h} className="eyebrow py-3 pr-6 align-bottom font-normal text-grey">
+                    {h}
+                  </th>
+                ))}
+              </tr>
+            </thead>
+            <tbody>
+              {block.rows.map((r, i) => (
+                <tr key={i} className="border-b border-rule align-top">
+                  {r.map((c, j) => (
+                    <td key={j} className={`py-4 pr-6 ${j === 0 ? "text-ink" : "text-grey"}`}>
+                      <Inline text={c} />
+                    </td>
+                  ))}
+                </tr>
+              ))}
+            </tbody>
+          </table>
+          {block.note && (
+            <p className="mt-4 font-sans text-[0.85rem] leading-relaxed text-grey">
+              <Inline text={block.note} />
+            </p>
+          )}
+        </div>
       </div>
     );
   }
@@ -203,8 +382,15 @@ export default async function CaseStudyPage({ slug }: { slug: string }) {
           {cs.blocks.map((b, i) => {
             const prev = cs.blocks[i - 1];
             const afterCaption = prev?.kind === "caption";
+            const reportKinds = ["prose", "list", "table"];
             const gap =
-              b.kind === "caption"
+              b.kind === "heading"
+                ? "mt-[clamp(4.5rem,11vh,7.5rem)]"
+                : reportKinds.includes(b.kind)
+                  ? "mt-8"
+                  : b.kind === "chart" || b.kind === "stats"
+                    ? "mt-[clamp(2.5rem,6vh,4rem)]"
+                    : b.kind === "caption" || b.kind === "findings"
                 ? "mt-[clamp(5.5rem,15vh,11rem)]"
                 : afterCaption
                   ? "mt-[clamp(1.75rem,4vh,3rem)]"

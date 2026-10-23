@@ -66,7 +66,7 @@ const BOOL = [
 const DATE = ["AUDIT_DATE"];
 
 // Check the key before doing anything else.
-const account = await api("/account");
+const account = await api("/contacts/lists?limit=1");
 if (!account.ok) {
   console.error(
     account.status === 401

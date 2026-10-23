@@ -65,6 +65,17 @@ const BOOL = [
 ];
 const DATE = ["AUDIT_DATE"];
 
+// Check the key before doing anything else.
+const account = await api("/account");
+if (!account.ok) {
+  console.error(
+    account.status === 401
+      ? "Brevo rejected the API key (401). Check you pasted the full xkeysib-… key in place of PASTE_KEY_HERE, and that it has Contacts access."
+      : `Brevo returned ${account.status}: ${(await account.text()).slice(0, 200)}`
+  );
+  process.exit(1);
+}
+
 const existing = new Set(
   ((await (await api("/contacts/attributes")).json()).attributes ?? []).map(
     (a) => a.name
@@ -116,6 +127,10 @@ for (const name of [
         body: JSON.stringify({ name, folderId }),
       })
     ).json();
+  if (!list.id) {
+    console.error(`Couldn't create the list "${name}": ${JSON.stringify(list)}`);
+    process.exit(1);
+  }
   console.log(`${name}: id ${list.id}`);
 }
 console.log(

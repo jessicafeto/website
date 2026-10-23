@@ -42,7 +42,7 @@ export async function GET(req: Request) {
     );
   } catch (e) {
     console.error("[audit] report generation failed", e);
-    return new Response(`Report generation failed: ${(e as Error).message}`, {
+    return new Response("Sorry, your report couldn’t be generated just now. Please try again in a moment.", {
       status: 500,
       headers: { "content-type": "text/plain; charset=utf-8" },
     });

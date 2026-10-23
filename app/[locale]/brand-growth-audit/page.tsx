@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import { getLocale } from "next-intl/server";
 import SiteHeader from "@/components/SiteHeader";
 import Footer from "@/components/home/Footer";
 import AuditApp from "@/components/audit/AuditApp";
@@ -19,17 +18,11 @@ export const metadata: Metadata = {
   },
 };
 
-export default async function BrandGrowthAuditPage() {
-  const sq = (await getLocale()) === "sq";
+export default function BrandGrowthAuditPage() {
   return (
     <>
       <SiteHeader />
       <main className="min-h-screen bg-paper">
-        {sq && (
-          <p className="eyebrow fixed inset-x-0 top-[82px] z-[110] bg-oxblood py-2 text-center text-white">
-            Ky vlerësim është aktualisht vetëm në anglisht
-          </p>
-        )}
         {/* Only promise an emailed report when email delivery is actually set up. */}
         <AuditApp emailEnabled={resendConfigured() && tokensEnabled()} />
       </main>

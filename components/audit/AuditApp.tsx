@@ -1,6 +1,7 @@
 "use client";
 
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
+import Image from "next/image";
 import { AUDIT, QUESTIONS, SHORT_TITLES } from "@/content/audit";
 import {
   encodeResponses,
@@ -640,8 +641,22 @@ export default function AuditApp({ emailEnabled }: { emailEnabled: boolean }) {
   const resumeAt = resume ? Math.min((resume.step ?? 0) + 1, STEPS.length) : 0;
   return (
     <>
-      <section className="film-grain relative overflow-hidden bg-charcoal text-white">
-        <div className="wrap relative z-10 pt-[calc(82px+clamp(3.5rem,11vh,7.5rem))] pb-[clamp(4rem,11vh,7.5rem)] text-center">
+      {/* Hero — full-bleed photograph under a dark wash, like the offer pages */}
+      <section className="film-grain relative flex min-h-[88vh] items-center overflow-hidden bg-charcoal text-white">
+        <Image
+          src="/idea/idea-desk.png"
+          alt=""
+          fill
+          priority
+          sizes="100vw"
+          className="scale-105 object-cover object-[50%_40%] blur-[2px]"
+        />
+        <div className="absolute inset-0 bg-black/55" aria-hidden />
+        <div
+          className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-black/45"
+          aria-hidden
+        />
+        <div className="wrap relative z-10 w-full pt-[calc(82px+clamp(3.5rem,11vh,7.5rem))] pb-[clamp(4rem,11vh,7.5rem)] text-center">
           <p className="eyebrow text-white/70">
             Free · The Small Business Brand &amp; Growth Audit
           </p>

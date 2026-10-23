@@ -24,7 +24,7 @@ export default async function PrivacyPolicyPage() {
     <LegalLayout
       title={sq ? "Politika e Privatësisë" : "Privacy Policy"}
       eyebrow={sq ? "Ligjore" : "Legal"}
-      updatedLabel={sq ? "Përditësuar më Korrik 2026" : "Last updated July 2026"}
+      updatedLabel={sq ? "Përditësuar më Tetor 2026" : "Last updated October 2026"}
     >
       {sq ? <PrivacySq /> : <PrivacyEn />}
     </LegalLayout>
@@ -63,6 +63,16 @@ function PrivacyEn() {
           enquiry.
         </li>
         <li>
+          <strong>The Brand &amp; Growth Audit.</strong> If you request your
+          full audit results, we collect your email address and, if you choose
+          to give them, your first name, business name, website, type of
+          business and main challenge, together with your answers, scores and
+          how you arrived at the audit (for example, a link from Instagram). You
+          can see your score without giving us any details. Your answers are
+          kept in your own browser while you complete the audit, so you can
+          resume; no contact details are stored there.
+        </li>
+        <li>
           <strong>Information collected automatically.</strong> With your consent,
           we use analytics and marketing cookies that collect usage data such as
           pages viewed, approximate location, device and browser. See our{" "}
@@ -80,6 +90,16 @@ function PrivacyEn() {
       <UL>
         <li>To respond to your enquiry and provide the services you ask for.</li>
         <li>
+          To create and send the audit report you request, and keep a record of
+          your results so we can discuss them with you if you get in touch.
+        </li>
+        <li>
+          To send occasional marketing emails, only if you tick the optional box
+          on the audit form. You can unsubscribe at any time using the link in
+          every marketing email, or by emailing us. Getting your report never
+          depends on agreeing to marketing.
+        </li>
+        <li>
           To understand and improve how the website is used (only with your
           consent).
         </li>
@@ -94,8 +114,10 @@ function PrivacyEn() {
         We rely on your <strong>consent</strong> for analytics and marketing
         cookies; on the necessity to take steps at your request and our{" "}
         <strong>legitimate interest</strong> in responding to enquiries when you
-        contact us; and on our legitimate interest in keeping the site secure and
-        functioning for essential cookies.
+        contact us or request your audit report; on your{" "}
+        <strong>consent</strong> for marketing emails; and on our legitimate
+        interest in keeping the site secure and functioning for essential
+        cookies.
       </P>
 
       <H2>Who we share it with</H2>
@@ -105,12 +127,20 @@ function PrivacyEn() {
       </P>
       <UL>
         <li>
-          <strong>Formspree</strong> — delivers contact-form submissions to us.
+          <strong>Formspree</strong> — delivers contact-form and audit
+          submissions to us.
+        </li>
+        <li>
+          <strong>Brevo</strong> — stores audit contacts and results, records
+          marketing consent and sends marketing emails to those who agreed.
+        </li>
+        <li>
+          <strong>Resend</strong> — sends the audit results email you request.
         </li>
         <li>
           <strong>Google Analytics &amp; Google Tag Manager, Microsoft
           Clarity</strong> — website analytics, loaded only with your analytics
-          consent.
+          consent. Audit events never include your name, email or business.
         </li>
         <li>
           <strong>Meta Pixel, LinkedIn Insight Tag</strong> — marketing
@@ -129,7 +159,10 @@ function PrivacyEn() {
       <H2>How long we keep it</H2>
       <P>
         Enquiry correspondence is kept only as long as needed to deal with your
-        request and for a reasonable period afterwards. Analytics and marketing
+        request and for a reasonable period afterwards. Audit details and
+        results are kept for 12 months and then deleted, unless you have agreed
+        to marketing emails, in which case we keep them until you unsubscribe.
+        Your private results link stops working after 12 months. Analytics and marketing
         data is retained according to each provider&rsquo;s settings and your
         consent.
       </P>
@@ -240,7 +273,16 @@ function PrivacySq() {
       <UL>
         <li>
           <strong>Formspree</strong> — na dorëzon dërgesat e formularit të
-          kontaktit.
+          kontaktit dhe të vlerësimit (Brand &amp; Growth Audit).
+        </li>
+        <li>
+          <strong>Brevo</strong> — ruan kontaktet dhe rezultatet e vlerësimit,
+          regjistron pëlqimin për marketing dhe dërgon email-e marketingu vetëm
+          te ata që kanë dhënë pëlqimin.
+        </li>
+        <li>
+          <strong>Resend</strong> — dërgon email-in me rezultatet e vlerësimit që
+          kërkoni.
         </li>
         <li>
           <strong>Google Analytics &amp; Google Tag Manager, Microsoft
@@ -266,6 +308,9 @@ function PrivacySq() {
       <P>
         Korrespondenca e kërkesave mbahet vetëm aq kohë sa nevojitet për të
         trajtuar kërkesën tuaj dhe për një periudhë të arsyeshme më pas. Të dhënat
+        dhe rezultatet e vlerësimit ruhen për 12 muaj dhe më pas fshihen, përveç
+        nëse keni pranuar email-e marketingu; në atë rast i ruajmë derisa të
+        çregjistroheni. Të dhënat
         analitike dhe të marketingut ruhen sipas cilësimeve të secilit ofrues dhe
         pëlqimit tuaj.
       </P>

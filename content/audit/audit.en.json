@@ -1,0 +1,720 @@
+{
+  "lang": "en",
+  "source": "noova-audit/content/audit.en.md",
+  "bands": [
+    {
+      "min": 1.0,
+      "max": 1.9,
+      "name": "Foundations",
+      "meaning": "There's room to build. Small, well-chosen changes here tend to make a noticeable difference."
+    },
+    {
+      "min": 2.0,
+      "max": 2.7,
+      "name": "Taking shape",
+      "meaning": "The basics exist, but they aren't yet consistent or working together."
+    },
+    {
+      "min": 2.8,
+      "max": 3.4,
+      "name": "Established",
+      "meaning": "This is working well. The next step is refining it and making it take less effort."
+    },
+    {
+      "min": 3.5,
+      "max": 4.0,
+      "name": "Distinctive",
+      "meaning": "This is a genuine strength. Protect it, and use it to support weaker areas."
+    }
+  ],
+  "disclaimer": "This audit is a structured self-assessment based on noova's professional experience. It isn't a scientifically validated measure, and it isn't financial, legal or technical advice. A low score doesn't mean your business is failing. It shows where attention is likely to be most useful.",
+  "milestones": [
+    {
+      "day": "Day 30",
+      "text": "My three actions are complete, or I know what's blocking them."
+    },
+    {
+      "day": "Day 60",
+      "text": "I've repeated this audit for my priority areas and noted what changed. I've chosen my next one or two actions."
+    },
+    {
+      "day": "Day 90",
+      "text": "I've retaken the full audit, compared my scores and set priorities for the next quarter."
+    }
+  ],
+  "milestoneTip": "put a 30-minute appointment with yourself in your diary for days 30, 60 and 90 now, before the weeks get busy.",
+  "categories": [
+    {
+      "id": "01",
+      "title": "Your Brand",
+      "assessing": "How clearly and consistently your business communicates who it's for, what it offers and why someone should choose you.",
+      "why": "Many clients decide whether to book before they ever speak to you. They decide based on your Instagram, your Google listing, a friend's recommendation or a glance at your window. A clear, consistent brand helps the right people feel confident enough to book, and gives you reasons to be chosen beyond price or convenience.",
+      "questions": [
+        {
+          "id": "1.1",
+          "title": "Your offer in one sentence",
+          "prompt": "Could you explain what you do, who it's for and why it's different, in one sentence a stranger would understand?",
+          "answers": [
+            "Not really. It changes depending on who I'm talking to.",
+            "I could, but it would be general (for example, \"high-quality treatments for everyone\").",
+            "Yes, though it isn't written down or used consistently.",
+            "Yes. It's written down and appears on our website, social media bios and printed materials."
+          ]
+        },
+        {
+          "id": "1.2",
+          "title": "Your ideal client",
+          "prompt": "How well do you know who your best clients are?",
+          "answers": [
+            "We serve whoever books.",
+            "We have a general idea, such as an age range or location.",
+            "We know what our best clients value and why they choose us, but haven't used this to shape our marketing.",
+            "We have a clear picture of our best clients, including their needs, concerns and what persuades them. Our services, prices and messages reflect it."
+          ]
+        },
+        {
+          "id": "1.3",
+          "title": "What sets you apart",
+          "prompt": "If a potential client compared you with two nearby competitors, would the difference be obvious?",
+          "answers": [
+            "Not really. We look and sound similar to others in our area.",
+            "We know we're different, but it isn't visible in how we present ourselves.",
+            "The difference is clear in person, but not consistently online.",
+            "It's clear everywhere. Our specialism, approach or experience is stated plainly and supported by evidence."
+          ]
+        },
+        {
+          "id": "1.4",
+          "title": "A consistent look and voice",
+          "prompt": "Do your logo, colours, fonts, photography and tone of voice feel like the same business everywhere they appear: signage, website, social media, price lists and messages?",
+          "answers": [
+            "Each place looks different. Things have been added over time.",
+            "We have a logo and colours, but use them inconsistently.",
+            "Mostly consistent, with a few outdated or mismatched materials.",
+            "Consistent everywhere, guided by simple brand guidelines or templates."
+          ]
+        },
+        {
+          "id": "1.5",
+          "title": "Reasons to trust you",
+          "prompt": "Before booking, can a new client easily find reasons to trust you? These include qualifications and experience, real photographs of your space and team, reviews and clear policies. *For cafés and restaurants, think menus, real food photography and your food hygiene rating.*",
+          "answers": [
+            "Very little of this is visible.",
+            "Some of it exists, but it's hard to find.",
+            "Most of it is visible, but spread across different places.",
+            "It's easy to find in the places people look before they book."
+          ]
+        }
+      ],
+      "meanings": {
+        "Foundations": "Potential clients may struggle to understand why they should choose you, so they fall back on price, location or availability. Clarifying your offer will strengthen every other area of this audit.",
+        "Taking shape": "You know what makes you good, but it isn't yet coming across consistently. The work is mostly about writing things down and applying them everywhere.",
+        "Established": "Your brand is clear and largely consistent. Look for the gaps, often older materials or the parts of your online presence that rarely get updated.",
+        "Distinctive": "Your brand is a real asset. Make sure everyone who represents the business, including new team members and any freelancers, uses it in the same way."
+      },
+      "actions": [
+        {
+          "title": "Write your one-sentence offer",
+          "body": "Use this structure: *We help [who] [feel or achieve what] through [what you do], unlike [the usual alternative], because [your reason to be believed].* Read it to three trusted clients and ask whether it sounds like you.",
+          "note": null
+        },
+        {
+          "title": "Study your five best clients",
+          "body": "List them and note what they have in common, why they chose you and the words they use to describe you. Use their words, rather than industry terms, on your website and in your bios.",
+          "note": null
+        },
+        {
+          "title": "Gather everything on one page",
+          "body": "Collect screenshots of your website, Instagram, Google listing, price list, business cards and signage. Note what doesn't match, then fix the three most visible inconsistencies.",
+          "note": null
+        },
+        {
+          "title": "Create a one-page brand sheet",
+          "body": "Include your logo files, two fonts, your colour codes, three words that describe your tone of voice, and a few examples of photographs that feel right and wrong for your brand.",
+          "note": null
+        },
+        {
+          "title": "Make trust visible",
+          "body": "Add your qualifications, short team biographies, real photographs of your space and clear policies (consultations, cancellations, deposits) to your website.",
+          "note": null
+        }
+      ],
+      "specialist": [
+        "Brand strategy and positioning, when you can't easily articulate what makes you different",
+        "A visual identity or refresh, when your look no longer reflects the quality of your work",
+        "Brand guidelines and templates, when several people create materials for the business",
+        "Photography direction, when your images don't match the experience clients receive"
+      ],
+      "priority": "**Foundational.** Your brand underpins every other area in this audit. If you score in Foundations here, address it before investing significantly in advertising or a new website.",
+      "tools": [
+        "**Canva** (free plan available): for creating templates so posts, price lists and signage stay consistent.",
+        "**A shared folder** (such as Google Drive): a single home for your logo files, fonts and brand sheet, so no one uses an outdated version."
+      ]
+    },
+    {
+      "id": "02",
+      "title": "Your Website & Online Presence",
+      "assessing": "Whether someone who finds you online can quickly understand what you offer, trust you and book or enquire with ease, particularly on a mobile phone.",
+      "why": "Most potential clients will look at your website, your Google listing or both before deciding to book. Every unclear page and every extra step between interest and booking is a point where someone may give up and choose a competitor.",
+      "questions": [
+        {
+          "id": "2.1",
+          "title": "First impression on a phone",
+          "prompt": "Open your website on your phone. Within a few seconds, is it clear what you offer, where you are and how to book?",
+          "answers": [
+            "We don't have a website, or it's very difficult to use on a phone.",
+            "It works on a phone, but key information is hard to find or difficult to read.",
+            "It's clear, but slow to load or awkward in places.",
+            "It's clear, fast and easy to use, and booking or enquiring is one tap away on every page."
+          ]
+        },
+        {
+          "id": "2.2",
+          "title": "Booking or enquiring",
+          "prompt": "How easy is it for a new client to book or enquire?",
+          "answers": [
+            "They have to phone or send a message and wait for a reply.",
+            "There's a form or booking link, but it's hard to find or has too many steps.",
+            "There's online booking or a short form, and it's clearly signposted.",
+            "Online booking or a short form appears on every page, and confirmations and reminders are sent automatically."
+          ]
+        },
+        {
+          "id": "2.3",
+          "title": "Services and prices",
+          "prompt": "Can visitors understand your services, what to expect and roughly what they cost?",
+          "answers": [
+            "Our services aren't listed online.",
+            "They're listed by name only, without explanations or prices.",
+            "They have clear descriptions and prices, but aren't organised around what clients want to achieve.",
+            "They're clear and organised around client needs, with prices (or \"from\" prices), what to expect and answers to common questions."
+          ]
+        },
+        {
+          "id": "2.4",
+          "title": "Your Google Business Profile",
+          "prompt": "Is your Google Business Profile claimed, complete and up to date? *This is the free listing that appears in Google Search and Google Maps.*",
+          "answers": [
+            "It isn't claimed, or I'm not sure.",
+            "It's claimed, but incomplete or out of date (opening hours, photographs or services).",
+            "It's complete and accurate, but rarely updated.",
+            "It's complete and regularly updated with new photographs and posts, and we reply to reviews."
+          ]
+        },
+        {
+          "id": "2.5",
+          "title": "Reviews and examples of your work",
+          "prompt": "How visible are your reviews and examples of your work?",
+          "answers": [
+            "We have few or no reviews.",
+            "We have reviews on one platform, but don't show them anywhere else.",
+            "We have a good number of recent reviews, shown in some places.",
+            "We ask for reviews consistently, reply to them, and show reviews and real examples of our work on our website and profiles, with clients' permission for any images."
+          ]
+        }
+      ],
+      "meanings": {
+        "Foundations": "People who are already interested may be struggling to book you. Making booking simple and completing your Google Business Profile are among the quickest improvements you can make.",
+        "Taking shape": "The essentials are online, but friction remains. Focus on the route to booking and on how you explain your services.",
+        "Established": "Your online presence works. Refine it by improving speed, answering common questions and keeping your Google profile active.",
+        "Distinctive": "Your website and listings are doing real work for you. Review them every quarter so they stay accurate as your services and prices change."
+      },
+      "actions": [
+        {
+          "title": "Run a five-minute phone test",
+          "body": "Ask a friend to find the price of your most popular service and book it on their phone while you watch. Note every moment they hesitate, then fix those points first.",
+          "note": null
+        },
+        {
+          "title": "Make booking unmissable",
+          "body": "Add a \"Book now\" or \"Enquire\" button to the top of every page, linking directly to your booking page rather than your homepage.",
+          "note": null
+        },
+        {
+          "title": "Rewrite your service descriptions",
+          "body": "For each one, explain who it's for, what happens during the appointment, how long it takes, any aftercare and the price.",
+          "note": null
+        },
+        {
+          "title": "Complete your Google Business Profile",
+          "body": "Choose accurate categories, list your services, keep your hours current (including bank holidays), add at least ten real photographs and include your booking link. Add a new photograph or post each month.",
+          "note": null
+        },
+        {
+          "title": "Answer the questions you're asked most",
+          "body": "List the five questions clients ask most often in messages, and answer them on your website.",
+          "note": null
+        },
+        {
+          "title": "See how you appear in search",
+          "body": "Search for \"[your main service] [your area]\" on your phone, and note where you appear on Google Search and Maps compared with competitors.",
+          "note": "**If you offer aesthetic or medical treatments,** check the advertising rules in your market before publishing photographs or promotions. In the UK, for example, prescription-only medicines such as botulinum toxin cannot be advertised to the public."
+        }
+      ],
+      "specialist": [
+        "Website design or redesign, when your site is outdated, slow or difficult to update",
+        "A user experience review, when people visit but don't book",
+        "Local search optimisation, when competitors consistently appear above you",
+        "Dedicated landing pages for a particular treatment, offer or campaign"
+      ],
+      "priority": "**Foundational for booking and your Google profile**, which are often quick wins. A full website redesign is usually a longer-term project. Plan it once your brand and offer are clear.",
+      "tools": [
+        "**Google Business Profile** (free): your listing on Google Search and Maps.",
+        "**Google Search Console** (free): shows which searches bring people to your website.",
+        "**PageSpeed Insights** (free): checks how quickly your website loads on mobile and suggests improvements."
+      ]
+    },
+    {
+      "id": "03",
+      "title": "Your Content & Social Media",
+      "assessing": "Whether your content helps the right people discover, trust and choose you, rather than simply keeping your feed busy.",
+      "why": "For many appearance-led and hospitality businesses, Instagram and TikTok act as a second website. Potential clients use them to judge your style, your expertise and what the experience will feel like. Content with a clear purpose builds that confidence. Content without one can take a great deal of time for little return.",
+      "questions": [
+        {
+          "id": "3.1",
+          "title": "Purpose",
+          "prompt": "Do you know what your content is meant to achieve?",
+          "answers": [
+            "We post when we have something to share.",
+            "We post to stay visible, without specific goals.",
+            "We have goals, such as more consultation bookings, but don't plan content around them.",
+            "Each type of content has a clear job: reaching new people, building trust or encouraging bookings."
+          ]
+        },
+        {
+          "id": "3.2",
+          "title": "Recurring themes",
+          "prompt": "Do you have a small number of recurring themes, often called content pillars?",
+          "answers": [
+            "No. Each post is decided on the day.",
+            "We have loose themes, but often drift away from them.",
+            "We have defined themes and use them most of the time.",
+            "We have three to five themes linked to what our clients care about, and a simple plan for the month ahead."
+          ]
+        },
+        {
+          "id": "3.3",
+          "title": "Content that builds trust",
+          "prompt": "How much of your content teaches, reassures or shows the experience, as opposed to promoting offers?",
+          "answers": [
+            "Almost all of it is promotional, such as offers and availability.",
+            "We share occasional educational or behind-the-scenes content.",
+            "There's a regular mix of promotional and trust-building content.",
+            "We consistently answer real client questions, show our team, process and space, and share client stories with permission."
+          ]
+        },
+        {
+          "id": "3.4",
+          "title": "A clear next step",
+          "prompt": "Does your content tell people what to do next, and is it easy for them to do it?",
+          "answers": [
+            "Rarely. There's no clear call to action or useful link.",
+            "There's a link in our bio, but it goes to our homepage or a cluttered list of links.",
+            "We include calls to action regularly, and our link goes directly to booking.",
+            "We include clear calls to action, reply to messages promptly and can see which content leads to enquiries."
+          ]
+        },
+        {
+          "id": "3.5",
+          "title": "A sustainable routine",
+          "prompt": "Can you keep your content going without it taking over your week?",
+          "answers": [
+            "It's stressful and inconsistent.",
+            "We have bursts of activity followed by long gaps.",
+            "It's fairly regular, but takes a lot of time.",
+            "We have a steady routine: content is planned and created in batches, scheduled in advance and supported by templates."
+          ]
+        }
+      ],
+      "meanings": {
+        "Foundations": "Your content may be taking time without bringing clients. A small number of clear themes and a direct link to booking will change more than posting more often.",
+        "Taking shape": "You're active, but without a clear plan. Decide what each post is for, and build a routine you can sustain during busy weeks.",
+        "Established": "Your content has direction. Look closely at which posts lead to enquiries, and do more of those.",
+        "Distinctive": "Your content is a strength. Consider repurposing your best material in your newsletter, website and Google profile."
+      },
+      "actions": [
+        {
+          "title": "Choose three or four content themes",
+          "body": "For a clinic, these might be *treatments explained*, *behind the scenes*, *your questions answered* and *aftercare and skin health*. For a café: *this week's menu*, *the people behind it*, *our neighbourhood* and *events*.",
+          "note": null
+        },
+        {
+          "title": "Keep a list of client questions",
+          "body": "Every question you're asked in person or in messages is a potential post. Add to the list each week.",
+          "note": null
+        },
+        {
+          "title": "Work in batches",
+          "body": "Set aside one session every fortnight to plan, photograph and write. Schedule your posts in advance so content continues during busy weeks.",
+          "note": null
+        },
+        {
+          "title": "Send your link straight to booking",
+          "body": "Make the link in your bio go directly to your booking page, or to a short page where booking is the first option.",
+          "note": null
+        },
+        {
+          "title": "Create a few templates",
+          "body": "Design three to five templates for regular formats, such as treatment explainers, reviews, menu updates and announcements, so each post takes minutes rather than hours.",
+          "note": null
+        },
+        {
+          "title": "Review once a month",
+          "body": "Identify the three posts that led to the most enquiries, saves or shares. Create more content like those, and less of what didn't perform.",
+          "note": null
+        }
+      ],
+      "specialist": [
+        "A content strategy and calendar, when you post regularly but without direction",
+        "Social media management, when you know what to do but don't have the time",
+        "Photography or video direction, when your content doesn't reflect the quality of your service",
+        "Short-form video concepts, when you want to use Reels or TikTok but don't know where to begin"
+      ],
+      "priority": "**Important, but rarely the first priority.** Make sure your brand is clear and booking is easy first, so that your content has somewhere useful to send people.",
+      "tools": [
+        "**Meta Business Suite** (free): plans and schedules posts for Instagram and Facebook.",
+        "**Canva** (free plan available): reusable templates for regular content."
+      ]
+    },
+    {
+      "id": "04",
+      "title": "Attracting New Customers",
+      "assessing": "How new clients find you, whether you're actively encouraging the routes that work, and whether you know which routes those are.",
+      "why": "Without knowing where clients come from, it's easy to spend time and money on activity that looks busy but doesn't lead to bookings. A small amount of tracking helps you put your effort where it makes a difference.",
+      "questions": [
+        {
+          "id": "4.1",
+          "title": "Where new clients come from",
+          "prompt": "Do you know how your new clients found you?",
+          "answers": [
+            "We have no idea.",
+            "We have a general sense, such as \"mostly word of mouth\".",
+            "We ask some clients, but don't record it consistently.",
+            "We record every new client's source and review the results each month."
+          ]
+        },
+        {
+          "id": "4.2",
+          "title": "Reviews and referrals",
+          "prompt": "Do you actively encourage reviews and recommendations?",
+          "answers": [
+            "No. We wait for them to happen.",
+            "We ask occasionally, when we remember.",
+            "We ask regularly, usually in person.",
+            "Every satisfied client is asked at the right moment with a direct link, and we thank clients who refer others."
+          ]
+        },
+        {
+          "id": "4.3",
+          "title": "Local partnerships",
+          "prompt": "Do you work with other local businesses, venues or communities?",
+          "answers": [
+            "No.",
+            "Informally, now and then.",
+            "We have one or two ongoing relationships.",
+            "We have planned partnerships with businesses that share our ideal clients, with clear arrangements and a way of tracking results."
+          ]
+        },
+        {
+          "id": "4.4",
+          "title": "Focused time and budget",
+          "prompt": "How do you decide where to spend your marketing time and money?",
+          "answers": [
+            "Reactively, when things are quiet or someone offers us advertising.",
+            "We spread our efforts across many channels.",
+            "We focus on a few channels, but without clear goals.",
+            "We have a simple plan with monthly goals, a set budget (even a small one) and two or three priority channels."
+          ]
+        },
+        {
+          "id": "4.5",
+          "title": "Knowing what works",
+          "prompt": "Can you tell which channels bring bookings, as opposed to likes, followers or clicks?",
+          "answers": [
+            "No.",
+            "We look at likes, followers or website visits.",
+            "We can roughly connect some bookings to where they came from.",
+            "We measure enquiries and bookings by source. If we advertise, we know roughly what each new client costs."
+          ]
+        }
+      ],
+      "meanings": {
+        "Foundations": "New clients are arriving largely by chance. Simply asking every new client how they found you will quickly show you where to focus.",
+        "Taking shape": "Some routes clearly work, but your effort isn't yet focused on them. Choose two or three channels and set a simple monthly goal.",
+        "Established": "You have a sensible approach. The next step is measuring more precisely so you can confidently invest more in what works.",
+        "Distinctive": "You understand your acquisition well. Consider testing one new channel at a time, with a clear budget and a way to measure it."
+      },
+      "actions": [
+        {
+          "title": "Ask every new client how they found you",
+          "body": "Add the question to your booking form or consultation, record the answer in a simple spreadsheet, and review it at the end of each month.",
+          "note": null
+        },
+        {
+          "title": "Ask for reviews at the right moment",
+          "body": "Send a short message with a direct link to your Google review page shortly after the appointment, while the experience is fresh. Never offer incentives in exchange for reviews. Most platforms prohibit it, and fake or incentivised reviews can break consumer protection rules.",
+          "note": null
+        },
+        {
+          "title": "List five potential partners",
+          "body": "Think of local businesses whose clients overlap with yours but who aren't competitors, such as a clinic and a bridal boutique, or a café and a florist. Propose one simple collaboration: a joint event, a shared offer or a referral arrangement.",
+          "note": null
+        },
+        {
+          "title": "Set one monthly goal",
+          "body": "For example, *eight new consultation bookings*. Choose the two or three channels most likely to deliver it, and decide in advance what you will spend.",
+          "note": null
+        },
+        {
+          "title": "Tag your links",
+          "body": "UTM tags are short labels added to the end of a link that tell Google Analytics where a visitor came from, such as your Instagram bio or a partner's newsletter. Use Google's free Campaign URL Builder to create them.",
+          "note": null
+        },
+        {
+          "title": "Get the basics right before advertising",
+          "body": "Paid advertising works best once your booking route is simple and you can measure results. If you test it, start with a small, fixed budget for a set period.",
+          "note": null
+        }
+      ],
+      "specialist": [
+        "A marketing strategy and plan, when you're unsure where to focus",
+        "Paid advertising on Meta or Google, once your booking route and tracking are in place",
+        "Analytics and conversion tracking set-up, when you want reliable answers about what works",
+        "Partnership and event campaigns, when you want to reach new audiences locally"
+      ],
+      "priority": "**Tracking where clients come from is foundational** and takes very little time. Partnerships and advertising are valuable next steps once you know which routes work.",
+      "tools": [
+        "**A simple spreadsheet** (Google Sheets or Excel): for recording client sources each month.",
+        "**Google Analytics 4** (free): shows how people find and use your website.",
+        "**Google's Campaign URL Builder** (free): creates tagged links for tracking."
+      ]
+    },
+    {
+      "id": "05",
+      "title": "Keeping Customers Coming Back",
+      "assessing": "How you stay in touch with clients after their visit, encourage them to return and recommend you, and manage their permission to receive messages.",
+      "why": "For appointment-based and hospitality businesses, returning clients are often the foundation of a steady diary. Encouraging an existing client to return usually takes less time and money than finding a new one. And a thoughtful follow-up is part of the experience you offer.",
+      "questions": [
+        {
+          "id": "5.1",
+          "title": "An organised client list",
+          "prompt": "Are your clients' details kept in one organised place?",
+          "answers": [
+            "They're scattered across phones, messages, paper and different systems.",
+            "They're mostly in one place, but incomplete or out of date.",
+            "They're in one system, such as a booking system or CRM, with up-to-date details. *A CRM, or customer relationship management system, is a database for client details and history.*",
+            "They're in one system with useful details, such as visit history, preferences, last visit and permissions, which we can filter and use."
+          ]
+        },
+        {
+          "id": "5.2",
+          "title": "Permission to stay in touch",
+          "prompt": "Do you know which clients have agreed to receive marketing messages, and how they agreed?",
+          "answers": [
+            "No. We message anyone whose details we have.",
+            "We assume it's fine because they're clients, without having checked the rules.",
+            "We ask for permission, but don't record when or how it was given.",
+            "We ask clearly and separately, record when and how permission was given, and make it easy to unsubscribe from every message."
+          ]
+        },
+        {
+          "id": "5.3",
+          "title": "Aftercare and follow-up",
+          "prompt": "What happens after a client's visit?",
+          "answers": [
+            "Nothing, unless they contact us.",
+            "We send messages occasionally, by hand, when we remember.",
+            "We send a standard thank-you or aftercare message by hand.",
+            "Timely aftercare, thank-you and review-request messages are sent automatically, in our brand's voice."
+          ]
+        },
+        {
+          "id": "5.4",
+          "title": "Encouraging return visits",
+          "prompt": "How do you encourage clients to return at the right time? *For cafés and restaurants, think about how you give regulars a reason to come back, such as seasonal menus or events.*",
+          "answers": [
+            "We wait for them to come back.",
+            "We mention it at the end of their visit.",
+            "We encourage clients to book their next appointment before they leave.",
+            "We rebook before clients leave where appropriate, and send a reminder when their next visit is due."
+          ]
+        },
+        {
+          "id": "5.5",
+          "title": "Clients who've stopped visiting",
+          "prompt": "Do you notice when regular clients stop visiting, and do you get in touch?",
+          "answers": [
+            "We don't notice.",
+            "We sometimes notice, but don't act.",
+            "We check in with some clients occasionally, by hand.",
+            "We can see who hasn't returned within their usual interval, and send them a personal, relevant message."
+          ]
+        }
+      ],
+      "meanings": {
+        "Foundations": "You may be losing clients who would happily return if reminded. Begin by organising your client list and checking your permissions. Both are quick to fix and protect your business.",
+        "Taking shape": "Good intentions are in place, but they depend on memory. Writing three standard messages and sending them consistently will make a noticeable difference.",
+        "Established": "You look after clients well. Automating the routine messages will save time and make the experience more consistent.",
+        "Distinctive": "Client relationships are a real strength. Consider a regular newsletter or a referral programme that builds on this loyalty."
+      },
+      "actions": [
+        {
+          "title": "Bring client details into one place",
+          "body": "If your booking system stores client records, make that your single source. Move details out of phones and notebooks over the coming month.",
+          "note": null
+        },
+        {
+          "title": "Get your permissions in order",
+          "body": "Add a separate, unticked box to your booking or sign-up form for marketing messages, and record the date and source of each consent. Include an unsubscribe link in every marketing email.",
+          "note": "*In the UK, there's a limited exception (sometimes called the \"soft opt-in\") that can allow you to email existing clients about similar services, provided they were given a clear chance to opt out when you collected their details and in every message since. Check the Information Commissioner's Office (ICO) guidance before relying on it.*"
+        },
+        {
+          "title": "Write three standard messages",
+          "body": "An aftercare or thank-you message, a review request and a \"time for your next visit\" reminder. Write them once in your brand's voice, then reuse them.",
+          "note": null
+        },
+        {
+          "title": "Rebook before clients leave",
+          "body": "Where it suits the service, suggest the next appointment at the end of each visit: *\"Most clients come back in around six weeks. Shall I find you a time now?\"*",
+          "note": null
+        },
+        {
+          "title": "Review lapsed clients monthly",
+          "body": "List clients who haven't visited in roughly twice their usual interval, and send a short, personal message rather than a generic discount.",
+          "note": null
+        },
+        {
+          "title": "Send something worth reading",
+          "body": "If you send a newsletter, make it seasonal or monthly and genuinely useful, with advice, news and what's new, rather than a list of offers.",
+          "note": null
+        }
+      ],
+      "specialist": [
+        "CRM set-up, when client details are spread across several tools",
+        "Automated email and message sequences, such as aftercare, reviews, rebooking and birthdays",
+        "Client segmentation, when you want to send different messages to different types of client",
+        "A lifecycle strategy, when you want a planned approach to loyalty and retention"
+      ],
+      "priority": "**Permissions are foundational:** they're a legal matter, and quick to put right. Aftercare and rebooking messages are among the highest-value improvements most appointment-based businesses can make.",
+      "tools": [
+        "**Your booking system's built-in features:** many salon and clinic booking systems include client records, reminders and follow-up messages. Check what yours offers before adding new software.",
+        "**Brevo or Mailchimp** (free plans available): for newsletters and simple automated emails.",
+        "**ICO guidance for small businesses** (UK): plain-English guidance on direct marketing and consent, at ico.org.uk."
+      ]
+    },
+    {
+      "id": "06",
+      "title": "Time-Saving Systems & AI",
+      "assessing": "How much time goes on repetitive admin, whether follow-ups depend on someone remembering, and whether tools, including AI, are used carefully to help.",
+      "why": "Time spent copying details, chasing replies and rewriting the same messages is time not spent with clients or improving the business. Simple systems also make the client experience more consistent, because things happen reliably whether you're busy, unwell or on holiday.",
+      "questions": [
+        {
+          "id": "6.1",
+          "title": "Repetitive admin",
+          "prompt": "How much of your week goes on repeated manual tasks, such as confirmations, reminders, copying details between systems or answering the same questions?",
+          "answers": [
+            "A lot, and it's growing.",
+            "A noticeable amount, which we've come to accept.",
+            "Some of these tasks are automated, but others aren't.",
+            "Repeated tasks are mostly automated or templated, and we review them regularly."
+          ]
+        },
+        {
+          "id": "6.2",
+          "title": "Enquiries and follow-ups",
+          "prompt": "Do enquiries or follow-ups ever get missed?",
+          "answers": [
+            "Often. Enquiries arrive in several places, and some go unanswered.",
+            "Sometimes, especially when we're busy.",
+            "Rarely, but it depends on one person remembering.",
+            "Every enquiry arrives in one place and receives a prompt response, and follow-ups are automatic or scheduled."
+          ]
+        },
+        {
+          "id": "6.3",
+          "title": "Connected tools",
+          "prompt": "Do your tools work together? Think of your website, booking system, email, payments and accounts.",
+          "answers": [
+            "We enter the same information in several places.",
+            "A few are connected, but many steps are manual.",
+            "Most of our key tools are connected.",
+            "Our tools are connected so information flows automatically, and we know what connects to what."
+          ]
+        },
+        {
+          "id": "6.4",
+          "title": "Responsible use of AI",
+          "prompt": "How do you use AI tools such as ChatGPT, Claude or Gemini?",
+          "answers": [
+            "We don't, or aren't sure where they would help.",
+            "Occasionally, for one-off tasks, with mixed results.",
+            "Regularly for some tasks, such as captions or emails, but without shared instructions.",
+            "For defined tasks, with reusable prompts that capture our brand voice. We check everything before it's published, and we never enter sensitive client information into tools that aren't approved for it."
+          ]
+        },
+        {
+          "id": "6.5",
+          "title": "Seeing how the business is doing",
+          "prompt": "How do you keep track of how the business is performing?",
+          "answers": [
+            "We don't check regularly.",
+            "We pull numbers together by hand when we need them.",
+            "We produce a regular report by hand, such as a monthly spreadsheet.",
+            "We have a simple dashboard or automated report showing the few numbers that matter, and review it on a set day."
+          ]
+        }
+      ],
+      "meanings": {
+        "Foundations": "Admin is likely taking time you'd rather spend elsewhere, and some opportunities may be slipping away. Begin with missed enquiries, because they cost you clients directly.",
+        "Taking shape": "Some systems exist, but they rely on memory and manual effort. Identify your three most repetitive tasks and tackle them one at a time.",
+        "Established": "Your systems work. Look for the remaining manual steps between tools, and consider where AI could save time safely.",
+        "Distinctive": "Your business runs efficiently. Document how your systems work so they keep running smoothly as the team changes."
+      },
+      "actions": [
+        {
+          "title": "Keep a time log for one week",
+          "body": "Note every task you repeat and roughly how long it takes. At the end of the week, choose the most time-consuming one to simplify first.",
+          "note": null
+        },
+        {
+          "title": "Switch on what you already have",
+          "body": "Most booking systems include automatic confirmations and reminders. Make sure they're switched on, and rewrite them in your brand's voice.",
+          "note": null
+        },
+        {
+          "title": "Create saved replies",
+          "body": "Write answers to the ten questions you're asked most often, and save them as quick replies in Instagram, WhatsApp Business or your email.",
+          "note": null
+        },
+        {
+          "title": "Bring enquiries into one place",
+          "body": "Decide where every enquiry should end up, and forward or connect everything else to it. Check that place at set times each day.",
+          "note": null
+        },
+        {
+          "title": "Build a small prompt library",
+          "body": "Write reusable instructions for the tasks you use AI for most often. For example:",
+          "note": "*You are writing for [business name], a [type of business] in [location]. Our tone is [three words]. Our clients are [short description]. Write a [caption, email or reply] about [topic], in under [length]. Avoid [words or claims to avoid]. End with [call to action].* Always review AI-generated content for accuracy before publishing. Never enter clients' health information or personal details into general AI tools."
+        },
+        {
+          "title": "Choose four to six numbers to track monthly",
+          "body": "For example: new clients, returning clients, enquiries by source, revenue, average spend and new reviews. Record them on the same day each month.",
+          "note": null
+        }
+      ],
+      "specialist": [
+        "Automated workflows for enquiries, follow-ups and reminders",
+        "Connecting your website, booking system, CRM and email tools",
+        "AI assistants and brand-specific prompt libraries, set up responsibly",
+        "Dashboards and automated reports"
+      ],
+      "priority": "**Usually a next-stage priority**, once your foundations are in place. **The exception is missed enquiries:** if they're happening, treat them as urgent.",
+      "tools": [
+        "**Your booking system's automation:** the simplest place to start.",
+        "**WhatsApp Business** (free): quick replies, greeting messages and away messages.",
+        "**Zapier or Make** (free plans available): connect tools that don't connect on their own.",
+        "**Looker Studio** (free): turns spreadsheets and Google data into a simple dashboard."
+      ]
+    }
+  ]
+}

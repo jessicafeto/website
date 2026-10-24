@@ -11,6 +11,10 @@ const CHOSEN_COOKIE = "noova-lang-chosen";
  * A one-time, first-visit language chooser. It appears only until the visitor
  * makes a choice (stored in the `noova-lang-chosen` cookie), then never nags
  * again — the persistent EN | SQ switcher in the header handles later changes.
+ *
+ * Never shown on the Brand & Growth Audit: it's English-only, the middleware
+ * already serves it in English, and visitors arriving from Instagram should go
+ * straight into the audit.
  */
 export default function LanguagePopup() {
   const active = useLocale();
@@ -18,13 +22,15 @@ export default function LanguagePopup() {
   const router = useRouter();
   const [open, setOpen] = useState(false);
 
+  const skip = pathname.startsWith("/brand-growth-audit");
+
   useEffect(() => {
-    if (routing.locales.length < 2) return;
+    if (routing.locales.length < 2 || skip) return;
     const chosen = document.cookie
       .split("; ")
       .some((c) => c.startsWith(`${CHOSEN_COOKIE}=`));
     if (!chosen) setOpen(true);
-  }, []);
+  }, [skip]);
 
   function choose(loc: string) {
     document.cookie = `${CHOSEN_COOKIE}=1; path=/; max-age=${60 * 60 * 24 * 365}; samesite=lax`;
@@ -32,7 +38,7 @@ export default function LanguagePopup() {
     if (loc !== active) router.replace(pathname, { locale: loc });
   }
 
-  if (!open) return null;
+  if (!open || skip) return null;
 
   return (
     <div

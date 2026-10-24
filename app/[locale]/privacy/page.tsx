@@ -63,14 +63,14 @@ function PrivacyEn() {
           enquiry.
         </li>
         <li>
-          <strong>The Brand &amp; Growth Audit.</strong> If you request your
-          full audit results, we collect your email address and, if you choose
-          to give them, your first name, business name, website, type of
-          business and main challenge, together with your answers, scores and
-          how you arrived at the audit (for example, a link from Instagram). You
-          can see your score without giving us any details. Your answers are
-          kept in your own browser while you complete the audit, so you can
-          resume; no contact details are stored there.
+          <strong>The Brand &amp; Growth Audit.</strong> Before you start the
+          audit, we ask for your first name and email address (and, if you
+          choose, your business name) so we can send you your results. We save
+          these when you start, together with how you arrived at the audit (for
+          example, a link from Instagram), and add your answers and scores when
+          you finish. Your answers are kept in your own browser while you
+          complete the audit, so you can resume; no contact details are stored
+          there.
         </li>
         <li>
           <strong>Information collected automatically.</strong> With your consent,

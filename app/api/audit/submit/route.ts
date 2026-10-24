@@ -1,12 +1,5 @@
 import { NextResponse } from "next/server";
-import {
-  AREA_SERVICE,
-  BUSINESS_TYPES,
-  CHALLENGES,
-  MARKETING_CONSENT_TEXT,
-  SHORT_TITLES,
-  WORKBOOK_URL,
-} from "@/content/audit";
+import { AREA_SERVICE, SHORT_TITLES, WORKBOOK_URL } from "@/content/audit";
 import { decodeResponses, score, tagsFor } from "@/lib/audit/scoring";
 import { createToken } from "@/lib/audit/token";
 import { sendToFormspree } from "@/lib/audit/formspree";
@@ -20,9 +13,19 @@ import {
   sendLeadNotification,
   sendReportEmail,
 } from "@/lib/audit/email";
+import {
+  UUID,
+  contactAttributes,
+  dropBlanks,
+  leadSource,
+  readContact,
+  str,
+  tooMany,
+} from "@/lib/audit/lead";
 
 /**
- * POST /api/audit/submit — the Brand & Growth Audit lead form.
+ * POST /api/audit/submit — answers in, results out (the visitor's details were
+ * collected before the questions; see /api/audit/start).
  *
  * 1. Validates the submission and recalculates the scores from the raw answers
  *    (the browser's numbers are never trusted).
@@ -38,58 +41,13 @@ import {
  */
 export const runtime = "nodejs";
 
-const UUID = /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i;
-const EMAIL = /^[^\s@<>()[\],;:"]+@[^\s@<>()[\],;:"]+\.[a-z]{2,}$/i;
-const UTM_KEYS = ["source", "medium", "campaign", "content", "term"] as const;
-
-// Best-effort burst protection (per serverless instance, not a hard limit).
-const recent = new Map<string, number[]>();
-function tooMany(ip: string) {
-  const now = Date.now();
-  const hits = (recent.get(ip) ?? []).filter((t) => now - t < 10 * 60_000);
-  hits.push(now);
-  recent.set(ip, hits);
-  return hits.length > 8;
-}
-
-function str(v: unknown, max: number): string {
-  return typeof v === "string"
-    ? v
-        .replace(/[\u0000-\u001f\u007f]/g, " ")
-        .trim()
-        .slice(0, max)
-    : "";
-}
-
-function normaliseWebsite(v: string): string | null {
-  if (!v) return "";
-  try {
-    const u = new URL(/^https?:\/\//i.test(v) ? v : `https://${v}`);
-    if (!u.hostname.includes(".")) return null;
-    return u.toString().replace(/\/$/, "");
-  } catch {
-    return null;
-  }
-}
-
-function leadSource(utmSource: string) {
-  const s = utmSource.toLowerCase();
-  if (s === "instagram" || s === "ig")
-    return "Instagram – Brand & Growth Audit";
-  if (s) return `${utmSource} – Brand & Growth Audit`;
-  return "Website – Brand & Growth Audit";
-}
-
 const fail = (status: number, error: string, field?: string) =>
   NextResponse.json({ ok: false, error, field }, { status });
 
 export async function POST(req: Request) {
   if (Number(req.headers.get("content-length") ?? 0) > 10_000)
     return fail(413, "Submission too large.");
-  const ip =
-    (req.headers.get("x-forwarded-for") ?? "").split(",")[0].trim() ||
-    "unknown";
-  if (tooMany(ip))
+  if (tooMany(req))
     return fail(
       429,
       "Too many attempts. Please wait a few minutes and try again."
@@ -112,35 +70,20 @@ export async function POST(req: Request) {
       "Your answers couldn’t be read. Please restart the audit."
     );
 
-  const email = str(body.email, 254).toLowerCase();
-  if (!EMAIL.test(email))
-    return fail(422, "Please enter a valid email address.", "email");
-  const website = normaliseWebsite(str(body.website, 200));
-  if (website === null)
-    return fail(
-      422,
-      "Please enter a valid website address, or leave it blank.",
-      "website"
-    );
-
-  const firstName = str(body.firstName, 60);
-  const businessName = str(body.businessName, 120);
-  const businessType = (BUSINESS_TYPES as readonly string[]).includes(
-    str(body.businessType, 80)
-  )
-    ? str(body.businessType, 80)
-    : "";
-  const challenge = (CHALLENGES as readonly string[]).includes(
-    str(body.challenge, 80)
-  )
-    ? str(body.challenge, 80)
-    : "";
-  const marketingConsent = body.marketingConsent === true;
-  const test = body.test === true;
-  const utmIn = (body.utm ?? {}) as Record<string, unknown>;
-  const utm = Object.fromEntries(
-    UTM_KEYS.map((k) => [k, str(utmIn[k], 100)])
-  ) as Record<(typeof UTM_KEYS)[number], string>;
+  const read = readContact(body);
+  if (!read.ok) return fail(422, read.error, read.field);
+  const c = read.contact;
+  const {
+    email,
+    firstName,
+    businessName,
+    website,
+    businessType,
+    challenge,
+    marketingConsent,
+    test,
+    utm,
+  } = c;
 
   const origin = process.env.AUDIT_BASE_URL || new URL(req.url).origin;
   const now = new Date();
@@ -153,7 +96,7 @@ export async function POST(req: Request) {
     : `${origin}/api/audit/report?a=${encoded}`;
 
   // Honeypot: bots fill the hidden field. Pretend it worked; store and send nothing.
-  if (str(body.company_url, 200)) {
+  if (c.honeypot) {
     return NextResponse.json({
       ok: true,
       token,
@@ -169,11 +112,7 @@ export async function POST(req: Request) {
     result.areas.find((a) => a.id === id)?.score ?? "";
 
   const attributes: BrevoAttributes = {
-    FIRSTNAME: firstName,
-    BUSINESS_NAME: businessName,
-    WEBSITE: website,
-    INDUSTRY: businessType,
-    PRIMARY_CHALLENGE: challenge,
+    ...contactAttributes(c, origin, now),
     AUDIT_SCORE: result.overall ?? "",
     AUDIT_BAND: result.overallBand ?? "",
     AUDIT_BRAND: areaScore("01"),
@@ -189,7 +128,6 @@ export async function POST(req: Request) {
       .map((p) => SHORT_TITLES[p.areaId])
       .join(", "),
     AUDIT_ANSWERS: encoded,
-    AUDIT_DATE: now.toISOString().slice(0, 10),
     AUDIT_REPORT_ID: submissionId,
     AUDIT_RESULTS_URL: resultsUrl,
     AUDIT_TAGS: tags.join(", "),
@@ -198,24 +136,8 @@ export async function POST(req: Request) {
     OPP_MARKETING: tags.includes("Marketing Opportunity"),
     OPP_CRM_AUTOMATION: tags.includes("CRM & Automation Opportunity"),
     OPP_ANALYTICS: tags.includes("Analytics Opportunity"),
-    LEAD_SOURCE: leadSource(utm.source),
-    CAMPAIGN_ID: utm.campaign || "brand_growth_audit",
-    UTM_SOURCE: utm.source,
-    UTM_MEDIUM: utm.medium,
-    UTM_CAMPAIGN: utm.campaign,
-    UTM_CONTENT: utm.content,
-    TEST_SUBMISSION: test,
   };
-  // Only ever record consent when it's given. An unticked box on a later visit
-  // must not overwrite consent given earlier (withdrawal happens by unsubscribing).
-  if (marketingConsent) {
-    attributes.MARKETING_CONSENT = true;
-    attributes.MARKETING_CONSENT_AT = now.toISOString();
-    attributes.MARKETING_CONSENT_SOURCE = `Brand & Growth Audit form (${origin}/brand-growth-audit): "${MARKETING_CONSENT_TEXT}"`;
-  }
-  // Brevo rejects empty strings for typed attributes; leave blanks out.
-  for (const [k, v] of Object.entries(attributes))
-    if (v === "") delete attributes[k];
+  dropBlanks(attributes);
 
   const devMock = process.env.NODE_ENV !== "production";
 

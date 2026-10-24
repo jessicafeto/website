@@ -1,8 +1,14 @@
 # Brand & Growth Audit (`/brand-growth-audit`)
 
-The interactive version of the 28-page workbook. Landing page → 30 questions plus
-an importance rating per area → instant score preview → details form → full
-results, personalised PDF and the workbook download.
+The interactive version of the 28-page workbook. Landing page → "Before we begin"
+(first name, email, optional business name, optional marketing box) → 30
+questions plus an importance rating per area → full results on screen, emailed
+copy, personalised PDF and the workbook download.
+
+Details are saved to Brevo the moment they're given (`/api/audit/start`, tagged
+"Audit started"), so leads who stop part-way aren't lost; answers, scores and
+the results email follow on completion (`/api/audit/submit`). The first-visit
+language pop-up never appears on audit pages, which are always served in English.
 
 ## Where things live
 
@@ -12,7 +18,8 @@ results, personalised PDF and the workbook download.
 | Question→action mapping, effort estimates, form options | `content/audit/index.ts` |
 | Scoring engine (pure, shared by browser and server) | `lib/audit/scoring.ts`, tests in `lib/audit/scoring.test.ts` (`npm run test:audit`) |
 | Signed results links | `lib/audit/token.ts` |
-| Submission (validation, CRM, emails) | `app/api/audit/submit/route.ts`, `lib/audit/brevo.ts`, `lib/audit/email.ts`, `lib/audit/formspree.ts` |
+| Details at the start | `app/api/audit/start/route.ts` |
+| Submission (validation, CRM, emails) | `app/api/audit/submit/route.ts`, `lib/audit/lead.ts`, `lib/audit/brevo.ts`, `lib/audit/email.ts`, `lib/audit/formspree.ts` |
 | Personalised PDF | `app/api/audit/report/route.ts`, `lib/audit/report-pdf.tsx` |
 | UI | `components/audit/*`, `app/[locale]/brand-growth-audit/**` |
 | Workbook PDF | `public/downloads/noova-brand-growth-audit-2026.pdf` |
@@ -75,14 +82,14 @@ Pushed to `dataLayer` (GTM) and `gtag` (GA4) only once those are loaded, which
 needs analytics cookie consent and `NEXT_PUBLIC_GA_ID` / `NEXT_PUBLIC_GTM_ID`.
 No personal data is included.
 
-`audit_landing_view` → `audit_start` → `audit_complete` → `audit_preview_shown` →
-`audit_form_submit` → `audit_results_unlocked` (`email_sent` true/false), plus
+`audit_landing_view` → `audit_form_submit` (details given) → `audit_start` →
+`audit_complete` → `audit_results_unlocked` (`email_sent` true/false), plus
 `audit_report_download`, `audit_workbook_download`, `audit_call_click`,
 `audit_service_click`.
 
 - Landing → start: `audit_start / audit_landing_view`
-- Completion: `audit_complete / audit_start`
-- Email capture: `audit_results_unlocked / audit_preview_shown`
+- Completion: `audit_complete / audit_start` (in Brevo: contacts tagged "Audit started" with no `AUDIT_SCORE` didn't finish)
+- Email capture: `audit_form_submit / audit_landing_view`
 - Delivery success: `audit_results_unlocked` with `email_sent=true` / all unlocks
 - Call conversion: `audit_call_click / audit_results_unlocked`
 

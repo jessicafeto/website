@@ -764,50 +764,193 @@ p {
 .audit-option {
   display: flex;
   align-items: flex-start;
-  gap: 16px;
-  min-height: 56px;
-  padding: 16px 18px;
+  gap: 18px;
+  min-height: 64px;
+  padding: 20px 22px;
   border: 1px solid var(--color-rule);
   background: #fff;
+  box-shadow: 0 1px 2px rgba(26, 25, 23, 0.04);
   cursor: pointer;
   transition:
     border-color var(--dur-fast) var(--ease-noova),
-    background var(--dur-fast) var(--ease-noova);
+    background var(--dur-fast) var(--ease-noova),
+    box-shadow var(--dur-fast) var(--ease-noova),
+    transform var(--dur-fast) var(--ease-noova);
 }
 .audit-option:hover {
-  border-color: var(--color-light);
+  border-color: var(--color-oxblood-soft);
+  box-shadow: 0 6px 18px rgba(26, 25, 23, 0.07);
 }
+.audit-option__text {
+  font-family: var(--font-sans);
+  font-size: 1.08rem;
+  line-height: 1.55;
+  color: var(--color-ink);
+}
+.audit-option__sub {
+  font-family: var(--font-sans);
+  font-size: 0.9rem;
+  color: var(--color-grey);
+}
+/* Chosen: the answer fills with oxblood, like the card stock */
 .audit-option[data-checked="true"] {
   border-color: var(--color-oxblood);
-  background: var(--color-limestone);
+  background: var(--color-oxblood);
+  box-shadow: 0 8px 22px rgba(92, 32, 36, 0.25);
+}
+.audit-option[data-checked="true"] .audit-option__text {
+  color: #fff;
+}
+.audit-option[data-checked="true"] .audit-option__sub {
+  color: rgba(255, 255, 255, 0.75);
 }
 .audit-option:has(input:focus-visible) {
   outline: 2px solid var(--color-oxblood);
-  outline-offset: 2px;
+  outline-offset: 3px;
 }
 .audit-option__mark {
   flex: none;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 28px;
-  height: 28px;
-  margin-top: -2px;
-  border: 1px solid var(--color-rule);
+  width: 32px;
+  height: 32px;
+  margin-top: -3px;
+  border: 1px solid var(--color-light);
   border-radius: 999px;
   font-family: var(--font-sans);
-  font-size: 12px;
+  font-size: 13px;
   color: var(--color-grey);
   transition: all var(--dur-fast) var(--ease-noova);
 }
 .audit-option[data-checked="true"] .audit-option__mark {
-  border-color: var(--color-oxblood);
-  background: var(--color-oxblood);
-  color: #fff;
+  border-color: #c9a7a2;
+  background: #fff;
+  color: var(--color-oxblood);
 }
 .audit-option--na {
   background: transparent;
   border-style: dashed;
+  box-shadow: none;
+}
+.audit-option--na .audit-option__text {
+  font-size: 1rem;
+  color: var(--color-grey);
+}
+
+/* Oxblood card stock: deep base, window light from the left, paper fibres,
+   fine grain and a soft vignette (matches the Instagram carousel). */
+.audit-material {
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+  background:
+    radial-gradient(120% 90% at 12% 0%, rgba(255, 236, 222, 0.13), transparent 58%),
+    radial-gradient(140% 120% at 50% 45%, transparent 55%, rgba(0, 0, 0, 0.32)),
+    #5c2024;
+}
+.audit-material::before,
+.audit-material::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 1;
+}
+.audit-material::before {
+  /* long paper fibres */
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='400'%3E%3Cfilter id='f'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.012 0.55' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23f)'/%3E%3C/svg%3E");
+  background-size: 400px 400px;
+  opacity: 0.16;
+  mix-blend-mode: overlay;
+}
+.audit-material::after {
+  /* fine grain */
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='g'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23g)'/%3E%3C/svg%3E");
+  background-size: 170px 170px;
+  opacity: 0.22;
+  mix-blend-mode: overlay;
+}
+/* The card resting on the desk (details screen) */
+.audit-card {
+  box-shadow:
+    0 40px 80px rgba(0, 0, 0, 0.5),
+    0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Legible white type over photography */
+.audit-shadow h1,
+.audit-shadow p,
+.audit-shadow li {
+  text-shadow:
+    0 2px 24px rgba(0, 0, 0, 0.55),
+    0 1px 4px rgba(0, 0, 0, 0.35);
+}
+
+/* Form fields on the oxblood card */
+.audit-field__label {
+  display: block;
+  font-family: var(--font-sans);
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  font-size: 0.72rem;
+  color: rgba(255, 255, 255, 0.75);
+}
+.audit-field {
+  margin-top: 8px;
+  width: 100%;
+  border: 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.35);
+  background: rgba(255, 255, 255, 0.06);
+  padding: 12px 12px;
+  font-family: var(--font-sans);
+  font-size: 1.05rem;
+  color: #fff;
+  outline: none;
+  border-radius: 0;
+  transition:
+    border-color var(--dur-fast) var(--ease-noova),
+    background var(--dur-fast) var(--ease-noova);
+}
+.audit-field:focus {
+  border-bottom-color: #c9a7a2;
+  background: rgba(255, 255, 255, 0.1);
+}
+.audit-field[aria-invalid="true"] {
+  border-bottom-color: #f0b8b0;
+}
+.audit-field__error {
+  display: block;
+  margin-top: 6px;
+  font-family: var(--font-sans);
+  font-size: 0.85rem;
+  color: #f6cdc6;
+}
+.audit-check--dark {
+  border-color: rgba(255, 255, 255, 0.6);
+  background: transparent;
+}
+.audit-check--dark:checked {
+  background: #fff;
+  border-color: #fff;
+}
+.audit-check--dark:checked::after {
+  border-color: var(--color-oxblood);
+}
+
+.audit-spinner {
+  width: 44px;
+  height: 44px;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-top-color: #c9a7a2;
+  animation: audit-spin 1s linear infinite;
+}
+@keyframes audit-spin {
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 .audit-step {
